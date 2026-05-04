@@ -1,0 +1,7 @@
+{
+  "buildCommand": null,
+  "outputDirectory": ".deploy",
+  "devCommand": "cd .deploy && python3 -m http.server 8080",
+  "cleanUrls": true,
+  "trailingSlash": false
+}

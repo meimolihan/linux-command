@@ -1,0 +1,18 @@
+{
+  "name": "linux-command-deploy",
+  "version": "1.0.0",
+  "description": "Linux 命令大全 - 包含 800+ Linux 命令的静态查询网站",
+  "main": "index.html",
+  "scripts": {
+    "start": "cd .deploy && python3 -m http.server 8080",
+    "serve": "npx serve .deploy -p 8080"
+  },
+  "keywords": [
+    "linux",
+    "command",
+    "cheatsheet",
+    "reference"
+  ],
+  "author": "",
+  "license": "MIT"
+}
