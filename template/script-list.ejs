@@ -1,0 +1,47 @@
+<%- include('partial/header'); %>
+<%- include('widget/search',{type: "list"}); %>
+<!-- ⑯ 骨架屏 -->
+<div class="skeleton-wrap" id="page-skeleton" style="display:none;">
+  <div class="skeleton-block sk-header"></div>
+  <div class="skeleton-block sk-tagline"></div>
+  <div class="skeleton-block sk-divider"></div>
+  <%for(var i=0;i<8;i++){%>
+  <div class="skeleton-block sk-row-sm"></div>
+  <%}%>
+</div>
+<div class="list-banner banner-script">
+  <div class="list-banner-inner">
+    <div class="banner-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"/>
+        <polyline points="8 6 2 12 8 18"/>
+      </svg>
+    </div>
+    <div class="banner-content">
+      <h2 class="banner-title">Shell 脚本库</h2>
+      <p class="banner-desc">共收录 <span class="banner-count script-count"><%=describe.script_length?describe.script_length:'0'%></span> 个脚本，包含 Docker 管理、Git 工具、系统运维等实用场景</p>
+    </div>
+  </div>
+</div>
+<div class="hotlist">
+  <div class="list-title">
+    <h3 class="section-title script-section">
+      <span class="section-icon-wrap">
+        <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
+      </span>
+      全部脚本
+    </h3>
+  </div>
+  <ul class="script-list">
+  <%describe.arr.forEach(function(page,item){%>
+    <%if(page.t === "script"){%>
+    <li><a href="c<%=page.p%>.html"><strong><%=page.n%></strong> - <%=page.d%></a></li>
+    <%}%>
+  <%});%>
+  </ul>
+</div>
+<%- include('widget/footer',{type: "list"}); %>
+<%- include('partial/footer'); %>

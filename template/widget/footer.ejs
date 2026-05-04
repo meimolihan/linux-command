@@ -1,0 +1,150 @@
+<!-- Linux命令行搜索引擎：https://jaywcjlove.github.io/linux-command/ -->
+<div class="footer <%if(type=='home'){%> home <%}%>">
+  <div class="footer-grid">
+    <!-- 第一行：导航链接 -->
+    <a class="footer-item" target="_blank" href="https://github.com/meimolihan/linux-command/new/main/command">
+      <svg class="footer-icon icon-command" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-add" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea"/>
+            <stop offset="100%" style="stop-color:#764ba2"/>
+          </linearGradient>
+        </defs>
+        <circle cx="12" cy="12" r="10" fill="url(#grad-add)"/>
+        <line x1="12" y1="8" x2="12" y2="16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="footer-text">添加命令</span>
+    </a>
+    <a class="footer-item" href="<%=relative_path%>hot.html">
+      <svg class="footer-icon icon-list" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-list" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#11998e"/>
+            <stop offset="100%" style="stop-color:#38ef7d"/>
+          </linearGradient>
+        </defs>
+        <rect x="3" y="4" width="18" height="16" rx="2" fill="url(#grad-list)"/>
+        <line x1="7" y1="9" x2="17" y2="9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="7" y1="14" x2="14" y2="14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="footer-text">命令列表</span>
+    </a>
+    <a class="footer-item" target="_blank" href="https://github.com/meimolihan/linux-command/new/main/myscript">
+      <svg class="footer-icon icon-script" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-script" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f093fb"/>
+            <stop offset="100%" style="stop-color:#f5576c"/>
+          </linearGradient>
+        </defs>
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="url(#grad-script)"/>
+        <path d="M8 8 L12 12 L8 16" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="14" y1="16" x2="16" y2="16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="footer-text">添加脚本</span>
+    </a>
+    <a class="footer-item" href="<%=relative_path%>script-list.html">
+      <svg class="footer-icon icon-doc" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-doc" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4facfe"/>
+            <stop offset="100%" style="stop-color:#00f2fe"/>
+          </linearGradient>
+        </defs>
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="url(#grad-doc)"/>
+        <polyline points="14 2 14 8 20 8" stroke="white" stroke-width="1.5" fill="none"/>
+        <line x1="8" y1="13" x2="16" y2="13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="8" y1="17" x2="13" y2="17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="footer-text">脚本列表</span>
+    </a>
+    <!-- 第二行：统计信息 -->
+    <a class="footer-item" href="<%=relative_path%>hot.html">
+      <svg class="footer-icon icon-command" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-cmd" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fa709a"/>
+            <stop offset="100%" style="stop-color:#fee140"/>
+          </linearGradient>
+        </defs>
+        <circle cx="12" cy="12" r="10" fill="url(#grad-cmd)"/>
+        <path d="M9.5 9L14.5 12L9.5 15V9Z" fill="white"/>
+      </svg>
+      <span class="footer-text">命令 <span class="footer-count command"><%=describe.command_length?describe.command_length:''%></span></span>
+    </a>
+    <a class="footer-item" href="<%=relative_path%>script-list.html">
+      <svg class="footer-icon icon-script" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-code" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#a8edea"/>
+            <stop offset="100%" style="stop-color:#fed6e3"/>
+          </linearGradient>
+        </defs>
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="url(#grad-code)"/>
+        <polyline points="8 8 11 12 8 16" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="13" y1="16" x2="16" y2="16" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="footer-text">脚本 <span class="footer-count script"><%=describe.script_length?describe.script_length:''%></span></span>
+    </a>
+    <% if(describe.k8s_length && describe.k8s_length > 0){ %>
+    <a class="footer-item" href="<%=relative_path%>all.html">
+      <svg class="footer-icon icon-script" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-k8s" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3268f7"/>
+            <stop offset="100%" style="stop-color:#6a11cb"/>
+          </linearGradient>
+        </defs>
+        <circle cx="12" cy="12" r="10" fill="url(#grad-k8s)"/>
+        <path d="M12 6v12M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="footer-text">K8s <span class="footer-count k8s"><%=describe.k8s_length%></span></span>
+    </a>
+    <% } %>
+    <a class="footer-item" href="<%=relative_path%>all.html">
+      <svg class="footer-icon icon-total" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="grad-total" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea"/>
+            <stop offset="100%" style="stop-color:#764ba2"/>
+          </linearGradient>
+        </defs>
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="url(#grad-total)"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="url(#grad-total)"/>
+      </svg>
+      <span class="footer-text">共计 <span class="footer-count total"><%=describe.total_length?describe.total_length:''%></span></span>
+    </a>
+    <a class="footer-item github-btn" href="https://github.com/meimolihan/linux-command" target="_blank">
+      <svg class="footer-icon icon-github" viewBox="0 0 24 24" fill="url(#github-gradient)" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="github-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#24292e"/>
+            <stop offset="50%" style="stop-color:#4285f4"/>
+            <stop offset="100%" style="stop-color:#ea4335"/>
+          </linearGradient>
+        </defs>
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+      <span class="footer-text">Github</span>
+    </a>
+  </div>
+
+  <!-- <div>
+    <a target="_blank" href="<%=relative_path%>contributors.html#镜像网站">镜像网站</a>列表，
+    <a href="https://github.com/jaywcjlove/linux-command/issues/649" target="_blank">推荐</a>自己的镜像网站
+  </div>
+  <div class="ad_title">
+    <sup>特别感谢：</sup>
+  </div>
+  <div class="ad">
+    <a href="https://go.warp.dev/linux-command">
+      <img alt="Warp sponsorship" width="160" src="<%=relative_path%>img/warp.png">
+      <b>Warp, the intelligent terminal for developers!</b>
+    </a>
+    <a href="https://pawakalabs.com/products/fakey/">
+      <img alt="Fakey sponsorship" width="160" src="<%=relative_path%>img/fakey.png">
+      <b>Fakey - Manga Translator, Available for Android, iOS and browser extension</b>
+    </a>
+  </div>
+</div> -->

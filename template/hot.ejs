@@ -1,0 +1,44 @@
+<%- include('partial/header'); %>
+<%- include('widget/search',{type: "list"}); %>
+<!-- ⑯ 骨架屏 -->
+<div class="skeleton-wrap" id="page-skeleton" style="display:none;">
+  <div class="skeleton-block sk-header"></div>
+  <div class="skeleton-block sk-tagline"></div>
+  <div class="skeleton-block sk-divider"></div>
+  <%for(var i=0;i<6;i++){%>
+  <div class="skeleton-block sk-row"></div>
+  <%}%>
+</div>
+<div class="list-banner">
+  <div class="list-banner-inner">
+    <div class="banner-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="4 17 10 11 4 5"></polyline>
+        <line x1="12" y1="19" x2="20" y2="19"></line>
+      </svg>
+    </div>
+    <div class="banner-content">
+      <h2 class="banner-title">Linux 命令大全</h2>
+      <p class="banner-desc">共收录 <span class="banner-count command-count"><%=describe.command_length?describe.command_length:'0'%></span> 个命令，涵盖系统管理、文件操作、网络配置等常用场景</p>
+    </div>
+  </div>
+</div>
+<div class="hotlist">
+  <div class="list-title">
+    <h3 class="section-title command-title">
+      <span class="section-icon-wrap">
+        <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+      </span>
+      全部命令
+    </h3>
+  </div>
+  <ul class="command-list">
+  <%describe.arr.forEach(function(page,item){%>
+    <li><a href="c<%=page.p%>.html"><strong><%=page.n%></strong> - <%=page.d%></a></li>
+  <%});%>
+  </ul>
+</div>
+<%- include('widget/footer',{type: "list"}); %>
+<%- include('partial/footer'); %>

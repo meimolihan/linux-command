@@ -1,0 +1,23 @@
+<%- include('partial/header'); %>
+<%- include('widget/search',{type: "list"}); %>
+<div class="list-banner" id="search_banner" style="display:none;">
+  <div class="list-banner-inner">
+    <div class="banner-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </div>
+    <div class="banner-content">
+      <h2 class="banner-title" id="search_banner_title">搜索结果</h2>
+      <p class="banner-desc" id="search_banner_desc"></p>
+    </div>
+  </div>
+</div>
+<div class="search_list">
+    <ul id="search_list_result">
+    </ul>
+</div>
+
+<%- include('widget/footer',{type: "list"}); %>
+<%- include('partial/footer'); %>

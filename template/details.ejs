@@ -1,0 +1,46 @@
+<%- include('partial/header'); %>
+<%- include('widget/search',{type: "list"}); %>
+<script type="text/javascript" src="<%=relative_path%>js/copy-to-clipboard.js"></script>
+
+<style>
+/* 壁纸模式详情页 - body 顶部间距 */
+body.wallpaper-random,
+body.wallpaper-local {
+  padding-top: 80px !important;
+}
+</style>
+
+<main id="main-content" class="markdown-body" style="padding-bottom: 10px !important; margin: 0 auto 0 auto !important;">
+<% if(describe.n){ %>
+<!-- ⑥ 命令头部信息卡片 -->
+<div class="command-header-card">
+  <div class="command-title-row">
+    <h1 class="command-name"><%=describe.n%></h1>
+    <span class="command-type-badge <%=describe.t === 'script' ? 'script' : 'command'%>"><%=describe.t === 'script' ? '脚本' : '命令'%></span>
+  </div>
+  <% if(describe.d){ %>
+  <p class="command-desc"><%=describe.d%></p>
+  <% } %>
+  <div class="command-actions">
+    <% var editDir = describe.t === "script" ? "myscript" : "command"; %>
+    <a class="action-btn edit-btn" target="_blank" href="https://github.com/meimolihan/linux-command/edit/main/<%=editDir%>/<%=describe.n%>.md">
+      <svg class="action-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+      <span>纠正错误</span>
+    </a>
+    <a class="action-btn add-btn" target="_blank" href="https://github.com/meimolihan/linux-command/edit/main/<%=editDir%>/<%=describe.n%>.md">
+      <svg class="action-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>添加实例</span>
+    </a>
+    <button class="action-btn copy-link-btn" onclick="navigator.clipboard.writeText(window.location.href);showToast('链接已复制','success')">
+      <svg class="action-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      <span>复制链接</span>
+    </button>
+  </div>
+</div>
+<% } %>
+
+<%-mdhtml%>
+
+</main>
+<%- include('widget/footer',{type: "list"}); %>
+<%- include('partial/footer'); %>
