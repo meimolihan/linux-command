@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="git_push 命令">
     <meta name="twitter:description" content="适用于多 Linux 发行版、无冗余提示、带彩色输出的 Git 项目一键自动提交与远程推送工具脚本。 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=moquwk65">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=moqzi0sk">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=moquwk65"></script>
+    <script src="../js/dt.js?v=moqzi0sk"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1131,8 +1131,8 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 <h1 id="git_push"><a class="anchor" aria-hidden="true" tabindex="-1" href="#git_push"><span class="octicon octicon-link"></span></a>git_push</h1>
 <p>适用于多 Linux 发行版、无冗余提示、带彩色输出的 Git 项目一键自动提交与远程推送工具脚本。</p>
 <h2 id="一键脚本"><a class="anchor" aria-hidden="true" tabindex="-1" href="#一键脚本"><span class="octicon octicon-link"></span></a>一键脚本</h2>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh<span class="token punctuation">)</span>
-</span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh)
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh<span class="token punctuation">)</span> /vol1/1000/compose/pansou
+</span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh) /vol1/1000/compose/pansou
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h2 id="效果预览"><a class="anchor" aria-hidden="true" tabindex="-1" href="#效果预览"><span class="octicon octicon-link"></span></a>效果预览</h2>
 <p>
@@ -1148,18 +1148,6 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
   <li>通用兼容：适用于多 Linux 发行版</li>
   <li>自动检测：检测是否有更改需要提交</li>
 </ul>
-<h3 id="使用方法"><a class="anchor" aria-hidden="true" tabindex="-1" href="#使用方法"><span class="octicon octicon-link"></span></a>使用方法</h3>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># 一键提交并推送（使用默认提交信息 "update"）</span>
-</span><span class="code-line line-number" line="2"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh<span class="token punctuation">)</span>
-</span><span class="code-line line-number" line="3">
-</span><span class="code-line line-number" line="4"><span class="token comment"># 自定义提交信息</span>
-</span><span class="code-line line-number" line="5"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh<span class="token punctuation">)</span> <span class="token string">"修复bug"</span>
-</span></code><div onclick="copied(this)" data-code="# 一键提交并推送（使用默认提交信息 &#x22;update&#x22;）
-bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh)
-
-# 自定义提交信息
-bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/git_push.sh) &#x22;修复bug&#x22;
-" class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h3 id="注意事项"><a class="anchor" aria-hidden="true" tabindex="-1" href="#注意事项"><span class="octicon octicon-link"></span></a>注意事项</h3>
 <ul>
   <li>会自动执行 <code>git add .</code>，请确认工作区没有敏感文件</li>
@@ -2245,8 +2233,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=moquwk65"></script>
-<script type="text/javascript" src="../js/index.js?v=moquwk65"></script>
-<script type="text/javascript" src="../js/enhance.js?v=moquwk65"></script>
+<script type="text/javascript" src="../js/dt.js?v=moqzi0sk"></script>
+<script type="text/javascript" src="../js/index.js?v=moqzi0sk"></script>
+<script type="text/javascript" src="../js/enhance.js?v=moqzi0sk"></script>
 </body>
 </html>
