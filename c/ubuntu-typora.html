@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="ubuntu-typora 命令">
     <meta name="twitter:description" content="Ubuntu 手动安装 Typora 便携版完整教程 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=moqzi0sk">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mor4skj2">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=moqzi0sk"></script>
+    <script src="../js/dt.js?v=mor4skj2"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1193,21 +1193,21 @@ StartupNotify=true
 EOF
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <p><strong>添加快捷方式执行权限</strong></p>
-<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">chmod</span> +x ~/.local/share/applications/typora.desktop
-</span></code><div onclick="copied(this)" data-code="chmod +x ~/.local/share/applications/typora.desktop
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">sudo</span> <span class="token function">chmod</span> +x ~/.local/share/applications/typora.desktop
+</span></code><div onclick="copied(this)" data-code="sudo chmod +x ~/.local/share/applications/typora.desktop
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <p><strong>验证快捷方式是否正常</strong></p>
-<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">gtk-launch typora.desktop
-</span></code><div onclick="copied(this)" data-code="gtk-launch typora.desktop
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">sudo</span> gtk-launch typora.desktop
+</span></code><div onclick="copied(this)" data-code="sudo gtk-launch typora.desktop
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <p>如果 Typora 能正常启动，说明快捷方式创建成功。</p>
 <p><strong>更新系统应用菜单</strong></p>
-<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">update-desktop-database ~/.local/share/applications/
-</span></code><div onclick="copied(this)" data-code="update-desktop-database ~/.local/share/applications/
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">sudo</span> update-desktop-database ~/.local/share/applications/
+</span></code><div onclick="copied(this)" data-code="sudo update-desktop-database ~/.local/share/applications/
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <p><strong>将 Typora 设为 .md 文件的默认程序</strong></p>
-<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">xdg-mime default typora.desktop text/markdown
-</span></code><div onclick="copied(this)" data-code="xdg-mime default typora.desktop text/markdown
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">sudo</span> xdg-mime default typora.desktop text/markdown
+</span></code><div onclick="copied(this)" data-code="sudo xdg-mime default typora.desktop text/markdown
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <p><strong>发送到桌面</strong></p>
 <pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">cp</span> ~/.local/share/applications/typora.desktop ~/桌面/typora.desktop
@@ -1425,8 +1425,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=moqzi0sk"></script>
-<script type="text/javascript" src="../js/index.js?v=moqzi0sk"></script>
-<script type="text/javascript" src="../js/enhance.js?v=moqzi0sk"></script>
+<script type="text/javascript" src="../js/dt.js?v=mor4skj2"></script>
+<script type="text/javascript" src="../js/index.js?v=mor4skj2"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mor4skj2"></script>
 </body>
 </html>
