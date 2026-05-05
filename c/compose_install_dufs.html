@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_install_dufs 命令">
     <meta name="twitter:description" content="Dufs 私有网盘 / 文件共享 / 静态服务器 / WebDAV 盘 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mos0r94z">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mos1ywit">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mos0r94z"></script>
+    <script src="../js/dt.js?v=mos1ywit"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1224,48 +1224,42 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
   <li>如需完全卸载，可使用文档末尾的一键卸载命令</li>
 </ul>
 <h2 id="脚本源码"><a class="anchor" aria-hidden="true" tabindex="-1" href="#脚本源码"><span class="octicon octicon-link"></span></a>脚本源码</h2>
-<blockquote>
-  <ol>
-    <li>
-      <p>不传参 → 正常交互式</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh</p>
-  </blockquote>
-  <ol start="2">
-    <li>
-      <p>先目录后端口</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh /vol1/1000/compose/dufs 5000</p>
-  </blockquote>
-  <ol start="3">
-    <li>
-      <p>先端口后目录</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh 5000 /vol1/1000/compose/dufs</p>
-  </blockquote>
-  <ol start="4">
-    <li>
-      <p>只传目录</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh /vol1/1000/compose/dufs</p>
-  </blockquote>
-  <ol start="5">
-    <li>
-      <p>只传端口</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh 5000</p>
-  </blockquote>
-</blockquote>
+<table>
+  <thead>
+    <tr>
+      <th>传参方式</th>
+      <th>命令示例</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>不传参（交互式）</td>
+      <td>脚本.sh</td>
+      <td>正常进入交互式流程</td>
+    </tr>
+    <tr>
+      <td>先目录，后端口</td>
+      <td>脚本.sh /vol1/1000/compose/dufs 5000</td>
+      <td>同时传入目录和端口</td>
+    </tr>
+    <tr>
+      <td>先端口，后目录</td>
+      <td>脚本.sh 5000 /vol1/1000/compose/dufs</td>
+      <td>同时传入端口和目录</td>
+    </tr>
+    <tr>
+      <td>只传目录</td>
+      <td>脚本.sh /vol1/1000/compose/dufs</td>
+      <td>仅传入目录参数</td>
+    </tr>
+    <tr>
+      <td>只传端口</td>
+      <td>脚本.sh 5000</td>
+      <td>仅传入端口参数</td>
+    </tr>
+  </tbody>
+</table>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token shebang important">#!/bin/bash</span>
 </span><span class="code-line line-number" line="2"><span class="token builtin class-name">set</span> <span class="token parameter variable">-uo</span> pipefail
 </span><span class="code-line line-number" line="3">
@@ -2216,8 +2210,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mos0r94z"></script>
-<script type="text/javascript" src="../js/index.js?v=mos0r94z"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mos0r94z"></script>
+<script type="text/javascript" src="../js/dt.js?v=mos1ywit"></script>
+<script type="text/javascript" src="../js/index.js?v=mos1ywit"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mos1ywit"></script>
 </body>
 </html>

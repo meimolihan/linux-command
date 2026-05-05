@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_install_allinssl 命令">
     <meta name="twitter:description" content="Docker Compose 一键部署 AllinSSL - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mos0r94z">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mos1ywit">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mos0r94z"></script>
+    <script src="../js/dt.js?v=mos1ywit"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1130,15 +1130,22 @@ class MarkdownStyle extends HTMLElement {
 customElements.define('markdown-style', MarkdownStyle);</script><markdown-style style="max-width: 960px; margin: 0 auto 60px auto; padding: 8px;" class="markdown-style">
 <h1 id="compose_install_allinssl"><a class="anchor" aria-hidden="true" tabindex="-1" href="#compose_install_allinssl"><span class="octicon octicon-link"></span></a>compose_install_allinssl</h1>
 <p>Docker Compose 一键部署 AllinSSL</p>
-<h2 id="补充说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#补充说明"><span class="octicon octicon-link"></span></a>补充说明</h2>
-<p>基于 Docker Compose 的 AllinSSL 自动化部署脚本，支持交互式传参和命令行传参两种使用方式，自动检测并安装 Docker 及 Docker Compose 环境，生成对应配置文件并启动容器，同时提供一键卸载功能。</p>
+<h2 id="项目简介"><a class="anchor" aria-hidden="true" tabindex="-1" href="#项目简介"><span class="octicon octicon-link"></span></a>项目简介</h2>
+<p><strong><a href="https://www.allinssl.com/">AllinSSL</a></strong> 是一款功能强大的 SSL 证书管理工具，支持自动申请、续期和管理多个证书颁发机构（如 Let's Encrypt、ZeroSSL）的 SSL/TLS 证书。结合 Docker 部署，您可以在任何支持 Docker 的平台（Linux、Windows、macOS、NAS 等）上快速部署和运行 AllinSSL，实现证书的集中管理和自动化维护。</p>
+<ul>
+  <li><strong>🌐 <code>AllinSSL</code> 官网地址：<a href="https://www.allinssl.com/">https://www.allinssl.com/</a></strong></li>
+  <li><strong>🐱 <code>GitHub</code> 项目地址：<a href="https://github.com/allinssl/allinssl">https://github.com/allinssl/allinssl</a></strong></li>
+  <li><strong>🐋 <code>Docker</code> 镜像地址：<a href="https://hub.docker.com/r/allinssl/allinssl">https://hub.docker.com/r/allinssl/allinssl</a></strong></li>
+</ul>
+<p><strong>默认登录信息</strong>：</p>
+<ul>
+  <li>👑 用户名：<code>admin</code></li>
+  <li>🔑 密码：<code>12345678</code></li>
+</ul>
 <h2 id="一键脚本"><a class="anchor" aria-hidden="true" tabindex="-1" href="#一键脚本"><span class="octicon octicon-link"></span></a>一键脚本</h2>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/compose_install_allinssl.sh<span class="token punctuation">)</span> <span class="token number">7979</span> /vol1/1000/compose/allinssl
 </span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/compose_install_allinssl.sh) 7979 /vol1/1000/compose/allinssl
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-<blockquote>
-  <p>默认用户名/密码：admin/12345678</p>
-</blockquote>
 <h2 id="效果预览"><a class="anchor" aria-hidden="true" tabindex="-1" href="#效果预览"><span class="octicon octicon-link"></span></a>效果预览</h2>
 <p>
   <img src="https://file.meimolihan.eu.org/screenshot/compose_install_allinssl-01.webp" alt="" loading="lazy">
@@ -1147,48 +1154,42 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
   <img src="https://file.meimolihan.eu.org/screenshot/compose_install_allinssl-02.webp" alt="WEB效果预览" loading="lazy">
 </p>
 <h2 id="脚本源码"><a class="anchor" aria-hidden="true" tabindex="-1" href="#脚本源码"><span class="octicon octicon-link"></span></a>脚本源码</h2>
-<blockquote>
-  <ol>
-    <li>
-      <p>不传参 → 正常交互式</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh</p>
-  </blockquote>
-  <ol start="2">
-    <li>
-      <p>先目录后端口</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh /vol1/1000/compose/allinssl 7979</p>
-  </blockquote>
-  <ol start="3">
-    <li>
-      <p>先端口后目录</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh 7979 /vol1/1000/compose/allinssl</p>
-  </blockquote>
-  <ol start="4">
-    <li>
-      <p>只传目录</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh /vol1/1000/compose/allinssl</p>
-  </blockquote>
-  <ol start="5">
-    <li>
-      <p>只传端口</p>
-    </li>
-  </ol>
-  <blockquote>
-    <p>脚本.sh 7979</p>
-  </blockquote>
-</blockquote>
+<table>
+  <thead>
+    <tr>
+      <th>传参方式</th>
+      <th>命令示例</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>不传参（交互式）</td>
+      <td>脚本.sh</td>
+      <td>正常进入交互式流程</td>
+    </tr>
+    <tr>
+      <td>先目录，后端口</td>
+      <td>脚本.sh /vol1/1000/compose/allinssl 7979</td>
+      <td>同时传入目录和端口</td>
+    </tr>
+    <tr>
+      <td>先端口，后目录</td>
+      <td>脚本.sh 7979 /vol1/1000/compose/allinssl</td>
+      <td>同时传入端口和目录</td>
+    </tr>
+    <tr>
+      <td>只传目录</td>
+      <td>脚本.sh /vol1/1000/compose/allinssl</td>
+      <td>仅传入目录参数</td>
+    </tr>
+    <tr>
+      <td>只传端口</td>
+      <td>脚本.sh 7979</td>
+      <td>仅传入端口参数</td>
+    </tr>
+  </tbody>
+</table>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token shebang important">#!/bin/bash</span>
 </span><span class="code-line line-number" line="2"><span class="token builtin class-name">set</span> <span class="token parameter variable">-uo</span> pipefail
 </span><span class="code-line line-number" line="3">
@@ -2065,8 +2066,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mos0r94z"></script>
-<script type="text/javascript" src="../js/index.js?v=mos0r94z"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mos0r94z"></script>
+<script type="text/javascript" src="../js/dt.js?v=mos1ywit"></script>
+<script type="text/javascript" src="../js/index.js?v=mos1ywit"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mos1ywit"></script>
 </body>
 </html>
