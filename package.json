@@ -1,7 +1,7 @@
 {
-  "name": "linux-command-deploy",
+  "name": "linux-command",
   "version": "1.0.0",
-  "description": "Linux 命令大全 - 包含 800+ Linux 命令的静态查询网站",
+  "description": "Linux 命令大全",
   "main": "index.html",
   "scripts": {
     "start": "cd .deploy && python3 -m http.server 8080",
