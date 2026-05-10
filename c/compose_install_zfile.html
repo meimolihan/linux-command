@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_install_zfile 命令">
     <meta name="twitter:description" content="Docker Compose 部署 ZFile 在线文件管理系统 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=moznr1qc">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mozoeplw">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=moznr1qc"></script>
+    <script src="../js/dt.js?v=mozoeplw"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1526,63 +1526,62 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="310"><span class="token string">      volumes:
 </span></span><span class="code-line line-number" line="311"><span class="token string">         - ./zfile/db:/root/.zfile-v4/db
 </span></span><span class="code-line line-number" line="312"><span class="token string">         - ./zfile/logs:/root/.zfile-v4/logs
-</span></span><span class="code-line line-number" line="313"><span class="token string">         - ./zfile/application.properties:/root/application.properties
-</span></span><span class="code-line line-number" line="314"><span class="token string">         - ./file:/data/file
-</span></span><span class="code-line line-number" line="315"><span class="token string">      image: zhaojun1998/zfile:latest
-</span></span><span class="code-line line-number" line="316"><span class="token string">      environment:
-</span></span><span class="code-line line-number" line="317"><span class="token string">         - TZ=Asia/Shanghai
-</span></span><span class="code-line line-number" line="318"><span class="token string">         - JAVA_OPTS=-Xmx512m -Xms256m
-</span></span><span class="code-line line-number" line="319"><span class="token string">      healthcheck:
-</span></span><span class="code-line line-number" line="320"><span class="token string">         test:
-</span></span><span class="code-line line-number" line="321"><span class="token string">            - CMD
-</span></span><span class="code-line line-number" line="322"><span class="token string">            - curl
-</span></span><span class="code-line line-number" line="323"><span class="token string">            - -f
-</span></span><span class="code-line line-number" line="324"><span class="token string">            - http://localhost:8080
-</span></span><span class="code-line line-number" line="325"><span class="token string">         interval: 30s
-</span></span><span class="code-line line-number" line="326"><span class="token string">         timeout: 10s
-</span></span><span class="code-line line-number" line="327"><span class="token string">         retries: 3
-</span></span><span class="code-line line-number" line="328"><span class="token string">EOF</span>
-</span><span class="code-line line-number" line="329">
-</span><span class="code-line line-number" line="330">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"docker-compose.yml"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="331">        log_ok <span class="token string">"配置文件创建成功"</span>
-</span><span class="code-line line-number" line="332">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="333">        log_error <span class="token string">"配置文件创建失败"</span>
-</span><span class="code-line line-number" line="334">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="335">        break_end
-</span><span class="code-line line-number" line="336">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="337">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="338">
-</span><span class="code-line line-number" line="339">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="340">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 尝试启动容器 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="341">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="342">    <span class="token keyword">if</span> <span class="token function">docker-compose</span> up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="343">        log_ok <span class="token string">"容器启动成功"</span>
-</span><span class="code-line line-number" line="344">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="345">        log_warn <span class="token string">"docker-compose 启动失败，尝试兼容版 docker compose <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="346">        <span class="token keyword">if</span> <span class="token function">docker</span> compose up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="347">            log_ok <span class="token string">"容器启动成功"</span>
-</span><span class="code-line line-number" line="348">        <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="349">            log_error <span class="token string">"容器启动失败"</span>
-</span><span class="code-line line-number" line="350">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="351">            break_end
-</span><span class="code-line line-number" line="352">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="353">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="354">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="355">
-</span><span class="code-line line-number" line="356">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="357">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 容器运行状态<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="358">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="359">    docker-ps-cn <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>
-</span><span class="code-line line-number" line="360">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="361">    <span class="token assign-left variable">LOCAL_IP</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">hostname</span> <span class="token parameter variable">-I</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $1}'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="362">    log_info <span class="token string">"部署完成！"</span>
-</span><span class="code-line line-number" line="363">    log_info <span class="token string">"访问地址：<span class="token variable">${gl_lv}</span>http://<span class="token variable">${LOCAL_IP}</span>:<span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="364">    log_info <span class="token string">"部署目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="365">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="366">    break_end
-</span><span class="code-line line-number" line="367"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="368">
-</span><span class="code-line line-number" line="369">deploy_app <span class="token string">"<span class="token variable">$@</span>"</span>
+</span></span><span class="code-line line-number" line="313"><span class="token string">         - ./file:/data/file
+</span></span><span class="code-line line-number" line="314"><span class="token string">      image: zhaojun1998/zfile:latest
+</span></span><span class="code-line line-number" line="315"><span class="token string">      environment:
+</span></span><span class="code-line line-number" line="316"><span class="token string">         - TZ=Asia/Shanghai
+</span></span><span class="code-line line-number" line="317"><span class="token string">         - JAVA_OPTS=-Xmx512m -Xms256m
+</span></span><span class="code-line line-number" line="318"><span class="token string">      healthcheck:
+</span></span><span class="code-line line-number" line="319"><span class="token string">         test:
+</span></span><span class="code-line line-number" line="320"><span class="token string">            - CMD
+</span></span><span class="code-line line-number" line="321"><span class="token string">            - curl
+</span></span><span class="code-line line-number" line="322"><span class="token string">            - -f
+</span></span><span class="code-line line-number" line="323"><span class="token string">            - http://localhost:8080
+</span></span><span class="code-line line-number" line="324"><span class="token string">         interval: 30s
+</span></span><span class="code-line line-number" line="325"><span class="token string">         timeout: 10s
+</span></span><span class="code-line line-number" line="326"><span class="token string">         retries: 3
+</span></span><span class="code-line line-number" line="327"><span class="token string">EOF</span>
+</span><span class="code-line line-number" line="328">
+</span><span class="code-line line-number" line="329">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"docker-compose.yml"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="330">        log_ok <span class="token string">"配置文件创建成功"</span>
+</span><span class="code-line line-number" line="331">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="332">        log_error <span class="token string">"配置文件创建失败"</span>
+</span><span class="code-line line-number" line="333">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="334">        break_end
+</span><span class="code-line line-number" line="335">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="336">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="337">
+</span><span class="code-line line-number" line="338">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="339">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 尝试启动容器 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="340">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="341">    <span class="token keyword">if</span> <span class="token function">docker-compose</span> up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="342">        log_ok <span class="token string">"容器启动成功"</span>
+</span><span class="code-line line-number" line="343">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="344">        log_warn <span class="token string">"docker-compose 启动失败，尝试兼容版 docker compose <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="345">        <span class="token keyword">if</span> <span class="token function">docker</span> compose up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="346">            log_ok <span class="token string">"容器启动成功"</span>
+</span><span class="code-line line-number" line="347">        <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="348">            log_error <span class="token string">"容器启动失败"</span>
+</span><span class="code-line line-number" line="349">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="350">            break_end
+</span><span class="code-line line-number" line="351">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="352">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="353">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="354">
+</span><span class="code-line line-number" line="355">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="356">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 容器运行状态<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="357">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="358">    docker-ps-cn <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>
+</span><span class="code-line line-number" line="359">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="360">    <span class="token assign-left variable">LOCAL_IP</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">hostname</span> <span class="token parameter variable">-I</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $1}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="361">    log_info <span class="token string">"部署完成！"</span>
+</span><span class="code-line line-number" line="362">    log_info <span class="token string">"访问地址：<span class="token variable">${gl_lv}</span>http://<span class="token variable">${LOCAL_IP}</span>:<span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="363">    log_info <span class="token string">"部署目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="364">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="365">    break_end
+</span><span class="code-line line-number" line="366"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="367">
+</span><span class="code-line line-number" line="368">deploy_app <span class="token string">"<span class="token variable">$@</span>"</span>
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -uo pipefail
 
@@ -1895,7 +1894,6 @@ services:
       volumes:
          - ./zfile/db:/root/.zfile-v4/db
          - ./zfile/logs:/root/.zfile-v4/logs
-         - ./zfile/application.properties:/root/application.properties
          - ./file:/data/file
       image: zhaojun1998/zfile:latest
       environment:
@@ -2220,8 +2218,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=moznr1qc"></script>
-<script type="text/javascript" src="../js/index.js?v=moznr1qc"></script>
-<script type="text/javascript" src="../js/enhance.js?v=moznr1qc"></script>
+<script type="text/javascript" src="../js/dt.js?v=mozoeplw"></script>
+<script type="text/javascript" src="../js/index.js?v=mozoeplw"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mozoeplw"></script>
 </body>
 </html>
