@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="docker_buildx_local 命令">
     <meta name="twitter:description" content="Docker 多架构镜像构建与推送到 Docker Hub - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp17ojlg">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp18e2vt">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp17ojlg"></script>
+    <script src="../js/dt.js?v=mp18e2vt"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1130,17 +1130,45 @@ class MarkdownStyle extends HTMLElement {
 customElements.define('markdown-style', MarkdownStyle);</script><markdown-style style="max-width: 960px; margin: 0 auto 60px auto; padding: 8px;" class="markdown-style">
 <h1 id="docker_buildx_local"><a class="anchor" aria-hidden="true" tabindex="-1" href="#docker_buildx_local"><span class="octicon octicon-link"></span></a>docker_buildx_local</h1>
 <p>Docker 多架构镜像构建与推送到 Docker Hub</p>
-<h2 id="构建流程"><a class="anchor" aria-hidden="true" tabindex="-1" href="#构建流程"><span class="octicon octicon-link"></span></a>构建流程</h2>
+<h2 id="补充说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#补充说明"><span class="octicon octicon-link"></span></a>补充说明</h2>
+<p><strong>docker buildx</strong> 是 Docker 官方提供的多架构镜像构建插件，它利用 QEMU 模拟器在单台机器上同时构建不同 CPU 架构的镜像（如 amd64 + arm64），无需多台物理机器。<code>docker buildx build --load</code> 将构建结果直接加载到本地 Docker 镜像库，适用于本地测试验证；结合 <code>--push</code> 或 <code>-o type=registry</code> 可直接推送到远程仓库。</p>
+<h3 id="工作原理"><a class="anchor" aria-hidden="true" tabindex="-1" href="#工作原理"><span class="octicon octicon-link"></span></a>工作原理</h3>
+<ul>
+  <li>通过 <code>docker buildx create</code> 创建 Builder 实例</li>
+  <li>Builder 内部使用 QEMU binfmt 注册处理器解析器，实现跨架构构建</li>
+  <li>构建时通过 <code>--platform</code> 指定目标架构，builder 自动拉起对应架构的构建容器</li>
+</ul>
+<h3 id="本地构建-vs-远程推送"><a class="anchor" aria-hidden="true" tabindex="-1" href="#本地构建-vs-远程推送"><span class="octicon octicon-link"></span></a>本地构建 vs 远程推送</h3>
+<table>
+  <thead>
+    <tr>
+      <th>构建方式</th>
+      <th>命令</th>
+      <th>结果</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>本地加载</td>
+      <td><code>--load</code> 或 <code>-o type=docker</code></td>
+      <td>镜像出现在 <code>docker images</code></td>
+    </tr>
+    <tr>
+      <td>远程推送</td>
+      <td><code>--push</code> 或 <code>-o type=registry</code></td>
+      <td>镜像直接推送到 registry</td>
+    </tr>
+    <tr>
+      <td>同时执行</td>
+      <td><code>--load --push</code>（仅单架构支持同时）</td>
+      <td>本地 + 远程</td>
+    </tr>
+  </tbody>
+</table>
 <blockquote>
-  <ol>
-    <li>克隆项目</li>
-    <li>开启 Docker 多架构支持（buildx）</li>
-    <li>登录 Docker Hub</li>
-    <li>构建并推送多架构镜像</li>
-    <li>验证运行</li>
-  </ol>
+  <p>⚠️ 注意：<code>--load</code> 一次只能加载一个架构的镜像到本地（不能同时 <code>--load</code> amd64 和 arm64）。如果需要构建多架构并保存到本地，需分别单独构建。</p>
 </blockquote>
-<h2 id="第一步克隆项目"><a class="anchor" aria-hidden="true" tabindex="-1" href="#第一步克隆项目"><span class="octicon octicon-link"></span></a>第一步：克隆项目</h2>
+<h2 id="克隆项目"><a class="anchor" aria-hidden="true" tabindex="-1" href="#克隆项目"><span class="octicon octicon-link"></span></a>克隆项目</h2>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token builtin class-name">cd</span> /vol1/1000/compose
 </span><span class="code-line line-number" line="2"><span class="token function">rm</span> <span class="token parameter variable">-rf</span> /vol1/1000/compose/linux-command
 </span><span class="code-line line-number" line="3"><span class="token function">git</span> clone https://github.com/meimolihan/linux-command.git
@@ -1150,7 +1178,7 @@ rm -rf /vol1/1000/compose/linux-command
 git clone https://github.com/meimolihan/linux-command.git
 cd linux-command
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-<h2 id="第二步开启-docker-多架构支持"><a class="anchor" aria-hidden="true" tabindex="-1" href="#第二步开启-docker-多架构支持"><span class="octicon octicon-link"></span></a>第二步：开启 Docker 多架构支持</h2>
+<h2 id="开启-docker-多架构支持"><a class="anchor" aria-hidden="true" tabindex="-1" href="#开启-docker-多架构支持"><span class="octicon octicon-link"></span></a>开启 Docker 多架构支持</h2>
 <blockquote>
   <p>构建支持 amd64 / arm64 双架构的镜像。<code>docker buildx create</code> 只需执行一次，之后每次构建直接使用即可。</p>
 </blockquote>
@@ -1171,7 +1199,7 @@ docker buildx create --name mybuilder --use
 # 启动并检查 builder
 docker buildx inspect mybuilder --bootstrap
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-<h2 id="第三步构建并推送多架构镜像"><a class="anchor" aria-hidden="true" tabindex="-1" href="#第三步构建并推送多架构镜像"><span class="octicon octicon-link"></span></a>第三步：构建并推送多架构镜像</h2>
+<h2 id="构建并推送多架构镜像"><a class="anchor" aria-hidden="true" tabindex="-1" href="#构建并推送多架构镜像"><span class="octicon octicon-link"></span></a>构建并推送多架构镜像</h2>
 <blockquote>
   <p>需要先执行 <code>docker login</code> 登录 Docker Hub。</p>
 </blockquote>
@@ -1350,7 +1378,7 @@ docker pull mobufan/linux-command:arm64  # 仅 arm64 机器（如 Mac M系列）
 docker pull mobufan/linux-command:latest # 自动匹配当前架构
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 </blockquote>
-<h2 id="第四步运行容器"><a class="anchor" aria-hidden="true" tabindex="-1" href="#第四步运行容器"><span class="octicon octicon-link"></span></a>第四步：运行容器</h2>
+<h2 id="运行容器"><a class="anchor" aria-hidden="true" tabindex="-1" href="#运行容器"><span class="octicon octicon-link"></span></a>运行容器</h2>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token punctuation">\</span>
 </span><span class="code-line line-number" line="2"> <span class="token parameter variable">--name</span> linux-command <span class="token punctuation">\</span>
 </span><span class="code-line line-number" line="3"> <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span>
@@ -1651,8 +1679,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp17ojlg"></script>
-<script type="text/javascript" src="../js/index.js?v=mp17ojlg"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp17ojlg"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp18e2vt"></script>
+<script type="text/javascript" src="../js/index.js?v=mp18e2vt"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp18e2vt"></script>
 </body>
 </html>
