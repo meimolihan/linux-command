@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_install_caddy 命令">
     <meta name="twitter:description" content="Web 服务器与反向代理工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp280x7x">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp28fru1">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp280x7x"></script>
+    <script src="../js/dt.js?v=mp28fru1"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1193,12 +1193,12 @@ docker run -d \
 <h3 id="caddyfile-配置"><a class="anchor" aria-hidden="true" tabindex="-1" href="#caddyfile-配置"><span class="octicon octicon-link"></span></a>Caddyfile 配置</h3>
 <p>Caddy 使用 <strong>Caddyfile</strong> 作为配置文件，语法比 Nginx 简洁得多。</p>
 <h4 id="1-静态文件服务器"><a class="anchor" aria-hidden="true" tabindex="-1" href="#1-静态文件服务器"><span class="octicon octicon-link"></span></a>1. 静态文件服务器</h4>
-<pre><code class="language-caddyfile code-highlight"><span class="code-line line-number" line="1"># 默认端口 80，浏览模式列出文件
-</span><span class="code-line line-number" line="2">:80 {
+<pre class="language-yaml"><code class="language-yaml code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># 默认端口 80，浏览模式列出文件</span>
+</span><span class="code-line line-number" line="2"><span class="token punctuation">:</span>80 <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="3">    root * /usr/share/caddy
 </span><span class="code-line line-number" line="4">    file_server browse
 </span><span class="code-line line-number" line="5">    encode gzip
-</span><span class="code-line line-number" line="6">}
+</span><span class="code-line line-number" line="6"><span class="token punctuation">}</span>
 </span></code><div onclick="copied(this)" data-code="# 默认端口 80，浏览模式列出文件
 :80 {
     root * /usr/share/caddy
@@ -1207,15 +1207,15 @@ docker run -d \
 }
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h4 id="2-反向代理"><a class="anchor" aria-hidden="true" tabindex="-1" href="#2-反向代理"><span class="octicon octicon-link"></span></a>2. 反向代理</h4>
-<pre><code class="language-caddyfile code-highlight"><span class="code-line line-number" line="1"># 将 /api 路径转发到后端服务
-</span><span class="code-line line-number" line="2">example.com {
-</span><span class="code-line line-number" line="3">    reverse_proxy /api/* localhost:8080
-</span><span class="code-line line-number" line="4">    reverse_proxy /admin/* localhost:9000
+<pre class="language-yaml"><code class="language-yaml code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># 将 /api 路径转发到后端服务</span>
+</span><span class="code-line line-number" line="2">example.com <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    reverse_proxy /api/* localhost<span class="token punctuation">:</span><span class="token number">8080</span>
+</span><span class="code-line line-number" line="4">    reverse_proxy /admin/* localhost<span class="token punctuation">:</span><span class="token number">9000</span>
 </span><span class="code-line line-number" line="5">
-</span><span class="code-line line-number" line="6">    # 静态资源
+</span><span class="code-line line-number" line="6">    <span class="token comment"># 静态资源</span>
 </span><span class="code-line line-number" line="7">    root * /var/www
 </span><span class="code-line line-number" line="8">    file_server
-</span><span class="code-line line-number" line="9">}
+</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
 </span></code><div onclick="copied(this)" data-code="# 将 /api 路径转发到后端服务
 example.com {
     reverse_proxy /api/* localhost:8080
@@ -1227,14 +1227,14 @@ example.com {
 }
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h4 id="3-自动-https生产环境"><a class="anchor" aria-hidden="true" tabindex="-1" href="#3-自动-https生产环境"><span class="octicon octicon-link"></span></a>3. 自动 HTTPS（生产环境）</h4>
-<pre><code class="language-caddyfile code-highlight"><span class="code-line line-number" line="1"># Caddy 自动从 Let's Encrypt 申请证书
-</span><span class="code-line line-number" line="2">example.com {
+<pre class="language-yaml"><code class="language-yaml code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># Caddy 自动从 Let's Encrypt 申请证书</span>
+</span><span class="code-line line-number" line="2">example.com <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="3">    root * /var/www/example
 </span><span class="code-line line-number" line="4">    file_server
 </span><span class="code-line line-number" line="5">
-</span><span class="code-line line-number" line="6">    # 配置联系邮箱（用于证书通知）
+</span><span class="code-line line-number" line="6">    <span class="token comment"># 配置联系邮箱（用于证书通知）</span>
 </span><span class="code-line line-number" line="7">    tls admin@example.com
-</span><span class="code-line line-number" line="8">}
+</span><span class="code-line line-number" line="8"><span class="token punctuation">}</span>
 </span></code><div onclick="copied(this)" data-code="# Caddy 自动从 Let&#x27;s Encrypt 申请证书
 example.com {
     root * /var/www/example
@@ -1245,16 +1245,16 @@ example.com {
 }
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h4 id="4-重定向"><a class="anchor" aria-hidden="true" tabindex="-1" href="#4-重定向"><span class="octicon octicon-link"></span></a>4. 重定向</h4>
-<pre><code class="language-caddyfile code-highlight"><span class="code-line line-number" line="1"># HTTP 自动跳转 HTTPS
-</span><span class="code-line line-number" line="2">example.com {
-</span><span class="code-line line-number" line="3">    redir https://{host}{uri} permanent
-</span><span class="code-line line-number" line="4">}
+<pre class="language-yaml"><code class="language-yaml code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># HTTP 自动跳转 HTTPS</span>
+</span><span class="code-line line-number" line="2">example.com <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    redir https<span class="token punctuation">:</span>//<span class="token punctuation">{</span>host<span class="token punctuation">}</span><span class="token punctuation">{</span>uri<span class="token punctuation">}</span> permanent
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="5">
-</span><span class="code-line line-number" line="6"># 路径重写
-</span><span class="code-line line-number" line="7">example.com {
+</span><span class="code-line line-number" line="6"><span class="token comment"># 路径重写</span>
+</span><span class="code-line line-number" line="7">example.com <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="8">    rewrite /api/* /api/index.php
-</span><span class="code-line line-number" line="9">    reverse_proxy localhost:9000
-</span><span class="code-line line-number" line="10">}
+</span><span class="code-line line-number" line="9">    reverse_proxy localhost<span class="token punctuation">:</span><span class="token number">9000</span>
+</span><span class="code-line line-number" line="10"><span class="token punctuation">}</span>
 </span></code><div onclick="copied(this)" data-code="# HTTP 自动跳转 HTTPS
 example.com {
     redir https://{host}{uri} permanent
@@ -1267,12 +1267,12 @@ example.com {
 }
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h4 id="5-基本认证"><a class="anchor" aria-hidden="true" tabindex="-1" href="#5-基本认证"><span class="octicon octicon-link"></span></a>5. 基本认证</h4>
-<pre><code class="language-caddyfile code-highlight"><span class="code-line line-number" line="1">example.com {
-</span><span class="code-line line-number" line="2">    basicauth {
-</span><span class="code-line line-number" line="3">        user $2a$14$hashhashhash...
-</span><span class="code-line line-number" line="4">    }
-</span><span class="code-line line-number" line="5">    reverse_proxy localhost:8080
-</span><span class="code-line line-number" line="6">}
+<pre class="language-yaml"><code class="language-yaml code-highlight"><span class="code-line line-number" line="1">example.com <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">    basicauth <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">        user $2a$14$hashhashhash<span class="token punctuation">...</span>
+</span><span class="code-line line-number" line="4">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="5">    reverse_proxy localhost<span class="token punctuation">:</span><span class="token number">8080</span>
+</span><span class="code-line line-number" line="6"><span class="token punctuation">}</span>
 </span></code><div onclick="copied(this)" data-code="example.com {
     basicauth {
         user $2a$14$hashhashhash...
@@ -1434,28 +1434,28 @@ volumes:
   caddy_config:
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h4 id="作为反向代理网关"><a class="anchor" aria-hidden="true" tabindex="-1" href="#作为反向代理网关"><span class="octicon octicon-link"></span></a>作为反向代理网关</h4>
-<pre><code class="language-caddyfile code-highlight"><span class="code-line line-number" line="1"># Caddyfile - 统一入口
-</span><span class="code-line line-number" line="2">www.example.com {
-</span><span class="code-line line-number" line="3">    # 强制 HTTPS
-</span><span class="code-line line-number" line="4">    redir https://{host}{uri} permanent
-</span><span class="code-line line-number" line="5">}
+<pre class="language-yaml"><code class="language-yaml code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># Caddyfile - 统一入口</span>
+</span><span class="code-line line-number" line="2">www.example.com <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    <span class="token comment"># 强制 HTTPS</span>
+</span><span class="code-line line-number" line="4">    redir https<span class="token punctuation">:</span>//<span class="token punctuation">{</span>host<span class="token punctuation">}</span><span class="token punctuation">{</span>uri<span class="token punctuation">}</span> permanent
+</span><span class="code-line line-number" line="5"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="6">
-</span><span class="code-line line-number" line="7">example.com {
-</span><span class="code-line line-number" line="8">    # 静态资源
+</span><span class="code-line line-number" line="7">example.com <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="8">    <span class="token comment"># 静态资源</span>
 </span><span class="code-line line-number" line="9">    root * /var/www/public
 </span><span class="code-line line-number" line="10">    file_server
 </span><span class="code-line line-number" line="11">
-</span><span class="code-line line-number" line="12">    # API 反向代理
-</span><span class="code-line line-number" line="13">    reverse_proxy /api/* app:3000
+</span><span class="code-line line-number" line="12">    <span class="token comment"># API 反向代理</span>
+</span><span class="code-line line-number" line="13">    reverse_proxy /api/* app<span class="token punctuation">:</span><span class="token number">3000</span>
 </span><span class="code-line line-number" line="14">
-</span><span class="code-line line-number" line="15">    # WebSocket 支持
-</span><span class="code-line line-number" line="16">    reverse_proxy /ws/* ws-app:8080
+</span><span class="code-line line-number" line="15">    <span class="token comment"># WebSocket 支持</span>
+</span><span class="code-line line-number" line="16">    reverse_proxy /ws/* ws<span class="token punctuation">-</span>app<span class="token punctuation">:</span><span class="token number">8080</span>
 </span><span class="code-line line-number" line="17">
-</span><span class="code-line line-number" line="18">    # 日志
-</span><span class="code-line line-number" line="19">    log {
+</span><span class="code-line line-number" line="18">    <span class="token comment"># 日志</span>
+</span><span class="code-line line-number" line="19">    log <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="20">        output file /var/log/caddy/access.log
-</span><span class="code-line line-number" line="21">    }
-</span><span class="code-line line-number" line="22">}
+</span><span class="code-line line-number" line="21">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="22"><span class="token punctuation">}</span>
 </span></code><div onclick="copied(this)" data-code="# Caddyfile - 统一入口
 www.example.com {
     # 强制 HTTPS
@@ -1720,8 +1720,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp280x7x"></script>
-<script type="text/javascript" src="../js/index.js?v=mp280x7x"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp280x7x"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp28fru1"></script>
+<script type="text/javascript" src="../js/index.js?v=mp28fru1"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp28fru1"></script>
 </body>
 </html>
