@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="pve_install_sr-iov 命令">
     <meta name="twitter:description" content="专为 PVE 系统打造的 SR-IOV 一键管理脚本 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp8e09un">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89wlof"></script>
+    <script src="../js/dt.js?v=mp8e09un"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1673,74 +1673,74 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="441"><span class="token string">}
 </span></span><span class="code-line line-number" line="442"><span class="token string">
 </span></span><span class="code-line line-number" line="443"><span class="token string">check_sriov_status() {
-</span></span><span class="code-line line-number" line="444"><span class="token string">    is_pve_system || return 1
-</span></span><span class="code-line line-number" line="445"><span class="token string">
-</span></span><span class="code-line line-number" line="446"><span class="token string">    echo -e "</span>"
-</span><span class="code-line line-number" line="447">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 正在扫描 Intel i915 PF / VF 设备 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
-</span><span class="code-line line-number" line="448">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="449">
-</span><span class="code-line line-number" line="450">    <span class="token assign-left variable">pf_list</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>lspci <span class="token parameter variable">-nn</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-i</span> <span class="token string">'HD Graphics'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="451">    <span class="token assign-left variable">vf_list</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>lspci <span class="token parameter variable">-nn</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-iE</span> <span class="token string">'HD Graphics.*Virtual Function|8086:56[0-9a-f]'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="452">
-</span><span class="code-line line-number" line="453">    <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token variable">$pf_list</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>未检测到 PF（Physical Function）<span class="token variable">${gl_bai}</span>"</span> <span class="token operator">||</span>
-</span><span class="code-line line-number" line="454">        <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="455">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>PF 列表：<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="456">            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$pf_list</span>"</span> <span class="token operator">|</span> <span class="token function">nl</span> <span class="token parameter variable">-w2</span> -s<span class="token string">') '</span>
-</span><span class="code-line line-number" line="457">        <span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="458">
-</span><span class="code-line line-number" line="459">    <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token variable">$vf_list</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>未检测到 VF（Virtual Function）<span class="token variable">${gl_bai}</span>"</span> <span class="token operator">||</span>
-</span><span class="code-line line-number" line="460">        <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="461">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>VF 列表：<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="462">            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$vf_list</span>"</span> <span class="token operator">|</span> <span class="token function">nl</span> <span class="token parameter variable">-w2</span> -s<span class="token string">') '</span>
-</span><span class="code-line line-number" line="463">        <span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="464">
-</span><span class="code-line line-number" line="465">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token entity" title="\n">\n</span>DKMS 状态："</span>
-</span><span class="code-line line-number" line="466">    dkms status <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-E</span> <span class="token string">'i915|sr-iov'</span> <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"暂无记录"</span>
-</span><span class="code-line line-number" line="467">
-</span><span class="code-line line-number" line="468">    <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-e</span> /sys/class/drm/card0/device/sriov_numvfs <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span>
-</span><span class="code-line line-number" line="469">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token entity" title="\n">\n</span>已启用 <span class="token variable">${gl_lv}</span>VF<span class="token variable">${gl_bai}</span> / 最大支持：<span class="token variable">${gl_lv}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> /sys/class/drm/card0/device/sriov_numvfs<span class="token variable">)</span></span> <span class="token variable">${gl_bai}</span>/ <span class="token variable">${gl_lv}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> /sys/class/drm/card0/device/sriov_totalvfs<span class="token variable">)</span></span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="470">
-</span><span class="code-line line-number" line="471">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="472">    break_end
-</span><span class="code-line line-number" line="473"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="474">
-</span><span class="code-line line-number" line="475"><span class="token function-name function">is_pve_system</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="476">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">"/var/lib/vz/template/iso"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="477">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="478">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-en</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_hong}</span>你这不是 <span class="token variable">${gl_huang}</span>PVE<span class="token variable">${gl_hong}</span> 系统！<span class="token entity" title="\c">\c</span>"</span>
-</span><span class="code-line line-number" line="479">        exit_animation
-</span><span class="code-line line-number" line="480">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="481">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="482">    <span class="token builtin class-name">return</span> <span class="token number">0</span>
-</span><span class="code-line line-number" line="483"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="484">
-</span><span class="code-line line-number" line="485"><span class="token function-name function">pve_optimize_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="486">    is_pve_system <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="487">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="488">    <span class="token function">wget</span> <span class="token parameter variable">-q</span> <span class="token parameter variable">-O</span> /root/pve_source.tar.gz <span class="token string">'https://gitee.com/meimolihan/script/raw/master/sh/pve/pve_source.tar.gz'</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">tar</span> zxvf /root/pve_source.tar.gz <span class="token operator">&#x26;&#x26;</span> /root/./pve_source
-</span><span class="code-line line-number" line="489">    break_end
-</span><span class="code-line line-number" line="490"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="491">
-</span><span class="code-line line-number" line="492"><span class="token function-name function">show_gpu_usage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="493">    is_pve_system <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="494">    check_and_install intel-gpu-tools <span class="token operator">&#x26;&#x26;</span> intel_gpu_top <span class="token parameter variable">-d</span> sriov
-</span><span class="code-line line-number" line="495"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="496">
-</span><span class="code-line line-number" line="497"><span class="token function-name function">check_pve_version</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="498">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> pveversion <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="499">        <span class="token assign-left variable">pve_version</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>pveversion <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-oP</span> <span class="token string">'pve-manager\/\K[^ ]+'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="500">        <span class="token assign-left variable">kernel_version</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-r</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="501">
-</span><span class="code-line line-number" line="502">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>PVE 系统版本：<span class="token variable">${gl_lv}</span><span class="token variable">$pve_version</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="503">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>PVE 内核版本：<span class="token variable">${gl_lv}</span><span class="token variable">$kernel_version</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="504">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="505">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>PVE 系统版本：<span class="token variable">${gl_hong}</span>非PVE系统或未安装pveversion<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="506">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="507"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="508">
-</span><span class="code-line line-number" line="509"><span class="token function-name function">linux_pve_menu</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="510">    <span class="token keyword">while</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
-</span><span class="code-line line-number" line="511">        <span class="token function">clear</span>
+</span></span><span class="code-line line-number" line="444"><span class="token string">    
+</span></span><span class="code-line line-number" line="445"><span class="token string">    echo -e "</span>"
+</span><span class="code-line line-number" line="446">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 正在扫描 Intel i915 PF / VF 设备 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
+</span><span class="code-line line-number" line="447">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="448">
+</span><span class="code-line line-number" line="449">    <span class="token assign-left variable">pf_list</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>lspci <span class="token parameter variable">-nn</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-i</span> <span class="token string">'HD Graphics'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="450">    <span class="token assign-left variable">vf_list</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>lspci <span class="token parameter variable">-nn</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-iE</span> <span class="token string">'HD Graphics.*Virtual Function|8086:56[0-9a-f]'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="451">
+</span><span class="code-line line-number" line="452">    <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token variable">$pf_list</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>未检测到 PF（Physical Function）<span class="token variable">${gl_bai}</span>"</span> <span class="token operator">||</span>
+</span><span class="code-line line-number" line="453">        <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="454">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>PF 列表：<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="455">            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$pf_list</span>"</span> <span class="token operator">|</span> <span class="token function">nl</span> <span class="token parameter variable">-w2</span> -s<span class="token string">') '</span>
+</span><span class="code-line line-number" line="456">        <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="457">
+</span><span class="code-line line-number" line="458">    <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token variable">$vf_list</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>未检测到 VF（Virtual Function）<span class="token variable">${gl_bai}</span>"</span> <span class="token operator">||</span>
+</span><span class="code-line line-number" line="459">        <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="460">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>VF 列表：<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="461">            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$vf_list</span>"</span> <span class="token operator">|</span> <span class="token function">nl</span> <span class="token parameter variable">-w2</span> -s<span class="token string">') '</span>
+</span><span class="code-line line-number" line="462">        <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="463">
+</span><span class="code-line line-number" line="464">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token entity" title="\n">\n</span>DKMS 状态："</span>
+</span><span class="code-line line-number" line="465">    dkms status <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-E</span> <span class="token string">'i915|sr-iov'</span> <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"暂无记录"</span>
+</span><span class="code-line line-number" line="466">
+</span><span class="code-line line-number" line="467">    <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-e</span> /sys/class/drm/card0/device/sriov_numvfs <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span>
+</span><span class="code-line line-number" line="468">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token entity" title="\n">\n</span>已启用 <span class="token variable">${gl_lv}</span>VF<span class="token variable">${gl_bai}</span> / 最大支持：<span class="token variable">${gl_lv}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> /sys/class/drm/card0/device/sriov_numvfs<span class="token variable">)</span></span> <span class="token variable">${gl_bai}</span>/ <span class="token variable">${gl_lv}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> /sys/class/drm/card0/device/sriov_totalvfs<span class="token variable">)</span></span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="469">
+</span><span class="code-line line-number" line="470">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="471">    break_end
+</span><span class="code-line line-number" line="472"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="473">
+</span><span class="code-line line-number" line="474"><span class="token function-name function">is_pve_system</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="475">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">"/var/lib/vz/template/iso"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="476">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="477">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-en</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_hong}</span>你这不是 <span class="token variable">${gl_huang}</span>PVE<span class="token variable">${gl_hong}</span> 系统！<span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="478">        exit_animation
+</span><span class="code-line line-number" line="479">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="480">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="481">    <span class="token builtin class-name">return</span> <span class="token number">0</span>
+</span><span class="code-line line-number" line="482"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="483">
+</span><span class="code-line line-number" line="484"><span class="token function-name function">pve_optimize_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="485">    is_pve_system <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="486">    <span class="token function">clear</span>
+</span><span class="code-line line-number" line="487">    <span class="token function">wget</span> <span class="token parameter variable">-q</span> <span class="token parameter variable">-O</span> /root/pve_source.tar.gz <span class="token string">'https://gitee.com/meimolihan/script/raw/master/sh/pve/pve_source.tar.gz'</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">tar</span> zxvf /root/pve_source.tar.gz <span class="token operator">&#x26;&#x26;</span> /root/./pve_source
+</span><span class="code-line line-number" line="488">    break_end
+</span><span class="code-line line-number" line="489"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="490">
+</span><span class="code-line line-number" line="491"><span class="token function-name function">show_gpu_usage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="492">    is_pve_system <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="493">    check_and_install intel-gpu-tools <span class="token operator">&#x26;&#x26;</span> intel_gpu_top <span class="token parameter variable">-d</span> sriov
+</span><span class="code-line line-number" line="494"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="495">
+</span><span class="code-line line-number" line="496"><span class="token function-name function">check_pve_version</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="497">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> pveversion <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="498">        <span class="token assign-left variable">pve_version</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>pveversion <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-oP</span> <span class="token string">'pve-manager\/\K[^ ]+'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="499">        <span class="token assign-left variable">kernel_version</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-r</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="500">
+</span><span class="code-line line-number" line="501">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>PVE 系统版本：<span class="token variable">${gl_lv}</span><span class="token variable">$pve_version</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="502">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>PVE 内核版本：<span class="token variable">${gl_lv}</span><span class="token variable">$kernel_version</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="503">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="504">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>PVE 系统版本：<span class="token variable">${gl_hong}</span>非PVE系统或未安装pveversion<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="505">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="506"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="507">
+</span><span class="code-line line-number" line="508"><span class="token function-name function">linux_pve_menu</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="509">    <span class="token keyword">while</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+</span><span class="code-line line-number" line="510">        <span class="token function">clear</span>
+</span><span class="code-line line-number" line="511">        is_pve_system <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
 </span><span class="code-line line-number" line="512">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="513">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE SR-IOV驱动管理<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="514">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
@@ -2221,8 +2221,7 @@ update_initramfs_and_reboot() {
 }
 
 check_sriov_status() {
-    is_pve_system || return 1
-
+    
     echo -e &#x22;&#x22;
     echo -e &#x22;${gl_huang}>>> 正在扫描 Intel i915 PF / VF 设备 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -2289,6 +2288,7 @@ check_pve_version() {
 linux_pve_menu() {
     while true; do
         clear
+        is_pve_system || return 1
         echo -e &#x22;&#x22;
         echo -e &#x22;${gl_zi}>>> PVE SR-IOV驱动管理${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -2487,7 +2487,7 @@ function copied(target, str) {
         <circle cx="12" cy="12" r="10" fill="url(#grad-cmd)"/>
         <path d="M9.5 9L14.5 12L9.5 15V9Z" fill="white"/>
       </svg>
-      <span class="footer-text">命令 <span class="footer-count command">768</span></span>
+      <span class="footer-text">命令 <span class="footer-count command">767</span></span>
     </a>
     <a class="footer-item" href="../script-list.html">
       <svg class="footer-icon icon-script" viewBox="0 0 24 24">
@@ -2515,7 +2515,7 @@ function copied(target, str) {
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="url(#grad-total)"/>
         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="url(#grad-total)"/>
       </svg>
-      <span class="footer-text">共计 <span class="footer-count total">912</span></span>
+      <span class="footer-text">共计 <span class="footer-count total">911</span></span>
     </a>
     <a class="footer-item github-btn" href="https://github.com/meimolihan/linux-command" target="_blank">
       <svg class="footer-icon icon-github" viewBox="0 0 24 24" fill="url(#github-gradient)" xmlns="http://www.w3.org/2000/svg">
@@ -2550,8 +2550,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp8e09un"></script>
+<script type="text/javascript" src="../js/index.js?v=mp8e09un"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp8e09un"></script>
 </body>
 </html>

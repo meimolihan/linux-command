@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="pve_all_list 命令">
     <meta name="twitter:description" content="PVE 全部实例列表（VM 虚拟机 + CT 容器）美化工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp8e09un">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89wlof"></script>
+    <script src="../js/dt.js?v=mp8e09un"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1260,22 +1260,31 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="70">
 </span><span class="code-line line-number" line="71"><span class="token function-name function">show_all_instance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="72">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="73">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE 全部实例列表(VM虚拟机 + CT容器)<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="74">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="75">
-</span><span class="code-line line-number" line="76">    <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="77">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"类型"</span> <span class="token string">"ID"</span> <span class="token string">"名称"</span> <span class="token string">"状态"</span> <span class="token string">"内存"</span> <span class="token string">"磁盘"</span> <span class="token string">"锁"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
-</span><span class="code-line line-number" line="78">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
-</span><span class="code-line line-number" line="79">
-</span><span class="code-line line-number" line="80">        parse_qm_list
-</span><span class="code-line line-number" line="81">        parse_pct_list
-</span><span class="code-line line-number" line="82">    <span class="token punctuation">}</span> <span class="token operator">|</span> column_if_available
-</span><span class="code-line line-number" line="83">
-</span><span class="code-line line-number" line="84">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="85">    break_end
-</span><span class="code-line line-number" line="86"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="87">
-</span><span class="code-line line-number" line="88">show_all_instance
+</span><span class="code-line line-number" line="73">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> qm <span class="token operator">&#x26;></span> /dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="74">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="75">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE 全部实例列表(VM虚拟机 + CT容器)<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="76">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="77">        log_error <span class="token string">"未检测到Proxmox VE环境，请确保脚本在PVE节点上运行"</span>
+</span><span class="code-line line-number" line="78">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="79">        break_end
+</span><span class="code-line line-number" line="80">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="81">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="82">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE 全部实例列表(VM虚拟机 + CT容器)<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="83">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="84">
+</span><span class="code-line line-number" line="85">    <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="86">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"类型"</span> <span class="token string">"ID"</span> <span class="token string">"名称"</span> <span class="token string">"状态"</span> <span class="token string">"内存"</span> <span class="token string">"磁盘"</span> <span class="token string">"锁"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
+</span><span class="code-line line-number" line="87">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
+</span><span class="code-line line-number" line="88">
+</span><span class="code-line line-number" line="89">        parse_qm_list
+</span><span class="code-line line-number" line="90">        parse_pct_list
+</span><span class="code-line line-number" line="91">    <span class="token punctuation">}</span> <span class="token operator">|</span> column_if_available
+</span><span class="code-line line-number" line="92">
+</span><span class="code-line line-number" line="93">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="94">    break_end
+</span><span class="code-line line-number" line="95"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="96">
+</span><span class="code-line line-number" line="97">show_all_instance
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -uo pipefail
 
@@ -1348,6 +1357,15 @@ parse_pct_list() {
 
 show_all_instance() {
     clear
+    if ! command -v qm &#x26;> /dev/null; then
+        echo -e &#x22;&#x22;
+        echo -e &#x22;${gl_zi}>>> PVE 全部实例列表(VM虚拟机 + CT容器)${gl_bai}&#x22;
+        echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+        log_error &#x22;未检测到Proxmox VE环境，请确保脚本在PVE节点上运行&#x22;
+        echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+        break_end
+        return 1
+    fi
     echo -e &#x22;${gl_zi}>>> PVE 全部实例列表(VM虚拟机 + CT容器)${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
@@ -1519,7 +1537,7 @@ function copied(target, str) {
         <circle cx="12" cy="12" r="10" fill="url(#grad-cmd)"/>
         <path d="M9.5 9L14.5 12L9.5 15V9Z" fill="white"/>
       </svg>
-      <span class="footer-text">命令 <span class="footer-count command">768</span></span>
+      <span class="footer-text">命令 <span class="footer-count command">767</span></span>
     </a>
     <a class="footer-item" href="../script-list.html">
       <svg class="footer-icon icon-script" viewBox="0 0 24 24">
@@ -1547,7 +1565,7 @@ function copied(target, str) {
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="url(#grad-total)"/>
         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="url(#grad-total)"/>
       </svg>
-      <span class="footer-text">共计 <span class="footer-count total">912</span></span>
+      <span class="footer-text">共计 <span class="footer-count total">911</span></span>
     </a>
     <a class="footer-item github-btn" href="https://github.com/meimolihan/linux-command" target="_blank">
       <svg class="footer-icon icon-github" viewBox="0 0 24 24" fill="url(#github-gradient)" xmlns="http://www.w3.org/2000/svg">
@@ -1582,8 +1600,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp8e09un"></script>
+<script type="text/javascript" src="../js/index.js?v=mp8e09un"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp8e09un"></script>
 </body>
 </html>
