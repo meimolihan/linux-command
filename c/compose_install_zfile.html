@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_install_zfile 命令">
     <meta name="twitter:description" content="Docker Compose 部署 ZFile 在线文件管理系统 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp8682u3">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp87tv7k">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp8682u3"></script>
+    <script src="../js/dt.js?v=mp87tv7k"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1251,7 +1251,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="35">
 </span><span class="code-line line-number" line="36"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="37">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="39">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="40">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="41">    <span class="token function">clear</span>
@@ -1307,57 +1307,57 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="91">    <span class="token builtin class-name">return</span> <span class="token number">0</span>
 </span><span class="code-line line-number" line="92"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="93">
-</span><span class="code-line line-number" line="94"><span class="token function-name function">root_use</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="95">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="96">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token environment constant">$EUID</span>"</span> <span class="token parameter variable">-ne</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="97">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token entity" title="\n">\n</span><span class="token variable">${gl_zi}</span>>>> ROOT登录检查<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="98">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="99">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>提示: <span class="token variable">${gl_bai}</span>该功能需要root用户才能运行！"</span>
-</span><span class="code-line line-number" line="100">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="101">        break_end
-</span><span class="code-line line-number" line="102">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="103">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="104">    <span class="token builtin class-name">return</span> <span class="token number">0</span>
-</span><span class="code-line line-number" line="105"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="106">
-</span><span class="code-line line-number" line="107"><span class="token function-name function">check_and_open_port</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="108">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">PORT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
-</span><span class="code-line line-number" line="109">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$PORT</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="110">        log_error <span class="token string">"未指定端口"</span>
-</span><span class="code-line line-number" line="111">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="112">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="113">
-</span><span class="code-line line-number" line="114">    log_info <span class="token string">"检查端口 <span class="token variable">${gl_huang}</span><span class="token variable">${PORT}</span><span class="token variable">${gl_bai}</span> 是否放行 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="115">
-</span><span class="code-line line-number" line="116">    <span class="token keyword">if</span> iptables <span class="token parameter variable">-L</span> INPUT <span class="token parameter variable">-n</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-qwE</span> <span class="token string">"dpt:<span class="token variable">${PORT}</span>|<span class="token variable">${PORT}</span>.*ACCEPT"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="117">        log_ok <span class="token string">"端口 <span class="token variable">${PORT}</span> 已放行，无需操作"</span>
-</span><span class="code-line line-number" line="118">        <span class="token builtin class-name">return</span> <span class="token number">0</span>
-</span><span class="code-line line-number" line="119">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="120">
-</span><span class="code-line line-number" line="121">    log_warn <span class="token string">"端口 <span class="token variable">${gl_hong}</span><span class="token variable">${PORT}</span><span class="token variable">${gl_bai}</span> 未放行，正在开放 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="94"><span class="token function-name function">check_and_open_port</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="95">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">PORT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
+</span><span class="code-line line-number" line="96">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$PORT</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="97">        log_error <span class="token string">"未指定端口"</span>
+</span><span class="code-line line-number" line="98">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="99">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="100">
+</span><span class="code-line line-number" line="101">    log_info <span class="token string">"检查端口 <span class="token variable">${gl_huang}</span><span class="token variable">${PORT}</span><span class="token variable">${gl_bai}</span> 是否放行 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="102">
+</span><span class="code-line line-number" line="103">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> iptables <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="104">        <span class="token keyword">if</span> iptables <span class="token parameter variable">-L</span> INPUT <span class="token parameter variable">-n</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-qwE</span> <span class="token string">"dpt:<span class="token variable">${PORT}</span>|<span class="token variable">${PORT}</span>.*ACCEPT"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="105">            log_ok <span class="token string">"端口 <span class="token variable">${PORT}</span> 已放行，无需操作"</span>
+</span><span class="code-line line-number" line="106">        <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="107">            log_warn <span class="token string">"端口 <span class="token variable">${gl_hong}</span><span class="token variable">${PORT}</span><span class="token variable">${gl_bai}</span> 未放行，正在开放 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="108">            iptables <span class="token parameter variable">-I</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">--dport</span> <span class="token string">"<span class="token variable">${PORT}</span>"</span> <span class="token parameter variable">-j</span> ACCEPT <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+</span><span class="code-line line-number" line="109">            iptables <span class="token parameter variable">-I</span> INPUT <span class="token parameter variable">-p</span> udp <span class="token parameter variable">--dport</span> <span class="token string">"<span class="token variable">${PORT}</span>"</span> <span class="token parameter variable">-j</span> ACCEPT <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+</span><span class="code-line line-number" line="110">            
+</span><span class="code-line line-number" line="111">            <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> netfilter-persistent <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="112">                netfilter-persistent save <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
+</span><span class="code-line line-number" line="113">            <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">service</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="114">                <span class="token function">service</span> iptables save <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+</span><span class="code-line line-number" line="115">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="116">            log_ok <span class="token string">"端口 <span class="token variable">${gl_lv}</span><span class="token variable">${PORT}</span><span class="token variable">${gl_bai}</span> 已开放并永久保存"</span>
+</span><span class="code-line line-number" line="117">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="118">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="119">        log_warn <span class="token string">"iptables 未安装，跳过端口检查"</span>
+</span><span class="code-line line-number" line="120">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="121"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="122">
-</span><span class="code-line line-number" line="123">    iptables <span class="token parameter variable">-I</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">--dport</span> <span class="token string">"<span class="token variable">${PORT}</span>"</span> <span class="token parameter variable">-j</span> ACCEPT <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
-</span><span class="code-line line-number" line="124">    iptables <span class="token parameter variable">-I</span> INPUT <span class="token parameter variable">-p</span> udp <span class="token parameter variable">--dport</span> <span class="token string">"<span class="token variable">${PORT}</span>"</span> <span class="token parameter variable">-j</span> ACCEPT <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
-</span><span class="code-line line-number" line="125">
-</span><span class="code-line line-number" line="126">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> netfilter-persistent <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span> <span class="token operator">&#x26;&#x26;</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> iptables-services <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="127">        log_info <span class="token string">"安装 iptables 持久化工具 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="128">        <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">apt</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="129">            <span class="token function">apt</span> update <span class="token parameter variable">-y</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="130">            <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> iptables-persistent netfilter-persistent <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="131">        <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> dnf <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="132">            dnf <span class="token function">install</span> <span class="token parameter variable">-y</span> iptables-services <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="133">        <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> yum <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="134">            yum <span class="token function">install</span> <span class="token parameter variable">-y</span> iptables-services <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="135">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="136">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="137">
-</span><span class="code-line line-number" line="138">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> netfilter-persistent <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="139">        netfilter-persistent save <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="140">    <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">service</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="141">        <span class="token function">service</span> iptables save <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
-</span><span class="code-line line-number" line="142">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="143">
-</span><span class="code-line line-number" line="144">    log_ok <span class="token string">"端口 <span class="token variable">${gl_lv}</span><span class="token variable">${PORT}</span><span class="token variable">${gl_bai}</span> 已开放并永久保存"</span>
+</span><span class="code-line line-number" line="123"><span class="token function-name function">check_port_available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="124">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">PORT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
+</span><span class="code-line line-number" line="125">    <span class="token keyword">if</span> ss <span class="token parameter variable">-tuln</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">":<span class="token variable">${PORT}</span> "</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="126">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="127">    <span class="token keyword">elif</span> <span class="token function">netstat</span> <span class="token parameter variable">-tuln</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">":<span class="token variable">${PORT}</span> "</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="128">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="129">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="130">        <span class="token builtin class-name">return</span> <span class="token number">0</span>
+</span><span class="code-line line-number" line="131">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="132"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="133">
+</span><span class="code-line line-number" line="134"><span class="token function-name function">get_free_port</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="135">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">start_port</span><span class="token operator">=</span><span class="token variable">$1</span>
+</span><span class="code-line line-number" line="136">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token variable">$start_port</span>
+</span><span class="code-line line-number" line="137">    <span class="token keyword">while</span> <span class="token operator">!</span> check_port_available <span class="token variable">$port</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+</span><span class="code-line line-number" line="138">        <span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span>port <span class="token operator">+</span> <span class="token number">1</span><span class="token variable">))</span></span>
+</span><span class="code-line line-number" line="139">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$port</span> <span class="token parameter variable">-gt</span> <span class="token variable"><span class="token variable">$((</span>start_port <span class="token operator">+</span> <span class="token number">100</span><span class="token variable">))</span></span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="140">            <span class="token builtin class-name">echo</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="141">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="142">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="143">    <span class="token keyword">done</span>
+</span><span class="code-line line-number" line="144">    <span class="token builtin class-name">echo</span> <span class="token variable">$port</span>
 </span><span class="code-line line-number" line="145"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="146">
 </span><span class="code-line line-number" line="147"><span class="token function-name function">docker-ps-cn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1406,8 +1406,8 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="190">
 </span><span class="code-line line-number" line="191"><span class="token function-name function">docker_check_env</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="192">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="193">        log_info <span class="token string">"正在检查 Docker 运行环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="194">        log_warn <span class="token string">"Docker 未安装，即将自动安装 Docker 环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="193">        log_info <span class="token string">"正在检查 Docker 运行环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="194">        log_warn <span class="token string">"Docker 未安装，即将自动安装 Docker 环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="195">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="196">        <span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_docker.sh<span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="197">
@@ -1419,14 +1419,14 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="203">        log_ok <span class="token string">"Docker 安装成功！"</span>
 </span><span class="code-line line-number" line="204">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="205">
-</span><span class="code-line line-number" line="206">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker-compose</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="206">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker-compose</span> <span class="token operator">&#x26;></span>/dev/null <span class="token operator">&#x26;&#x26;</span> <span class="token operator">!</span> <span class="token function">docker</span> compose version <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="207">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="208">        log_info <span class="token string">"正在检查 Docker Compose 环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="209">        log_warn <span class="token string">"Docker Compose 未安装，即将自动安装<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="208">        log_info <span class="token string">"正在检查 Docker Compose 环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="209">        log_warn <span class="token string">"Docker Compose 未安装，即将自动安装 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="210">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="211">        <span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_compose.sh<span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="212">
-</span><span class="code-line line-number" line="213">        <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker-compose</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="213">        <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker-compose</span> <span class="token operator">&#x26;></span>/dev/null <span class="token operator">&#x26;&#x26;</span> <span class="token operator">!</span> <span class="token function">docker</span> compose version <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="214">            log_error <span class="token string">"Docker Compose 安装失败，请手动安装后重试！"</span>
 </span><span class="code-line line-number" line="215">            <span class="token function">sleep</span> <span class="token number">1</span>
 </span><span class="code-line line-number" line="216">            <span class="token builtin class-name">exit</span> <span class="token number">1</span>
@@ -1449,166 +1449,145 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="233">
 </span><span class="code-line line-number" line="234">    <span class="token keyword">for</span> <span class="token for-or-select variable">container_name</span> <span class="token keyword">in</span> <span class="token string">"<span class="token variable">${targets<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
 </span><span class="code-line line-number" line="235">        <span class="token keyword">if</span> <span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span> <span class="token parameter variable">--filter</span> <span class="token string">"name=^/<span class="token variable">${container_name}</span>$"</span> <span class="token parameter variable">--format</span> <span class="token string">"{{.Names}}"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"^<span class="token variable">${container_name}</span>$"</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="236">            log_info <span class="token string">"检测到容器 <span class="token variable">${gl_huang}</span><span class="token variable">${container_name}</span><span class="token variable">${gl_bai}</span>，正在停止并删除<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="236">            log_info <span class="token string">"检测到容器 <span class="token variable">${gl_huang}</span><span class="token variable">${container_name}</span><span class="token variable">${gl_bai}</span>，正在停止并删除 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="237">            <span class="token function">docker</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">${container_name}</span>"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="238">            log_ok <span class="token string">"容器 <span class="token variable">${container_name}</span> 清理完成"</span>
 </span><span class="code-line line-number" line="239">        <span class="token keyword">else</span>
 </span><span class="code-line line-number" line="240">            log_ok <span class="token string">"容器 <span class="token variable">${container_name}</span> 不存在，跳过"</span>
 </span><span class="code-line line-number" line="241">        <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="242">    <span class="token keyword">done</span>
-</span><span class="code-line line-number" line="243">
-</span><span class="code-line line-number" line="244">    log_info <span class="token string">"开始模糊清理相关镜像（关键词：<span class="token variable">${targets<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>）<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="245">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">image_ids</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">docker</span> images <span class="token parameter variable">--format</span> <span class="token string">"{{.ID}}"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-f</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token builtin class-name">printf</span> <span class="token string">"%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">${targets<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/^/-i /;s/ / -i /g'</span><span class="token variable">)</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="246">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$image_ids</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="247">        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$image_ids</span>"</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">docker</span> rmi <span class="token parameter variable">-f</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="248">        log_ok <span class="token string">"相关镜像已全部删除"</span>
-</span><span class="code-line line-number" line="249">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="250">        log_ok <span class="token string">"未找到相关镜像"</span>
-</span><span class="code-line line-number" line="251">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="252">
-</span><span class="code-line line-number" line="253">    log_info <span class="token string">"清理悬空镜像与未使用镜像<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="254">    <span class="token function">docker</span> image prune <span class="token parameter variable">-a</span> <span class="token parameter variable">-f</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="255">    log_ok <span class="token string">"未使用镜像清理完成"</span>
-</span><span class="code-line line-number" line="256">
-</span><span class="code-line line-number" line="257">    log_info <span class="token string">"清理Docker无用资源（容器/网络/卷/构建缓存）<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="258">    <span class="token function">docker</span> system prune <span class="token parameter variable">-a</span> <span class="token parameter variable">-f</span> <span class="token parameter variable">--volumes</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="259">    <span class="token function">docker</span> builder prune <span class="token parameter variable">-af</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="260">    log_ok <span class="token string">"Docker系统资源清理完成"</span>
-</span><span class="code-line line-number" line="261">
-</span><span class="code-line line-number" line="262">    log_info <span class="token string">"验证清理结果<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="263">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">remain</span><span class="token operator">=</span><span class="token number">0</span>
-</span><span class="code-line line-number" line="264">    <span class="token keyword">for</span> <span class="token for-or-select variable">name</span> <span class="token keyword">in</span> <span class="token string">"<span class="token variable">${targets<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
-</span><span class="code-line line-number" line="265">        <span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span> <span class="token parameter variable">--filter</span> <span class="token string">"name=^/<span class="token variable">${name}</span>$"</span> <span class="token parameter variable">--format</span> <span class="token string">"{{.Names}}"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"^<span class="token variable">${name}</span>$"</span> <span class="token operator">&#x26;&#x26;</span> <span class="token assign-left variable">remain</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span>remain<span class="token operator">+</span><span class="token number">1</span><span class="token variable">))</span></span>
-</span><span class="code-line line-number" line="266">    <span class="token keyword">done</span>
-</span><span class="code-line line-number" line="267">
-</span><span class="code-line line-number" line="268">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$remain</span>"</span> <span class="token parameter variable">-eq</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="269">        log_ok <span class="token string">"所有指定容器、镜像、残留资源已彻底清理，无名称冲突"</span>
-</span><span class="code-line line-number" line="270">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="271">        log_warn <span class="token string">"仍有 <span class="token variable">${gl_huang}</span><span class="token variable">${remain}</span><span class="token variable">${gl_bai}</span> 个相关容器未清理，请手动检查"</span>
-</span><span class="code-line line-number" line="272">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="273"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="274">
-</span><span class="code-line line-number" line="275"><span class="token function-name function">deploy_app</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="276">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">COMPOSE_DIR</span><span class="token operator">=</span><span class="token string">""</span>
-</span><span class="code-line line-number" line="277">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">HOST_PORT</span><span class="token operator">=</span><span class="token string">""</span>
+</span><span class="code-line line-number" line="243"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="244">
+</span><span class="code-line line-number" line="245"><span class="token function-name function">deploy_app</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="246">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">COMPOSE_DIR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$DEFAULT_COMPOSE_DIR</span>"</span>
+</span><span class="code-line line-number" line="247">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">HOST_PORT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$DEFAULT_PORT</span>"</span>
+</span><span class="code-line line-number" line="248">
+</span><span class="code-line line-number" line="249">    root_use <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="250">    <span class="token function">clear</span>
+</span><span class="code-line line-number" line="251">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> <span class="token variable">${DEFAULT_TITLE}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="252">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="253">    
+</span><span class="code-line line-number" line="254">    docker_check_env
+</span><span class="code-line line-number" line="255">
+</span><span class="code-line line-number" line="256">    log_info <span class="token string">"部署目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="257">    
+</span><span class="code-line line-number" line="258">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>"</span> <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">ls</span> <span class="token parameter variable">-A</span> $<span class="token punctuation">{</span>COMPOSE_DIR<span class="token punctuation">}</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token variable">)</span></span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="259">        log_warn <span class="token string">"部署目录已存在，将使用现有目录"</span>
+</span><span class="code-line line-number" line="260">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="261">    
+</span><span class="code-line line-number" line="262">    <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>/zfile"</span> <span class="token operator">||</span> <span class="token punctuation">{</span> log_error <span class="token string">"目录创建失败"</span><span class="token punctuation">;</span> break_end<span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="263">    <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>/file"</span> <span class="token operator">||</span> <span class="token punctuation">{</span> log_error <span class="token string">"文件目录创建失败"</span><span class="token punctuation">;</span> break_end<span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="264">    <span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>"</span> <span class="token operator">||</span> <span class="token punctuation">{</span> log_error <span class="token string">"进入目录失败"</span><span class="token punctuation">;</span> break_end<span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="265">
+</span><span class="code-line line-number" line="266">    <span class="token keyword">if</span> <span class="token operator">!</span> check_port_available <span class="token variable">$HOST_PORT</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="267">        log_warn <span class="token string">"端口 <span class="token variable">${gl_hong}</span><span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span> 已被占用"</span>
+</span><span class="code-line line-number" line="268">        <span class="token assign-left variable">NEW_PORT</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>get_free_port <span class="token punctuation">$((</span>HOST_PORT + <span class="token number">1</span><span class="token punctuation">)</span><span class="token variable">)</span></span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="269">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$NEW_PORT</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="270">            log_info <span class="token string">"自动分配新端口：<span class="token variable">${gl_lv}</span><span class="token variable">${NEW_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="271">            <span class="token assign-left variable">HOST_PORT</span><span class="token operator">=</span><span class="token variable">$NEW_PORT</span>
+</span><span class="code-line line-number" line="272">        <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="273">            log_error <span class="token string">"无法找到可用端口，请手动指定"</span>
+</span><span class="code-line line-number" line="274">            break_end
+</span><span class="code-line line-number" line="275">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="276">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="277">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="278">
-</span><span class="code-line line-number" line="279">    root_use <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="280">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="281">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> <span class="token variable">${DEFAULT_TITLE}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="282">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="283">    
-</span><span class="code-line line-number" line="284">    docker_check_env
-</span><span class="code-line line-number" line="285">
-</span><span class="code-line line-number" line="286">    <span class="token keyword">for</span> <span class="token for-or-select variable">arg</span> <span class="token keyword">in</span> <span class="token string">"<span class="token variable">$@</span>"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
-</span><span class="code-line line-number" line="287">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arg</span>"</span> <span class="token operator">=~</span> ^<span class="token punctuation">[</span><span class="token number">0</span>-9<span class="token punctuation">]</span>+$ <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="288">            <span class="token assign-left variable">HOST_PORT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$arg</span>"</span>
-</span><span class="code-line line-number" line="289">        <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="290">            <span class="token assign-left variable">COMPOSE_DIR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$arg</span>"</span>
-</span><span class="code-line line-number" line="291">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="292">    <span class="token keyword">done</span>
-</span><span class="code-line line-number" line="293">
-</span><span class="code-line line-number" line="294">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="295">        <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入 docker-compose 存放路径（回车默认：<span class="token variable">${gl_huang}</span><span class="token variable">${DEFAULT_COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>）(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span> 退出安装)："</span> input_dir
-</span><span class="code-line line-number" line="296">        <span class="token assign-left variable">COMPOSE_DIR</span><span class="token operator">=</span><span class="token variable">${input_dir<span class="token operator">:-</span>$DEFAULT_COMPOSE_DIR}</span>
-</span><span class="code-line line-number" line="297">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="298">        log_info <span class="token string">"已通过传参指定部署目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="299">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="300">
-</span><span class="code-line line-number" line="301">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$COMPOSE_DIR</span>"</span> <span class="token operator">=</span> <span class="token string">"0"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="302">        exit_script
-</span><span class="code-line line-number" line="303">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="304">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="305">
-</span><span class="code-line line-number" line="306">    log_info <span class="token string">"部署目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="307">    <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>/zfile"</span> <span class="token operator">||</span> <span class="token punctuation">{</span> log_error <span class="token string">"目录创建失败"</span><span class="token punctuation">;</span> break_end<span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="308">    <span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>"</span> <span class="token operator">||</span> <span class="token punctuation">{</span> log_error <span class="token string">"进入目录失败"</span><span class="token punctuation">;</span> break_end<span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="279">    log_info <span class="token string">"使用端口：<span class="token variable">${gl_lv}</span><span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="280">    check_and_open_port <span class="token string">"<span class="token variable">${HOST_PORT}</span>"</span>
+</span><span class="code-line line-number" line="281">    clean_old_container <span class="token string">"<span class="token variable">${DEFAULT_CONTAINER_NAME}</span>"</span>
+</span><span class="code-line line-number" line="282">
+</span><span class="code-line line-number" line="283">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="284">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 生成 <span class="token variable">${gl_lv}</span>docker-compose.yml<span class="token variable">${gl_huang}</span> 文件<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="285">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="286">    
+</span><span class="code-line line-number" line="287">    <span class="token function">cat</span> <span class="token operator">></span> docker-compose.yml <span class="token operator">&#x3C;&#x3C;</span> <span class="token string">EOF
+</span></span><span class="code-line line-number" line="288"><span class="token string">services:
+</span></span><span class="code-line line-number" line="289"><span class="token string">   <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>:
+</span></span><span class="code-line line-number" line="290"><span class="token string">      container_name: <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>
+</span></span><span class="code-line line-number" line="291"><span class="token string">      restart: unless-stopped
+</span></span><span class="code-line line-number" line="292"><span class="token string">      ports:
+</span></span><span class="code-line line-number" line="293"><span class="token string">         - "<span class="token variable">${HOST_PORT}</span>:8080"
+</span></span><span class="code-line line-number" line="294"><span class="token string">      volumes:
+</span></span><span class="code-line line-number" line="295"><span class="token string">         - ./zfile/db:/root/.zfile-v4/db
+</span></span><span class="code-line line-number" line="296"><span class="token string">         - ./zfile/logs:/root/.zfile-v4/logs
+</span></span><span class="code-line line-number" line="297"><span class="token string">         - ./file:/data/file
+</span></span><span class="code-line line-number" line="298"><span class="token string">      image: zhaojun1998/zfile:latest
+</span></span><span class="code-line line-number" line="299"><span class="token string">      environment:
+</span></span><span class="code-line line-number" line="300"><span class="token string">         - TZ=Asia/Shanghai
+</span></span><span class="code-line line-number" line="301"><span class="token string">         - JAVA_OPTS=-Xmx512m -Xms256m
+</span></span><span class="code-line line-number" line="302"><span class="token string">      healthcheck:
+</span></span><span class="code-line line-number" line="303"><span class="token string">         test: ["CMD", "curl", "-f", "http://localhost:8080"]
+</span></span><span class="code-line line-number" line="304"><span class="token string">         interval: 30s
+</span></span><span class="code-line line-number" line="305"><span class="token string">         timeout: 10s
+</span></span><span class="code-line line-number" line="306"><span class="token string">         retries: 3
+</span></span><span class="code-line line-number" line="307"><span class="token string">         start_period: 40s
+</span></span><span class="code-line line-number" line="308"><span class="token string">EOF</span>
 </span><span class="code-line line-number" line="309">
-</span><span class="code-line line-number" line="310">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">${HOST_PORT}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="311">        <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入映射端口（回车默认：<span class="token variable">${gl_huang}</span><span class="token variable">${DEFAULT_PORT}</span><span class="token variable">${gl_bai}</span>）(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span> 退出安装)："</span> input_port
-</span><span class="code-line line-number" line="312">        <span class="token assign-left variable">HOST_PORT</span><span class="token operator">=</span><span class="token variable">${input_port<span class="token operator">:-</span>$DEFAULT_PORT}</span>
-</span><span class="code-line line-number" line="313">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="314">        log_info <span class="token string">"已通过传参指定端口：<span class="token variable">${gl_lv}</span><span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="315">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="316">
-</span><span class="code-line line-number" line="317">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$HOST_PORT</span>"</span> <span class="token operator">=</span> <span class="token string">"0"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="318">        exit_script
-</span><span class="code-line line-number" line="319">        <span class="token function">rm</span> <span class="token parameter variable">-rf</span> <span class="token string">"<span class="token variable">${COMPOSE_DIR}</span>"</span>
-</span><span class="code-line line-number" line="320">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="321">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="322">
-</span><span class="code-line line-number" line="323">    log_info <span class="token string">"使用端口：<span class="token variable">${gl_lv}</span><span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="324">    check_and_open_port <span class="token string">"<span class="token variable">${HOST_PORT}</span>"</span>
-</span><span class="code-line line-number" line="325">    clean_old_container <span class="token string">"<span class="token variable">${DEFAULT_CONTAINER_NAME}</span>"</span>
-</span><span class="code-line line-number" line="326">
-</span><span class="code-line line-number" line="327">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="328">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 生成 <span class="token variable">${gl_lv}</span>docker-compose.yml<span class="token variable">${gl_huang}</span> 文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="329">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="330">    <span class="token function">cat</span> <span class="token operator">></span> docker-compose.yml <span class="token operator">&#x3C;&#x3C;</span> <span class="token string">EOF
-</span></span><span class="code-line line-number" line="331"><span class="token string">services:
-</span></span><span class="code-line line-number" line="332"><span class="token string">   <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>:
-</span></span><span class="code-line line-number" line="333"><span class="token string">      container_name: <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>
-</span></span><span class="code-line line-number" line="334"><span class="token string">      restart: always
-</span></span><span class="code-line line-number" line="335"><span class="token string">      ports:
-</span></span><span class="code-line line-number" line="336"><span class="token string">         - <span class="token variable">${HOST_PORT}</span>:8080
-</span></span><span class="code-line line-number" line="337"><span class="token string">      volumes:
-</span></span><span class="code-line line-number" line="338"><span class="token string">         - ./zfile/db:/root/.zfile-v4/db
-</span></span><span class="code-line line-number" line="339"><span class="token string">         - ./zfile/logs:/root/.zfile-v4/logs
-</span></span><span class="code-line line-number" line="340"><span class="token string">         - ./file:/data/file
-</span></span><span class="code-line line-number" line="341"><span class="token string">      image: zhaojun1998/zfile:latest
-</span></span><span class="code-line line-number" line="342"><span class="token string">      environment:
-</span></span><span class="code-line line-number" line="343"><span class="token string">         - TZ=Asia/Shanghai
-</span></span><span class="code-line line-number" line="344"><span class="token string">         - JAVA_OPTS=-Xmx512m -Xms256m
-</span></span><span class="code-line line-number" line="345"><span class="token string">      healthcheck:
-</span></span><span class="code-line line-number" line="346"><span class="token string">         test:
-</span></span><span class="code-line line-number" line="347"><span class="token string">            - CMD
-</span></span><span class="code-line line-number" line="348"><span class="token string">            - curl
-</span></span><span class="code-line line-number" line="349"><span class="token string">            - -f
-</span></span><span class="code-line line-number" line="350"><span class="token string">            - http://localhost:8080
-</span></span><span class="code-line line-number" line="351"><span class="token string">         interval: 30s
-</span></span><span class="code-line line-number" line="352"><span class="token string">         timeout: 10s
-</span></span><span class="code-line line-number" line="353"><span class="token string">         retries: 3
-</span></span><span class="code-line line-number" line="354"><span class="token string">EOF</span>
-</span><span class="code-line line-number" line="355">
-</span><span class="code-line line-number" line="356">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"docker-compose.yml"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="357">        log_ok <span class="token string">"配置文件创建成功"</span>
-</span><span class="code-line line-number" line="358">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="359">        log_error <span class="token string">"配置文件创建失败"</span>
-</span><span class="code-line line-number" line="360">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="361">        break_end
-</span><span class="code-line line-number" line="362">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="363">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="364">
-</span><span class="code-line line-number" line="365">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="366">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 尝试启动容器 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="367">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="368">    <span class="token keyword">if</span> <span class="token function">docker-compose</span> up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="369">        log_ok <span class="token string">"容器启动成功"</span>
-</span><span class="code-line line-number" line="370">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="371">        log_warn <span class="token string">"docker-compose 启动失败，尝试兼容版 docker compose <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="372">        <span class="token keyword">if</span> <span class="token function">docker</span> compose up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="373">            log_ok <span class="token string">"容器启动成功"</span>
-</span><span class="code-line line-number" line="374">        <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="375">            log_error <span class="token string">"容器启动失败"</span>
-</span><span class="code-line line-number" line="376">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="377">            break_end
-</span><span class="code-line line-number" line="378">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="379">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="380">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="381">
-</span><span class="code-line line-number" line="382">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="383">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 容器运行状态<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="384">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="385">    docker-ps-cn <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>
-</span><span class="code-line line-number" line="386">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="387">    <span class="token assign-left variable">LOCAL_IP</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">hostname</span> <span class="token parameter variable">-I</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $1}'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="388">    log_info <span class="token string">"部署完成！"</span>
-</span><span class="code-line line-number" line="389">    log_info <span class="token string">"访问地址：<span class="token variable">${gl_lv}</span>http://<span class="token variable">${LOCAL_IP}</span>:<span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="390">    log_info <span class="token string">"部署目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="391">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="392">    break_end
-</span><span class="code-line line-number" line="393"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="394">
-</span><span class="code-line line-number" line="395">deploy_app <span class="token string">"<span class="token variable">$@</span>"</span>
+</span><span class="code-line line-number" line="310">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"docker-compose.yml"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="311">        log_ok <span class="token string">"配置文件创建成功"</span>
+</span><span class="code-line line-number" line="312">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="313">        log_error <span class="token string">"配置文件创建失败"</span>
+</span><span class="code-line line-number" line="314">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="315">        break_end
+</span><span class="code-line line-number" line="316">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="317">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="318">
+</span><span class="code-line line-number" line="319">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="320">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 启动容器 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="321">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="322">    
+</span><span class="code-line line-number" line="323">    <span class="token assign-left variable">START_SUCCESS</span><span class="token operator">=</span>false
+</span><span class="code-line line-number" line="324">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker-compose</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="325">        <span class="token keyword">if</span> <span class="token function">docker-compose</span> up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="326">            <span class="token assign-left variable">START_SUCCESS</span><span class="token operator">=</span>true
+</span><span class="code-line line-number" line="327">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="328">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="329">    
+</span><span class="code-line line-number" line="330">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$START_SUCCESS</span>"</span> <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="331">        <span class="token keyword">if</span> <span class="token function">docker</span> compose up -d<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="332">            <span class="token assign-left variable">START_SUCCESS</span><span class="token operator">=</span>true
+</span><span class="code-line line-number" line="333">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="334">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="335">    
+</span><span class="code-line line-number" line="336">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$START_SUCCESS</span>"</span> <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="337">        log_error <span class="token string">"容器启动失败"</span>
+</span><span class="code-line line-number" line="338">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="339">        <span class="token function">docker-compose</span> logs <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token function">docker</span> compose logs <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+</span><span class="code-line line-number" line="340">        break_end
+</span><span class="code-line line-number" line="341">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="342">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="343">    
+</span><span class="code-line line-number" line="344">    log_ok <span class="token string">"容器启动成功"</span>
+</span><span class="code-line line-number" line="345">
+</span><span class="code-line line-number" line="346">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="347">    log_info <span class="token string">"等待容器启动完成 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="348">    <span class="token function">sleep</span> <span class="token number">5</span>
+</span><span class="code-line line-number" line="349">    
+</span><span class="code-line line-number" line="350">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="351">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 容器运行状态<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="352">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="353">    docker-ps-cn <span class="token variable">${DEFAULT_CONTAINER_NAME}</span>
+</span><span class="code-line line-number" line="354">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="355">    
+</span><span class="code-line line-number" line="356">    <span class="token assign-left variable">LOCAL_IP</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">hostname</span> <span class="token parameter variable">-I</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $1}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="357">    
+</span><span class="code-line line-number" line="358">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="359">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 部署完成！<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="360">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="361">    log_info <span class="token string">"访问地址：<span class="token variable">${gl_lv}</span>http://<span class="token variable">${LOCAL_IP}</span>:<span class="token variable">${HOST_PORT}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="362">    log_info <span class="token string">"部署目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="363">    log_info <span class="token string">"文件存放目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span>/file<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="364">    log_info <span class="token string">"数据库目录：<span class="token variable">${gl_huang}</span><span class="token variable">${COMPOSE_DIR}</span>/zfile/db<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="365">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="366">    
+</span><span class="code-line line-number" line="367">    log_info <span class="token string">"首次访问需要初始化系统，请按照向导设置管理员账户"</span>
+</span><span class="code-line line-number" line="368">    log_info <span class="token string">"ZFile 默认不支持 root 用户登录，请使用普通用户账户"</span>
+</span><span class="code-line line-number" line="369">    
+</span><span class="code-line line-number" line="370">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="371">    break_end
+</span><span class="code-line line-number" line="372"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="373">
+</span><span class="code-line line-number" line="374">deploy_app
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -uo pipefail
 
@@ -1646,7 +1625,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1702,19 +1681,6 @@ root_use() {
     return 0
 }
 
-root_use() {
-    clear
-    if [ &#x22;$EUID&#x22; -ne 0 ]; then
-        echo -e &#x22;\n${gl_zi}>>> ROOT登录检查${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-        echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-        echo -e &#x22;${gl_huang}提示: ${gl_bai}该功能需要root用户才能运行！&#x22;
-        echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-        break_end
-        return 1
-    fi
-    return 0
-}
-
 check_and_open_port() {
     local PORT=&#x22;$1&#x22;
     if [[ -z &#x22;$PORT&#x22; ]]; then
@@ -1724,35 +1690,48 @@ check_and_open_port() {
 
     log_info &#x22;检查端口 ${gl_huang}${PORT}${gl_bai} 是否放行 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 
-    if iptables -L INPUT -n 2>/dev/null | grep -qwE &#x22;dpt:${PORT}|${PORT}.*ACCEPT&#x22; >/dev/null 2>&#x26;1; then
-        log_ok &#x22;端口 ${PORT} 已放行，无需操作&#x22;
+    if command -v iptables &#x26;>/dev/null; then
+        if iptables -L INPUT -n 2>/dev/null | grep -qwE &#x22;dpt:${PORT}|${PORT}.*ACCEPT&#x22; >/dev/null 2>&#x26;1; then
+            log_ok &#x22;端口 ${PORT} 已放行，无需操作&#x22;
+        else
+            log_warn &#x22;端口 ${gl_hong}${PORT}${gl_bai} 未放行，正在开放 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            iptables -I INPUT -p tcp --dport &#x22;${PORT}&#x22; -j ACCEPT 2>/dev/null
+            iptables -I INPUT -p udp --dport &#x22;${PORT}&#x22; -j ACCEPT 2>/dev/null
+            
+            if command -v netfilter-persistent >/dev/null 2>&#x26;1; then
+                netfilter-persistent save >/dev/null 2>&#x26;1
+            elif command -v service >/dev/null 2>&#x26;1; then
+                service iptables save 2>/dev/null
+            fi
+            log_ok &#x22;端口 ${gl_lv}${PORT}${gl_bai} 已开放并永久保存&#x22;
+        fi
+    else
+        log_warn &#x22;iptables 未安装，跳过端口检查&#x22;
+    fi
+}
+
+check_port_available() {
+    local PORT=&#x22;$1&#x22;
+    if ss -tuln | grep -q &#x22;:${PORT} &#x22;; then
+        return 1
+    elif netstat -tuln 2>/dev/null | grep -q &#x22;:${PORT} &#x22;; then
+        return 1
+    else
         return 0
     fi
+}
 
-    log_warn &#x22;端口 ${gl_hong}${PORT}${gl_bai} 未放行，正在开放 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-
-    iptables -I INPUT -p tcp --dport &#x22;${PORT}&#x22; -j ACCEPT 2>/dev/null
-    iptables -I INPUT -p udp --dport &#x22;${PORT}&#x22; -j ACCEPT 2>/dev/null
-
-    if ! command -v netfilter-persistent >/dev/null 2>&#x26;1 &#x26;&#x26; ! command -v iptables-services >/dev/null 2>&#x26;1; then
-        log_info &#x22;安装 iptables 持久化工具 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-        if command -v apt >/dev/null 2>&#x26;1; then
-            apt update -y >/dev/null 2>&#x26;1
-            apt install -y iptables-persistent netfilter-persistent >/dev/null 2>&#x26;1
-        elif command -v dnf >/dev/null 2>&#x26;1; then
-            dnf install -y iptables-services >/dev/null 2>&#x26;1
-        elif command -v yum >/dev/null 2>&#x26;1; then
-            yum install -y iptables-services >/dev/null 2>&#x26;1
+get_free_port() {
+    local start_port=$1
+    local port=$start_port
+    while ! check_port_available $port; do
+        port=$((port + 1))
+        if [ $port -gt $((start_port + 100)) ]; then
+            echo &#x22;&#x22;
+            return 1
         fi
-    fi
-
-    if command -v netfilter-persistent >/dev/null 2>&#x26;1; then
-        netfilter-persistent save >/dev/null 2>&#x26;1
-    elif command -v service >/dev/null 2>&#x26;1; then
-        service iptables save 2>/dev/null
-    fi
-
-    log_ok &#x22;端口 ${gl_lv}${PORT}${gl_bai} 已开放并永久保存&#x22;
+    done
+    echo $port
 }
 
 docker-ps-cn() {
@@ -1801,8 +1780,8 @@ docker-ps-cn() {
 
 docker_check_env() {
     if ! command -v docker &#x26;>/dev/null; then
-        log_info &#x22;正在检查 Docker 运行环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-        log_warn &#x22;Docker 未安装，即将自动安装 Docker 环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;正在检查 Docker 运行环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_warn &#x22;Docker 未安装，即将自动安装 Docker 环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_docker.sh)
 
@@ -1814,14 +1793,14 @@ docker_check_env() {
         log_ok &#x22;Docker 安装成功！&#x22;
     fi
 
-    if ! command -v docker-compose &#x26;>/dev/null; then
+    if ! command -v docker-compose &#x26;>/dev/null &#x26;&#x26; ! docker compose version &#x26;>/dev/null; then
         echo -e &#x22;&#x22;
-        log_info &#x22;正在检查 Docker Compose 环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-        log_warn &#x22;Docker Compose 未安装，即将自动安装${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;正在检查 Docker Compose 环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_warn &#x22;Docker Compose 未安装，即将自动安装 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_compose.sh)
 
-        if ! command -v docker-compose &#x26;>/dev/null; then
+        if ! command -v docker-compose &#x26;>/dev/null &#x26;&#x26; ! docker compose version &#x26;>/dev/null; then
             log_error &#x22;Docker Compose 安装失败，请手动安装后重试！&#x22;
             sleep 1
             exit 1
@@ -1844,48 +1823,18 @@ clean_old_container() {
 
     for container_name in &#x22;${targets[@]}&#x22;; do
         if docker ps -a --filter &#x22;name=^/${container_name}$&#x22; --format &#x22;{{.Names}}&#x22; | grep -q &#x22;^${container_name}$&#x22;; then
-            log_info &#x22;检测到容器 ${gl_huang}${container_name}${gl_bai}，正在停止并删除${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;检测到容器 ${gl_huang}${container_name}${gl_bai}，正在停止并删除 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             docker rm -f &#x22;${container_name}&#x22; >/dev/null 2>&#x26;1
             log_ok &#x22;容器 ${container_name} 清理完成&#x22;
         else
             log_ok &#x22;容器 ${container_name} 不存在，跳过&#x22;
         fi
     done
-
-    log_info &#x22;开始模糊清理相关镜像（关键词：${targets[*]}）${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-    local image_ids=$(docker images --format &#x22;{{.ID}}&#x22; | grep -f <(printf &#x22;%s\n&#x22; &#x22;${targets[@]}&#x22; | sed &#x27;s/^/-i /;s/ / -i /g&#x27;))
-    if [ -n &#x22;$image_ids&#x22; ]; then
-        echo &#x22;$image_ids&#x22; | xargs docker rmi -f >/dev/null 2>&#x26;1
-        log_ok &#x22;相关镜像已全部删除&#x22;
-    else
-        log_ok &#x22;未找到相关镜像&#x22;
-    fi
-
-    log_info &#x22;清理悬空镜像与未使用镜像${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-    docker image prune -a -f >/dev/null 2>&#x26;1
-    log_ok &#x22;未使用镜像清理完成&#x22;
-
-    log_info &#x22;清理Docker无用资源（容器/网络/卷/构建缓存）${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-    docker system prune -a -f --volumes >/dev/null 2>&#x26;1
-    docker builder prune -af >/dev/null 2>&#x26;1
-    log_ok &#x22;Docker系统资源清理完成&#x22;
-
-    log_info &#x22;验证清理结果${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-    local remain=0
-    for name in &#x22;${targets[@]}&#x22;; do
-        docker ps -a --filter &#x22;name=^/${name}$&#x22; --format &#x22;{{.Names}}&#x22; | grep -q &#x22;^${name}$&#x22; &#x26;&#x26; remain=$((remain+1))
-    done
-
-    if [ &#x22;$remain&#x22; -eq 0 ]; then
-        log_ok &#x22;所有指定容器、镜像、残留资源已彻底清理，无名称冲突&#x22;
-    else
-        log_warn &#x22;仍有 ${gl_huang}${remain}${gl_bai} 个相关容器未清理，请手动检查&#x22;
-    fi
 }
 
 deploy_app() {
-    local COMPOSE_DIR=&#x22;&#x22;
-    local HOST_PORT=&#x22;&#x22;
+    local COMPOSE_DIR=&#x22;$DEFAULT_COMPOSE_DIR&#x22;
+    local HOST_PORT=&#x22;$DEFAULT_PORT&#x22;
 
     root_use || return 1
     clear
@@ -1894,41 +1843,27 @@ deploy_app() {
     
     docker_check_env
 
-    for arg in &#x22;$@&#x22;; do
-        if [[ &#x22;$arg&#x22; =~ ^[0-9]+$ ]]; then
-            HOST_PORT=&#x22;$arg&#x22;
-        else
-            COMPOSE_DIR=&#x22;$arg&#x22;
-        fi
-    done
-
-    if [ -z &#x22;${COMPOSE_DIR}&#x22; ]; then
-        read -r -e -p &#x22;${gl_bai}请输入 docker-compose 存放路径（回车默认：${gl_huang}${DEFAULT_COMPOSE_DIR}${gl_bai}）(${gl_hong}0${gl_bai} 退出安装)：&#x22; input_dir
-        COMPOSE_DIR=${input_dir:-$DEFAULT_COMPOSE_DIR}
-    else
-        log_info &#x22;已通过传参指定部署目录：${gl_huang}${COMPOSE_DIR}${gl_bai}&#x22;
-    fi
-
-    if [ &#x22;$COMPOSE_DIR&#x22; = &#x22;0&#x22; ]; then
-        exit_script
-        return 1
-    fi
-
     log_info &#x22;部署目录：${gl_huang}${COMPOSE_DIR}${gl_bai}&#x22;
+    
+    if [ -d &#x22;${COMPOSE_DIR}&#x22; ] &#x26;&#x26; [ &#x22;$(ls -A ${COMPOSE_DIR} 2>/dev/null)&#x22; ]; then
+        log_warn &#x22;部署目录已存在，将使用现有目录&#x22;
+    fi
+    
     mkdir -p &#x22;${COMPOSE_DIR}/zfile&#x22; || { log_error &#x22;目录创建失败&#x22;; break_end; return 1; }
+    mkdir -p &#x22;${COMPOSE_DIR}/file&#x22; || { log_error &#x22;文件目录创建失败&#x22;; break_end; return 1; }
     cd &#x22;${COMPOSE_DIR}&#x22; || { log_error &#x22;进入目录失败&#x22;; break_end; return 1; }
 
-    if [ -z &#x22;${HOST_PORT}&#x22; ]; then
-        read -r -e -p &#x22;${gl_bai}请输入映射端口（回车默认：${gl_huang}${DEFAULT_PORT}${gl_bai}）(${gl_hong}0${gl_bai} 退出安装)：&#x22; input_port
-        HOST_PORT=${input_port:-$DEFAULT_PORT}
-    else
-        log_info &#x22;已通过传参指定端口：${gl_lv}${HOST_PORT}${gl_bai}&#x22;
-    fi
-
-    if [ &#x22;$HOST_PORT&#x22; = &#x22;0&#x22; ]; then
-        exit_script
-        rm -rf &#x22;${COMPOSE_DIR}&#x22;
-        return 1
+    if ! check_port_available $HOST_PORT; then
+        log_warn &#x22;端口 ${gl_hong}${HOST_PORT}${gl_bai} 已被占用&#x22;
+        NEW_PORT=$(get_free_port $((HOST_PORT + 1)))
+        if [ -n &#x22;$NEW_PORT&#x22; ]; then
+            log_info &#x22;自动分配新端口：${gl_lv}${NEW_PORT}${gl_bai}&#x22;
+            HOST_PORT=$NEW_PORT
+        else
+            log_error &#x22;无法找到可用端口，请手动指定&#x22;
+            break_end
+            return 1
+        fi
     fi
 
     log_info &#x22;使用端口：${gl_lv}${HOST_PORT}${gl_bai}&#x22;
@@ -1936,15 +1871,16 @@ deploy_app() {
     clean_old_container &#x22;${DEFAULT_CONTAINER_NAME}&#x22;
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 生成 ${gl_lv}docker-compose.yml${gl_huang} 文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_huang}>>> 生成 ${gl_lv}docker-compose.yml${gl_huang} 文件${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+    
     cat > docker-compose.yml << EOF
 services:
    ${DEFAULT_CONTAINER_NAME}:
       container_name: ${DEFAULT_CONTAINER_NAME}
-      restart: always
+      restart: unless-stopped
       ports:
-         - ${HOST_PORT}:8080
+         - &#x22;${HOST_PORT}:8080&#x22;
       volumes:
          - ./zfile/db:/root/.zfile-v4/db
          - ./zfile/logs:/root/.zfile-v4/logs
@@ -1954,14 +1890,11 @@ services:
          - TZ=Asia/Shanghai
          - JAVA_OPTS=-Xmx512m -Xms256m
       healthcheck:
-         test:
-            - CMD
-            - curl
-            - -f
-            - http://localhost:8080
+         test: [&#x22;CMD&#x22;, &#x22;curl&#x22;, &#x22;-f&#x22;, &#x22;http://localhost:8080&#x22;]
          interval: 30s
          timeout: 10s
          retries: 3
+         start_period: 40s
 EOF
 
     if [ -f &#x22;docker-compose.yml&#x22; ]; then
@@ -1974,36 +1907,61 @@ EOF
     fi
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 尝试启动容器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_huang}>>> 启动容器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-    if docker-compose up -d; then
-        log_ok &#x22;容器启动成功&#x22;
-    else
-        log_warn &#x22;docker-compose 启动失败，尝试兼容版 docker compose ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-        if docker compose up -d; then
-            log_ok &#x22;容器启动成功&#x22;
-        else
-            log_error &#x22;容器启动失败&#x22;
-            echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-            break_end
-            return 1
+    
+    START_SUCCESS=false
+    if command -v docker-compose &#x26;>/dev/null; then
+        if docker-compose up -d; then
+            START_SUCCESS=true
         fi
     fi
+    
+    if [ &#x22;$START_SUCCESS&#x22; = false ]; then
+        if docker compose up -d; then
+            START_SUCCESS=true
+        fi
+    fi
+    
+    if [ &#x22;$START_SUCCESS&#x22; = false ]; then
+        log_error &#x22;容器启动失败&#x22;
+        echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+        docker-compose logs 2>/dev/null || docker compose logs 2>/dev/null
+        break_end
+        return 1
+    fi
+    
+    log_ok &#x22;容器启动成功&#x22;
 
+    echo -e &#x22;&#x22;
+    log_info &#x22;等待容器启动完成 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    sleep 5
+    
     echo -e &#x22;&#x22;
     echo -e &#x22;${gl_huang}>>> 容器运行状态${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     docker-ps-cn ${DEFAULT_CONTAINER_NAME}
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+    
     LOCAL_IP=$(hostname -I | awk &#x27;{print $1}&#x27;)
-    log_info &#x22;部署完成！&#x22;
+    
+    echo &#x22;&#x22;
+    echo -e &#x22;${gl_huang}>>> 部署完成！${gl_bai}&#x22;
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     log_info &#x22;访问地址：${gl_lv}http://${LOCAL_IP}:${HOST_PORT}${gl_bai}&#x22;
     log_info &#x22;部署目录：${gl_huang}${COMPOSE_DIR}${gl_bai}&#x22;
+    log_info &#x22;文件存放目录：${gl_huang}${COMPOSE_DIR}/file${gl_bai}&#x22;
+    log_info &#x22;数据库目录：${gl_huang}${COMPOSE_DIR}/zfile/db${gl_bai}&#x22;
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+    
+    log_info &#x22;首次访问需要初始化系统，请按照向导设置管理员账户&#x22;
+    log_info &#x22;ZFile 默认不支持 root 用户登录，请使用普通用户账户&#x22;
+    
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     break_end
 }
 
-deploy_app &#x22;$@&#x22;
+deploy_app
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h2 id="一键完全卸载命令"><a class="anchor" aria-hidden="true" tabindex="-1" href="#一键完全卸载命令"><span class="octicon octicon-link"></span></a>一键完全卸载命令</h2>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># 停止并删除容器 + 删除镜像 + 删除部署目录(按需修改)</span>
@@ -2272,8 +2230,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp8682u3"></script>
-<script type="text/javascript" src="../js/index.js?v=mp8682u3"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp8682u3"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp87tv7k"></script>
+<script type="text/javascript" src="../js/index.js?v=mp87tv7k"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp87tv7k"></script>
 </body>
 </html>
