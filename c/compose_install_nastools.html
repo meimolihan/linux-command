@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_install_nastools 命令">
     <meta name="twitter:description" content="Docker Compose 部署 NASTools 媒体管理套件 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp7vd55x">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp7vtev2">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp7vd55x"></script>
+    <script src="../js/dt.js?v=mp7vtev2"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1169,6 +1169,12 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 <p>
   <img src="https://file.meimolihan.eu.org/screenshot/compose_install_nastools-02.webp" alt="WEB效果预览" title="截图演示" loading="lazy">
 </p>
+<p>
+  <img src="https://file.meimolihan.eu.org/screenshot/compose_install_nastools-03.webp" alt="WEB效果预览" title="截图演示" loading="lazy">
+</p>
+<p>
+  <img src="https://file.meimolihan.eu.org/screenshot/compose_install_nastools-04.webp" alt="WEB效果预览" title="截图演示" loading="lazy">
+</p>
 <h2 id="补充说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#补充说明"><span class="octicon octicon-link"></span></a>补充说明</h2>
 <p>该脚本用于一键部署 NASTools 媒体管理套件，基于 Docker Compose 实现，集成字幕下载、索引器和媒体管理三大核心服务，适合 NAS 用户搭建自动化媒体中心。</p>
 <h3 id="组件说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#组件说明"><span class="octicon octicon-link"></span></a>组件说明</h3>
@@ -1813,7 +1819,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="378"><span class="token string">         - <span class="token variable">${HOST_PORT}</span>:3000
 </span></span><span class="code-line line-number" line="379"><span class="token string">      volumes:
 </span></span><span class="code-line line-number" line="380"><span class="token string">         - ./config:/config
-</span></span><span class="code-line line-number" line="381"><span class="token string">         - ./config/hosts:/etc/hosts
+</span></span><span class="code-line line-number" line="381"><span class="token string">         # - ./config/hosts:/etc/hosts
 </span></span><span class="code-line line-number" line="382"><span class="token string">         - <span class="token variable">${MEDIA_DIR}</span>:/media
 </span></span><span class="code-line line-number" line="383"><span class="token string">      environment:
 </span></span><span class="code-line line-number" line="384"><span class="token string">         - PUID=0
@@ -2263,7 +2269,7 @@ services:
          - ${HOST_PORT}:3000
       volumes:
          - ./config:/config
-         - ./config/hosts:/etc/hosts
+         # - ./config/hosts:/etc/hosts
          - ${MEDIA_DIR}:/media
       environment:
          - PUID=0
@@ -2582,8 +2588,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp7vd55x"></script>
-<script type="text/javascript" src="../js/index.js?v=mp7vd55x"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp7vd55x"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp7vtev2"></script>
+<script type="text/javascript" src="../js/index.js?v=mp7vtev2"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp7vtev2"></script>
 </body>
 </html>
