@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_uninstall_docker 命令">
     <meta name="twitter:description" content="Linux 卸载 Docker 环境 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1230,7 +1230,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="21">
 </span><span class="code-line line-number" line="22"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="23">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="25">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="26">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="27">    <span class="token function">clear</span>
@@ -1258,7 +1258,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="49"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="50">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="51">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="52">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="52">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="53">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="54">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="55">    <span class="token function">clear</span>
@@ -1267,7 +1267,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="58"><span class="token function-name function">uninstall_docker_environment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="59">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="60">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="61">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 卸载 Docker 环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="61">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 卸载 Docker 环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="62">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="63">        log_warn <span class="token string">"Docker 未安装，无需卸载"</span>
 </span><span class="code-line line-number" line="64">        exit_animation
@@ -1276,23 +1276,23 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="67">
 </span><span class="code-line line-number" line="68">	<span class="token function">clear</span>
 </span><span class="code-line line-number" line="69">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="70">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 卸载 Docker 环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="70">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 卸载 Docker 环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="71">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="72">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_hong}</span>注意: <span class="token variable">${gl_bai}</span>确定卸载 Docker 环境吗？(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" choice
 </span></span><span class="code-line line-number" line="73"><span class="token string">    [ "</span><span class="token variable">$choice</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; { exit_animation; return 1; }
 </span></span><span class="code-line line-number" line="74"><span class="token string">
 </span></span><span class="code-line line-number" line="75"><span class="token string">    case "</span><span class="token variable">$choice</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="76"><span class="token string">        [Yy])
-</span></span><span class="code-line line-number" line="77"><span class="token string">            echo -e "</span><span class="token variable">${gl_zi}</span><span class="token operator">>></span><span class="token operator">></span> 正在清理所有 Docker 资源<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="77"><span class="token string">            echo -e "</span><span class="token variable">${gl_zi}</span><span class="token operator">>></span><span class="token operator">></span> 正在清理所有 Docker 资源 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="78"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="79"><span class="token string">            
-</span></span><span class="code-line line-number" line="80"><span class="token string">            log_info "</span>正在停止所有容器<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="80"><span class="token string">            log_info "</span>正在停止所有容器 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="81"><span class="token string">            docker stop <span class="token variable"><span class="token variable">$(</span><span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-aq</span><span class="token variable">)</span></span> >/dev/null 2>&#x26;1
 </span></span><span class="code-line line-number" line="82"><span class="token string">            
-</span></span><span class="code-line line-number" line="83"><span class="token string">            log_info "</span>正在删除容器、镜像、网络、数据卷<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="83"><span class="token string">            log_info "</span>正在删除容器、镜像、网络、数据卷 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="84"><span class="token string">            docker system prune -a --volumes -f >/dev/null 2>&#x26;1
 </span></span><span class="code-line line-number" line="85"><span class="token string">            
-</span></span><span class="code-line line-number" line="86"><span class="token string">            log_info "</span>正在卸载 Docker 相关组件<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="86"><span class="token string">            log_info "</span>正在卸载 Docker 相关组件 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="87"><span class="token string">            if command -v apt &#x26;>/dev/null; then
 </span></span><span class="code-line line-number" line="88"><span class="token string">                apt remove -y docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose >/dev/null 2>&#x26;1
 </span></span><span class="code-line line-number" line="89"><span class="token string">                apt autoremove -y >/dev/null 2>&#x26;1
@@ -1300,7 +1300,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="91"><span class="token string">                yum remove -y docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose >/dev/null 2>&#x26;1
 </span></span><span class="code-line line-number" line="92"><span class="token string">            fi
 </span></span><span class="code-line line-number" line="93"><span class="token string">            
-</span></span><span class="code-line line-number" line="94"><span class="token string">            log_info "</span>正在删除配置文件与残留目录<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="94"><span class="token string">            log_info "</span>正在删除配置文件与残留目录 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="95"><span class="token string">            rm -rf /etc/docker /var/lib/docker /var/run/docker.sock >/dev/null 2>&#x26;1
 </span></span><span class="code-line line-number" line="96"><span class="token string">            hash -r
 </span></span><span class="code-line line-number" line="97"><span class="token string">            
@@ -1345,7 +1345,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1373,7 +1373,7 @@ handle_invalid_input() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1382,7 +1382,7 @@ exit_animation() {
 uninstall_docker_environment() {
     if ! command -v docker &#x26;>/dev/null; then
         echo -e &#x22;&#x22;
-        echo -e &#x22;${gl_zi}>>> 卸载 Docker 环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_zi}>>> 卸载 Docker 环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         log_warn &#x22;Docker 未安装，无需卸载&#x22;
         exit_animation
@@ -1391,23 +1391,23 @@ uninstall_docker_environment() {
 
 	clear
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 卸载 Docker 环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 卸载 Docker 环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     read -r -e -p &#x22;$(echo -e &#x22;${gl_hong}注意: ${gl_bai}确定卸载 Docker 环境吗？(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; choice
     [ &#x22;$choice&#x22; = &#x22;0&#x22; ] &#x26;&#x26; { exit_animation; return 1; }
 
     case &#x22;$choice&#x22; in
         [Yy])
-            echo -e &#x22;${gl_zi}>>> 正在清理所有 Docker 资源${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_zi}>>> 正在清理所有 Docker 资源 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             
-            log_info &#x22;正在停止所有容器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;正在停止所有容器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             docker stop $(docker ps -aq) >/dev/null 2>&#x26;1
             
-            log_info &#x22;正在删除容器、镜像、网络、数据卷${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;正在删除容器、镜像、网络、数据卷 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             docker system prune -a --volumes -f >/dev/null 2>&#x26;1
             
-            log_info &#x22;正在卸载 Docker 相关组件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;正在卸载 Docker 相关组件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             if command -v apt &#x26;>/dev/null; then
                 apt remove -y docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose >/dev/null 2>&#x26;1
                 apt autoremove -y >/dev/null 2>&#x26;1
@@ -1415,7 +1415,7 @@ uninstall_docker_environment() {
                 yum remove -y docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose >/dev/null 2>&#x26;1
             fi
             
-            log_info &#x22;正在删除配置文件与残留目录${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;正在删除配置文件与残留目录 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             rm -rf /etc/docker /var/lib/docker /var/run/docker.sock >/dev/null 2>&#x26;1
             hash -r
             
@@ -1668,8 +1668,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

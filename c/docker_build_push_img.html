@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="docker_build_push_img 命令">
     <meta name="twitter:description" content="Docker 镜像构建、登录校验与一键推送工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1290,7 +1290,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/docker_build_pu
 </span><span class="code-line line-number" line="57">
 </span><span class="code-line line-number" line="58"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="59">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="61">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="62">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="63">    <span class="token function">clear</span>
@@ -1298,9 +1298,9 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/docker_build_pu
 </span><span class="code-line line-number" line="65">
 </span><span class="code-line line-number" line="66"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="67">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="69">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="70">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="70">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="71">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="72">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="73">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1309,7 +1309,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/docker_build_pu
 </span><span class="code-line line-number" line="76"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="77">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="78">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="79">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="79">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="80">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="81">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="82">    <span class="token function">clear</span>
@@ -1378,121 +1378,123 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/docker_build_pu
 </span><span class="code-line line-number" line="145">    <span class="token assign-left variable">FULL_IMAGE_NAME</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$full_name</span>"</span>
 </span><span class="code-line line-number" line="146"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="147">
-</span><span class="code-line line-number" line="148"><span class="token assign-left variable">WORK_DIR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>.}</span>"</span>
-</span><span class="code-line line-number" line="149"><span class="token assign-left variable">INPUT_IMAGE</span><span class="token operator">=</span><span class="token string">""</span>
-</span><span class="code-line line-number" line="150">
-</span><span class="code-line line-number" line="151"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-ge</span> <span class="token number">2</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="152">    <span class="token assign-left variable">INPUT_IMAGE</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$2</span>"</span>
+</span><span class="code-line line-number" line="148"><span class="token comment"># ===================== 核心修改：支持传参完整镜像名 =====================</span>
+</span><span class="code-line line-number" line="149"><span class="token comment"># 第一个参数：工作目录（默认当前）</span>
+</span><span class="code-line line-number" line="150"><span class="token comment"># 第二个参数：完整镜像名（可选）</span>
+</span><span class="code-line line-number" line="151"><span class="token assign-left variable">WORK_DIR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>.}</span>"</span>
+</span><span class="code-line line-number" line="152"><span class="token assign-left variable">INPUT_IMAGE</span><span class="token operator">=</span><span class="token string">""</span>
 </span><span class="code-line line-number" line="153">
-</span><span class="code-line line-number" line="154"><span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-eq</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="155">    <span class="token assign-left variable">INPUT_IMAGE</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
-</span><span class="code-line line-number" line="156">    <span class="token assign-left variable">WORK_DIR</span><span class="token operator">=</span><span class="token string">"."</span>
-</span><span class="code-line line-number" line="157"><span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="158">
-</span><span class="code-line line-number" line="159"><span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">${WORK_DIR}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="160">    log_error <span class="token string">"工作目录不存在：<span class="token variable">${WORK_DIR}</span>"</span>
-</span><span class="code-line line-number" line="161">    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="162"><span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="163">
-</span><span class="code-line line-number" line="164"><span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">${WORK_DIR}</span>"</span> <span class="token operator">||</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="165">    log_error <span class="token string">"无法进入工作目录：<span class="token variable">${WORK_DIR}</span>"</span>
-</span><span class="code-line line-number" line="166">    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="167"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="168">
-</span><span class="code-line line-number" line="169"><span class="token function">clear</span>
-</span><span class="code-line line-number" line="170"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> Docker 镜像构建与推送工具<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="171"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="172">log_info <span class="token string">"当前工作目录：<span class="token variable">${gl_lv}</span><span class="token variable">${<span class="token environment constant">PWD</span>}</span>"</span>
-</span><span class="code-line line-number" line="173">
-</span><span class="code-line line-number" line="174"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">${INPUT_IMAGE}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="175">    log_info <span class="token string">"检测到传入镜像：<span class="token variable">${gl_lv}</span><span class="token variable">${INPUT_IMAGE}</span>"</span>
-</span><span class="code-line line-number" line="176">    <span class="token assign-left variable">FULL_IMAGE_INPUT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${INPUT_IMAGE}</span>"</span>
-</span><span class="code-line line-number" line="177"><span class="token keyword">else</span>
-</span><span class="code-line line-number" line="178">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>请输入完整镜像名称(<span class="token variable">${gl_huang}</span>示例: mobufan/nginx:latest<span class="token variable">${gl_bai}</span>, 0返回): "</span><span class="token punctuation">)</span><span class="token string">" FULL_IMAGE_INPUT
-</span></span><span class="code-line line-number" line="179"><span class="token string">fi
-</span></span><span class="code-line line-number" line="180"><span class="token string">parse_full_image_name "</span><span class="token variable">$FULL_IMAGE_INPUT</span><span class="token string">"
-</span></span><span class="code-line line-number" line="181"><span class="token string">
-</span></span><span class="code-line line-number" line="182"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="183"><span class="token string">log_info "</span>即将构建镜像：<span class="token variable">${gl_lv}</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="184"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="185"><span class="token string">
-</span></span><span class="code-line line-number" line="186"><span class="token string">log_info "</span>开始执行 <span class="token function">docker</span> build<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="187"><span class="token string">if docker build -t "</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">" .; then
-</span></span><span class="code-line line-number" line="188"><span class="token string">    log_ok "</span>镜像构建成功！<span class="token variable">${gl_lv}</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="189"><span class="token string">    echo -e "</span>"
-</span><span class="code-line line-number" line="190">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 镜像详情<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="191">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="192">    list_beautify_docker_images <span class="token string">"<span class="token variable">${FULL_IMAGE_NAME}</span>"</span>
-</span><span class="code-line line-number" line="193">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="194"><span class="token keyword">else</span>
-</span><span class="code-line line-number" line="195">    log_error <span class="token string">"镜像构建失败！"</span>
-</span><span class="code-line line-number" line="196">    exit_animation
-</span><span class="code-line line-number" line="197">    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="198"><span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="199">
-</span><span class="code-line line-number" line="200"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="201">
-</span><span class="code-line line-number" line="202"><span class="token keyword">while</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
-</span><span class="code-line line-number" line="203">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>是否推送镜像到 Docker Hub？(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" PUSH_CHOICE
-</span></span><span class="code-line line-number" line="204"><span class="token string">    case "</span><span class="token variable">$PUSH_CHOICE</span><span class="token string">" in
-</span></span><span class="code-line line-number" line="205"><span class="token string">        [Yy]) break ;;
-</span></span><span class="code-line line-number" line="206"><span class="token string">        [Nn])
-</span></span><span class="code-line line-number" line="207"><span class="token string">            log_info "</span>已取消推送<span class="token string">"
-</span></span><span class="code-line line-number" line="208"><span class="token string">            exit_animation
-</span></span><span class="code-line line-number" line="209"><span class="token string">            exit 0
-</span></span><span class="code-line line-number" line="210"><span class="token string">            ;;
-</span></span><span class="code-line line-number" line="211"><span class="token string">        *) handle_y_n ;;
-</span></span><span class="code-line line-number" line="212"><span class="token string">    esac
-</span></span><span class="code-line line-number" line="213"><span class="token string">done
-</span></span><span class="code-line line-number" line="214"><span class="token string">
-</span></span><span class="code-line line-number" line="215"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span><span class="code-line line-number" line="154"><span class="token comment"># 如果传入了2个参数：第1个是目录，第2个是镜像名</span>
+</span><span class="code-line line-number" line="155"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-ge</span> <span class="token number">2</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="156">    <span class="token assign-left variable">INPUT_IMAGE</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$2</span>"</span>
+</span><span class="code-line line-number" line="157"><span class="token comment"># 如果只传入1个参数且不是目录：当作镜像名，目录使用当前目录</span>
+</span><span class="code-line line-number" line="158"><span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-eq</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="159">    <span class="token assign-left variable">INPUT_IMAGE</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
+</span><span class="code-line line-number" line="160">    <span class="token assign-left variable">WORK_DIR</span><span class="token operator">=</span><span class="token string">"."</span>
+</span><span class="code-line line-number" line="161"><span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="162">
+</span><span class="code-line line-number" line="163"><span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">${WORK_DIR}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="164">    log_error <span class="token string">"工作目录不存在：<span class="token variable">${WORK_DIR}</span>"</span>
+</span><span class="code-line line-number" line="165">    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="166"><span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="167">
+</span><span class="code-line line-number" line="168"><span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">${WORK_DIR}</span>"</span> <span class="token operator">||</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="169">    log_error <span class="token string">"无法进入工作目录：<span class="token variable">${WORK_DIR}</span>"</span>
+</span><span class="code-line line-number" line="170">    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="171"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="172">
+</span><span class="code-line line-number" line="173"><span class="token function">clear</span>
+</span><span class="code-line line-number" line="174"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> Docker 镜像构建与推送工具<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="175"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="176">log_info <span class="token string">"当前工作目录：<span class="token variable">${gl_lv}</span><span class="token variable">${<span class="token environment constant">PWD</span>}</span>"</span>
+</span><span class="code-line line-number" line="177">
+</span><span class="code-line line-number" line="178"><span class="token comment"># 传参则直接使用，否则交互式输入</span>
+</span><span class="code-line line-number" line="179"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">${INPUT_IMAGE}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="180">    log_info <span class="token string">"检测到传入镜像：<span class="token variable">${gl_lv}</span><span class="token variable">${INPUT_IMAGE}</span>"</span>
+</span><span class="code-line line-number" line="181">    <span class="token assign-left variable">FULL_IMAGE_INPUT</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${INPUT_IMAGE}</span>"</span>
+</span><span class="code-line line-number" line="182"><span class="token keyword">else</span>
+</span><span class="code-line line-number" line="183">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>请输入完整镜像名称(<span class="token variable">${gl_huang}</span>示例: mobufan/nginx:latest<span class="token variable">${gl_bai}</span>, 0返回): "</span><span class="token punctuation">)</span><span class="token string">" FULL_IMAGE_INPUT
+</span></span><span class="code-line line-number" line="184"><span class="token string">fi
+</span></span><span class="code-line line-number" line="185"><span class="token string">parse_full_image_name "</span><span class="token variable">$FULL_IMAGE_INPUT</span><span class="token string">"
+</span></span><span class="code-line line-number" line="186"><span class="token string"># ======================================================================
+</span></span><span class="code-line line-number" line="187"><span class="token string">
+</span></span><span class="code-line line-number" line="188"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="189"><span class="token string">log_info "</span>即将构建镜像：<span class="token variable">${gl_lv}</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="190"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="191"><span class="token string">
+</span></span><span class="code-line line-number" line="192"><span class="token string">log_info "</span>开始执行 <span class="token function">docker</span> build <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="193"><span class="token string">if docker build -t "</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">" .; then
+</span></span><span class="code-line line-number" line="194"><span class="token string">    log_ok "</span>镜像构建成功！<span class="token variable">${gl_lv}</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="195"><span class="token string">    list_beautify_docker_images "</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="196"><span class="token string">else
+</span></span><span class="code-line line-number" line="197"><span class="token string">    log_error "</span>镜像构建失败！<span class="token string">"
+</span></span><span class="code-line line-number" line="198"><span class="token string">    exit_animation
+</span></span><span class="code-line line-number" line="199"><span class="token string">    exit 1
+</span></span><span class="code-line line-number" line="200"><span class="token string">fi
+</span></span><span class="code-line line-number" line="201"><span class="token string">
+</span></span><span class="code-line line-number" line="202"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="203"><span class="token string">
+</span></span><span class="code-line line-number" line="204"><span class="token string">while true; do
+</span></span><span class="code-line line-number" line="205"><span class="token string">    read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>是否推送镜像到 Docker Hub？(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token variable">)</span></span><span class="token string">" PUSH_CHOICE
+</span></span><span class="code-line line-number" line="206"><span class="token string">    case "</span><span class="token variable">$PUSH_CHOICE</span><span class="token string">" in
+</span></span><span class="code-line line-number" line="207"><span class="token string">        [Yy]) break ;;
+</span></span><span class="code-line line-number" line="208"><span class="token string">        [Nn])
+</span></span><span class="code-line line-number" line="209"><span class="token string">            log_info "</span>已取消推送<span class="token string">"
+</span></span><span class="code-line line-number" line="210"><span class="token string">            exit_animation
+</span></span><span class="code-line line-number" line="211"><span class="token string">            exit 0
+</span></span><span class="code-line line-number" line="212"><span class="token string">            ;;
+</span></span><span class="code-line line-number" line="213"><span class="token string">        *) handle_y_n ;;
+</span></span><span class="code-line line-number" line="214"><span class="token string">    esac
+</span></span><span class="code-line line-number" line="215"><span class="token string">done
 </span></span><span class="code-line line-number" line="216"><span class="token string">
-</span></span><span class="code-line line-number" line="217"><span class="token string">if [[ -z "</span><span class="token variable">$DOCKER_USERNAME</span><span class="token string">" ]]; then
-</span></span><span class="code-line line-number" line="218"><span class="token string">    read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入 Docker Hub 用户名(<span class="token variable">${gl_huang}</span>0<span class="token variable">${gl_bai}</span>返回): "</span><span class="token variable">)</span></span><span class="token string">" DOCKER_USERNAME
-</span></span><span class="code-line line-number" line="219"><span class="token string">    [ "</span><span class="token variable">$DOCKER_USERNAME</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; exit_script
-</span></span><span class="code-line line-number" line="220"><span class="token string">    FULL_IMAGE_NAME="</span><span class="token variable">${DOCKER_USERNAME}</span>/<span class="token variable">${IMAGE_NAME}</span><span class="token builtin class-name">:</span><span class="token variable">${IMAGE_TAG}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="221"><span class="token string">fi
-</span></span><span class="code-line line-number" line="222"><span class="token string">
-</span></span><span class="code-line line-number" line="223"><span class="token string">log_info "</span>检查 Docker Hub 登录状态<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="224"><span class="token string">if ! docker info 2>/dev/null | grep -q "</span>Username: <span class="token variable">${DOCKER_USERNAME}</span><span class="token string">"; then
-</span></span><span class="code-line line-number" line="225"><span class="token string">    log_warn "</span>未登录用户 <span class="token variable">${DOCKER_USERNAME}</span>，开始登录<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="226"><span class="token string">    docker login -u "</span><span class="token variable">${DOCKER_USERNAME}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="227"><span class="token string">    if [ <span class="token variable">$?</span> -ne 0 ]; then
-</span></span><span class="code-line line-number" line="228"><span class="token string">        log_error "</span>登录失败！<span class="token string">"
-</span></span><span class="code-line line-number" line="229"><span class="token string">        exit_animation
-</span></span><span class="code-line line-number" line="230"><span class="token string">        exit 1
-</span></span><span class="code-line line-number" line="231"><span class="token string">    fi
-</span></span><span class="code-line line-number" line="232"><span class="token string">    log_ok "</span>登录成功！<span class="token string">"
-</span></span><span class="code-line line-number" line="233"><span class="token string">else
-</span></span><span class="code-line line-number" line="234"><span class="token string">    log_ok "</span>已登录用户：<span class="token variable">${gl_lv}</span><span class="token variable">${DOCKER_USERNAME}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="235"><span class="token string">fi
-</span></span><span class="code-line line-number" line="236"><span class="token string">
-</span></span><span class="code-line line-number" line="237"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="217"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="218"><span class="token string">
+</span></span><span class="code-line line-number" line="219"><span class="token string">if [[ -z "</span><span class="token variable">$DOCKER_USERNAME</span><span class="token string">" ]]; then
+</span></span><span class="code-line line-number" line="220"><span class="token string">    read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入 Docker Hub 用户名(<span class="token variable">${gl_huang}</span>0<span class="token variable">${gl_bai}</span>返回): "</span><span class="token variable">)</span></span><span class="token string">" DOCKER_USERNAME
+</span></span><span class="code-line line-number" line="221"><span class="token string">    [ "</span><span class="token variable">$DOCKER_USERNAME</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; exit_script
+</span></span><span class="code-line line-number" line="222"><span class="token string">    FULL_IMAGE_NAME="</span><span class="token variable">${DOCKER_USERNAME}</span>/<span class="token variable">${IMAGE_NAME}</span><span class="token builtin class-name">:</span><span class="token variable">${IMAGE_TAG}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="223"><span class="token string">fi
+</span></span><span class="code-line line-number" line="224"><span class="token string">
+</span></span><span class="code-line line-number" line="225"><span class="token string">log_info "</span>检查 Docker Hub 登录状态 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="226"><span class="token string">if ! docker info 2>/dev/null | grep -q "</span>Username: <span class="token variable">${DOCKER_USERNAME}</span><span class="token string">"; then
+</span></span><span class="code-line line-number" line="227"><span class="token string">    log_warn "</span>未登录用户 <span class="token variable">${DOCKER_USERNAME}</span>，开始登录 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="228"><span class="token string">    docker login -u "</span><span class="token variable">${DOCKER_USERNAME}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="229"><span class="token string">    if [ <span class="token variable">$?</span> -ne 0 ]; then
+</span></span><span class="code-line line-number" line="230"><span class="token string">        log_error "</span>登录失败！<span class="token string">"
+</span></span><span class="code-line line-number" line="231"><span class="token string">        exit_animation
+</span></span><span class="code-line line-number" line="232"><span class="token string">        exit 1
+</span></span><span class="code-line line-number" line="233"><span class="token string">    fi
+</span></span><span class="code-line line-number" line="234"><span class="token string">    log_ok "</span>登录成功！<span class="token string">"
+</span></span><span class="code-line line-number" line="235"><span class="token string">else
+</span></span><span class="code-line line-number" line="236"><span class="token string">    log_ok "</span>已登录用户：<span class="token variable">${gl_lv}</span><span class="token variable">${DOCKER_USERNAME}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="237"><span class="token string">fi
 </span></span><span class="code-line line-number" line="238"><span class="token string">
-</span></span><span class="code-line line-number" line="239"><span class="token string">while true; do
-</span></span><span class="code-line line-number" line="240"><span class="token string">    read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>确定推送 <span class="token variable">${gl_lv}</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token variable">${gl_bai}</span>？(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token variable">)</span></span><span class="token string">" CONFIRM
-</span></span><span class="code-line line-number" line="241"><span class="token string">    case "</span><span class="token variable">$CONFIRM</span><span class="token string">" in
-</span></span><span class="code-line line-number" line="242"><span class="token string">        [Yy])
-</span></span><span class="code-line line-number" line="243"><span class="token string">            log_info "</span>开始推送镜像<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="244"><span class="token string">            docker push "</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="245"><span class="token string">            if [ <span class="token variable">$?</span> -eq 0 ]; then
-</span></span><span class="code-line line-number" line="246"><span class="token string">                log_ok "</span>镜像推送成功！<span class="token string">"
-</span></span><span class="code-line line-number" line="247"><span class="token string">            else
-</span></span><span class="code-line line-number" line="248"><span class="token string">                log_error "</span>镜像推送失败！<span class="token string">"
-</span></span><span class="code-line line-number" line="249"><span class="token string">            fi
-</span></span><span class="code-line line-number" line="250"><span class="token string">            break
-</span></span><span class="code-line line-number" line="251"><span class="token string">            ;;
-</span></span><span class="code-line line-number" line="252"><span class="token string">        [Nn])
-</span></span><span class="code-line line-number" line="253"><span class="token string">            log_info "</span>已取消推送<span class="token string">"
-</span></span><span class="code-line line-number" line="254"><span class="token string">            exit_animation
-</span></span><span class="code-line line-number" line="255"><span class="token string">            exit 0
-</span></span><span class="code-line line-number" line="256"><span class="token string">            ;;
-</span></span><span class="code-line line-number" line="257"><span class="token string">        *) handle_y_n ;;
-</span></span><span class="code-line line-number" line="258"><span class="token string">    esac
-</span></span><span class="code-line line-number" line="259"><span class="token string">done
-</span></span><span class="code-line line-number" line="260"><span class="token string">
-</span></span><span class="code-line line-number" line="261"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"
-</span><span class="code-line line-number" line="262">break_end
+</span></span><span class="code-line line-number" line="239"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="240"><span class="token string">
+</span></span><span class="code-line line-number" line="241"><span class="token string">while true; do
+</span></span><span class="code-line line-number" line="242"><span class="token string">    read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>确定推送 <span class="token variable">${gl_lv}</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token variable">${gl_bai}</span>？(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token variable">)</span></span><span class="token string">" CONFIRM
+</span></span><span class="code-line line-number" line="243"><span class="token string">    case "</span><span class="token variable">$CONFIRM</span><span class="token string">" in
+</span></span><span class="code-line line-number" line="244"><span class="token string">        [Yy])
+</span></span><span class="code-line line-number" line="245"><span class="token string">            log_info "</span>开始推送镜像 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="246"><span class="token string">            docker push "</span><span class="token variable">${FULL_IMAGE_NAME}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="247"><span class="token string">            if [ <span class="token variable">$?</span> -eq 0 ]; then
+</span></span><span class="code-line line-number" line="248"><span class="token string">                log_ok "</span>镜像推送成功！<span class="token string">"
+</span></span><span class="code-line line-number" line="249"><span class="token string">            else
+</span></span><span class="code-line line-number" line="250"><span class="token string">                log_error "</span>镜像推送失败！<span class="token string">"
+</span></span><span class="code-line line-number" line="251"><span class="token string">            fi
+</span></span><span class="code-line line-number" line="252"><span class="token string">            break
+</span></span><span class="code-line line-number" line="253"><span class="token string">            ;;
+</span></span><span class="code-line line-number" line="254"><span class="token string">        [Nn])
+</span></span><span class="code-line line-number" line="255"><span class="token string">            log_info "</span>已取消推送<span class="token string">"
+</span></span><span class="code-line line-number" line="256"><span class="token string">            exit_animation
+</span></span><span class="code-line line-number" line="257"><span class="token string">            exit 0
+</span></span><span class="code-line line-number" line="258"><span class="token string">            ;;
+</span></span><span class="code-line line-number" line="259"><span class="token string">        *) handle_y_n ;;
+</span></span><span class="code-line line-number" line="260"><span class="token string">    esac
+</span></span><span class="code-line line-number" line="261"><span class="token string">done
+</span></span><span class="code-line line-number" line="262"><span class="token string">
+</span></span><span class="code-line line-number" line="263"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"
+</span><span class="code-line line-number" line="264">break_end
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -euo pipefail
 
@@ -1552,7 +1554,7 @@ handle_y_n() {
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1560,9 +1562,9 @@ break_end() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1571,7 +1573,7 @@ exit_script() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1640,12 +1642,16 @@ parse_full_image_name() {
     FULL_IMAGE_NAME=&#x22;$full_name&#x22;
 }
 
+# ===================== 核心修改：支持传参完整镜像名 =====================
+# 第一个参数：工作目录（默认当前）
+# 第二个参数：完整镜像名（可选）
 WORK_DIR=&#x22;${1:-.}&#x22;
 INPUT_IMAGE=&#x22;&#x22;
 
+# 如果传入了2个参数：第1个是目录，第2个是镜像名
 if [[ $# -ge 2 ]]; then
     INPUT_IMAGE=&#x22;$2&#x22;
-
+# 如果只传入1个参数且不是目录：当作镜像名，目录使用当前目录
 elif [[ $# -eq 1 ]] &#x26;&#x26; [[ ! -d &#x22;$1&#x22; ]]; then
     INPUT_IMAGE=&#x22;$1&#x22;
     WORK_DIR=&#x22;.&#x22;
@@ -1666,6 +1672,7 @@ echo -e &#x22;${gl_zi}>>> Docker 镜像构建与推送工具${gl_bai}&#x22;
 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 log_info &#x22;当前工作目录：${gl_lv}${PWD}&#x22;
 
+# 传参则直接使用，否则交互式输入
 if [[ -n &#x22;${INPUT_IMAGE}&#x22; ]]; then
     log_info &#x22;检测到传入镜像：${gl_lv}${INPUT_IMAGE}&#x22;
     FULL_IMAGE_INPUT=&#x22;${INPUT_IMAGE}&#x22;
@@ -1673,19 +1680,16 @@ else
     read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请输入完整镜像名称(${gl_huang}示例: mobufan/nginx:latest${gl_bai}, 0返回): &#x22;)&#x22; FULL_IMAGE_INPUT
 fi
 parse_full_image_name &#x22;$FULL_IMAGE_INPUT&#x22;
+# ======================================================================
 
 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 log_info &#x22;即将构建镜像：${gl_lv}${FULL_IMAGE_NAME}&#x22;
 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
-log_info &#x22;开始执行 docker build${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+log_info &#x22;开始执行 docker build ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 if docker build -t &#x22;${FULL_IMAGE_NAME}&#x22; .; then
     log_ok &#x22;镜像构建成功！${gl_lv}${FULL_IMAGE_NAME}&#x22;
-    echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 镜像详情${gl_bai}&#x22;
-    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     list_beautify_docker_images &#x22;${FULL_IMAGE_NAME}&#x22;
-    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 else
     log_error &#x22;镜像构建失败！&#x22;
     exit_animation
@@ -1715,9 +1719,9 @@ if [[ -z &#x22;$DOCKER_USERNAME&#x22; ]]; then
     FULL_IMAGE_NAME=&#x22;${DOCKER_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG}&#x22;
 fi
 
-log_info &#x22;检查 Docker Hub 登录状态${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+log_info &#x22;检查 Docker Hub 登录状态 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 if ! docker info 2>/dev/null | grep -q &#x22;Username: ${DOCKER_USERNAME}&#x22;; then
-    log_warn &#x22;未登录用户 ${DOCKER_USERNAME}，开始登录${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_warn &#x22;未登录用户 ${DOCKER_USERNAME}，开始登录 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     docker login -u &#x22;${DOCKER_USERNAME}&#x22;
     if [ $? -ne 0 ]; then
         log_error &#x22;登录失败！&#x22;
@@ -1735,7 +1739,7 @@ while true; do
     read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}确定推送 ${gl_lv}${FULL_IMAGE_NAME}${gl_bai}？(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; CONFIRM
     case &#x22;$CONFIRM&#x22; in
         [Yy])
-            log_info &#x22;开始推送镜像${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;开始推送镜像 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             docker push &#x22;${FULL_IMAGE_NAME}&#x22;
             if [ $? -eq 0 ]; then
                 log_ok &#x22;镜像推送成功！&#x22;
@@ -1979,8 +1983,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

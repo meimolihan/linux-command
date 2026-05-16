@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="pve_install_sr-iov 命令">
     <meta name="twitter:description" content="专为 PVE 系统打造的 SR-IOV 一键管理脚本 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1280,9 +1280,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="48">
 </span><span class="code-line line-number" line="49"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="50">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="51">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="51">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="52">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="53">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="53">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="54">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="55">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="56">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1291,16 +1291,16 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="59"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="61">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="62">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="62">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="63">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="64">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="65"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="66">
 </span><span class="code-line line-number" line="67"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="68">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="69">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="69">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="70">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="71">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="71">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="72">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="73">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="74">    <span class="token function">clear</span>
@@ -1508,7 +1508,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="276">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>重启后新内核生效，立即重启吗? (<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" confirm
 </span></span><span class="code-line line-number" line="277"><span class="token string">    case "</span><span class="token variable">$confirm</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="278"><span class="token string">    [yY])
-</span></span><span class="code-line line-number" line="279"><span class="token string">        log_info "</span>系统将在 <span class="token number">3</span> 秒后重启<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="279"><span class="token string">        log_info "</span>系统将在 <span class="token number">3</span> 秒后重启 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="280"><span class="token string">        sleep_fractional 3
 </span></span><span class="code-line line-number" line="281"><span class="token string">        reboot
 </span></span><span class="code-line line-number" line="282"><span class="token string">        ;;
@@ -1582,7 +1582,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="350"><span class="token string">    install jq curl wget
 </span></span><span class="code-line line-number" line="351"><span class="token string">    clear
 </span></span><span class="code-line line-number" line="352"><span class="token string">    echo -e "</span>"
-</span><span class="code-line line-number" line="353">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>当前内核的头文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
+</span><span class="code-line line-number" line="353">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>当前内核的头文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
 </span><span class="code-line line-number" line="354">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="355">    <span class="token function">apt</span> update
 </span><span class="code-line line-number" line="356">    <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token string">"pve-headers-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-r</span><span class="token variable">)</span></span>"</span> <span class="token operator">||</span>
@@ -1594,7 +1594,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="362">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="363">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="364">
-</span><span class="code-line line-number" line="365">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>正在检测 GitHub 最新版本<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
+</span><span class="code-line line-number" line="365">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>正在检测 GitHub 最新版本 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
 </span><span class="code-line line-number" line="366">    <span class="token assign-left variable">API</span><span class="token operator">=</span><span class="token string">"https://api.github.com/repos/strongtz/i915-sriov-dkms/releases/latest"</span>
 </span><span class="code-line line-number" line="367">    <span class="token assign-left variable">VER</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> <span class="token string">"<span class="token variable">$API</span>"</span> <span class="token operator">|</span> jq <span class="token parameter variable">-r</span> .tag_name<span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="368">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token variable">$VER</span> <span class="token operator">||</span> <span class="token variable">$VER</span> <span class="token operator">==</span> <span class="token string">"null"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -1648,7 +1648,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="416"><span class="token function-name function">update_initramfs_and_reboot</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="417">    is_pve_system <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
 </span><span class="code-line line-number" line="418">
-</span><span class="code-line line-number" line="419">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>正在更新 initramfs<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
+</span><span class="code-line line-number" line="419">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>正在更新 initramfs <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
 </span><span class="code-line line-number" line="420">    update-initramfs <span class="token parameter variable">-u</span> <span class="token parameter variable">-k</span> all <span class="token operator">||</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="421">        log_error <span class="token string">"update-initramfs 失败！"</span>
 </span><span class="code-line line-number" line="422">        exit_animation
@@ -1660,7 +1660,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="428">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>需要重启生效，立即重启? (<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" confirm
 </span></span><span class="code-line line-number" line="429"><span class="token string">    case "</span><span class="token variable">$confirm</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="430"><span class="token string">    [yY])
-</span></span><span class="code-line line-number" line="431"><span class="token string">        log_info "</span><span class="token variable">${gl_lv}</span>系统将在 <span class="token number">3</span> 秒后重启<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="431"><span class="token string">        log_info "</span><span class="token variable">${gl_lv}</span>系统将在 <span class="token number">3</span> 秒后重启 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="432"><span class="token string">        exit_animation
 </span></span><span class="code-line line-number" line="433"><span class="token string">        reboot
 </span></span><span class="code-line line-number" line="434"><span class="token string">        ;;
@@ -1676,7 +1676,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="444"><span class="token string">    is_pve_system || return 1
 </span></span><span class="code-line line-number" line="445"><span class="token string">
 </span></span><span class="code-line line-number" line="446"><span class="token string">    echo -e "</span>"
-</span><span class="code-line line-number" line="447">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 正在扫描 Intel i915 PF / VF 设备<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
+</span><span class="code-line line-number" line="447">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 正在扫描 Intel i915 PF / VF 设备 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token variable">${gl_hui}</span>"</span>
 </span><span class="code-line line-number" line="448">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="449">
 </span><span class="code-line line-number" line="450">    <span class="token assign-left variable">pf_list</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>lspci <span class="token parameter variable">-nn</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-i</span> <span class="token string">'HD Graphics'</span><span class="token variable">)</span></span>
@@ -1828,9 +1828,9 @@ handle_invalid_input() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1839,16 +1839,16 @@ exit_script() {
 exit_animation() {
     echo -ne &#x22;\r${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
 }
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -2056,7 +2056,7 @@ reboot_for_new_kernel() {
     read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}重启后新内核生效，立即重启吗? (${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; confirm
     case &#x22;$confirm&#x22; in
     [yY])
-        log_info &#x22;系统将在 3 秒后重启${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;系统将在 3 秒后重启 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         sleep_fractional 3
         reboot
         ;;
@@ -2130,7 +2130,7 @@ install_i915_sriov_driver() {
     install jq curl wget
     clear
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_bai}当前内核的头文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
+    echo -e &#x22;${gl_bai}当前内核的头文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     apt update
     apt install -y &#x22;pve-headers-$(uname -r)&#x22; ||
@@ -2142,7 +2142,7 @@ install_i915_sriov_driver() {
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     echo -e &#x22;&#x22;
 
-    echo -e &#x22;${gl_bai}正在检测 GitHub 最新版本${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
+    echo -e &#x22;${gl_bai}正在检测 GitHub 最新版本 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
     API=&#x22;https://api.github.com/repos/strongtz/i915-sriov-dkms/releases/latest&#x22;
     VER=$(curl -s &#x22;$API&#x22; | jq -r .tag_name)
     if [[ -z $VER || $VER == &#x22;null&#x22; ]]; then
@@ -2196,7 +2196,7 @@ install_i915_sriov_driver() {
 update_initramfs_and_reboot() {
     is_pve_system || return 1
 
-    echo -e &#x22;${gl_bai}正在更新 initramfs${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
+    echo -e &#x22;${gl_bai}正在更新 initramfs ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
     update-initramfs -u -k all || {
         log_error &#x22;update-initramfs 失败！&#x22;
         exit_animation
@@ -2208,7 +2208,7 @@ update_initramfs_and_reboot() {
     read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}需要重启生效，立即重启? (${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; confirm
     case &#x22;$confirm&#x22; in
     [yY])
-        log_info &#x22;${gl_lv}系统将在 3 秒后重启${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;${gl_lv}系统将在 3 秒后重启 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         exit_animation
         reboot
         ;;
@@ -2224,7 +2224,7 @@ check_sriov_status() {
     is_pve_system || return 1
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 正在扫描 Intel i915 PF / VF 设备${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
+    echo -e &#x22;${gl_huang}>>> 正在扫描 Intel i915 PF / VF 设备 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}${gl_hui}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     pf_list=$(lspci -nn | grep -i &#x27;HD Graphics&#x27;)
@@ -2550,8 +2550,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_batch_del_dir 命令">
     <meta name="twitter:description" content="Linux 批量递归删除指定目录下的指定名称的文件夹工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1207,7 +1207,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_batch_del
 </span><span class="code-line line-number" line="21">
 </span><span class="code-line line-number" line="22"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="23">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="25">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="26">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="27">    <span class="token function">clear</span>
@@ -1234,7 +1234,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_batch_del
 </span><span class="code-line line-number" line="48">log_info <span class="token string">"要删除的文件夹: <span class="token variable">${gl_lv}</span><span class="token variable">${DEL_DIR}</span><span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="49"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="50">
-</span><span class="code-line line-number" line="51">log_info <span class="token string">"正在扫描并预览匹配项<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="51">log_info <span class="token string">"正在扫描并预览匹配项 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="52"><span class="token builtin class-name">mapfile</span> <span class="token parameter variable">-t</span> RESULT <span class="token operator">&#x3C;</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">find</span> <span class="token string">"<span class="token variable">${SCAN_DIR}</span>"</span> <span class="token parameter variable">-type</span> d <span class="token parameter variable">-name</span> <span class="token string">"<span class="token variable">${DEL_DIR}</span>"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="53"><span class="token assign-left variable">COUNT</span><span class="token operator">=</span><span class="token variable">${<span class="token operator">#</span>RESULT<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>
 </span><span class="code-line line-number" line="54">
@@ -1254,18 +1254,19 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_batch_del
 </span><span class="code-line line-number" line="68"><span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>确定删除以上所有目录？(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" choice
 </span></span><span class="code-line line-number" line="69"><span class="token string">case "</span><span class="token variable">${choice}</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="70"><span class="token string">    [Yy])
-</span></span><span class="code-line line-number" line="71"><span class="token string">        log_warn "</span>正在删除，请稍候<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="72"><span class="token string">        for dir in "</span><span class="token variable">${RESULT<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span><span class="token string">"; do
-</span></span><span class="code-line line-number" line="73"><span class="token string">            rm -rf "</span><span class="token variable">${dir}</span><span class="token string">" &#x26;&#x26; log_info "</span>已删除: <span class="token variable">${dir}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="74"><span class="token string">        done
-</span></span><span class="code-line line-number" line="75"><span class="token string">        log_ok "</span>删除完成，共删除 <span class="token variable">${COUNT}</span> 个目录<span class="token string">"
-</span></span><span class="code-line line-number" line="76"><span class="token string">        ;;
-</span></span><span class="code-line line-number" line="77"><span class="token string">    [Nn]|*)
-</span></span><span class="code-line line-number" line="78"><span class="token string">        log_warn "</span>已取消删除操作<span class="token string">"
-</span></span><span class="code-line line-number" line="79"><span class="token string">        ;;
-</span></span><span class="code-line line-number" line="80"><span class="token string">esac
-</span></span><span class="code-line line-number" line="81"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"
-</span><span class="code-line line-number" line="82">break_end
+</span></span><span class="code-line line-number" line="71"><span class="token string">        log_warn "</span>正在删除，请稍候 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="72"><span class="token string">        # 修复：使用 rm -rf 递归强制删除非空目录，替代无法删除非空目录的 find -delete
+</span></span><span class="code-line line-number" line="73"><span class="token string">        for dir in "</span><span class="token variable">${RESULT<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span><span class="token string">"; do
+</span></span><span class="code-line line-number" line="74"><span class="token string">            rm -rf "</span><span class="token variable">${dir}</span><span class="token string">" &#x26;&#x26; log_info "</span>已删除: <span class="token variable">${dir}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="75"><span class="token string">        done
+</span></span><span class="code-line line-number" line="76"><span class="token string">        log_ok "</span>删除完成，共删除 <span class="token variable">${COUNT}</span> 个目录<span class="token string">"
+</span></span><span class="code-line line-number" line="77"><span class="token string">        ;;
+</span></span><span class="code-line line-number" line="78"><span class="token string">    [Nn]|*)
+</span></span><span class="code-line line-number" line="79"><span class="token string">        log_warn "</span>已取消删除操作<span class="token string">"
+</span></span><span class="code-line line-number" line="80"><span class="token string">        ;;
+</span></span><span class="code-line line-number" line="81"><span class="token string">esac
+</span></span><span class="code-line line-number" line="82"><span class="token string">echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"
+</span><span class="code-line line-number" line="83">break_end
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -euo pipefail
 
@@ -1289,7 +1290,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1316,7 +1317,7 @@ log_info &#x22;开始扫描目录: ${gl_huang}${SCAN_DIR}${gl_bai}&#x22;
 log_info &#x22;要删除的文件夹: ${gl_lv}${DEL_DIR}${gl_bai}&#x22;
 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
-log_info &#x22;正在扫描并预览匹配项${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+log_info &#x22;正在扫描并预览匹配项 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 mapfile -t RESULT < <(find &#x22;${SCAN_DIR}&#x22; -type d -name &#x22;${DEL_DIR}&#x22; 2>/dev/null)
 COUNT=${#RESULT[@]}
 
@@ -1336,7 +1337,8 @@ echo -e &#x22;${gl_bufan}——————————————————�
 read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}确定删除以上所有目录？(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; choice
 case &#x22;${choice}&#x22; in
     [Yy])
-        log_warn &#x22;正在删除，请稍候${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_warn &#x22;正在删除，请稍候 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        # 修复：使用 rm -rf 递归强制删除非空目录，替代无法删除非空目录的 find -delete
         for dir in &#x22;${RESULT[@]}&#x22;; do
             rm -rf &#x22;${dir}&#x22; &#x26;&#x26; log_info &#x22;已删除: ${dir}&#x22;
         done
@@ -1577,8 +1579,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="batch_replace 命令">
     <meta name="twitter:description" content="Linux 递归批量替换指定类型文件中的字符串 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1252,7 +1252,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="35">
 </span><span class="code-line line-number" line="36"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="37">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="39">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="40">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="41">    <span class="token function">clear</span>
@@ -1260,9 +1260,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="43">
 </span><span class="code-line line-number" line="44"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="45">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="46">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="46">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="47">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="48">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="48">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="49">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="50">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="51">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1271,7 +1271,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="54"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="55">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="56">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="57">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="57">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="58">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="59">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="60">    <span class="token function">clear</span>
@@ -1289,7 +1289,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="72">
 </span><span class="code-line line-number" line="73"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="74">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="75">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="75">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="76">    <span class="token function">sleep</span> <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="77">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="78">    <span class="token function">clear</span>
@@ -1303,105 +1303,104 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="86">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="87">    log_info <span class="token string">"使用模式："</span>
 </span><span class="code-line line-number" line="88">    log_info <span class="token string">"  1. 交互模式：按提示输入 旧字符串、新字符串、文件类型"</span>
-</span><span class="code-line line-number" line="89">    log_info <span class="token string">"  2. 传参模式：./脚本.sh 旧字符串 新字符串 文件类型"</span>
+</span><span class="code-line line-number" line="89">    log_info <span class="token string">"  2. 传参模式：./脚本.sh <span class="token entity" title="\&#x22;">\"</span>旧字符串<span class="token entity" title="\&#x22;">\"</span> <span class="token entity" title="\&#x22;">\"</span>新字符串<span class="token entity" title="\&#x22;">\"</span> 文件类型"</span>
 </span><span class="code-line line-number" line="90">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="91">    log_info <span class="token string">"使用示例："</span>
-</span><span class="code-line line-number" line="92">    log_info <span class="token string">"  1. 替换 sh/md 文件：./replace.sh old new"</span>
-</span><span class="code-line line-number" line="93">    log_info <span class="token string">"  2. 替换 txt/py 文件：./replace.sh old new txt py"</span>
-</span><span class="code-line line-number" line="94">    log_info <span class="token string">"  3. 替换所有类型：./replace.sh old new sh md txt py js html"</span>
-</span><span class="code-line line-number" line="95">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="96">    log_info <span class="token string">"支持特性："</span>
-</span><span class="code-line line-number" line="97">    log_info <span class="token string">"  - 兼容 Linux/macOS 系统"</span>
-</span><span class="code-line line-number" line="98">    log_info <span class="token string">"  - 支持任意特殊字符，无需转义"</span>
-</span><span class="code-line line-number" line="99">    log_info <span class="token string">"  - 自定义文件类型，空格分隔"</span>
-</span><span class="code-line line-number" line="100">    log_info <span class="token string">"  - 替换前二次确认，防止误操作"</span>
-</span><span class="code-line line-number" line="101">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="102">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="103"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="104">
-</span><span class="code-line line-number" line="105"><span class="token function-name function">batch_replace_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="106">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="107">    show_help
-</span><span class="code-line line-number" line="108">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 批量字符串替换工具<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="109">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="92">    log_info <span class="token string">"  ./replace.sh <span class="token entity" title="\&#x22;">\"</span>old str<span class="token entity" title="\&#x22;">\"</span> <span class="token entity" title="\&#x22;">\"</span>new str<span class="token entity" title="\&#x22;">\"</span> sh md"</span>
+</span><span class="code-line line-number" line="93">    log_info <span class="token string">"  带 $ / 空格 必须加双引号！"</span>
+</span><span class="code-line line-number" line="94">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="95">    log_info <span class="token string">"支持特性："</span>
+</span><span class="code-line line-number" line="96">    log_info <span class="token string">"  - 兼容 Linux/macOS 系统"</span>
+</span><span class="code-line line-number" line="97">    log_info <span class="token string">"  - 支持空格、$、/、&#x26; 等所有特殊字符"</span>
+</span><span class="code-line line-number" line="98">    log_info <span class="token string">"  - 替换前二次确认，防止误操作"</span>
+</span><span class="code-line line-number" line="99">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="100">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="101"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="102">
+</span><span class="code-line line-number" line="103"><span class="token function-name function">batch_replace_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="104">    <span class="token function">clear</span>
+</span><span class="code-line line-number" line="105">    show_help
+</span><span class="code-line line-number" line="106">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 批量字符串替换工具<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="107">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="108">
+</span><span class="code-line line-number" line="109">    <span class="token builtin class-name">local</span> OLD_STR NEW_STR FILE_TYPES
 </span><span class="code-line line-number" line="110">
-</span><span class="code-line line-number" line="111">    <span class="token builtin class-name">local</span> OLD_STR NEW_STR FILE_TYPES
-</span><span class="code-line line-number" line="112">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-ge</span> <span class="token number">2</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="113">        <span class="token assign-left variable">OLD_STR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
-</span><span class="code-line line-number" line="114">        <span class="token assign-left variable">NEW_STR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$2</span>"</span>
-</span><span class="code-line line-number" line="115">        <span class="token assign-left variable">FILE_TYPES</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${3<span class="token operator">:-</span>sh}</span>"</span>
-</span><span class="code-line line-number" line="116">        log_info <span class="token string">"已通过命令行传参获取配置"</span>
-</span><span class="code-line line-number" line="117">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="118">        <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>请输入要替换的旧字符串(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): "</span><span class="token punctuation">)</span><span class="token string">" OLD_STR
-</span></span><span class="code-line line-number" line="119"><span class="token string">        [ "</span><span class="token variable">$OLD_STR</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; { exit_script; }
-</span></span><span class="code-line line-number" line="120"><span class="token string">
-</span></span><span class="code-line line-number" line="121"><span class="token string">        read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入替换后的新字符串(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): "</span><span class="token variable">)</span></span><span class="token string">" NEW_STR
-</span></span><span class="code-line line-number" line="122"><span class="token string">        [ "</span><span class="token variable">$NEW_STR</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; { exit_script; }
-</span></span><span class="code-line line-number" line="123"><span class="token string">
-</span></span><span class="code-line line-number" line="124"><span class="token string">        read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入要处理的文件后缀(<span class="token variable">${gl_huang}</span>空格分隔，默认：sh<span class="token variable">${gl_bai}</span>)(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): "</span><span class="token variable">)</span></span><span class="token string">" FILE_TYPES
-</span></span><span class="code-line line-number" line="125"><span class="token string">        [ "</span><span class="token variable">$FILE_TYPES</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; { exit_script; }
-</span></span><span class="code-line line-number" line="126"><span class="token string">        FILE_TYPES=<span class="token variable">${FILE_TYPES<span class="token operator">:-</span>sh md}</span>
-</span></span><span class="code-line line-number" line="127"><span class="token string">    fi
-</span></span><span class="code-line line-number" line="128"><span class="token string">
-</span></span><span class="code-line line-number" line="129"><span class="token string">    if [[ -z "</span><span class="token variable">${OLD_STR}</span><span class="token string">" || -z "</span><span class="token variable">${NEW_STR}</span><span class="token string">" ]]; then
-</span></span><span class="code-line line-number" line="130"><span class="token string">        log_error "</span>旧字符串和新字符串不能为空，请重新操作！<span class="token string">"
-</span></span><span class="code-line line-number" line="131"><span class="token string">        sleep_fractional 1.5
-</span></span><span class="code-line line-number" line="132"><span class="token string">        batch_replace_str
-</span></span><span class="code-line line-number" line="133"><span class="token string">        return 1
-</span></span><span class="code-line line-number" line="134"><span class="token string">    fi
-</span></span><span class="code-line line-number" line="135"><span class="token string">
-</span></span><span class="code-line line-number" line="136"><span class="token string">    echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="137"><span class="token string">    log_info "</span>替换配置预览<span class="token string">"
-</span></span><span class="code-line line-number" line="138"><span class="token string">    log_info "</span>旧内容：<span class="token variable">${gl_huang}</span><span class="token variable">${OLD_STR}</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="139"><span class="token string">    log_info "</span>新内容：<span class="token variable">${gl_lv}</span><span class="token variable">${NEW_STR}</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="140"><span class="token string">    log_info "</span>处理文件类型：<span class="token variable">${gl_lan}</span><span class="token variable">${FILE_TYPES}</span><span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="141"><span class="token string">    log_warn "</span>替换范围：当前目录及子目录下匹配的文件<span class="token string">"
-</span></span><span class="code-line line-number" line="142"><span class="token string">    log_warn "</span>替换模式：全局替换（所有匹配项都会被替换）<span class="token string">"
+</span><span class="code-line line-number" line="111">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-ge</span> <span class="token number">2</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="112">        <span class="token assign-left variable">OLD_STR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
+</span><span class="code-line line-number" line="113">        <span class="token assign-left variable">NEW_STR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$2</span>"</span>
+</span><span class="code-line line-number" line="114">        <span class="token builtin class-name">shift</span> <span class="token number">2</span>
+</span><span class="code-line line-number" line="115">        <span class="token assign-left variable">FILE_TYPES</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$*</span>"</span>
+</span><span class="code-line line-number" line="116">        <span class="token assign-left variable">FILE_TYPES</span><span class="token operator">=</span><span class="token variable">${FILE_TYPES<span class="token operator">:-</span>"sh md"}</span>
+</span><span class="code-line line-number" line="117">        log_info <span class="token string">"已通过命令行传参获取配置"</span>
+</span><span class="code-line line-number" line="118">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="119">        <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>请输入要替换的旧字符串(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): "</span><span class="token punctuation">)</span><span class="token string">" OLD_STR
+</span></span><span class="code-line line-number" line="120"><span class="token string">        [ "</span><span class="token variable">$OLD_STR</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; { exit_script; }
+</span></span><span class="code-line line-number" line="121"><span class="token string">
+</span></span><span class="code-line line-number" line="122"><span class="token string">        read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入替换后的新字符串(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): "</span><span class="token variable">)</span></span><span class="token string">" NEW_STR
+</span></span><span class="code-line line-number" line="123"><span class="token string">        [ "</span><span class="token variable">$NEW_STR</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; { exit_script; }
+</span></span><span class="code-line line-number" line="124"><span class="token string">
+</span></span><span class="code-line line-number" line="125"><span class="token string">        read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请输入要处理的文件后缀(<span class="token variable">${gl_huang}</span>空格分隔，默认：sh md<span class="token variable">${gl_bai}</span>)(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): "</span><span class="token variable">)</span></span><span class="token string">" FILE_TYPES
+</span></span><span class="code-line line-number" line="126"><span class="token string">        [ "</span><span class="token variable">$FILE_TYPES</span><span class="token string">" = "</span><span class="token number">0</span><span class="token string">" ] &#x26;&#x26; { exit_script; }
+</span></span><span class="code-line line-number" line="127"><span class="token string">        FILE_TYPES=${FILE_TYPES:-"</span><span class="token function">sh</span> md<span class="token string">"}
+</span></span><span class="code-line line-number" line="128"><span class="token string">    fi
+</span></span><span class="code-line line-number" line="129"><span class="token string">
+</span></span><span class="code-line line-number" line="130"><span class="token string">    if [[ -z "</span><span class="token variable">${OLD_STR}</span><span class="token string">" || -z "</span><span class="token variable">${NEW_STR}</span><span class="token string">" ]]; then
+</span></span><span class="code-line line-number" line="131"><span class="token string">        log_error "</span>旧字符串和新字符串不能为空，请重新操作！<span class="token string">"
+</span></span><span class="code-line line-number" line="132"><span class="token string">        sleep_fractional 1.5
+</span></span><span class="code-line line-number" line="133"><span class="token string">        batch_replace_str
+</span></span><span class="code-line line-number" line="134"><span class="token string">        return 1
+</span></span><span class="code-line line-number" line="135"><span class="token string">    fi
+</span></span><span class="code-line line-number" line="136"><span class="token string">
+</span></span><span class="code-line line-number" line="137"><span class="token string">    echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="138"><span class="token string">    log_info "</span>替换配置预览<span class="token string">"
+</span></span><span class="code-line line-number" line="139"><span class="token string">    log_info "</span>旧内容：<span class="token variable">${gl_huang}</span><span class="token variable">${OLD_STR}</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="140"><span class="token string">    log_info "</span>新内容：<span class="token variable">${gl_lv}</span><span class="token variable">${NEW_STR}</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="141"><span class="token string">    log_info "</span>处理文件类型：<span class="token variable">${gl_lan}</span><span class="token variable">${FILE_TYPES}</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="142"><span class="token string">    log_warn "</span>替换范围：当前目录及子目录<span class="token string">"
 </span></span><span class="code-line line-number" line="143"><span class="token string">
 </span></span><span class="code-line line-number" line="144"><span class="token string">    read -r -e -p "</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>是否确认执行替换?(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token variable">)</span></span><span class="token string">" choice
 </span></span><span class="code-line line-number" line="145"><span class="token string">    case "</span><span class="token variable">${choice}</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="146"><span class="token string">        [Yy])
-</span></span><span class="code-line line-number" line="147"><span class="token string">            log_info "</span>开始执行批量替换，请稍候<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="147"><span class="token string">            log_info "</span>开始执行批量替换，请稍候 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="148"><span class="token string">            
-</span></span><span class="code-line line-number" line="149"><span class="token string">            local sed_i=(-i)
+</span></span><span class="code-line line-number" line="149"><span class="token string">            local sed_cmd=("</span><span class="token function">sed</span><span class="token string">")
 </span></span><span class="code-line line-number" line="150"><span class="token string">            if [[ "</span><span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-s</span><span class="token variable">)</span></span><span class="token string">" == "</span>Darwin<span class="token string">" ]]; then
-</span></span><span class="code-line line-number" line="151"><span class="token string">                sed_i=(-i "</span>"<span class="token punctuation">)</span>
-</span><span class="code-line line-number" line="152">                log_info <span class="token string">"检测到 macOS 系统，自动适配 sed 语法"</span>
-</span><span class="code-line line-number" line="153">            <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="154">
-</span><span class="code-line line-number" line="155">            <span class="token keyword">for</span> <span class="token for-or-select variable">ext</span> <span class="token keyword">in</span> <span class="token variable">$FILE_TYPES</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
-</span><span class="code-line line-number" line="156">                <span class="token assign-left variable">ext</span><span class="token operator">=</span><span class="token variable">${ext<span class="token operator">#</span>.}</span>
-</span><span class="code-line line-number" line="157">                <span class="token assign-left variable">count</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-name</span> <span class="token string">"*.<span class="token variable">${ext}</span>"</span> <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span> <span class="token operator">|</span> <span class="token function">tr</span> <span class="token parameter variable">-d</span> <span class="token string">' '</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="158">                <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$count</span>"</span> <span class="token parameter variable">-gt</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="159">                    <span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-name</span> <span class="token string">"*.<span class="token variable">${ext}</span>"</span> <span class="token parameter variable">-exec</span> <span class="token function">sed</span> <span class="token string">"<span class="token variable">${sed_i<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span> <span class="token string">"s#<span class="token variable">${OLD_STR}</span>#<span class="token variable">${NEW_STR}</span>#g"</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> +
-</span><span class="code-line line-number" line="160">                    log_ok <span class="token string">"已处理 <span class="token variable">${count}</span> 个 .<span class="token variable">${ext}</span> 文件"</span>
-</span><span class="code-line line-number" line="161">                <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="162">                    log_warn <span class="token string">"未找到 .<span class="token variable">${ext}</span> 文件，跳过该类型"</span>
-</span><span class="code-line line-number" line="163">                <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="164">            <span class="token keyword">done</span>
-</span><span class="code-line line-number" line="165">
-</span><span class="code-line line-number" line="166">            log_ok <span class="token string">"✅ 批量替换操作全部完成！"</span>
-</span><span class="code-line line-number" line="167">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="168">        <span class="token punctuation">[</span>Nn<span class="token punctuation">]</span><span class="token punctuation">)</span>
-</span><span class="code-line line-number" line="169">            log_warn <span class="token string">"已取消替换操作"</span>
-</span><span class="code-line line-number" line="170">            sleep_fractional <span class="token number">1</span>
-</span><span class="code-line line-number" line="171">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="172">        *<span class="token punctuation">)</span>
-</span><span class="code-line line-number" line="173">            handle_y_n
-</span><span class="code-line line-number" line="174">            batch_replace_str
-</span><span class="code-line line-number" line="175">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="176">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="177">    <span class="token keyword">esac</span>
-</span><span class="code-line line-number" line="178">
-</span><span class="code-line line-number" line="179">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="180">    break_end
-</span><span class="code-line line-number" line="181"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="182">
-</span><span class="code-line line-number" line="183"><span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-ge</span> <span class="token number">2</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="184">    batch_replace_str <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token string">"<span class="token variable">$2</span>"</span> <span class="token string">"<span class="token variable">${*<span class="token operator">:</span>3}</span>"</span>
-</span><span class="code-line line-number" line="185"><span class="token keyword">else</span>
-</span><span class="code-line line-number" line="186">    batch_replace_str
-</span><span class="code-line line-number" line="187"><span class="token keyword">fi</span>
+</span></span><span class="code-line line-number" line="151"><span class="token string">                sed_cmd+=(-i "</span>"<span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="152">                log_info <span class="token string">"检测到 macOS 系统"</span>
+</span><span class="code-line line-number" line="153">            <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="154">                <span class="token assign-left variable">sed_cmd</span><span class="token operator">+=</span><span class="token punctuation">(</span>-i<span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="155">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="156">
+</span><span class="code-line line-number" line="157">            <span class="token keyword">for</span> <span class="token for-or-select variable">ext</span> <span class="token keyword">in</span> <span class="token variable">$FILE_TYPES</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+</span><span class="code-line line-number" line="158">                <span class="token assign-left variable">ext</span><span class="token operator">=</span><span class="token variable">${ext<span class="token operator">#</span>.}</span>
+</span><span class="code-line line-number" line="159">                <span class="token assign-left variable">file_list</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-name</span> <span class="token string">"*.<span class="token variable">${ext}</span>"</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="160">                <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$file_list</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="161">                    <span class="token assign-left variable">count</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$file_list</span>"</span> <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span> <span class="token operator">|</span> <span class="token function">tr</span> <span class="token parameter variable">-d</span> <span class="token string">' '</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="162">                    <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$file_list</span>"</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token string">"<span class="token variable">${sed_cmd<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span> <span class="token string">"s#<span class="token variable">${OLD_STR}</span>#<span class="token variable">${NEW_STR}</span>#g"</span>
+</span><span class="code-line line-number" line="163">                    log_ok <span class="token string">"已处理 <span class="token variable">${count}</span> 个 .<span class="token variable">${ext}</span> 文件"</span>
+</span><span class="code-line line-number" line="164">                <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="165">                    log_warn <span class="token string">"未找到 .<span class="token variable">${ext}</span> 文件，跳过"</span>
+</span><span class="code-line line-number" line="166">                <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="167">            <span class="token keyword">done</span>
+</span><span class="code-line line-number" line="168">
+</span><span class="code-line line-number" line="169">            log_ok <span class="token string">"✅ 批量替换操作全部完成！"</span>
+</span><span class="code-line line-number" line="170">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="171">        <span class="token punctuation">[</span>Nn<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="172">            log_warn <span class="token string">"已取消替换操作"</span>
+</span><span class="code-line line-number" line="173">            sleep_fractional <span class="token number">1</span>
+</span><span class="code-line line-number" line="174">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="175">        *<span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="176">            handle_y_n
+</span><span class="code-line line-number" line="177">            batch_replace_str <span class="token string">"<span class="token variable">$@</span>"</span>
+</span><span class="code-line line-number" line="178">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="179">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="180">    <span class="token keyword">esac</span>
+</span><span class="code-line line-number" line="181">
+</span><span class="code-line line-number" line="182">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="183">    break_end
+</span><span class="code-line line-number" line="184"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="185">
+</span><span class="code-line line-number" line="186">batch_replace_str <span class="token string">"<span class="token variable">$@</span>"</span>
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -uo pipefail
 
@@ -1439,7 +1438,7 @@ handle_y_n() {
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -r -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1447,9 +1446,9 @@ break_end() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1458,7 +1457,7 @@ exit_script() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1476,7 +1475,7 @@ sleep_fractional() {
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     sleep 0.6
     echo &#x22;&#x22;
     clear
@@ -1490,17 +1489,15 @@ show_help() {
     echo -e &#x22;&#x22;
     log_info &#x22;使用模式：&#x22;
     log_info &#x22;  1. 交互模式：按提示输入 旧字符串、新字符串、文件类型&#x22;
-    log_info &#x22;  2. 传参模式：./脚本.sh 旧字符串 新字符串 文件类型&#x22;
+    log_info &#x22;  2. 传参模式：./脚本.sh \&#x22;旧字符串\&#x22; \&#x22;新字符串\&#x22; 文件类型&#x22;
     echo -e &#x22;&#x22;
     log_info &#x22;使用示例：&#x22;
-    log_info &#x22;  1. 替换 sh/md 文件：./replace.sh old new&#x22;
-    log_info &#x22;  2. 替换 txt/py 文件：./replace.sh old new txt py&#x22;
-    log_info &#x22;  3. 替换所有类型：./replace.sh old new sh md txt py js html&#x22;
+    log_info &#x22;  ./replace.sh \&#x22;old str\&#x22; \&#x22;new str\&#x22; sh md&#x22;
+    log_info &#x22;  带 $ / 空格 必须加双引号！&#x22;
     echo -e &#x22;&#x22;
     log_info &#x22;支持特性：&#x22;
     log_info &#x22;  - 兼容 Linux/macOS 系统&#x22;
-    log_info &#x22;  - 支持任意特殊字符，无需转义&#x22;
-    log_info &#x22;  - 自定义文件类型，空格分隔&#x22;
+    log_info &#x22;  - 支持空格、$、/、&#x26; 等所有特殊字符&#x22;
     log_info &#x22;  - 替换前二次确认，防止误操作&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     echo -e &#x22;&#x22;
@@ -1513,10 +1510,13 @@ batch_replace_str() {
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     local OLD_STR NEW_STR FILE_TYPES
+
     if [ $# -ge 2 ]; then
         OLD_STR=&#x22;$1&#x22;
         NEW_STR=&#x22;$2&#x22;
-        FILE_TYPES=&#x22;${3:-sh}&#x22;
+        shift 2
+        FILE_TYPES=&#x22;$*&#x22;
+        FILE_TYPES=${FILE_TYPES:-&#x22;sh md&#x22;}
         log_info &#x22;已通过命令行传参获取配置&#x22;
     else
         read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请输入要替换的旧字符串(${gl_hong}0${gl_bai}退出): &#x22;)&#x22; OLD_STR
@@ -1525,9 +1525,9 @@ batch_replace_str() {
         read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请输入替换后的新字符串(${gl_hong}0${gl_bai}退出): &#x22;)&#x22; NEW_STR
         [ &#x22;$NEW_STR&#x22; = &#x22;0&#x22; ] &#x26;&#x26; { exit_script; }
 
-        read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请输入要处理的文件后缀(${gl_huang}空格分隔，默认：sh${gl_bai})(${gl_hong}0${gl_bai}退出): &#x22;)&#x22; FILE_TYPES
+        read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请输入要处理的文件后缀(${gl_huang}空格分隔，默认：sh md${gl_bai})(${gl_hong}0${gl_bai}退出): &#x22;)&#x22; FILE_TYPES
         [ &#x22;$FILE_TYPES&#x22; = &#x22;0&#x22; ] &#x26;&#x26; { exit_script; }
-        FILE_TYPES=${FILE_TYPES:-sh md}
+        FILE_TYPES=${FILE_TYPES:-&#x22;sh md&#x22;}
     fi
 
     if [[ -z &#x22;${OLD_STR}&#x22; || -z &#x22;${NEW_STR}&#x22; ]]; then
@@ -1542,28 +1542,30 @@ batch_replace_str() {
     log_info &#x22;旧内容：${gl_huang}${OLD_STR}${gl_bai}&#x22;
     log_info &#x22;新内容：${gl_lv}${NEW_STR}${gl_bai}&#x22;
     log_info &#x22;处理文件类型：${gl_lan}${FILE_TYPES}${gl_bai}&#x22;
-    log_warn &#x22;替换范围：当前目录及子目录下匹配的文件&#x22;
-    log_warn &#x22;替换模式：全局替换（所有匹配项都会被替换）&#x22;
+    log_warn &#x22;替换范围：当前目录及子目录&#x22;
 
     read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}是否确认执行替换?(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; choice
     case &#x22;${choice}&#x22; in
         [Yy])
-            log_info &#x22;开始执行批量替换，请稍候${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;开始执行批量替换，请稍候 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             
-            local sed_i=(-i)
+            local sed_cmd=(&#x22;sed&#x22;)
             if [[ &#x22;$(uname -s)&#x22; == &#x22;Darwin&#x22; ]]; then
-                sed_i=(-i &#x22;&#x22;)
-                log_info &#x22;检测到 macOS 系统，自动适配 sed 语法&#x22;
+                sed_cmd+=(-i &#x22;&#x22;)
+                log_info &#x22;检测到 macOS 系统&#x22;
+            else
+                sed_cmd+=(-i)
             fi
 
             for ext in $FILE_TYPES; do
                 ext=${ext#.}
-                count=$(find . -type f -name &#x22;*.${ext}&#x22; | wc -l | tr -d &#x27; &#x27;)
-                if [ &#x22;$count&#x22; -gt 0 ]; then
-                    find . -type f -name &#x22;*.${ext}&#x22; -exec sed &#x22;${sed_i[@]}&#x22; &#x22;s#${OLD_STR}#${NEW_STR}#g&#x22; {} +
+                file_list=$(find . -type f -name &#x22;*.${ext}&#x22;)
+                if [ -n &#x22;$file_list&#x22; ]; then
+                    count=$(echo &#x22;$file_list&#x22; | wc -l | tr -d &#x27; &#x27;)
+                    echo &#x22;$file_list&#x22; | xargs &#x22;${sed_cmd[@]}&#x22; &#x22;s#${OLD_STR}#${NEW_STR}#g&#x22;
                     log_ok &#x22;已处理 ${count} 个 .${ext} 文件&#x22;
                 else
-                    log_warn &#x22;未找到 .${ext} 文件，跳过该类型&#x22;
+                    log_warn &#x22;未找到 .${ext} 文件，跳过&#x22;
                 fi
             done
 
@@ -1575,7 +1577,7 @@ batch_replace_str() {
             ;;
         *)
             handle_y_n
-            batch_replace_str
+            batch_replace_str &#x22;$@&#x22;
             return 1
             ;;
     esac
@@ -1584,11 +1586,7 @@ batch_replace_str() {
     break_end
 }
 
-if [ $# -ge 2 ]; then
-    batch_replace_str &#x22;$1&#x22; &#x22;$2&#x22; &#x22;${*:3}&#x22;
-else
-    batch_replace_str
-fi
+batch_replace_str &#x22;$@&#x22;
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h2 id="创建本地脚本"><a class="anchor" aria-hidden="true" tabindex="-1" href="#创建本地脚本"><span class="octicon octicon-link"></span></a>创建本地脚本</h2>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token assign-left variable">new_script</span><span class="token operator">=</span><span class="token string">"new_test.sh"</span>
@@ -1813,8 +1811,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

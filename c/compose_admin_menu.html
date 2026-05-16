@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_admin_menu 命令">
     <meta name="twitter:description" content="Docker Compose 全能管理脚本 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1240,7 +1240,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="32"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="33">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="34">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="35">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="35">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="36">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="37">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="38">    <span class="token function">clear</span>
@@ -1248,9 +1248,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="40">
 </span><span class="code-line line-number" line="41"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="42">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="43">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="43">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="44">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="45">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="45">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="46">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="47">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="48">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1258,14 +1258,14 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="50">
 </span><span class="code-line line-number" line="51"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="52">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="53">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="53">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="54">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="55">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="56">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="57"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="58">
 </span><span class="code-line line-number" line="59"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="61">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="62">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="63">    <span class="token function">clear</span>
@@ -1500,7 +1500,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="292"><span class="token string">        local overwrite
 </span></span><span class="code-line line-number" line="293"><span class="token string">        read -r -e -p "$(echo -e "${gl_bai}是否覆盖？(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}，${gl_huang}0${gl_bai}返回): ")" overwrite || return
 </span></span><span class="code-line line-number" line="294"><span class="token string">        [[ "$overwrite" == "0" ]] &#x26;&#x26; { cancel_return "上一级选单"; return 1; }
-</span></span><span class="code-line line-number" line="295"><span class="token string">        [[ "$overwrite" != [yY] ]] &#x26;&#x26; { echo -e "${gl_huang}已取消操作${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c"; sleep_fractional 0.6; return; }
+</span></span><span class="code-line line-number" line="295"><span class="token string">        [[ "$overwrite" != [yY] ]] &#x26;&#x26; { echo -e "${gl_huang}已取消操作 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c"; sleep_fractional 0.6; return; }
 </span></span><span class="code-line line-number" line="296"><span class="token string">    fi
 </span></span><span class="code-line line-number" line="297"><span class="token string">
 </span></span><span class="code-line line-number" line="298"><span class="token string">    echo -e "${gl_huang}将创建文件：$file_name${gl_bai}"
@@ -1836,7 +1836,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="628"><span class="token string">        case $cmd_choice in
 </span></span><span class="code-line line-number" line="629"><span class="token string">        1)
 </span></span><span class="code-line line-number" line="630"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="631"><span class="token string">            echo -e "正在启动 ${gl_huang}$current_dir_name${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="631"><span class="token string">            echo -e "正在启动 ${gl_huang}$current_dir_name${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="632"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="633"><span class="token string">            docker-compose up -d --remove-orphans
 </span></span><span class="code-line line-number" line="634"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -1844,7 +1844,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="636"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="637"><span class="token string">        2)
 </span></span><span class="code-line line-number" line="638"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="639"><span class="token string">            echo -e "${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="639"><span class="token string">            echo -e "${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="640"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="641"><span class="token string">            docker-compose down
 </span></span><span class="code-line line-number" line="642"><span class="token string">            echo -e "\n"
@@ -1853,7 +1853,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="645"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="646"><span class="token string">        3)
 </span></span><span class="code-line line-number" line="647"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="648"><span class="token string">            echo -e "${gl_bai}正在重启 ${gl_huang}$current_dir_name${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="648"><span class="token string">            echo -e "${gl_bai}正在重启 ${gl_huang}$current_dir_name${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="649"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="650"><span class="token string">            docker-compose down &#x26;&#x26; docker-compose up -d --remove-orphans
 </span></span><span class="code-line line-number" line="651"><span class="token string">            echo -e "\n"
@@ -1862,7 +1862,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="654"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="655"><span class="token string">        4)
 </span></span><span class="code-line line-number" line="656"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="657"><span class="token string">            echo -e "${gl_bai}正在更新 ${gl_huang}$current_dir_name${gl_bai} 容器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="657"><span class="token string">            echo -e "${gl_bai}正在更新 ${gl_huang}$current_dir_name${gl_bai} 容器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="658"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="659"><span class="token string">            docker-compose pull &#x26;&#x26; docker-compose up -d --remove-orphans &#x26;&#x26; docker image prune -f
 </span></span><span class="code-line line-number" line="660"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -1870,7 +1870,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="662"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="663"><span class="token string">        5)
 </span></span><span class="code-line line-number" line="664"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="665"><span class="token string">            echo -e "${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 配置文件内容${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="665"><span class="token string">            echo -e "${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 配置文件内容 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="666"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="667"><span class="token string">            if [ -f "docker-compose.yml" ]; then
 </span></span><span class="code-line line-number" line="668"><span class="token string">                cat docker-compose.yml | sed '</span>/^$/d<span class="token string">'
@@ -1882,7 +1882,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="674"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="675"><span class="token string">        6)
 </span></span><span class="code-line line-number" line="676"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="677"><span class="token string">            echo -e "${gl_bai}正在打开 ${gl_huang}$current_dir_name${gl_bai} 配置文件编辑器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="677"><span class="token string">            echo -e "${gl_bai}正在打开 ${gl_huang}$current_dir_name${gl_bai} 配置文件编辑器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="678"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="679"><span class="token string">            if [ -f "docker-compose.yml" ]; then
 </span></span><span class="code-line line-number" line="680"><span class="token string">                nano docker-compose.yml
@@ -1890,7 +1890,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="682"><span class="token string">                echo -e "${gl_hong}错误: docker-compose.yml 文件不存在${gl_bai}"
 </span></span><span class="code-line line-number" line="683"><span class="token string">                read -r -e -p "$(echo -e "${gl_bai}docker-compose.yml 不存在，要创建吗？ (${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): ")" create_choice
 </span></span><span class="code-line line-number" line="684"><span class="token string">                if [[ "$create_choice" =~ ^[Yy]$ ]]; then
-</span></span><span class="code-line line-number" line="685"><span class="token string">                    echo -e "${gl_lv}正在创建 docker-compose.yml${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="685"><span class="token string">                    echo -e "${gl_lv}正在创建 docker-compose.yml ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="686"><span class="token string">                    create_file docker-compose.yml
 </span></span><span class="code-line line-number" line="687"><span class="token string">                else
 </span></span><span class="code-line line-number" line="688"><span class="token string">                    echo -e "${gl_huang}已取消创建${gl_bai}"
@@ -1901,7 +1901,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="693"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="694"><span class="token string">        7)
 </span></span><span class="code-line line-number" line="695"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="696"><span class="token string">            echo -e "${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务状态${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="696"><span class="token string">            echo -e "${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务状态 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="697"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="698"><span class="token string">            docker-compose ps
 </span></span><span class="code-line line-number" line="699"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -1909,7 +1909,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="701"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="702"><span class="token string">        8)
 </span></span><span class="code-line line-number" line="703"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="704"><span class="token string">            echo -e "${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务日志${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="704"><span class="token string">            echo -e "${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务日志 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="705"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="706"><span class="token string">            docker-compose logs
 </span></span><span class="code-line line-number" line="707"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -1917,7 +1917,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="709"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="710"><span class="token string">        9)
 </span></span><span class="code-line line-number" line="711"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="712"><span class="token string">            echo -e "${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务及相关资源${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="712"><span class="token string">            echo -e "${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务及相关资源 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="713"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="714"><span class="token string">            echo -e "${gl_hong}⚠️  警告: 此操作将删除容器、网络和卷！${gl_bai}"
 </span></span><span class="code-line line-number" line="715"><span class="token string">            echo -e "${gl_bai}数据卷不会被删除，但网络和相关资源将被清理${gl_bai}"
@@ -1935,7 +1935,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="727"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="728"><span class="token string">        11)
 </span></span><span class="code-line line-number" line="729"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="730"><span class="token string">            echo -e "${gl_bai}正在查看 ${gl_huang}$current_dir_name${gl_bai} 服务最终生效配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="730"><span class="token string">            echo -e "${gl_bai}正在查看 ${gl_huang}$current_dir_name${gl_bai} 服务最终生效配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="731"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="732"><span class="token string">            docker-compose config
 </span></span><span class="code-line line-number" line="733"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -1943,7 +1943,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="735"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="736"><span class="token string">        12)
 </span></span><span class="code-line line-number" line="737"><span class="token string">            echo
-</span></span><span class="code-line line-number" line="738"><span class="token string">            echo -e "${gl_bai}正在打印 ${gl_huang}$current_dir_name${gl_bai} 服务依赖拓扑图${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="738"><span class="token string">            echo -e "${gl_bai}正在打印 ${gl_huang}$current_dir_name${gl_bai} 服务依赖拓扑图 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="739"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="740"><span class="token string">            docker-compose images
 </span></span><span class="code-line line-number" line="741"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -2010,7 +2010,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="802"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="803"><span class="token string">        24)
 </span></span><span class="code-line line-number" line="804"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="805"><span class="token string">            echo -e "${gl_bai}正在重新构建 ${gl_huang}$current_dir_name${gl_bai} 并启动服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="805"><span class="token string">            echo -e "${gl_bai}正在重新构建 ${gl_huang}$current_dir_name${gl_bai} 并启动服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="806"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="807"><span class="token string">            docker-compose up -d --build
 </span></span><span class="code-line line-number" line="808"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -2030,7 +2030,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="822"><span class="token string">            fi
 </span></span><span class="code-line line-number" line="823"><span class="token string">            
 </span></span><span class="code-line line-number" line="824"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="825"><span class="token string">            echo -e "${gl_bai}进入 ${gl_huang}$TARGET_SERVICE${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="825"><span class="token string">            echo -e "${gl_bai}进入 ${gl_huang}$TARGET_SERVICE${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="826"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="827"><span class="token string">            
 </span></span><span class="code-line line-number" line="828"><span class="token string">            if ! docker inspect "$TARGET_SERVICE" &#x26;>/dev/null; then
@@ -2058,7 +2058,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="850"><span class="token string">            fi
 </span></span><span class="code-line line-number" line="851"><span class="token string">            
 </span></span><span class="code-line line-number" line="852"><span class="token string">            if ! docker exec -it "$TARGET_SERVICE" bash 2>/dev/null; then
-</span></span><span class="code-line line-number" line="853"><span class="token string">                echo -e "${gl_hong}bash 不可用，尝试使用 sh${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="853"><span class="token string">                echo -e "${gl_hong}bash 不可用，尝试使用 sh ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="854"><span class="token string">                docker exec -it "$TARGET_SERVICE" sh
 </span></span><span class="code-line line-number" line="855"><span class="token string">            fi
 </span></span><span class="code-line line-number" line="856"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
@@ -2081,7 +2081,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="873"><span class="token string">            install yq
 </span></span><span class="code-line line-number" line="874"><span class="token string">            clear
 </span></span><span class="code-line line-number" line="875"><span class="token string">            echo -e ""
-</span></span><span class="code-line line-number" line="876"><span class="token string">            echo -e "${gl_zi}>>> 永久修改重启策略${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
+</span></span><span class="code-line line-number" line="876"><span class="token string">            echo -e "${gl_zi}>>> 永久修改重启策略 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}"
 </span></span><span class="code-line line-number" line="877"><span class="token string">            echo -e "${gl_bufan}————————————————————————————————————————————————${gl_bai}"
 </span></span><span class="code-line line-number" line="878"><span class="token string">
 </span></span><span class="code-line line-number" line="879"><span class="token string">            if [ ! -f "docker-compose.yml" ] &#x26;&#x26; [ ! -f "docker-compose.yaml" ]; then
@@ -2189,7 +2189,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="981">                <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>是否立即更新容器的重启策略？ (<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" update_now
 </span></span><span class="code-line line-number" line="982"><span class="token string">
 </span></span><span class="code-line line-number" line="983"><span class="token string">                if [[ "</span><span class="token variable">$update_now</span><span class="token string">" =~ ^[Yy]$ ]]; then
-</span></span><span class="code-line line-number" line="984"><span class="token string">                    echo -e "</span><span class="token variable">${gl_bai}</span>更新容器重启策略<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="984"><span class="token string">                    echo -e "</span><span class="token variable">${gl_bai}</span>更新容器重启策略 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="985"><span class="token string">                    if docker update --restart="</span><span class="token variable">$new_policy</span><span class="token string">" "</span><span class="token variable">$TARGET_SERVICE</span><span class="token string">" >/dev/null 2>&#x26;1; then
 </span></span><span class="code-line line-number" line="986"><span class="token string">                        echo -e "</span><span class="token variable">${gl_lv}</span>✓ 容器重启策略已更新<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="987"><span class="token string">                    else
@@ -2208,7 +2208,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="1000">                <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"输入 <span class="token variable">${gl_bufan}</span>y<span class="token variable">${gl_bai}</span> 重新创建，其他键跳过:"</span><span class="token variable">)</span></span>"</span> recreate_choice
 </span><span class="code-line line-number" line="1001">
 </span><span class="code-line line-number" line="1002">                <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$recreate_choice</span>"</span> <span class="token operator">=</span> <span class="token string">"y"</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$recreate_choice</span>"</span> <span class="token operator">=</span> <span class="token string">"Y"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="1003">                    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>重新创建容器<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="1003">                    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>重新创建容器 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1004">                    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker-compose</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="1005">                        <span class="token function">docker-compose</span> down <span class="token operator">&#x26;&#x26;</span> <span class="token function">docker-compose</span> up <span class="token parameter variable">-d</span>
 </span><span class="code-line line-number" line="1006">                    <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker</span> <span class="token operator">&#x26;></span>/dev/null <span class="token operator">&#x26;&#x26;</span> <span class="token function">docker</span> compose version <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -2341,7 +2341,7 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -2349,9 +2349,9 @@ exit_animation() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -2359,14 +2359,14 @@ exit_script() {
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
 }
 
 break_end() {
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -r -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -2601,7 +2601,7 @@ create_file() {
         local overwrite
         read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}是否覆盖？(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}，${gl_huang}0${gl_bai}返回): &#x22;)&#x22; overwrite || return
         [[ &#x22;$overwrite&#x22; == &#x22;0&#x22; ]] &#x26;&#x26; { cancel_return &#x22;上一级选单&#x22;; return 1; }
-        [[ &#x22;$overwrite&#x22; != [yY] ]] &#x26;&#x26; { echo -e &#x22;${gl_huang}已取消操作${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;; sleep_fractional 0.6; return; }
+        [[ &#x22;$overwrite&#x22; != [yY] ]] &#x26;&#x26; { echo -e &#x22;${gl_huang}已取消操作 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;; sleep_fractional 0.6; return; }
     fi
 
     echo -e &#x22;${gl_huang}将创建文件：$file_name${gl_bai}&#x22;
@@ -2937,7 +2937,7 @@ show_compose_commands_menu() {
         case $cmd_choice in
         1)
             echo -e &#x22;&#x22;
-            echo -e &#x22;正在启动 ${gl_huang}$current_dir_name${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;正在启动 ${gl_huang}$current_dir_name${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose up -d --remove-orphans
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -2945,7 +2945,7 @@ show_compose_commands_menu() {
             ;;
         2)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose down
             echo -e &#x22;\n&#x22;
@@ -2954,7 +2954,7 @@ show_compose_commands_menu() {
             ;;
         3)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在重启 ${gl_huang}$current_dir_name${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在重启 ${gl_huang}$current_dir_name${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose down &#x26;&#x26; docker-compose up -d --remove-orphans
             echo -e &#x22;\n&#x22;
@@ -2963,7 +2963,7 @@ show_compose_commands_menu() {
             ;;
         4)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在更新 ${gl_huang}$current_dir_name${gl_bai} 容器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在更新 ${gl_huang}$current_dir_name${gl_bai} 容器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose pull &#x26;&#x26; docker-compose up -d --remove-orphans &#x26;&#x26; docker image prune -f
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -2971,7 +2971,7 @@ show_compose_commands_menu() {
             ;;
         5)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 配置文件内容${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 配置文件内容 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             if [ -f &#x22;docker-compose.yml&#x22; ]; then
                 cat docker-compose.yml | sed &#x27;/^$/d&#x27;
@@ -2983,7 +2983,7 @@ show_compose_commands_menu() {
             ;;
         6)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在打开 ${gl_huang}$current_dir_name${gl_bai} 配置文件编辑器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在打开 ${gl_huang}$current_dir_name${gl_bai} 配置文件编辑器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             if [ -f &#x22;docker-compose.yml&#x22; ]; then
                 nano docker-compose.yml
@@ -2991,7 +2991,7 @@ show_compose_commands_menu() {
                 echo -e &#x22;${gl_hong}错误: docker-compose.yml 文件不存在${gl_bai}&#x22;
                 read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}docker-compose.yml 不存在，要创建吗？ (${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; create_choice
                 if [[ &#x22;$create_choice&#x22; =~ ^[Yy]$ ]]; then
-                    echo -e &#x22;${gl_lv}正在创建 docker-compose.yml${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                    echo -e &#x22;${gl_lv}正在创建 docker-compose.yml ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                     create_file docker-compose.yml
                 else
                     echo -e &#x22;${gl_huang}已取消创建${gl_bai}&#x22;
@@ -3002,7 +3002,7 @@ show_compose_commands_menu() {
             ;;
         7)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务状态${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务状态 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose ps
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -3010,7 +3010,7 @@ show_compose_commands_menu() {
             ;;
         8)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务日志${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在显示 ${gl_huang}$current_dir_name${gl_bai} 服务日志 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose logs
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -3018,7 +3018,7 @@ show_compose_commands_menu() {
             ;;
         9)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务及相关资源${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在停止并删除 ${gl_huang}$current_dir_name${gl_bai} 服务及相关资源 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             echo -e &#x22;${gl_hong}⚠️  警告: 此操作将删除容器、网络和卷！${gl_bai}&#x22;
             echo -e &#x22;${gl_bai}数据卷不会被删除，但网络和相关资源将被清理${gl_bai}&#x22;
@@ -3036,7 +3036,7 @@ show_compose_commands_menu() {
             ;;
         11)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在查看 ${gl_huang}$current_dir_name${gl_bai} 服务最终生效配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在查看 ${gl_huang}$current_dir_name${gl_bai} 服务最终生效配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose config
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -3044,7 +3044,7 @@ show_compose_commands_menu() {
             ;;
         12)
             echo
-            echo -e &#x22;${gl_bai}正在打印 ${gl_huang}$current_dir_name${gl_bai} 服务依赖拓扑图${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在打印 ${gl_huang}$current_dir_name${gl_bai} 服务依赖拓扑图 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose images
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -3111,7 +3111,7 @@ show_compose_commands_menu() {
             ;;
         24)
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}正在重新构建 ${gl_huang}$current_dir_name${gl_bai} 并启动服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在重新构建 ${gl_huang}$current_dir_name${gl_bai} 并启动服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             docker-compose up -d --build
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -3131,7 +3131,7 @@ show_compose_commands_menu() {
             fi
             
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_bai}进入 ${gl_huang}$TARGET_SERVICE${gl_bai} 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}进入 ${gl_huang}$TARGET_SERVICE${gl_bai} 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             
             if ! docker inspect &#x22;$TARGET_SERVICE&#x22; &#x26;>/dev/null; then
@@ -3159,7 +3159,7 @@ show_compose_commands_menu() {
             fi
             
             if ! docker exec -it &#x22;$TARGET_SERVICE&#x22; bash 2>/dev/null; then
-                echo -e &#x22;${gl_hong}bash 不可用，尝试使用 sh${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                echo -e &#x22;${gl_hong}bash 不可用，尝试使用 sh ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                 docker exec -it &#x22;$TARGET_SERVICE&#x22; sh
             fi
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -3182,7 +3182,7 @@ show_compose_commands_menu() {
             install yq
             clear
             echo -e &#x22;&#x22;
-            echo -e &#x22;${gl_zi}>>> 永久修改重启策略${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_zi}>>> 永久修改重启策略 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
             if [ ! -f &#x22;docker-compose.yml&#x22; ] &#x26;&#x26; [ ! -f &#x22;docker-compose.yaml&#x22; ]; then
@@ -3290,7 +3290,7 @@ show_compose_commands_menu() {
                 read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}是否立即更新容器的重启策略？ (${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; update_now
 
                 if [[ &#x22;$update_now&#x22; =~ ^[Yy]$ ]]; then
-                    echo -e &#x22;${gl_bai}更新容器重启策略${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                    echo -e &#x22;${gl_bai}更新容器重启策略 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                     if docker update --restart=&#x22;$new_policy&#x22; &#x22;$TARGET_SERVICE&#x22; >/dev/null 2>&#x26;1; then
                         echo -e &#x22;${gl_lv}✓ 容器重启策略已更新${gl_bai}&#x22;
                     else
@@ -3309,7 +3309,7 @@ show_compose_commands_menu() {
                 read -r -e -p &#x22;$(echo -e &#x22;输入 ${gl_bufan}y${gl_bai} 重新创建，其他键跳过:&#x22;)&#x22; recreate_choice
 
                 if [ &#x22;$recreate_choice&#x22; = &#x22;y&#x22; ] || [ &#x22;$recreate_choice&#x22; = &#x22;Y&#x22; ]; then
-                    echo -e &#x22;${gl_bai}重新创建容器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                    echo -e &#x22;${gl_bai}重新创建容器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                     if command -v docker-compose &#x26;>/dev/null; then
                         docker-compose down &#x26;&#x26; docker-compose up -d
                     elif command -v docker &#x26;>/dev/null &#x26;&#x26; docker compose version &#x26;>/dev/null; then
@@ -3632,8 +3632,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

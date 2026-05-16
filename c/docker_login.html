@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="docker_login 命令">
     <meta name="twitter:description" content="Docker 与 Docker Compose 的安装、卸载菜单管理工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1268,7 +1268,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="36"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="37">
 </span><span class="code-line line-number" line="38"><span class="token function-name function">clean_all_old_keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="39">    log_info <span class="token string">"正在清理所有旧密钥、GPG、Docker 凭证、残留配置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="39">    log_info <span class="token string">"正在清理所有旧密钥、GPG、Docker 凭证、残留配置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="40">    <span class="token function">pkill</span> <span class="token parameter variable">-f</span> gpg-agent <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token boolean">true</span>
 </span><span class="code-line line-number" line="41">    <span class="token function">rm</span> <span class="token parameter variable">-rf</span> /root/.gnupg /root/.password-store /root/.docker
 </span><span class="code-line line-number" line="42">    <span class="token function">rm</span> <span class="token parameter variable">-f</span> /usr/local/bin/docker-credential-pass /usr/local/bin/docker-credential-secretservice
@@ -1280,7 +1280,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="48"><span class="token function-name function">install_deps</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="49">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">pkg</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>detect_pkg<span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="50">    log_info <span class="token string">"检测到包管理器：<span class="token variable">$pkg</span>"</span>
-</span><span class="code-line line-number" line="51">    log_info <span class="token string">"安装依赖<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="51">    log_info <span class="token string">"安装依赖 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="52">    <span class="token keyword">case</span> <span class="token variable">$pkg</span> <span class="token keyword">in</span>
 </span><span class="code-line line-number" line="53">        <span class="token function">apt</span><span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="54">            <span class="token function">apt</span> update <span class="token parameter variable">-y</span>
@@ -1321,14 +1321,14 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="89">            log_error <span class="token string">"不支持的架构: <span class="token variable">$arch</span>"</span>
 </span><span class="code-line line-number" line="90">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
 </span><span class="code-line line-number" line="91">    <span class="token keyword">esac</span>
-</span><span class="code-line line-number" line="92">    log_info <span class="token string">"下载加密助手<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="92">    log_info <span class="token string">"下载加密助手 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="93">    <span class="token function">curl</span> <span class="token parameter variable">-fSL</span> --connect-timeout <span class="token number">10</span> --max-time <span class="token number">30</span> <span class="token parameter variable">-o</span> <span class="token string">"<span class="token variable">$helper_path</span>"</span> <span class="token string">"<span class="token variable">$url</span>"</span>
 </span><span class="code-line line-number" line="94">    <span class="token function">chmod</span> +x <span class="token string">"<span class="token variable">$helper_path</span>"</span>
 </span><span class="code-line line-number" line="95">    log_ok <span class="token string">"加密助手安装成功"</span>
 </span><span class="code-line line-number" line="96"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="97">
 </span><span class="code-line line-number" line="98"><span class="token function-name function">generate_full_gpg</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="99">    log_info <span class="token string">"生成【带加密能力】的 GPG 密钥<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="99">    log_info <span class="token string">"生成【带加密能力】的 GPG 密钥 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="100">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">GPG_TTY</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">tty</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> /dev/tty<span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="101">
 </span><span class="code-line line-number" line="102">gpg <span class="token parameter variable">--batch</span> <span class="token parameter variable">--passphrase</span> <span class="token string">''</span> --gen-key <span class="token operator">&#x3C;&#x3C;</span><span class="token string">EOF
@@ -1377,7 +1377,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="145">    <span class="token builtin class-name">echo</span>
 </span><span class="code-line line-number" line="146">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="147">    log_ok <span class="token string">"✅ 全部完成！登录一次永久生效"</span>
-</span><span class="code-line line-number" line="148">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>使用示例：docker login -u 用户名 -p dckr_pat_密钥<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="148">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>使用示例：docker login -u 用户名 -p dckr_pat_密钥 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="149">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="150"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="151">
@@ -1420,7 +1420,7 @@ check_docker() {
 }
 
 clean_all_old_keys() {
-    log_info &#x22;正在清理所有旧密钥、GPG、Docker 凭证、残留配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;正在清理所有旧密钥、GPG、Docker 凭证、残留配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     pkill -f gpg-agent 2>/dev/null || true
     rm -rf /root/.gnupg /root/.password-store /root/.docker
     rm -f /usr/local/bin/docker-credential-pass /usr/local/bin/docker-credential-secretservice
@@ -1432,7 +1432,7 @@ clean_all_old_keys() {
 install_deps() {
     local pkg=$(detect_pkg)
     log_info &#x22;检测到包管理器：$pkg&#x22;
-    log_info &#x22;安装依赖${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;安装依赖 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     case $pkg in
         apt)
             apt update -y
@@ -1473,14 +1473,14 @@ install_pass_helper() {
             log_error &#x22;不支持的架构: $arch&#x22;
             ;;
     esac
-    log_info &#x22;下载加密助手${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;下载加密助手 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     curl -fSL --connect-timeout 10 --max-time 30 -o &#x22;$helper_path&#x22; &#x22;$url&#x22;
     chmod +x &#x22;$helper_path&#x22;
     log_ok &#x22;加密助手安装成功&#x22;
 }
 
 generate_full_gpg() {
-    log_info &#x22;生成【带加密能力】的 GPG 密钥${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;生成【带加密能力】的 GPG 密钥 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     export GPG_TTY=$(tty 2>/dev/null || echo /dev/tty)
 
 gpg --batch --passphrase &#x27;&#x27; --gen-key <<EOF
@@ -1529,7 +1529,7 @@ main() {
     echo
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     log_ok &#x22;✅ 全部完成！登录一次永久生效&#x22;
-    echo -e &#x22;${gl_huang}使用示例：docker login -u 用户名 -p dckr_pat_密钥${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_huang}使用示例：docker login -u 用户名 -p dckr_pat_密钥 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 }
 
@@ -1758,8 +1758,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

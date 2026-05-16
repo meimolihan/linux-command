@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_install_nano_zh 命令">
     <meta name="twitter:description" content="安装 nano 编辑器并开启中文 UTF-8 环境 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1187,7 +1187,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="21">
 </span><span class="code-line line-number" line="22"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="23">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="25">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span>
 </span><span class="code-line line-number" line="26">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="27">    <span class="token function">clear</span>
@@ -1206,7 +1206,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="40"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="41">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="42">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="43">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="43">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="44">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="45">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="46"><span class="token punctuation">}</span>
@@ -1317,7 +1317,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="151">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">env_files_updated</span><span class="token operator">=</span><span class="token string">"0"</span>
 </span><span class="code-line line-number" line="152">
 </span><span class="code-line line-number" line="153">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="154">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>开始修复 nano 配置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="154">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>开始修复 nano 配置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="155">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="156">
 </span><span class="code-line line-number" line="157">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/os-release <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -1341,7 +1341,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="175">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="176">
 </span><span class="code-line line-number" line="177">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="178">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 设置中文环境变量<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="178">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 设置中文环境变量 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="179">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="180">
 </span><span class="code-line line-number" line="181">    <span class="token function">touch</span> ~/.profile ~/.bash_profile ~/.bashrc
@@ -1402,10 +1402,10 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="236">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"  <span class="token variable">${gl_lv}</span>source ~/.bashrc<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="237">
 </span><span class="code-line line-number" line="238">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="239">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 创建 nano 配置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="239">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 创建 nano 配置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="240">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="241">
-</span><span class="code-line line-number" line="242">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>正在创建 nano 配置文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="242">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>正在创建 nano 配置文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="243">    <span class="token function">cat</span> <span class="token operator">></span>~/.nanorc <span class="token operator">&#x3C;&#x3C;</span><span class="token string">EOF
 </span></span><span class="code-line line-number" line="244"><span class="token string"># Nano 配置 - 自动修复版
 </span></span><span class="code-line line-number" line="245"><span class="token string"># 生成时间: <span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +<span class="token string">"%Y-%m-%d %H:%M:%S"</span><span class="token variable">)</span></span>
@@ -1486,13 +1486,13 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="320">    add_syntax_highlight
 </span><span class="code-line line-number" line="321">
 </span><span class="code-line line-number" line="322">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="323">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 验证配置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="323">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 验证配置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="324">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="325">
 </span><span class="code-line line-number" line="326">    <span class="token keyword">if</span> <span class="token function">nano</span> <span class="token parameter variable">--rcfile</span><span class="token operator">=~</span>/.nanorc <span class="token parameter variable">--version</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="327">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>✓ 配置语法检查通过<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="328">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="329">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_hong}</span>✗ 配置有错误，创建最小配置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="329">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_hong}</span>✗ 配置有错误，创建最小配置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="330">        <span class="token function">cat</span> <span class="token operator">></span>~/.nanorc <span class="token operator">&#x3C;&#x3C;</span><span class="token string">'EOF'
 </span></span><span class="code-line line-number" line="331"><span class="token string"># 最小安全配置
 </span></span><span class="code-line line-number" line="332"><span class="token string">unset autoindent
@@ -1529,7 +1529,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="363">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>✓ 中文测试命令已添加：nano-zh<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="364">
 </span><span class="code-line line-number" line="365">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="366">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 修复完成<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="366">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 修复完成 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="367">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="368">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>✓ nano 配置修复完成！<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="369">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
@@ -1557,7 +1557,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_n
 </span><span class="code-line line-number" line="391">
 </span><span class="code-line line-number" line="392"><span class="token function-name function">tools_install_nano</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="393">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="394">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装 nano文本编辑器<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="394">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装 nano文本编辑器 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="395">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="396">    <span class="token function">install</span> <span class="token function">nano</span>
 </span><span class="code-line line-number" line="397">    fix_nano_config
@@ -1610,7 +1610,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s
     echo &#x22;&#x22;
     clear
@@ -1629,7 +1629,7 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;\r${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
 }
@@ -1740,7 +1740,7 @@ fix_nano_config() {
     local env_files_updated=&#x22;0&#x22;
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}开始修复 nano 配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}开始修复 nano 配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     if [ -f /etc/os-release ]; then
@@ -1764,7 +1764,7 @@ fix_nano_config() {
     fi
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 设置中文环境变量${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_huang}>>> 设置中文环境变量 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     touch ~/.profile ~/.bash_profile ~/.bashrc
@@ -1825,10 +1825,10 @@ fix_nano_config() {
     echo -e &#x22;  ${gl_lv}source ~/.bashrc${gl_bai}&#x22;
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 创建 nano 配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_huang}>>> 创建 nano 配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
-    echo -e &#x22;${gl_lv}正在创建 nano 配置文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_lv}正在创建 nano 配置文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     cat >~/.nanorc <<EOF
 # Nano 配置 - 自动修复版
 # 生成时间: $(date +&#x22;%Y-%m-%d %H:%M:%S&#x22;)
@@ -1909,13 +1909,13 @@ EOF
     add_syntax_highlight
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 验证配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_huang}>>> 验证配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     if nano --rcfile=~/.nanorc --version &#x26;>/dev/null; then
         echo -e &#x22;${gl_lv}✓ 配置语法检查通过${gl_bai}&#x22;
     else
-        echo -e &#x22;${gl_hong}✗ 配置有错误，创建最小配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_hong}✗ 配置有错误，创建最小配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         cat >~/.nanorc <<&#x27;EOF&#x27;
 # 最小安全配置
 unset autoindent
@@ -1952,7 +1952,7 @@ EOF
     echo -e &#x22;${gl_lv}✓ 中文测试命令已添加：nano-zh${gl_bai}&#x22;
 
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_huang}>>> 修复完成${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_huang}>>> 修复完成 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     echo -e &#x22;${gl_lv}✓ nano 配置修复完成！${gl_bai}&#x22;
     echo -e &#x22;&#x22;
@@ -1980,7 +1980,7 @@ EOF
 
 tools_install_nano() {
     clear
-    echo -e &#x22;${gl_zi}>>> 安装 nano文本编辑器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装 nano文本编辑器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     install nano
     fix_nano_config
@@ -2234,8 +2234,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

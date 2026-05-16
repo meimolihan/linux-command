@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_install 命令">
     <meta name="twitter:description" content="Linux 安装工具 - 全平台自动识别包管理器 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1219,7 +1219,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="18"><span class="token function-name function">install_packages</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="19">    <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-eq</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="20">        log_error <span class="token string">"未提供软件包参数!"</span>
-</span><span class="code-line line-number" line="21">        log_info <span class="token string">"使用方法: <span class="token variable">$0</span> 软件包1 软件包2 软件包3..."</span>
+</span><span class="code-line line-number" line="21">        log_info <span class="token string">"使用方法: <span class="token variable">$0</span> 软件包1 软件包2 软件包3 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="22">        log_info <span class="token string">"示例: <span class="token variable">$0</span> git curl wget"</span>
 </span><span class="code-line line-number" line="23">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
 </span><span class="code-line line-number" line="24">    <span class="token punctuation">}</span>
@@ -1359,7 +1359,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 install_packages() {
     [[ $# -eq 0 ]] &#x26;&#x26; {
         log_error &#x22;未提供软件包参数!&#x22;
-        log_info &#x22;使用方法: $0 软件包1 软件包2 软件包3...&#x22;
+        log_info &#x22;使用方法: $0 软件包1 软件包2 软件包3 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         log_info &#x22;示例: $0 git curl wget&#x22;
         return 1
     }
@@ -1708,8 +1708,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

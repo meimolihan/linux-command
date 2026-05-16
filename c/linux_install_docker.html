@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_install_docker 命令">
     <meta name="twitter:description" content="Linux 安装 Docker 环境 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1191,7 +1191,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="32"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="33">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="34">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="35">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="35">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="36">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="37">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="38">    <span class="token function">clear</span>
@@ -1200,152 +1200,164 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="41"><span class="token function-name function">install_add_docker_cn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="42">    <span class="token builtin class-name">local</span> country
 </span><span class="code-line line-number" line="43">    <span class="token assign-left variable">country</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> ipinfo.io/country <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"US"</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="44">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="45">        log_info <span class="token string">"检测到中国地区，配置国内镜像加速"</span>
-</span><span class="code-line line-number" line="46">        <span class="token function">cat</span> <span class="token operator">></span>/etc/docker/daemon.json <span class="token operator">&#x3C;&#x3C;</span><span class="token string">EOF
-</span></span><span class="code-line line-number" line="47"><span class="token string">{
-</span></span><span class="code-line line-number" line="48"><span class="token string">  "registry-mirrors": [
-</span></span><span class="code-line line-number" line="49"><span class="token string">    "https://docker.1ms.run",
-</span></span><span class="code-line line-number" line="50"><span class="token string">    "https://docker.m.ixdev.cn",
-</span></span><span class="code-line line-number" line="51"><span class="token string">    "https://hub.rat.dev",
-</span></span><span class="code-line line-number" line="52"><span class="token string">    "https://dockerproxy.net",
-</span></span><span class="code-line line-number" line="53"><span class="token string">    "https://docker-registry.nmqu.com",
-</span></span><span class="code-line line-number" line="54"><span class="token string">    "https://docker.amingg.com",
-</span></span><span class="code-line line-number" line="55"><span class="token string">    "https://docker.hlmirror.com",
-</span></span><span class="code-line line-number" line="56"><span class="token string">    "https://hub1.nat.tf",
-</span></span><span class="code-line line-number" line="57"><span class="token string">    "https://hub2.nat.tf",
-</span></span><span class="code-line line-number" line="58"><span class="token string">    "https://hub3.nat.tf",
-</span></span><span class="code-line line-number" line="59"><span class="token string">    "https://docker.m.daocloud.io",
-</span></span><span class="code-line line-number" line="60"><span class="token string">    "https://docker.kejilion.pro",
-</span></span><span class="code-line line-number" line="61"><span class="token string">    "https://docker.367231.xyz",
-</span></span><span class="code-line line-number" line="62"><span class="token string">    "https://hub.1panel.dev",
-</span></span><span class="code-line line-number" line="63"><span class="token string">    "https://dockerproxy.cool",
-</span></span><span class="code-line line-number" line="64"><span class="token string">    "https://docker.apiba.cn",
-</span></span><span class="code-line line-number" line="65"><span class="token string">    "https://proxy.vvvv.ee"
-</span></span><span class="code-line line-number" line="66"><span class="token string">  ]
-</span></span><span class="code-line line-number" line="67"><span class="token string">}
-</span></span><span class="code-line line-number" line="68"><span class="token string">EOF</span>
-</span><span class="code-line line-number" line="69">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="70">        log_info <span class="token string">"非中国地区，不配置国内镜像"</span>
-</span><span class="code-line line-number" line="71">        <span class="token function">rm</span> <span class="token parameter variable">-f</span> /etc/docker/daemon.json <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
-</span><span class="code-line line-number" line="72">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="73">
-</span><span class="code-line line-number" line="74">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="75">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="76">    
-</span><span class="code-line line-number" line="77">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> systemctl <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="78">        systemctl <span class="token builtin class-name">enable</span> <span class="token function">docker</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="79">        systemctl start <span class="token function">docker</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="80">        systemctl restart <span class="token function">docker</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
-</span><span class="code-line line-number" line="81">        log_ok <span class="token string">"Docker 已设置开机自启并重启完成"</span>
-</span><span class="code-line line-number" line="82">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="83">        log_warn <span class="token string">"无 systemctl，跳过服务自启设置"</span>
-</span><span class="code-line line-number" line="84">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="85"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="86">
-</span><span class="code-line line-number" line="87"><span class="token function-name function">install_add_docker_guanfang</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="88">    <span class="token builtin class-name">local</span> country
-</span><span class="code-line line-number" line="89">    <span class="token assign-left variable">country</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> ipinfo.io/country <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"US"</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="90">    
-</span><span class="code-line line-number" line="91">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="92">        log_info <span class="token string">"中国地区使用阿里云镜像安装 <span class="token variable">${gl_huang}</span>Docker<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="93">        <span class="token builtin class-name">cd</span> ~ <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="94">        <span class="token function">curl</span> <span class="token parameter variable">-sS</span> <span class="token parameter variable">-O</span> raw.githubusercontent.com/kejilion/docker/main/install
-</span><span class="code-line line-number" line="95">        <span class="token function">chmod</span> +x <span class="token function">install</span>
-</span><span class="code-line line-number" line="96">        <span class="token function">sh</span> <span class="token function">install</span> <span class="token parameter variable">--mirror</span> Aliyun
-</span><span class="code-line line-number" line="97">        <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token function">install</span>
-</span><span class="code-line line-number" line="98">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="99">        log_info <span class="token string">"海外地区使用官方脚本安装"</span>
-</span><span class="code-line line-number" line="100">        <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://get.docker.com <span class="token operator">|</span> <span class="token function">sh</span>
-</span><span class="code-line line-number" line="101">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="102">    
-</span><span class="code-line line-number" line="103">    install_add_docker_cn
-</span><span class="code-line line-number" line="104"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="105">
-</span><span class="code-line line-number" line="106"><span class="token function-name function">install_add_docker</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="107">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="108">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装 <span class="token variable">${gl_huang}</span>docker<span class="token variable">${gl_zi}</span> 环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="109">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="110">    
-</span><span class="code-line line-number" line="111">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">${gl_bai}</span>确定要安装 <span class="token variable">${gl_huang}</span>docker<span class="token variable">${gl_bai}</span> 环境吗？ (<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span> confirm
-</span><span class="code-line line-number" line="112">    
-</span><span class="code-line line-number" line="113">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token variable">$confirm</span> <span class="token operator">=~</span> ^<span class="token punctuation">[</span>Yy<span class="token punctuation">]</span>$ <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="114">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>已取消安装操作<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="115">        exit_animation
-</span><span class="code-line line-number" line="116">        <span class="token builtin class-name">return</span>
-</span><span class="code-line line-number" line="117">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="118">
-</span><span class="code-line line-number" line="119">    log_info <span class="token string">"开始检测系统并安装 <span class="token variable">${gl_huang}</span>Docker<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="120">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="121">
-</span><span class="code-line line-number" line="122">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/os-release <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"Fedora"</span> /etc/os-release<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="123">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>Fedora<span class="token variable">${gl_bai}</span> 系统"</span>
-</span><span class="code-line line-number" line="124">        install_add_docker_guanfang
-</span><span class="code-line line-number" line="125">
-</span><span class="code-line line-number" line="126">    <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> dnf <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="127">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>RHEL 系系统<span class="token variable">${gl_bai}</span> (dnf)"</span>
-</span><span class="code-line line-number" line="128">        dnf update <span class="token parameter variable">-y</span>
-</span><span class="code-line line-number" line="129">        dnf <span class="token function">install</span> <span class="token parameter variable">-y</span> yum-utils device-mapper-persistent-data lvm2
-</span><span class="code-line line-number" line="130">        <span class="token function">rm</span> <span class="token parameter variable">-f</span> /etc/yum.repos.d/docker*.repo <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
-</span><span class="code-line line-number" line="131">        
-</span><span class="code-line line-number" line="132">        <span class="token assign-left variable">country</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> ipinfo.io/country <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"US"</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="133">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="134">            <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo <span class="token operator">|</span> <span class="token function">tee</span> /etc/yum.repos.d/docker-ce.repo <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="135">        <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="136">            yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="137">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="138">        
-</span><span class="code-line line-number" line="139">        dnf <span class="token function">install</span> <span class="token parameter variable">-y</span> docker-ce docker-ce-cli containerd.io
-</span><span class="code-line line-number" line="140">        install_add_docker_cn
-</span><span class="code-line line-number" line="141">
-</span><span class="code-line line-number" line="142">    <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/os-release <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"Kali"</span> /etc/os-release<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="143">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>Kali Linux<span class="token variable">${gl_bai}</span> 系统"</span>
-</span><span class="code-line line-number" line="144">        <span class="token function">apt</span> update
-</span><span class="code-line line-number" line="145">        <span class="token function">apt</span> upgrade <span class="token parameter variable">-y</span>
-</span><span class="code-line line-number" line="146">        <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> apt-transport-https ca-certificates <span class="token function">curl</span> gnupg lsb-release
-</span><span class="code-line line-number" line="147">        <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /etc/apt/keyrings
-</span><span class="code-line line-number" line="148">        
-</span><span class="code-line line-number" line="149">        <span class="token assign-left variable">country</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> ipinfo.io/country <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"US"</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="150">        <span class="token assign-left variable">arch</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-m</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="151">        
-</span><span class="code-line line-number" line="152">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="153">            <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://mirrors.aliyun.com/docker-ce/linux/debian/gpg <span class="token operator">|</span> gpg <span class="token parameter variable">--dearmor</span> <span class="token parameter variable">-o</span> /etc/apt/keyrings/docker-archive-keyring.gpg <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="154">            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"x86_64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="155">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=amd64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="156">            <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"aarch64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="157">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=arm64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="158">            <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="159">        <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="160">            <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://download.docker.com/linux/debian/gpg <span class="token operator">|</span> gpg <span class="token parameter variable">--dearmor</span> <span class="token parameter variable">-o</span> /etc/apt/keyrings/docker-archive-keyring.gpg <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="161">            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"x86_64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="162">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=amd64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="163">            <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"aarch64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="164">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=arm64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
-</span><span class="code-line line-number" line="165">            <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="166">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="167">        
-</span><span class="code-line line-number" line="168">        <span class="token function">apt</span> update
-</span><span class="code-line line-number" line="169">        <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> docker-ce docker-ce-cli containerd.io
-</span><span class="code-line line-number" line="170">        install_add_docker_cn
-</span><span class="code-line line-number" line="171">
-</span><span class="code-line line-number" line="172">    <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">apt</span> <span class="token operator">&#x26;></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> yum <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="173">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>Debian/Ubuntu/CentOS<span class="token variable">${gl_bai}</span> 通用系统"</span>
-</span><span class="code-line line-number" line="174">        install_add_docker_guanfang
-</span><span class="code-line line-number" line="175">
-</span><span class="code-line line-number" line="176">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="177">        log_warn <span class="token string">"未知系统，尝试直接安装 Docker"</span>
-</span><span class="code-line line-number" line="178">        <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">docker</span> <span class="token function">docker-compose</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">docker</span> <span class="token function">docker-compose</span> <span class="token operator">||</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">docker</span> <span class="token function">docker-compose</span>
-</span><span class="code-line line-number" line="179">        install_add_docker_cn
-</span><span class="code-line line-number" line="180">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="44">    
+</span><span class="code-line line-number" line="45">    <span class="token comment"># 修复：先创建目录，防止写入失败</span>
+</span><span class="code-line line-number" line="46">    <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /etc/docker
+</span><span class="code-line line-number" line="47">
+</span><span class="code-line line-number" line="48">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="49">        log_info <span class="token string">"检测到中国地区，配置国内镜像加速"</span>
+</span><span class="code-line line-number" line="50">        <span class="token function">cat</span> <span class="token operator">></span>/etc/docker/daemon.json <span class="token operator">&#x3C;&#x3C;</span><span class="token string">EOF
+</span></span><span class="code-line line-number" line="51"><span class="token string">{
+</span></span><span class="code-line line-number" line="52"><span class="token string">  "registry-mirrors": [
+</span></span><span class="code-line line-number" line="53"><span class="token string">    "https://docker.1ms.run",
+</span></span><span class="code-line line-number" line="54"><span class="token string">    "https://docker.m.ixdev.cn",
+</span></span><span class="code-line line-number" line="55"><span class="token string">    "https://hub.rat.dev",
+</span></span><span class="code-line line-number" line="56"><span class="token string">    "https://dockerproxy.net",
+</span></span><span class="code-line line-number" line="57"><span class="token string">    "https://docker-registry.nmqu.com",
+</span></span><span class="code-line line-number" line="58"><span class="token string">    "https://docker.amingg.com",
+</span></span><span class="code-line line-number" line="59"><span class="token string">    "https://docker.hlmirror.com",
+</span></span><span class="code-line line-number" line="60"><span class="token string">    "https://hub1.nat.tf",
+</span></span><span class="code-line line-number" line="61"><span class="token string">    "https://hub2.nat.tf",
+</span></span><span class="code-line line-number" line="62"><span class="token string">    "https://hub3.nat.tf",
+</span></span><span class="code-line line-number" line="63"><span class="token string">    "https://docker.m.daocloud.io",
+</span></span><span class="code-line line-number" line="64"><span class="token string">    "https://docker.kejilion.pro",
+</span></span><span class="code-line line-number" line="65"><span class="token string">    "https://docker.367231.xyz",
+</span></span><span class="code-line line-number" line="66"><span class="token string">    "https://hub.1panel.dev",
+</span></span><span class="code-line line-number" line="67"><span class="token string">    "https://dockerproxy.cool",
+</span></span><span class="code-line line-number" line="68"><span class="token string">    "https://docker.apiba.cn",
+</span></span><span class="code-line line-number" line="69"><span class="token string">    "https://proxy.vvvv.ee"
+</span></span><span class="code-line line-number" line="70"><span class="token string">  ]
+</span></span><span class="code-line line-number" line="71"><span class="token string">}
+</span></span><span class="code-line line-number" line="72"><span class="token string">EOF</span>
+</span><span class="code-line line-number" line="73">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="74">        log_info <span class="token string">"非中国地区，不配置国内镜像"</span>
+</span><span class="code-line line-number" line="75">        <span class="token function">rm</span> <span class="token parameter variable">-f</span> /etc/docker/daemon.json <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+</span><span class="code-line line-number" line="76">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="77">
+</span><span class="code-line line-number" line="78">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="79">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="80">    
+</span><span class="code-line line-number" line="81">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> systemctl <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="82">        systemctl <span class="token builtin class-name">enable</span> <span class="token function">docker</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
+</span><span class="code-line line-number" line="83">        systemctl daemon-reload <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
+</span><span class="code-line line-number" line="84">        systemctl restart <span class="token function">docker</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
+</span><span class="code-line line-number" line="85">        log_ok <span class="token string">"Docker 已设置开机自启并重启完成"</span>
+</span><span class="code-line line-number" line="86">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="87">        log_warn <span class="token string">"无 systemctl，跳过服务自启设置"</span>
+</span><span class="code-line line-number" line="88">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="89"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="90">
+</span><span class="code-line line-number" line="91"><span class="token function-name function">install_add_docker_guanfang</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="92">    <span class="token builtin class-name">local</span> country
+</span><span class="code-line line-number" line="93">    <span class="token assign-left variable">country</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> ipinfo.io/country <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"US"</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="94">    
+</span><span class="code-line line-number" line="95">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="96">        log_info <span class="token string">"中国地区使用阿里云镜像安装 <span class="token variable">${gl_huang}</span>Docker<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="97">        <span class="token builtin class-name">cd</span> ~ <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="98">        <span class="token function">curl</span> <span class="token parameter variable">-sS</span> <span class="token parameter variable">-O</span> https://raw.githubusercontent.com/kejilion/docker/main/install
+</span><span class="code-line line-number" line="99">        <span class="token function">chmod</span> +x <span class="token function">install</span>
+</span><span class="code-line line-number" line="100">        <span class="token function">sh</span> <span class="token function">install</span> <span class="token parameter variable">--mirror</span> Aliyun
+</span><span class="code-line line-number" line="101">        <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token function">install</span>
+</span><span class="code-line line-number" line="102">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="103">        log_info <span class="token string">"海外地区使用官方脚本安装"</span>
+</span><span class="code-line line-number" line="104">        <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://get.docker.com <span class="token operator">|</span> <span class="token function">sh</span>
+</span><span class="code-line line-number" line="105">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="106">    
+</span><span class="code-line line-number" line="107">    <span class="token comment"># 修复：安装后等待一下，让命令生效</span>
+</span><span class="code-line line-number" line="108">    sleep_fractional <span class="token number">1</span>
+</span><span class="code-line line-number" line="109">    install_add_docker_cn
+</span><span class="code-line line-number" line="110"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="111">
+</span><span class="code-line line-number" line="112"><span class="token function-name function">install_add_docker</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="113">    <span class="token function">clear</span>
+</span><span class="code-line line-number" line="114">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装 <span class="token variable">${gl_huang}</span>docker<span class="token variable">${gl_zi}</span> 环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="115">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="116">    
+</span><span class="code-line line-number" line="117">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">${gl_bai}</span>确定要安装 <span class="token variable">${gl_huang}</span>docker<span class="token variable">${gl_bai}</span> 环境吗？ (<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span> confirm
+</span><span class="code-line line-number" line="118">    
+</span><span class="code-line line-number" line="119">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token variable">$confirm</span> <span class="token operator">=~</span> ^<span class="token punctuation">[</span>Yy<span class="token punctuation">]</span>$ <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="120">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>已取消安装操作<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="121">        exit_animation
+</span><span class="code-line line-number" line="122">        <span class="token builtin class-name">return</span>
+</span><span class="code-line line-number" line="123">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="124">
+</span><span class="code-line line-number" line="125">    log_info <span class="token string">"开始检测系统并安装 <span class="token variable">${gl_huang}</span>Docker <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="126">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="127">
+</span><span class="code-line line-number" line="128">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/os-release <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"Fedora"</span> /etc/os-release<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="129">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>Fedora<span class="token variable">${gl_bai}</span> 系统"</span>
+</span><span class="code-line line-number" line="130">        install_add_docker_guanfang
+</span><span class="code-line line-number" line="131">
+</span><span class="code-line line-number" line="132">    <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> dnf <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="133">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>RHEL 系系统<span class="token variable">${gl_bai}</span> (dnf)"</span>
+</span><span class="code-line line-number" line="134">        dnf update <span class="token parameter variable">-y</span>
+</span><span class="code-line line-number" line="135">        dnf <span class="token function">install</span> <span class="token parameter variable">-y</span> yum-utils device-mapper-persistent-data lvm2
+</span><span class="code-line line-number" line="136">        <span class="token function">rm</span> <span class="token parameter variable">-f</span> /etc/yum.repos.d/docker*.repo <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+</span><span class="code-line line-number" line="137">        
+</span><span class="code-line line-number" line="138">        <span class="token assign-left variable">country</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> ipinfo.io/country <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"US"</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="139">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="140">            <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo <span class="token operator">|</span> <span class="token function">tee</span> /etc/yum.repos.d/docker-ce.repo <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="141">        <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="142">            yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="143">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="144">        
+</span><span class="code-line line-number" line="145">        dnf <span class="token function">install</span> <span class="token parameter variable">-y</span> docker-ce docker-ce-cli containerd.io
+</span><span class="code-line line-number" line="146">        install_add_docker_cn
+</span><span class="code-line line-number" line="147">
+</span><span class="code-line line-number" line="148">    <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/os-release <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"Kali"</span> /etc/os-release<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="149">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>Kali Linux<span class="token variable">${gl_bai}</span> 系统"</span>
+</span><span class="code-line line-number" line="150">        <span class="token function">apt</span> update
+</span><span class="code-line line-number" line="151">        <span class="token function">apt</span> upgrade <span class="token parameter variable">-y</span>
+</span><span class="code-line line-number" line="152">        <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> apt-transport-https ca-certificates <span class="token function">curl</span> gnupg lsb-release
+</span><span class="code-line line-number" line="153">        <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /etc/apt/keyrings
+</span><span class="code-line line-number" line="154">        
+</span><span class="code-line line-number" line="155">        <span class="token assign-left variable">country</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> ipinfo.io/country <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"US"</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="156">        <span class="token assign-left variable">arch</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-m</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="157">        
+</span><span class="code-line line-number" line="158">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$country</span>"</span> <span class="token operator">=</span> <span class="token string">"CN"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="159">            <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://mirrors.aliyun.com/docker-ce/linux/debian/gpg <span class="token operator">|</span> gpg <span class="token parameter variable">--dearmor</span> <span class="token parameter variable">-o</span> /etc/apt/keyrings/docker-archive-keyring.gpg <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="160">            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"x86_64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="161">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=amd64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="162">            <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"aarch64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="163">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=arm64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="164">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="165">        <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="166">            <span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://download.docker.com/linux/debian/gpg <span class="token operator">|</span> gpg <span class="token parameter variable">--dearmor</span> <span class="token parameter variable">-o</span> /etc/apt/keyrings/docker-archive-keyring.gpg <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="167">            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"x86_64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="168">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=amd64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="169">            <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$arch</span>"</span> <span class="token operator">=</span> <span class="token string">"aarch64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="170">                <span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=arm64 signed-by=/etc/apt/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian bullseye stable"</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">></span>/dev/null
+</span><span class="code-line line-number" line="171">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="172">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="173">        
+</span><span class="code-line line-number" line="174">        <span class="token function">apt</span> update
+</span><span class="code-line line-number" line="175">        <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> docker-ce docker-ce-cli containerd.io
+</span><span class="code-line line-number" line="176">        install_add_docker_cn
+</span><span class="code-line line-number" line="177">
+</span><span class="code-line line-number" line="178">    <span class="token keyword">elif</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">apt</span> <span class="token operator">&#x26;></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> yum <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="179">        log_info <span class="token string">"检测到 <span class="token variable">${gl_huang}</span>Debian/Ubuntu/CentOS<span class="token variable">${gl_bai}</span> 通用系统"</span>
+</span><span class="code-line line-number" line="180">        install_add_docker_guanfang
 </span><span class="code-line line-number" line="181">
-</span><span class="code-line line-number" line="182">    <span class="token builtin class-name">local</span> ver
-</span><span class="code-line line-number" line="183">    <span class="token assign-left variable">ver</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">docker</span> <span class="token parameter variable">--version</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $3}'</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/,//g'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="184">    log_ok <span class="token string">"Docker 版本：<span class="token variable">${gl_lv}</span><span class="token variable">$ver</span><span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="185">    log_ok <span class="token string">"Docker 环境安装完成！"</span>
-</span><span class="code-line line-number" line="186">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="187"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="188">
-</span><span class="code-line line-number" line="189">install_add_docker
+</span><span class="code-line line-number" line="182">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="183">        log_warn <span class="token string">"未知系统，尝试直接安装 Docker"</span>
+</span><span class="code-line line-number" line="184">        <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> docker.io <span class="token function">docker-compose</span> <span class="token operator">||</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">docker</span> <span class="token function">docker-compose</span>
+</span><span class="code-line line-number" line="185">        install_add_docker_cn
+</span><span class="code-line line-number" line="186">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="187">
+</span><span class="code-line line-number" line="188">    <span class="token comment"># 修复：检查是否安装成功</span>
+</span><span class="code-line line-number" line="189">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="190">        log_error <span class="token string">"Docker 安装失败！"</span>
+</span><span class="code-line line-number" line="191">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="192">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="193">
+</span><span class="code-line line-number" line="194">    <span class="token builtin class-name">local</span> ver
+</span><span class="code-line line-number" line="195">    <span class="token assign-left variable">ver</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">docker</span> <span class="token parameter variable">--version</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $3}'</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/,//g'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="196">    log_ok <span class="token string">"Docker 版本：<span class="token variable">${gl_lv}</span><span class="token variable">$ver</span><span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="197">    log_ok <span class="token string">"Docker 环境安装完成！"</span>
+</span><span class="code-line line-number" line="198">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="199"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="200">
+</span><span class="code-line line-number" line="201">install_add_docker
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -uo pipefail
 
@@ -1380,7 +1392,7 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1389,6 +1401,10 @@ exit_animation() {
 install_add_docker_cn() {
     local country
     country=$(curl -s ipinfo.io/country 2>/dev/null || echo &#x22;US&#x22;)
+    
+    # 修复：先创建目录，防止写入失败
+    mkdir -p /etc/docker
+
     if [ &#x22;$country&#x22; = &#x22;CN&#x22; ]; then
         log_info &#x22;检测到中国地区，配置国内镜像加速&#x22;
         cat >/etc/docker/daemon.json <<EOF
@@ -1424,7 +1440,7 @@ EOF
     
     if command -v systemctl &#x26;>/dev/null; then
         systemctl enable docker >/dev/null 2>&#x26;1
-        systemctl start docker >/dev/null 2>&#x26;1
+        systemctl daemon-reload >/dev/null 2>&#x26;1
         systemctl restart docker >/dev/null 2>&#x26;1
         log_ok &#x22;Docker 已设置开机自启并重启完成&#x22;
     else
@@ -1439,7 +1455,7 @@ install_add_docker_guanfang() {
     if [ &#x22;$country&#x22; = &#x22;CN&#x22; ]; then
         log_info &#x22;中国地区使用阿里云镜像安装 ${gl_huang}Docker${gl_bai}&#x22;
         cd ~ || return 1
-        curl -sS -O raw.githubusercontent.com/kejilion/docker/main/install
+        curl -sS -O https://raw.githubusercontent.com/kejilion/docker/main/install
         chmod +x install
         sh install --mirror Aliyun
         rm -f install
@@ -1448,12 +1464,14 @@ install_add_docker_guanfang() {
         curl -fsSL https://get.docker.com | sh
     fi
     
+    # 修复：安装后等待一下，让命令生效
+    sleep_fractional 1
     install_add_docker_cn
 }
 
 install_add_docker() {
     clear
-    echo -e &#x22;${gl_zi}>>> 安装 ${gl_huang}docker${gl_zi} 环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装 ${gl_huang}docker${gl_zi} 环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     
     read -r -e -p &#x22;${gl_bai}确定要安装 ${gl_huang}docker${gl_bai} 环境吗？ (${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22; confirm
@@ -1464,7 +1482,7 @@ install_add_docker() {
         return
     fi
 
-    log_info &#x22;开始检测系统并安装 ${gl_huang}Docker${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;开始检测系统并安装 ${gl_huang}Docker ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     if [ -f /etc/os-release ] &#x26;&#x26; grep -q &#x22;Fedora&#x22; /etc/os-release; then
@@ -1523,8 +1541,14 @@ install_add_docker() {
 
     else
         log_warn &#x22;未知系统，尝试直接安装 Docker&#x22;
-        install -y docker docker-compose 2>/dev/null || apt install -y docker docker-compose || yum install -y docker docker-compose
+        apt install -y docker.io docker-compose || yum install -y docker docker-compose
         install_add_docker_cn
+    fi
+
+    # 修复：检查是否安装成功
+    if ! command -v docker &#x26;>/dev/null; then
+        log_error &#x22;Docker 安装失败！&#x22;
+        return 1
     fi
 
     local ver
@@ -1766,8 +1790,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

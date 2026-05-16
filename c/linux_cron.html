@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_cron 命令">
     <meta name="twitter:description" content="Linux 定时任务管理脚本 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1181,7 +1181,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="22">
 </span><span class="code-line line-number" line="23"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="25">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意‮键继‬续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="25">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意‮键继‬续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="26">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="27">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="28">    <span class="token function">clear</span>
@@ -1200,7 +1200,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="41"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="42">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即‮退将‬出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="43">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="44">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="44">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="45">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="46">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="47">    <span class="token function">clear</span>
@@ -1208,9 +1208,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="49">
 </span><span class="code-line line-number" line="50"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="51">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="52">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="52">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="53">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="54">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="54">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="55">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="56">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="57">    <span class="token function">clear</span>
@@ -1218,20 +1218,20 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="59">
 </span><span class="code-line line-number" line="60"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="61">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="62">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="62">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="63">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="64">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="64">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="65">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="66">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="67">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
 </span><span class="code-line line-number" line="68"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="69">
 </span><span class="code-line line-number" line="70"><span class="token function-name function">handle_y_n</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="71">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_hong}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="71">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_hong}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>) <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="72">    sleep_fractional <span class="token number">0.3</span>
-</span><span class="code-line line-number" line="73">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_huang}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="73">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_huang}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>) <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="74">    sleep_fractional <span class="token number">0.3</span>
-</span><span class="code-line line-number" line="75">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="75">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>) <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="76">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="77">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="78">    <span class="token builtin class-name">return</span> <span class="token number">2</span>
@@ -1591,7 +1591,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="432"><span class="token string">        return 1
 </span></span><span class="code-line line-number" line="433"><span class="token string">    fi
 </span></span><span class="code-line line-number" line="434"><span class="token string">
-</span></span><span class="code-line line-number" line="435"><span class="token string">    echo -e "</span><span class="token variable">${gl_bai}</span>正在打开<span class="token variable">${gl_lv}</span><span class="token function">crontab</span><span class="token variable">${gl_bai}</span>编辑器<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="435"><span class="token string">    echo -e "</span><span class="token variable">${gl_bai}</span>正在打开<span class="token variable">${gl_lv}</span><span class="token function">crontab</span><span class="token variable">${gl_bai}</span>编辑器 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="436"><span class="token string">    log_warn "</span>请谨慎编辑，保存后更改将立即生效<span class="token string">"
 </span></span><span class="code-line line-number" line="437"><span class="token string">
 </span></span><span class="code-line line-number" line="438"><span class="token string">    if crontab -e; then
@@ -1622,7 +1622,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="463"><span class="token string">
 </span></span><span class="code-line line-number" line="464"><span class="token string">    case "</span><span class="token variable">$confirm</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="465"><span class="token string">    [yY] | [yY][eE][sS])
-</span></span><span class="code-line line-number" line="466"><span class="token string">        echo -e "</span><span class="token variable">${gl_lan}</span>正在清空crontab<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="466"><span class="token string">        echo -e "</span><span class="token variable">${gl_lan}</span>正在清空crontab <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="467"><span class="token string">        if crontab -r 2>/dev/null; then
 </span></span><span class="code-line line-number" line="468"><span class="token string">            log_ok "</span>crontab已清空（crontab -r）<span class="token string">"
 </span></span><span class="code-line line-number" line="469"><span class="token string">        elif echo "</span>" <span class="token operator">|</span> <span class="token function">crontab</span> - <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -1786,7 +1786,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="627">
 </span><span class="code-line line-number" line="628"><span class="token function-name function">_stop_cron_service</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="629">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="630">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在停止cron服务<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="630">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在停止cron服务 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="631">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="632">
 </span><span class="code-line line-number" line="633">    detect_cron_service
@@ -1813,7 +1813,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="654">
 </span><span class="code-line line-number" line="655"><span class="token function-name function">_start_cron_service</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="656">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="657">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在启动cron服务<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="657">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在启动cron服务 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="658">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="659">
 </span><span class="code-line line-number" line="660">    detect_cron_service
@@ -1840,7 +1840,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="681">
 </span><span class="code-line line-number" line="682"><span class="token function-name function">_restart_cron_service</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="683">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="684">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在重启cron服务<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="684">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在重启cron服务 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="685">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="686">
 </span><span class="code-line line-number" line="687">    detect_cron_service
@@ -1867,7 +1867,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="708">
 </span><span class="code-line line-number" line="709"><span class="token function-name function">_reload_cron_config</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="710">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="711">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 重新加载cron配置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="711">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 重新加载cron配置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="712">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="713">
 </span><span class="code-line line-number" line="714">    detect_cron_service
@@ -1912,7 +1912,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="753">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">target_dir</span><span class="token operator">=</span><span class="token string">"/opt/scripts"</span>
 </span><span class="code-line line-number" line="754">
 </span><span class="code-line line-number" line="755">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">$target_dir</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="756">        log_info <span class="token string">"目录 <span class="token variable">${gl_lv}</span><span class="token variable">$target_dir</span><span class="token variable">${gl_bai}</span> 不存在，正在创建<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="756">        log_info <span class="token string">"目录 <span class="token variable">${gl_lv}</span><span class="token variable">$target_dir</span><span class="token variable">${gl_bai}</span> 不存在，正在创建 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="757">        <span class="token keyword">if</span> <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">$target_dir</span>"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="758">            log_ok <span class="token string">"目录创建成功"</span>
 </span><span class="code-line line-number" line="759">        <span class="token keyword">elif</span> <span class="token function">sudo</span> <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">$target_dir</span>"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -2142,7 +2142,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意‮键继‬续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意‮键继‬续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -2161,7 +2161,7 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即‮退将‬出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -2169,9 +2169,9 @@ exit_animation() {
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -2179,20 +2179,20 @@ cancel_return() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
 }
 
 handle_y_n() {
-    echo -ne &#x22;\r${gl_hong}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;\r${gl_hong}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai}) ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.3
-    echo -ne &#x22;\r${gl_huang}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;\r${gl_huang}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai}) ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.3
-    echo -ne &#x22;\r${gl_lv}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;\r${gl_lv}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai}) ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     return 2
@@ -2552,7 +2552,7 @@ edit_crontab() {
         return 1
     fi
 
-    echo -e &#x22;${gl_bai}正在打开${gl_lv}crontab${gl_bai}编辑器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_bai}正在打开${gl_lv}crontab${gl_bai}编辑器 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     log_warn &#x22;请谨慎编辑，保存后更改将立即生效&#x22;
 
     if crontab -e; then
@@ -2583,7 +2583,7 @@ clear_crontab() {
 
     case &#x22;$confirm&#x22; in
     [yY] | [yY][eE][sS])
-        echo -e &#x22;${gl_lan}正在清空crontab${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_lan}正在清空crontab ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         if crontab -r 2>/dev/null; then
             log_ok &#x22;crontab已清空（crontab -r）&#x22;
         elif echo &#x22;&#x22; | crontab - 2>/dev/null; then
@@ -2747,7 +2747,7 @@ detect_cron_service() {
 
 _stop_cron_service() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 正在停止cron服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 正在停止cron服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     detect_cron_service
@@ -2774,7 +2774,7 @@ _stop_cron_service() {
 
 _start_cron_service() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 正在启动cron服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 正在启动cron服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     detect_cron_service
@@ -2801,7 +2801,7 @@ _start_cron_service() {
 
 _restart_cron_service() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 正在重启cron服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 正在重启cron服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     detect_cron_service
@@ -2828,7 +2828,7 @@ _restart_cron_service() {
 
 _reload_cron_config() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 重新加载cron配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 重新加载cron配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     detect_cron_service
@@ -2873,7 +2873,7 @@ create_script_in_opt() {
     local target_dir=&#x22;/opt/scripts&#x22;
 
     if [ ! -d &#x22;$target_dir&#x22; ]; then
-        log_info &#x22;目录 ${gl_lv}$target_dir${gl_bai} 不存在，正在创建${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;目录 ${gl_lv}$target_dir${gl_bai} 不存在，正在创建 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         if mkdir -p &#x22;$target_dir&#x22; 2>/dev/null; then
             log_ok &#x22;目录创建成功&#x22;
         elif sudo mkdir -p &#x22;$target_dir&#x22; 2>/dev/null; then
@@ -3303,8 +3303,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

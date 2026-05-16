@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_install_compose 命令">
     <meta name="twitter:description" content="Linux 安装 Docker Compose - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1251,7 +1251,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 </span><span class="code-line line-number" line="32"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="33">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="34">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="35">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="35">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="36">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="37">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="38">    <span class="token function">clear</span>
@@ -1259,9 +1259,9 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 </span><span class="code-line line-number" line="40">
 </span><span class="code-line line-number" line="41"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="42">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="43">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="43">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="44">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="45">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="45">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="46">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="47">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="48">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1306,7 +1306,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 </span><span class="code-line line-number" line="87">        log_warn <span class="token string">"未知系统，使用通用安装方式"</span>
 </span><span class="code-line line-number" line="88">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="89">
-</span><span class="code-line line-number" line="90">    log_info <span class="token string">"下载官方最新版（兼容所有Linux）..."</span>
+</span><span class="code-line line-number" line="90">    log_info <span class="token string">"下载官方最新版（兼容所有Linux） <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="91">    <span class="token assign-left variable">ARCH</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-m</span><span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="92">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$ARCH</span>"</span> <span class="token operator">=</span> <span class="token string">"x86_64"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="93">        <span class="token assign-left variable">DL_ARCH</span><span class="token operator">=</span><span class="token string">"x86_64"</span>
@@ -1320,7 +1320,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 </span><span class="code-line line-number" line="101">    <span class="token function">curl</span> <span class="token parameter variable">-sL</span> <span class="token string">"<span class="token variable">$LATEST_URL</span>"</span> <span class="token parameter variable">-o</span> /usr/libexec/docker/cli-plugins/docker-compose
 </span><span class="code-line line-number" line="102">    <span class="token function">chmod</span> +x /usr/libexec/docker/cli-plugins/docker-compose
 </span><span class="code-line line-number" line="103">
-</span><span class="code-line line-number" line="104">    log_info <span class="token string">"创建双命令兼容（WSL+全Linux通用）..."</span>
+</span><span class="code-line line-number" line="104">    log_info <span class="token string">"创建双命令兼容（WSL+全Linux通用） <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="105">    <span class="token function">ln</span> <span class="token parameter variable">-sf</span> /usr/libexec/docker/cli-plugins/docker-compose /usr/local/bin/docker-compose
 </span><span class="code-line line-number" line="106">    <span class="token function">ln</span> <span class="token parameter variable">-sf</span> /usr/libexec/docker/cli-plugins/docker-compose /usr/bin/docker-compose
 </span><span class="code-line line-number" line="107">
@@ -1369,7 +1369,7 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1377,9 +1377,9 @@ exit_animation() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1424,7 +1424,7 @@ install_docker_compose() {
         log_warn &#x22;未知系统，使用通用安装方式&#x22;
     fi
 
-    log_info &#x22;下载官方最新版（兼容所有Linux）...&#x22;
+    log_info &#x22;下载官方最新版（兼容所有Linux） ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     ARCH=$(uname -m)
     if [ &#x22;$ARCH&#x22; = &#x22;x86_64&#x22; ]; then
         DL_ARCH=&#x22;x86_64&#x22;
@@ -1438,7 +1438,7 @@ install_docker_compose() {
     curl -sL &#x22;$LATEST_URL&#x22; -o /usr/libexec/docker/cli-plugins/docker-compose
     chmod +x /usr/libexec/docker/cli-plugins/docker-compose
 
-    log_info &#x22;创建双命令兼容（WSL+全Linux通用）...&#x22;
+    log_info &#x22;创建双命令兼容（WSL+全Linux通用） ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     ln -sf /usr/libexec/docker/cli-plugins/docker-compose /usr/local/bin/docker-compose
     ln -sf /usr/libexec/docker/cli-plugins/docker-compose /usr/bin/docker-compose
 
@@ -1684,8 +1684,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="git_pull 命令">
     <meta name="twitter:description" content="Git 项目一键拉取更新工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1255,7 +1255,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="39">
 </span><span class="code-line line-number" line="40"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="41">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="42">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="42">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="43">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="44">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="45">    <span class="token function">clear</span>
@@ -1287,14 +1287,14 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="71"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="72">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="73">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="74">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="74">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="75">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="76">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="77"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="78">
 </span><span class="code-line line-number" line="79"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="80">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="81">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="81">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="82">    <span class="token function">sleep</span> <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="83">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="84">    <span class="token function">clear</span>
@@ -1302,9 +1302,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="86">
 </span><span class="code-line line-number" line="87"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="88">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="89">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="89">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="90">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="91">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="91">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="92">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="93">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="94">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1494,7 +1494,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="278">        <span class="token assign-left variable">upstream_branch</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> rev-parse --abbrev-ref <span class="token string">"@{upstream}"</span><span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="279">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>上游分支: <span class="token variable">${gl_lv}</span><span class="token variable">${upstream_branch}</span><span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="280">    <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="281">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>上游分支: <span class="token variable">${gl_huang}</span>未设置，正在自动关联<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="281">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>上游分支: <span class="token variable">${gl_huang}</span>未设置，正在自动关联 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="282">        <span class="token function">git</span> branch --set-upstream-to<span class="token operator">=</span><span class="token string">"<span class="token variable">$remote</span>/<span class="token variable">$branch</span>"</span> <span class="token string">"<span class="token variable">$branch</span>"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="283">        <span class="token assign-left variable">upstream_branch</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> rev-parse --abbrev-ref <span class="token string">"@{upstream}"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"关联失败"</span><span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="284">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>已关联: <span class="token variable">${gl_lv}</span><span class="token variable">${upstream_branch}</span><span class="token variable">${gl_bai}</span>"</span>
@@ -1503,7 +1503,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="287">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>远程名称: <span class="token variable">${gl_lv}</span><span class="token variable">${remote}</span><span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="288">    
 </span><span class="code-line line-number" line="289">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="290">    log_info <span class="token string">"检查远程仓库信息<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="290">    log_info <span class="token string">"检查远程仓库信息 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="291">    
 </span><span class="code-line line-number" line="292">    <span class="token keyword">if</span> <span class="token function">git</span> remote get-url <span class="token string">"<span class="token variable">$remote</span>"</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="293">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>远程仓库URL: <span class="token variable">${gl_lv}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> remote get-url <span class="token string">"<span class="token variable">$remote</span>"</span><span class="token variable">)</span></span><span class="token variable">${gl_bai}</span>"</span>
@@ -1521,7 +1521,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="305">    
 </span><span class="code-line line-number" line="306">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="307">    
-</span><span class="code-line line-number" line="308">    log_info <span class="token string">"检查工作目录状态<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="308">    log_info <span class="token string">"检查工作目录状态 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="309">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">status_output</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> status <span class="token parameter variable">--short</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="310">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$status_output</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="311">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>当前有未提交的更改:<span class="token variable">${gl_bai}</span>"</span>
@@ -1543,7 +1543,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="327"><span class="token string">    
 </span></span><span class="code-line line-number" line="328"><span class="token string">    echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="329"><span class="token string">
-</span></span><span class="code-line line-number" line="330"><span class="token string">    log_info "</span>正在拉取最新的远程信息<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="330"><span class="token string">    log_info "</span>正在拉取最新的远程信息 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="331"><span class="token string">    echo -e "</span><span class="token variable">${gl_bai}</span>执行: <span class="token function">git</span> fetch <span class="token variable">${gl_huang}</span><span class="token variable">${remote}</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="332"><span class="token string">    
 </span></span><span class="code-line line-number" line="333"><span class="token string">    if git fetch "</span><span class="token variable">$remote</span><span class="token string">"; then
@@ -1575,7 +1575,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="359"><span class="token string">
 </span></span><span class="code-line line-number" line="360"><span class="token string">    if [[ "</span><span class="token variable">$local_commit</span><span class="token string">" == "</span><span class="token variable">$base_commit</span><span class="token string">" ]]; then
 </span></span><span class="code-line line-number" line="361"><span class="token string">        echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="362"><span class="token string">        log_warn "</span>检测到远程更新，开始拉取<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="362"><span class="token string">        log_warn "</span>检测到远程更新，开始拉取 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="363"><span class="token string">        
 </span></span><span class="code-line line-number" line="364"><span class="token string">        echo -e "</span><span class="token variable">${gl_bai}</span>执行: <span class="token function">git</span> pull <span class="token variable">${gl_huang}</span><span class="token variable">${remote}</span> <span class="token variable">${branch}</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="365"><span class="token string">        if git pull "</span><span class="token variable">$remote</span><span class="token string">" "</span><span class="token variable">$branch</span><span class="token string">"; then
@@ -1676,7 +1676,7 @@ handle_y_n() {
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1708,14 +1708,14 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;\r${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
 }
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     sleep 0.6
     echo &#x22;&#x22;
     clear
@@ -1723,9 +1723,9 @@ cancel_return() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1915,7 +1915,7 @@ git_pull() {
         upstream_branch=$(git rev-parse --abbrev-ref &#x22;@{upstream}&#x22;)
         echo -e &#x22;${gl_bai}上游分支: ${gl_lv}${upstream_branch}${gl_bai}&#x22;
     else
-        echo -e &#x22;${gl_bai}上游分支: ${gl_huang}未设置，正在自动关联${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_bai}上游分支: ${gl_huang}未设置，正在自动关联 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         git branch --set-upstream-to=&#x22;$remote/$branch&#x22; &#x22;$branch&#x22; >/dev/null 2>&#x26;1
         upstream_branch=$(git rev-parse --abbrev-ref &#x22;@{upstream}&#x22; 2>/dev/null || echo &#x22;关联失败&#x22;)
         echo -e &#x22;${gl_bai}已关联: ${gl_lv}${upstream_branch}${gl_bai}&#x22;
@@ -1924,7 +1924,7 @@ git_pull() {
     echo -e &#x22;${gl_bai}远程名称: ${gl_lv}${remote}${gl_bai}&#x22;
     
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-    log_info &#x22;检查远程仓库信息${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;检查远程仓库信息 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     
     if git remote get-url &#x22;$remote&#x22; &#x26;>/dev/null; then
         echo -e &#x22;${gl_bai}远程仓库URL: ${gl_lv}$(git remote get-url &#x22;$remote&#x22;)${gl_bai}&#x22;
@@ -1942,7 +1942,7 @@ git_pull() {
     
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     
-    log_info &#x22;检查工作目录状态${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;检查工作目录状态 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     local status_output=$(git status --short 2>/dev/null)
     if [[ -n &#x22;$status_output&#x22; ]]; then
         echo -e &#x22;${gl_bai}当前有未提交的更改:${gl_bai}&#x22;
@@ -1964,7 +1964,7 @@ git_pull() {
     
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
-    log_info &#x22;正在拉取最新的远程信息${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;正在拉取最新的远程信息 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bai}执行: git fetch ${gl_huang}${remote}${gl_bai}&#x22;
     
     if git fetch &#x22;$remote&#x22;; then
@@ -1996,7 +1996,7 @@ git_pull() {
 
     if [[ &#x22;$local_commit&#x22; == &#x22;$base_commit&#x22; ]]; then
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-        log_warn &#x22;检测到远程更新，开始拉取${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_warn &#x22;检测到远程更新，开始拉取 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         
         echo -e &#x22;${gl_bai}执行: git pull ${gl_huang}${remote} ${branch}${gl_bai}&#x22;
         if git pull &#x22;$remote&#x22; &#x22;$branch&#x22;; then
@@ -2287,8 +2287,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

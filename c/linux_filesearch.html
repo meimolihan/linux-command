@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_filesearch 命令">
     <meta name="twitter:description" content="当前目录递归模糊搜索文件 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1191,7 +1191,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_filesearc
 </span><span class="code-line line-number" line="17">
 </span><span class="code-line line-number" line="18"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="19">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="21">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="22">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="23">    <span class="token function">clear</span>
@@ -1199,9 +1199,9 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_filesearc
 </span><span class="code-line line-number" line="25">
 </span><span class="code-line line-number" line="26"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="27">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="28">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="28">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="29">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="30">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="30">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="31">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="32">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="33">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1249,9 +1249,9 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_filesearc
 </span><span class="code-line line-number" line="75">            <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>请输入搜索关键词 (<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): "</span><span class="token punctuation">)</span><span class="token string">" keyword
 </span></span><span class="code-line line-number" line="76"><span class="token string">            [[ "</span><span class="token variable">$keyword</span><span class="token string">" == "</span><span class="token number">0</span><span class="token string">" ]] &#x26;&#x26; { exit_script; }
 </span></span><span class="code-line line-number" line="77"><span class="token string">            if [[ -z "</span><span class="token variable">$keyword</span><span class="token string">" ]]; then
-</span></span><span class="code-line line-number" line="78"><span class="token string">                echo -ne "</span><span class="token variable">${gl_huang}</span>输入搜索关键词<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token punctuation">\</span>c<span class="token string">"
+</span></span><span class="code-line line-number" line="78"><span class="token string">                echo -ne "</span><span class="token variable">${gl_huang}</span>输入搜索关键词 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token punctuation">\</span>c<span class="token string">"
 </span></span><span class="code-line line-number" line="79"><span class="token string">                sleep_fractional 0.5
-</span></span><span class="code-line line-number" line="80"><span class="token string">                echo -ne "</span><span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token punctuation">\</span>c<span class="token string">"
+</span></span><span class="code-line line-number" line="80"><span class="token string">                echo -ne "</span> <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token punctuation">\</span>c<span class="token string">"
 </span></span><span class="code-line line-number" line="81"><span class="token string">                sleep_fractional 0.6
 </span></span><span class="code-line line-number" line="82"><span class="token string">                continue
 </span></span><span class="code-line line-number" line="83"><span class="token string">            fi
@@ -1323,7 +1323,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_filesearc
 </span><span class="code-line line-number" line="149">                            <span class="token keyword">if</span> <span class="token function">file</span> <span class="token string">"<span class="token variable">$file</span>"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"text"</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="150">                                <span class="token builtin class-name">local</span> preview
 </span><span class="code-line line-number" line="151">                                <span class="token assign-left variable">preview</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">head</span> <span class="token parameter variable">-1</span> <span class="token string">"<span class="token variable">$file</span>"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">|</span> <span class="token function">cut</span> -c-50<span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="152">                                <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$preview</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"  <span class="token variable">${gl_zi}</span>预览: <span class="token variable">${preview}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="152">                                <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$preview</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"  <span class="token variable">${gl_zi}</span>预览: <span class="token variable">${preview}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="153">                            <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="154">                        <span class="token keyword">else</span>
 </span><span class="code-line line-number" line="155">                            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"  <span class="token variable">${gl_hui}</span>[无法获取文件信息]<span class="token variable">${gl_bai}</span>"</span>
@@ -1380,7 +1380,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1388,9 +1388,9 @@ break_end() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1438,9 +1438,9 @@ search_file_here() {
             read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请输入搜索关键词 (${gl_hong}0${gl_bai}退出): &#x22;)&#x22; keyword
             [[ &#x22;$keyword&#x22; == &#x22;0&#x22; ]] &#x26;&#x26; { exit_script; }
             if [[ -z &#x22;$keyword&#x22; ]]; then
-                echo -ne &#x22;${gl_huang}输入搜索关键词${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+                echo -ne &#x22;${gl_huang}输入搜索关键词 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
                 sleep_fractional 0.5
-                echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+                echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
                 sleep_fractional 0.6
                 continue
             fi
@@ -1512,7 +1512,7 @@ search_file_here() {
                             if file &#x22;$file&#x22; 2>/dev/null | grep -q &#x22;text&#x22;; then
                                 local preview
                                 preview=$(head -1 &#x22;$file&#x22; 2>/dev/null | cut -c-50)
-                                [[ -n &#x22;$preview&#x22; ]] &#x26;&#x26; echo -e &#x22;  ${gl_zi}预览: ${preview}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                                [[ -n &#x22;$preview&#x22; ]] &#x26;&#x26; echo -e &#x22;  ${gl_zi}预览: ${preview} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                             fi
                         else
                             echo -e &#x22;  ${gl_hui}[无法获取文件信息]${gl_bai}&#x22;
@@ -1774,8 +1774,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

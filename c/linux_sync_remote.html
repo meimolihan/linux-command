@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_sync_remote 命令">
     <meta name="twitter:description" content="Rsync 远程同步管理工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1208,7 +1208,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span><span class="code-line line-number" line="17">
 </span><span class="code-line line-number" line="18"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="19">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="21">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="22">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="23">    <span class="token function">clear</span>
@@ -1216,9 +1216,9 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span><span class="code-line line-number" line="25">
 </span><span class="code-line line-number" line="26"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="27">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="28">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="28">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="29">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="30">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="30">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="31">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="32">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="33">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1237,16 +1237,16 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span><span class="code-line line-number" line="46"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="47">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="48">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="49">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="49">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="50">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="51">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="52"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="53">
 </span><span class="code-line line-number" line="54"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="55">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="56">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="56">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="57">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="58">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="58">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="59">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="61">    <span class="token function">clear</span>
@@ -1254,9 +1254,9 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span><span class="code-line line-number" line="63">
 </span><span class="code-line line-number" line="64"><span class="token function-name function">cancel_empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="65">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="66">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_hong}</span>空输入，返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="66">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_hong}</span>空输入，返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="67">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="69">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="70">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="71">    <span class="token function">clear</span>
@@ -1583,13 +1583,13 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span></span><span class="code-line line-number" line="392"><span class="token string">
 </span></span><span class="code-line line-number" line="393"><span class="token string">    if [[ "</span><span class="token variable">$direction</span><span class="token string">" == "</span>pull<span class="token string">" ]]; then
 </span></span><span class="code-line line-number" line="394"><span class="token string">        echo -e "</span>"
-</span><span class="code-line line-number" line="395">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在拉取同步到本地: <span class="token variable">${gl_huang}</span><span class="token variable">$remote</span>:<span class="token variable">$remote_path</span> <span class="token variable">${gl_bai}</span>-> <span class="token variable">${gl_lv}</span><span class="token variable">$local_path</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="395">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在拉取同步到本地: <span class="token variable">${gl_huang}</span><span class="token variable">$remote</span>:<span class="token variable">$remote_path</span> <span class="token variable">${gl_bai}</span>-> <span class="token variable">${gl_lv}</span><span class="token variable">$local_path</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="396">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="397">        <span class="token assign-left variable">source</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$remote</span>:<span class="token variable">$remote_path</span>"</span>
 </span><span class="code-line line-number" line="398">        <span class="token assign-left variable">destination</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$local_path</span>"</span>
 </span><span class="code-line line-number" line="399">    <span class="token keyword">else</span>
 </span><span class="code-line line-number" line="400">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="401">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在推送同步到远端: <span class="token variable">${gl_huang}</span><span class="token variable">$local_path</span> <span class="token variable">${gl_bai}</span>-> <span class="token variable">${gl_lv}</span><span class="token variable">$remote</span>:<span class="token variable">$remote_path</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="401">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 正在推送同步到远端: <span class="token variable">${gl_huang}</span><span class="token variable">$local_path</span> <span class="token variable">${gl_bai}</span>-> <span class="token variable">${gl_lv}</span><span class="token variable">$remote</span>:<span class="token variable">$remote_path</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="402">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="403">        <span class="token assign-left variable">source</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$local_path</span>"</span>
 </span><span class="code-line line-number" line="404">        <span class="token assign-left variable">destination</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$remote</span>:<span class="token variable">$remote_path</span>"</span>
@@ -1615,7 +1615,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span><span class="code-line line-number" line="424">        <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="425">
 </span><span class="code-line line-number" line="426">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">stat</span> <span class="token parameter variable">-c</span> %a <span class="token string">"<span class="token variable">$password_or_key</span>"</span><span class="token variable">)</span></span>"</span> <span class="token operator">!=</span> <span class="token string">"600"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="427">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>警告：密钥文件权限不正确，正在修复<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="427">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>警告：密钥文件权限不正确，正在修复 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="428">            <span class="token function">chmod</span> <span class="token number">600</span> <span class="token string">"<span class="token variable">$password_or_key</span>"</span>
 </span><span class="code-line line-number" line="429">        <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="430">
@@ -2020,7 +2020,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span><span class="code-line line-number" line="829">        
 </span><span class="code-line line-number" line="830">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="831">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"  <span class="token variable">${gl_bai}</span>连接测试:<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="832">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"  <span class="token variable">${gl_bai}</span>正在测试 SSH 连接<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="832">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"  <span class="token variable">${gl_bai}</span>正在测试 SSH 连接 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="833">        
 </span><span class="code-line line-number" line="834">        <span class="token builtin class-name">local</span> <span class="token assign-left variable">ssh_test_cmd</span><span class="token operator">=</span><span class="token string">""</span>
 </span><span class="code-line line-number" line="835">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$auth_method</span>"</span> <span class="token operator">==</span> <span class="token string">"password"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -2098,7 +2098,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_sync_remo
 </span></span><span class="code-line line-number" line="907"><span class="token string">        return
 </span></span><span class="code-line line-number" line="908"><span class="token string">    fi
 </span></span><span class="code-line line-number" line="909"><span class="token string">    
-</span></span><span class="code-line line-number" line="910"><span class="token string">    echo -e "</span><span class="token variable">${gl_bai}</span>开始批量执行推送任务<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="910"><span class="token string">    echo -e "</span><span class="token variable">${gl_bai}</span>开始批量执行推送任务 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="911"><span class="token string">    echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="912"><span class="token string">    
 </span></span><span class="code-line line-number" line="913"><span class="token string">    local success_count=0
@@ -2250,7 +2250,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -2258,9 +2258,9 @@ break_end() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -2279,16 +2279,16 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;\r${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
 }
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -2296,9 +2296,9 @@ cancel_return() {
 
 cancel_empty() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -e &#x22;${gl_hong}空输入，返回 ${gl_huang}${menu_name}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -e &#x22;${gl_hong}空输入，返回 ${gl_huang}${menu_name} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -2625,13 +2625,13 @@ remote_run_task() {
 
     if [[ &#x22;$direction&#x22; == &#x22;pull&#x22; ]]; then
         echo -e &#x22;&#x22;
-        echo -e &#x22;${gl_zi}>>> 正在拉取同步到本地: ${gl_huang}$remote:$remote_path ${gl_bai}-> ${gl_lv}$local_path${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_zi}>>> 正在拉取同步到本地: ${gl_huang}$remote:$remote_path ${gl_bai}-> ${gl_lv}$local_path ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         source=&#x22;$remote:$remote_path&#x22;
         destination=&#x22;$local_path&#x22;
     else
         echo -e &#x22;&#x22;
-        echo -e &#x22;${gl_zi}>>> 正在推送同步到远端: ${gl_huang}$local_path ${gl_bai}-> ${gl_lv}$remote:$remote_path${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_zi}>>> 正在推送同步到远端: ${gl_huang}$local_path ${gl_bai}-> ${gl_lv}$remote:$remote_path ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         source=&#x22;$local_path&#x22;
         destination=&#x22;$remote:$remote_path&#x22;
@@ -2657,7 +2657,7 @@ remote_run_task() {
         fi
 
         if [[ &#x22;$(stat -c %a &#x22;$password_or_key&#x22;)&#x22; != &#x22;600&#x22; ]]; then
-            echo -e &#x22;${gl_huang}警告：密钥文件权限不正确，正在修复${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_huang}警告：密钥文件权限不正确，正在修复 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             chmod 600 &#x22;$password_or_key&#x22;
         fi
 
@@ -3062,7 +3062,7 @@ remote_show_task_details() {
         
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         echo -e &#x22;  ${gl_bai}连接测试:${gl_bai}&#x22;
-        echo -e &#x22;  ${gl_bai}正在测试 SSH 连接${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;  ${gl_bai}正在测试 SSH 连接 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         
         local ssh_test_cmd=&#x22;&#x22;
         if [[ &#x22;$auth_method&#x22; == &#x22;password&#x22; ]]; then
@@ -3140,7 +3140,7 @@ remote_run_all_tasks_push() {
         return
     fi
     
-    echo -e &#x22;${gl_bai}开始批量执行推送任务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_bai}开始批量执行推送任务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     
     local success_count=0
@@ -3502,8 +3502,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

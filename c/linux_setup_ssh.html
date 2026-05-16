@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_setup_ssh 命令">
     <meta name="twitter:description" content="Linux SSH 服务安装配置与安全优化 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1521,7 +1521,7 @@ ssh -vvv user@server_ip
 </span><span class="code-line line-number" line="17">
 </span><span class="code-line line-number" line="18"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="19">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="21">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="22">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="23">    <span class="token function">clear</span>
@@ -1547,9 +1547,9 @@ ssh -vvv user@server_ip
 </span><span class="code-line line-number" line="43">
 </span><span class="code-line line-number" line="44"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="45">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="46">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="46">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="47">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="48">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="48">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="49">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="50">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="51">    <span class="token function">clear</span>
@@ -1558,7 +1558,7 @@ ssh -vvv user@server_ip
 </span><span class="code-line line-number" line="54"><span class="token function-name function">root_use</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="55">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="56">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token environment constant">$EUID</span>"</span> <span class="token parameter variable">-ne</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="57">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token entity" title="\n">\n</span><span class="token variable">${gl_zi}</span>>>> ROOT登录检查<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="57">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token entity" title="\n">\n</span><span class="token variable">${gl_zi}</span>>>> ROOT登录检查 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="58">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="59">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>提示: <span class="token variable">${gl_bai}</span>该功能需要root用户才能运行！"</span>
 </span><span class="code-line line-number" line="60">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
@@ -1651,7 +1651,7 @@ ssh -vvv user@server_ip
 </span></span><span class="code-line line-number" line="147"><span class="token string">    done
 </span></span><span class="code-line line-number" line="148"><span class="token string">    log_info "</span>使用 SSH 端口: <span class="token variable">$SSH_PORT</span><span class="token string">"
 </span></span><span class="code-line line-number" line="149"><span class="token string">    
-</span></span><span class="code-line line-number" line="150"><span class="token string">    log_info "</span>检测操作系统<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="150"><span class="token string">    log_info "</span>检测操作系统 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="151"><span class="token string">    if [ -f /etc/os-release ]; then
 </span></span><span class="code-line line-number" line="152"><span class="token string">        . /etc/os-release
 </span></span><span class="code-line line-number" line="153"><span class="token string">        OS=<span class="token variable">$ID</span>
@@ -1679,7 +1679,7 @@ ssh -vvv user@server_ip
 </span></span><span class="code-line line-number" line="175"><span class="token string">    fi
 </span></span><span class="code-line line-number" line="176"><span class="token string">    log_info "</span>检测到操作系统: <span class="token variable">$OS_NAME</span><span class="token string">"
 </span></span><span class="code-line line-number" line="177"><span class="token string">    
-</span></span><span class="code-line line-number" line="178"><span class="token string">    log_info "</span>开始安装 SSH 服务<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="178"><span class="token string">    log_info "</span>开始安装 SSH 服务 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="179"><span class="token string">    case <span class="token variable">$OS</span> in
 </span></span><span class="code-line line-number" line="180"><span class="token string">        debian|ubuntu|linuxmint)
 </span></span><span class="code-line line-number" line="181"><span class="token string">            apt-get update -qq
@@ -1704,7 +1704,7 @@ ssh -vvv user@server_ip
 </span></span><span class="code-line line-number" line="200"><span class="token string">    esac
 </span></span><span class="code-line line-number" line="201"><span class="token string">    log_ok "</span>SSH 服务安装完成<span class="token string">"
 </span></span><span class="code-line line-number" line="202"><span class="token string">    
-</span></span><span class="code-line line-number" line="203"><span class="token string">    log_info "</span>开始配置 SSH 服务<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="203"><span class="token string">    log_info "</span>开始配置 SSH 服务 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="204"><span class="token string">    [ -f /etc/ssh/sshd_config ] &#x26;&#x26; \
 </span></span><span class="code-line line-number" line="205"><span class="token string">        cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup.<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%Y%m%d%H%M%S<span class="token variable">)</span></span>
 </span></span><span class="code-line line-number" line="206"><span class="token string">
@@ -1743,7 +1743,7 @@ ssh -vvv user@server_ip
 </span><span class="code-line line-number" line="239">
 </span><span class="code-line line-number" line="240">    log_ok <span class="token string">"SSH 配置已更新/补全"</span>
 </span><span class="code-line line-number" line="241">    
-</span><span class="code-line line-number" line="242">    log_info <span class="token string">"开始配置防火墙<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="242">    log_info <span class="token string">"开始配置防火墙 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="243">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> ufw <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="244">        ufw allow <span class="token string">"<span class="token variable">$SSH_PORT</span>"</span>/tcp
 </span><span class="code-line line-number" line="245">        <span class="token builtin class-name">echo</span> <span class="token string">"y"</span> <span class="token operator">|</span> ufw <span class="token builtin class-name">enable</span>
@@ -1782,7 +1782,7 @@ ssh -vvv user@server_ip
 </span></span><span class="code-line line-number" line="278"><span class="token string">        *) log_info "</span>已跳过 root 密码修改。<span class="token string">" ;;
 </span></span><span class="code-line line-number" line="279"><span class="token string">    esac
 </span></span><span class="code-line line-number" line="280"><span class="token string">    
-</span></span><span class="code-line line-number" line="281"><span class="token string">    log_info "</span>启动/重启 SSH 服务<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="281"><span class="token string">    log_info "</span>启动/重启 SSH 服务 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="282"><span class="token string">    case <span class="token variable">$OS</span> in
 </span></span><span class="code-line line-number" line="283"><span class="token string">        debian|ubuntu|linuxmint|opensuse*|suse*|arch|manjaro)
 </span></span><span class="code-line line-number" line="284"><span class="token string">            systemctl enable ssh
@@ -1837,7 +1837,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1863,9 +1863,9 @@ sleep_fractional() {
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -ne &#x22;${gl_lv}即将 ${gl_huang}${menu_name}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_lv}即将 ${gl_huang}${menu_name} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1874,7 +1874,7 @@ cancel_return() {
 root_use() {
     clear
     if [ &#x22;$EUID&#x22; -ne 0 ]; then
-        echo -e &#x22;\n${gl_zi}>>> ROOT登录检查${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;\n${gl_zi}>>> ROOT登录检查 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         echo -e &#x22;${gl_huang}提示: ${gl_bai}该功能需要root用户才能运行！&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -1967,7 +1967,7 @@ linux_setup_ssh() {
     done
     log_info &#x22;使用 SSH 端口: $SSH_PORT&#x22;
     
-    log_info &#x22;检测操作系统${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;检测操作系统 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     if [ -f /etc/os-release ]; then
         . /etc/os-release
         OS=$ID
@@ -1995,7 +1995,7 @@ linux_setup_ssh() {
     fi
     log_info &#x22;检测到操作系统: $OS_NAME&#x22;
     
-    log_info &#x22;开始安装 SSH 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;开始安装 SSH 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     case $OS in
         debian|ubuntu|linuxmint)
             apt-get update -qq
@@ -2020,7 +2020,7 @@ linux_setup_ssh() {
     esac
     log_ok &#x22;SSH 服务安装完成&#x22;
     
-    log_info &#x22;开始配置 SSH 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;开始配置 SSH 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     [ -f /etc/ssh/sshd_config ] &#x26;&#x26; \
         cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup.$(date +%Y%m%d%H%M%S)
 
@@ -2059,7 +2059,7 @@ linux_setup_ssh() {
 
     log_ok &#x22;SSH 配置已更新/补全&#x22;
     
-    log_info &#x22;开始配置防火墙${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;开始配置防火墙 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     if command -v ufw >/dev/null 2>&#x26;1; then
         ufw allow &#x22;$SSH_PORT&#x22;/tcp
         echo &#x22;y&#x22; | ufw enable
@@ -2098,7 +2098,7 @@ linux_setup_ssh() {
         *) log_info &#x22;已跳过 root 密码修改。&#x22; ;;
     esac
     
-    log_info &#x22;启动/重启 SSH 服务${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;启动/重启 SSH 服务 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     case $OS in
         debian|ubuntu|linuxmint|opensuse*|suse*|arch|manjaro)
             systemctl enable ssh
@@ -2358,8 +2358,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

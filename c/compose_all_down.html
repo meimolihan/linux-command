@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_all_down 命令">
     <meta name="twitter:description" content="交互式批量停止 Docker Compose 项目的管理脚本。 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1200,15 +1200,15 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="2"><span class="token builtin class-name">set</span> <span class="token parameter variable">-uo</span> pipefail
 </span><span class="code-line line-number" line="3">
 </span><span class="code-line line-number" line="4"><span class="token function-name function">list_color_init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="5">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_hui</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;59m'</span>
-</span><span class="code-line line-number" line="6">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_hong</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;9m'</span>
-</span><span class="code-line line-number" line="7">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_lv</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;10m'</span>
-</span><span class="code-line line-number" line="8">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_huang</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;11m'</span>
-</span><span class="code-line line-number" line="9">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_lan</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;32m'</span>
-</span><span class="code-line line-number" line="10">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_bai</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;15m'</span>
-</span><span class="code-line line-number" line="11">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_zi</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;13m'</span>
-</span><span class="code-line line-number" line="12">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_bufan</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;14m'</span>
-</span><span class="code-line line-number" line="13">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">reset</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[0m'</span>
+</span><span class="code-line line-number" line="5">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_hui</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;59m'</span>   <span class="token comment"># 灰色</span>
+</span><span class="code-line line-number" line="6">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_hong</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;9m'</span>   <span class="token comment"># 红色</span>
+</span><span class="code-line line-number" line="7">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_lv</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;10m'</span>    <span class="token comment"># 绿色</span>
+</span><span class="code-line line-number" line="8">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_huang</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;11m'</span> <span class="token comment"># 黄色</span>
+</span><span class="code-line line-number" line="9">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_lan</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;32m'</span>   <span class="token comment"># 蓝色</span>
+</span><span class="code-line line-number" line="10">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_bai</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;15m'</span>   <span class="token comment"># 白色</span>
+</span><span class="code-line line-number" line="11">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_zi</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;13m'</span>    <span class="token comment"># 紫色</span>
+</span><span class="code-line line-number" line="12">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_bufan</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;14m'</span> <span class="token comment"># 亮青色</span>
+</span><span class="code-line line-number" line="13">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">reset</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[0m'</span>          <span class="token comment"># 重置</span>
 </span><span class="code-line line-number" line="14"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="15">list_color_init
 </span><span class="code-line line-number" line="16">
@@ -1243,7 +1243,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="45"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="46">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="47">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="48">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="48">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="49">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="50">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="51">    <span class="token function">clear</span>
@@ -1251,9 +1251,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="53">
 </span><span class="code-line line-number" line="54"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="55">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="56">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="56">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="57">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="58">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="58">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="59">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="60">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="61">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1261,7 +1261,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="63">
 </span><span class="code-line line-number" line="64"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="65">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="66">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="66">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="67">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="69">    <span class="token function">clear</span>
@@ -1310,7 +1310,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="112"><span class="token string">    local stopped_count=0
 </span></span><span class="code-line line-number" line="113"><span class="token string">    local total_count=0
 </span></span><span class="code-line line-number" line="114"><span class="token string">
-</span></span><span class="code-line line-number" line="115"><span class="token string">    echo -e "</span><span class="token variable">${gl_bai}</span>正在扫描 <span class="token variable">${gl_huang}</span><span class="token variable">$COMPOSE_WORK_DIR</span><span class="token variable">${gl_bai}</span> 下的 Compose 项目<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="115"><span class="token string">    echo -e "</span><span class="token variable">${gl_bai}</span>正在扫描 <span class="token variable">${gl_huang}</span><span class="token variable">$COMPOSE_WORK_DIR</span><span class="token variable">${gl_bai}</span> 下的 Compose 项目 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="116"><span class="token string">    echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="117"><span class="token string">
 </span></span><span class="code-line line-number" line="118"><span class="token string">    if [[ -f "</span>docker-compose.yml<span class="token string">" ]] || [[ -f "</span>docker-compose.yaml<span class="token string">" ]]; then
@@ -1380,7 +1380,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="182">        <span class="token builtin class-name">return</span>
 </span><span class="code-line line-number" line="183">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="184">    
-</span><span class="code-line line-number" line="185">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="185">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="186">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="187">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="188">    <span class="token function">clear</span>
@@ -1405,7 +1405,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="207">        <span class="token string">"/vol2/1000/compose"</span>
 </span><span class="code-line line-number" line="208">    <span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="209">
-</span><span class="code-line line-number" line="210">    log_info <span class="token string">"正在扫描运行中的 docker-compose 项目<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="210">    log_info <span class="token string">"正在扫描运行中的 docker-compose 项目 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="211">
 </span><span class="code-line line-number" line="212">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">running_projects</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="213">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker</span> <span class="token operator">&#x26;></span>/dev/null <span class="token operator">&#x26;&#x26;</span> <span class="token function">docker</span> info <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -1577,15 +1577,15 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 set -uo pipefail
 
 list_color_init() {
-    export gl_hui=$&#x27;\033[38;5;59m&#x27;
-    export gl_hong=$&#x27;\033[38;5;9m&#x27;
-    export gl_lv=$&#x27;\033[38;5;10m&#x27;
-    export gl_huang=$&#x27;\033[38;5;11m&#x27;
-    export gl_lan=$&#x27;\033[38;5;32m&#x27;
-    export gl_bai=$&#x27;\033[38;5;15m&#x27;
-    export gl_zi=$&#x27;\033[38;5;13m&#x27;
-    export gl_bufan=$&#x27;\033[38;5;14m&#x27;
-    export reset=$&#x27;\033[0m&#x27;
+    export gl_hui=$&#x27;\033[38;5;59m&#x27;   # 灰色
+    export gl_hong=$&#x27;\033[38;5;9m&#x27;   # 红色
+    export gl_lv=$&#x27;\033[38;5;10m&#x27;    # 绿色
+    export gl_huang=$&#x27;\033[38;5;11m&#x27; # 黄色
+    export gl_lan=$&#x27;\033[38;5;32m&#x27;   # 蓝色
+    export gl_bai=$&#x27;\033[38;5;15m&#x27;   # 白色
+    export gl_zi=$&#x27;\033[38;5;13m&#x27;    # 紫色
+    export gl_bufan=$&#x27;\033[38;5;14m&#x27; # 亮青色
+    export reset=$&#x27;\033[0m&#x27;          # 重置
 }
 list_color_init
 
@@ -1620,7 +1620,7 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1628,9 +1628,9 @@ exit_animation() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1638,7 +1638,7 @@ exit_script() {
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1687,7 +1687,7 @@ stop_all_compose_projects() {
     local stopped_count=0
     local total_count=0
 
-    echo -e &#x22;${gl_bai}正在扫描 ${gl_huang}$COMPOSE_WORK_DIR${gl_bai} 下的 Compose 项目${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_bai}正在扫描 ${gl_huang}$COMPOSE_WORK_DIR${gl_bai} 下的 Compose 项目 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 
     if [[ -f &#x22;docker-compose.yml&#x22; ]] || [[ -f &#x22;docker-compose.yaml&#x22; ]]; then
@@ -1757,7 +1757,7 @@ stop_all_compose_projects() {
         return
     fi
     
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -r -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -1782,7 +1782,7 @@ interactive_stop() {
         &#x22;/vol2/1000/compose&#x22;
     )
 
-    log_info &#x22;正在扫描运行中的 docker-compose 项目${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;正在扫描运行中的 docker-compose 项目 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 
     local running_projects=()
     if command -v docker &#x26;>/dev/null &#x26;&#x26; docker info &#x26;>/dev/null; then
@@ -2174,8 +2174,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

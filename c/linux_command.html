@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_command 命令">
     <meta name="twitter:description" content="克隆、构建 linux-command 项目 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1229,7 +1229,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="35">
 </span><span class="code-line line-number" line="36"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="37">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键退出<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="39">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="40">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="41"><span class="token punctuation">}</span>
@@ -1257,7 +1257,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="63"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="64">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="65">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="66">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="66">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="67">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="69">    <span class="token function">clear</span>
@@ -1265,9 +1265,9 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="71">
 </span><span class="code-line line-number" line="72"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="73">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="74">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="74">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="75">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="76">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="76">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="77">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="78">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="79">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -1275,7 +1275,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="81">
 </span><span class="code-line line-number" line="82"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="83">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="84">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="84">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回到 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_lv}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="85">    <span class="token function">sleep</span> <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="86">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="87">    <span class="token function">clear</span>
@@ -1284,8 +1284,8 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="90"><span class="token function-name function">docker_check_env</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="91">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="92">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="93">        log_info <span class="token string">"正在检查 Docker 运行环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="94">        log_warn <span class="token string">"Docker 未安装，即将自动安装 Docker 环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="93">        log_info <span class="token string">"正在检查 Docker 运行环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="94">        log_warn <span class="token string">"Docker 未安装，即将自动安装 Docker 环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="95">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="96">        <span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_docker.sh<span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="97">
@@ -1299,8 +1299,8 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="105">
 </span><span class="code-line line-number" line="106">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">docker-compose</span> <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="107">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="108">        log_info <span class="token string">"正在检查 Docker Compose 环境<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="109">        log_warn <span class="token string">"Docker Compose 未安装，即将自动安装<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="108">        log_info <span class="token string">"正在检查 Docker Compose 环境 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="109">        log_warn <span class="token string">"Docker Compose 未安装，即将自动安装 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="110">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="111">        <span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_compose.sh<span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="112">
@@ -1493,7 +1493,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="299">    <span class="token punctuation">}</span> <span class="token operator">|</span> column_if_available
 </span><span class="code-line line-number" line="300"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="301">
-</span><span class="code-line line-number" line="302"><span class="token assign-left variable">DEFAULT_TAG</span><span class="token operator">=</span><span class="token string">"latest"</span>
+</span><span class="code-line line-number" line="302"><span class="token assign-left variable">DEFAULT_TAG</span><span class="token operator">=</span><span class="token string">"v1.0"</span>
 </span><span class="code-line line-number" line="303"><span class="token assign-left variable">DEFAULT_DIR</span><span class="token operator">=</span><span class="token string">"/vol1/1000/compose/linux-command"</span>
 </span><span class="code-line line-number" line="304"><span class="token assign-left variable">DEFAULT_PORT</span><span class="token operator">=</span><span class="token string">"9665"</span>
 </span><span class="code-line line-number" line="305"><span class="token assign-left variable">REPO_URL</span><span class="token operator">=</span><span class="token string">"https://github.com/meimolihan/linux-command.git"</span>
@@ -1528,20 +1528,20 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="334">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">compose_container</span><span class="token operator">=</span><span class="token string">"command"</span>
 </span><span class="code-line line-number" line="335">    
 </span><span class="code-line line-number" line="336">    <span class="token keyword">if</span> <span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span> <span class="token parameter variable">--filter</span> <span class="token string">"name=^/<span class="token variable">${container_name}</span>$"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"<span class="token variable">${container_name}</span>"</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="337">        log_info <span class="token string">"检测到旧容器 <span class="token variable">${gl_huang}</span><span class="token variable">${container_name}</span><span class="token variable">${gl_bai}</span>，正在停止并删除<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="337">        log_info <span class="token string">"检测到旧容器 <span class="token variable">${gl_huang}</span><span class="token variable">${container_name}</span><span class="token variable">${gl_bai}</span>，正在停止并删除 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="338">        <span class="token function">docker</span> stop <span class="token string">"<span class="token variable">${container_name}</span>"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="339">        <span class="token function">docker</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">${container_name}</span>"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="340">        log_ok <span class="token string">"旧容器 <span class="token variable">${container_name}</span> 清理完成"</span>
 </span><span class="code-line line-number" line="341">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="342">    
 </span><span class="code-line line-number" line="343">    <span class="token keyword">if</span> <span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span> <span class="token parameter variable">--filter</span> <span class="token string">"name=^/<span class="token variable">${compose_container}</span>$"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"<span class="token variable">${compose_container}</span>"</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="344">        log_info <span class="token string">"检测到旧容器 <span class="token variable">${gl_huang}</span><span class="token variable">${compose_container}</span><span class="token variable">${gl_bai}</span>，正在停止并删除<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="344">        log_info <span class="token string">"检测到旧容器 <span class="token variable">${gl_huang}</span><span class="token variable">${compose_container}</span><span class="token variable">${gl_bai}</span>，正在停止并删除 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="345">        <span class="token function">docker</span> stop <span class="token string">"<span class="token variable">${compose_container}</span>"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="346">        <span class="token function">docker</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">${compose_container}</span>"</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="347">        log_ok <span class="token string">"旧容器 <span class="token variable">${compose_container}</span> 清理完成"</span>
 </span><span class="code-line line-number" line="348">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="349">
-</span><span class="code-line line-number" line="350">    log_info <span class="token string">"清理Docker残留资源<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="350">    log_info <span class="token string">"清理Docker残留资源 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="351">    <span class="token function">docker</span> container prune <span class="token parameter variable">-f</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="352">    <span class="token function">docker</span> network prune <span class="token parameter variable">-f</span> <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span>
 </span><span class="code-line line-number" line="353">    
@@ -1589,7 +1589,7 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="395">    <span class="token assign-left variable">IMAGE_TAG</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${INPUT_TAG<span class="token operator">:-</span>${DEFAULT_TAG}</span>}"</span>
 </span><span class="code-line line-number" line="396">    <span class="token assign-left variable">IMAGE_NAME</span><span class="token operator">=</span><span class="token string">"mobufan/linux-command:<span class="token variable">${IMAGE_TAG}</span>"</span>
 </span><span class="code-line line-number" line="397">
-</span><span class="code-line line-number" line="398">    log_info <span class="token string">"构建镜像：<span class="token variable">${gl_huang}</span><span class="token variable">${IMAGE_NAME}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="398">    log_info <span class="token string">"构建镜像：<span class="token variable">${gl_huang}</span><span class="token variable">${IMAGE_NAME}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="399">    <span class="token function">docker</span> build <span class="token parameter variable">-t</span> <span class="token string">"<span class="token variable">${IMAGE_NAME}</span>"</span> <span class="token builtin class-name">.</span> <span class="token operator">||</span> log_error <span class="token string">"镜像构建失败"</span>
 </span><span class="code-line line-number" line="400">    log_ok <span class="token string">"镜像构建成功"</span>
 </span><span class="code-line line-number" line="401">
@@ -1628,11 +1628,11 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_command.s
 </span><span class="code-line line-number" line="434">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>是否启动 Docker 容器(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" START_CHOICE
 </span></span><span class="code-line line-number" line="435"><span class="token string">    case "</span><span class="token variable">${START_CHOICE}</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="436"><span class="token string">        [Yy])
-</span></span><span class="code-line line-number" line="437"><span class="token string">            log_info "</span>尝试启动容器 <span class="token punctuation">(</span>docker compose up -d<span class="token punctuation">)</span><span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="437"><span class="token string">            log_info "</span>尝试启动容器 <span class="token punctuation">(</span>docker compose up -d<span class="token punctuation">)</span> <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="438"><span class="token string">            if docker compose up -d; then
 </span></span><span class="code-line line-number" line="439"><span class="token string">                log_ok "</span>容器启动成功<span class="token string">"
 </span></span><span class="code-line line-number" line="440"><span class="token string">            else
-</span></span><span class="code-line line-number" line="441"><span class="token string">                log_warn "</span><span class="token function">docker</span> compose 启动失败，尝试兼容版 <span class="token function">docker-compose</span><span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="441"><span class="token string">                log_warn "</span><span class="token function">docker</span> compose 启动失败，尝试兼容版 <span class="token function">docker-compose</span> <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="442"><span class="token string">                docker-compose up -d || log_error "</span>容器启动失败<span class="token string">"
 </span></span><span class="code-line line-number" line="443"><span class="token string">                log_ok "</span>容器启动成功<span class="token string">"
 </span></span><span class="code-line line-number" line="444"><span class="token string">            fi
@@ -1705,7 +1705,7 @@ handle_y_n() {
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键退出${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
 }
@@ -1733,7 +1733,7 @@ sleep_fractional() {
 exit_animation() {
     echo -ne &#x22;${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -1741,9 +1741,9 @@ exit_animation() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -1751,7 +1751,7 @@ exit_script() {
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_lv}即将返回到 ${gl_huang}${menu_name}${gl_lv} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     sleep 0.6
     echo &#x22;&#x22;
     clear
@@ -1760,8 +1760,8 @@ cancel_return() {
 docker_check_env() {
     if ! command -v docker &#x26;>/dev/null; then
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-        log_info &#x22;正在检查 Docker 运行环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-        log_warn &#x22;Docker 未安装，即将自动安装 Docker 环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;正在检查 Docker 运行环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_warn &#x22;Docker 未安装，即将自动安装 Docker 环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_docker.sh)
 
@@ -1775,8 +1775,8 @@ docker_check_env() {
 
     if ! command -v docker-compose &#x26;>/dev/null; then
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-        log_info &#x22;正在检查 Docker Compose 环境${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
-        log_warn &#x22;Docker Compose 未安装，即将自动安装${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;正在检查 Docker Compose 环境 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_warn &#x22;Docker Compose 未安装，即将自动安装 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_install_compose.sh)
 
@@ -1969,7 +1969,7 @@ docker-ps-cn() {
     } | column_if_available
 }
 
-DEFAULT_TAG=&#x22;latest&#x22;
+DEFAULT_TAG=&#x22;v1.0&#x22;
 DEFAULT_DIR=&#x22;/vol1/1000/compose/linux-command&#x22;
 DEFAULT_PORT=&#x22;9665&#x22;
 REPO_URL=&#x22;https://github.com/meimolihan/linux-command.git&#x22;
@@ -2004,20 +2004,20 @@ clean_old_container() {
     local compose_container=&#x22;command&#x22;
     
     if docker ps -a --filter &#x22;name=^/${container_name}$&#x22; | grep -q &#x22;${container_name}&#x22;; then
-        log_info &#x22;检测到旧容器 ${gl_huang}${container_name}${gl_bai}，正在停止并删除${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;检测到旧容器 ${gl_huang}${container_name}${gl_bai}，正在停止并删除 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         docker stop &#x22;${container_name}&#x22; >/dev/null 2>&#x26;1
         docker rm -f &#x22;${container_name}&#x22; >/dev/null 2>&#x26;1
         log_ok &#x22;旧容器 ${container_name} 清理完成&#x22;
     fi
     
     if docker ps -a --filter &#x22;name=^/${compose_container}$&#x22; | grep -q &#x22;${compose_container}&#x22;; then
-        log_info &#x22;检测到旧容器 ${gl_huang}${compose_container}${gl_bai}，正在停止并删除${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;检测到旧容器 ${gl_huang}${compose_container}${gl_bai}，正在停止并删除 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         docker stop &#x22;${compose_container}&#x22; >/dev/null 2>&#x26;1
         docker rm -f &#x22;${compose_container}&#x22; >/dev/null 2>&#x26;1
         log_ok &#x22;旧容器 ${compose_container} 清理完成&#x22;
     fi
 
-    log_info &#x22;清理Docker残留资源${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;清理Docker残留资源 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     docker container prune -f >/dev/null 2>&#x26;1
     docker network prune -f >/dev/null 2>&#x26;1
     
@@ -2065,7 +2065,7 @@ main() {
     IMAGE_TAG=&#x22;${INPUT_TAG:-${DEFAULT_TAG}}&#x22;
     IMAGE_NAME=&#x22;mobufan/linux-command:${IMAGE_TAG}&#x22;
 
-    log_info &#x22;构建镜像：${gl_huang}${IMAGE_NAME}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;构建镜像：${gl_huang}${IMAGE_NAME} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     docker build -t &#x22;${IMAGE_NAME}&#x22; . || log_error &#x22;镜像构建失败&#x22;
     log_ok &#x22;镜像构建成功&#x22;
 
@@ -2104,11 +2104,11 @@ EOF
     read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}是否启动 Docker 容器(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; START_CHOICE
     case &#x22;${START_CHOICE}&#x22; in
         [Yy])
-            log_info &#x22;尝试启动容器 (docker compose up -d)${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;尝试启动容器 (docker compose up -d) ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             if docker compose up -d; then
                 log_ok &#x22;容器启动成功&#x22;
             else
-                log_warn &#x22;docker compose 启动失败，尝试兼容版 docker-compose${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                log_warn &#x22;docker compose 启动失败，尝试兼容版 docker-compose ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                 docker-compose up -d || log_error &#x22;容器启动失败&#x22;
                 log_ok &#x22;容器启动成功&#x22;
             fi
@@ -2379,8 +2379,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

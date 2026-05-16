@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_set_locales_zh 命令">
     <meta name="twitter:description" content="Linux  配置全系统中文语言 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1180,7 +1180,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="21">
 </span><span class="code-line line-number" line="22"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="23">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="24">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="25">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span>
 </span><span class="code-line line-number" line="26">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="27">    <span class="token function">clear</span>
@@ -1328,18 +1328,18 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="169">
 </span><span class="code-line line-number" line="170"><span class="token function-name function">_debian_like_zh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="171">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="172">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="172">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="173">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="174">    <span class="token function">install</span> locales locales-all fonts-wqy-zenhei fonts-wqy-microhei fonts-noto-cjk-extra
-</span><span class="code-line line-number" line="175">    log_info <span class="token string">"生成并启用 zh_CN.UTF-8<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="175">    log_info <span class="token string">"生成并启用 zh_CN.UTF-8 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="176">    <span class="token function">cp</span> <span class="token parameter variable">-n</span> /etc/locale.gen /etc/locale.gen.bak <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
 </span><span class="code-line line-number" line="177">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"^zh_CN.UTF-8 UTF-8"</span> /etc/locale.gen<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="178">        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/'</span> /etc/locale.gen
 </span><span class="code-line line-number" line="179">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="180">    locale-gen zh_CN.UTF-8
-</span><span class="code-line line-number" line="181">    log_info <span class="token string">"使用 update-locale 设置系统默认locale<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="181">    log_info <span class="token string">"使用 update-locale 设置系统默认locale <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="182">    update-locale <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8 <span class="token assign-left variable">LC_MESSAGES</span><span class="token operator">=</span>zh_CN.UTF-8 <span class="token assign-left variable"><span class="token environment constant">LANGUAGE</span></span><span class="token operator">=</span><span class="token string">"zh_CN:zh"</span>
-</span><span class="code-line line-number" line="183">    log_info <span class="token string">"配置apt使用中文界面<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="183">    log_info <span class="token string">"配置apt使用中文界面 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="184">    <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /etc/apt/apt.conf.d
 </span><span class="code-line line-number" line="185">    <span class="token builtin class-name">echo</span> <span class="token string">'Acquire::Languages "zh_CN";'</span> <span class="token operator">></span>/etc/apt/apt.conf.d/99chinese
 </span><span class="code-line line-number" line="186">    <span class="token builtin class-name">echo</span> <span class="token string">'Acquire::Languages::fallback "en";'</span> <span class="token operator">>></span>/etc/apt/apt.conf.d/99chinese
@@ -1351,13 +1351,13 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="192">
 </span><span class="code-line line-number" line="193"><span class="token function-name function">_redhat_like_zh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="194">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="195">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="195">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="196">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="197">    <span class="token function">install</span> langpacks-zh_CN glibc-langpack-zh wqy-zenhei-fonts wqy-microhei-fonts google-noto-sans-cjk-fonts
-</span><span class="code-line line-number" line="198">    log_info <span class="token string">"设置 locale<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="198">    log_info <span class="token string">"设置 locale <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="199">    localectl set-locale <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8 <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">'LANG=zh_CN.UTF-8'</span> <span class="token operator">></span>/etc/locale.conf
 </span><span class="code-line line-number" line="200">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> dnf <span class="token operator">&#x26;></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="201">        log_info <span class="token string">"配置dnf使用中文界面<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="201">        log_info <span class="token string">"配置dnf使用中文界面 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="202">        <span class="token builtin class-name">echo</span> <span class="token string">"lang_cn=1"</span> <span class="token operator">>></span>/etc/dnf/dnf.conf <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
 </span><span class="code-line line-number" line="203">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="204">    <span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8
@@ -1366,15 +1366,15 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="207">
 </span><span class="code-line line-number" line="208"><span class="token function-name function">_arch_like_zh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="209">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="210">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="210">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="211">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="212">    <span class="token function">install</span> glibc-locales wqy-zenhei wqy-microhei noto-fonts-cjk
-</span><span class="code-line line-number" line="213">    log_info <span class="token string">"生成 locale<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="213">    log_info <span class="token string">"生成 locale <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="214">    <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/#zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/'</span> /etc/locale.gen
 </span><span class="code-line line-number" line="215">    locale-gen
 </span><span class="code-line line-number" line="216">    localectl set-locale <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8
 </span><span class="code-line line-number" line="217">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/pacman.conf <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"Color"</span> /etc/pacman.conf<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="218">        log_info <span class="token string">"配置pacman显示中文<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="218">        log_info <span class="token string">"配置pacman显示中文 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="219">        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/^#Color/Color/'</span> /etc/pacman.conf
 </span><span class="code-line line-number" line="220">    <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="221">    <span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8
@@ -1383,10 +1383,10 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="224">
 </span><span class="code-line line-number" line="225"><span class="token function-name function">_suse_like_zh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="226">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="227">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="227">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="228">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="229">    <span class="token function">install</span> glibc-locale wqy-zenhei-fonts wqy-microhei-fonts noto-sans-cjk-fonts
-</span><span class="code-line line-number" line="230">    log_info <span class="token string">"设置 locale<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="230">    log_info <span class="token string">"设置 locale <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="231">    localectl set-locale <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8
 </span><span class="code-line line-number" line="232">    <span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8
 </span><span class="code-line line-number" line="233">    log_ok <span class="token string">"SUSE系中文配置完成"</span>
@@ -1394,10 +1394,10 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="235">
 </span><span class="code-line line-number" line="236"><span class="token function-name function">_alpine_like_zh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="237">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="238">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="238">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="239">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="240">    <span class="token function">install</span> musl-locales musl-locales-lang wqy-zenhei
-</span><span class="code-line line-number" line="241">    log_info <span class="token string">"设置 locale<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="241">    log_info <span class="token string">"设置 locale <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="242">    <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/# zh_CN.UTF-8/zh_CN.UTF-8/'</span> /etc/locale.conf
 </span><span class="code-line line-number" line="243">    <span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8
 </span><span class="code-line line-number" line="244">    log_ok <span class="token string">"Alpine系中文配置完成"</span>
@@ -1405,11 +1405,11 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="246">
 </span><span class="code-line line-number" line="247"><span class="token function-name function">_gentoo_like_zh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="248">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="249">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="249">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> 安装中文语言包与字体 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="250">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="251">    emerge <span class="token parameter variable">--noreplace</span> glibc
 </span><span class="code-line line-number" line="252">    emerge <span class="token parameter variable">--noreplace</span> wqy-zenhei noto-cjk
-</span><span class="code-line line-number" line="253">    log_info <span class="token string">"生成 locale<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="253">    log_info <span class="token string">"生成 locale <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="254">    <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/'</span> /etc/locale.gen
 </span><span class="code-line line-number" line="255">    locale-gen
 </span><span class="code-line line-number" line="256">    eselect locale <span class="token builtin class-name">set</span> zh_CN.UTF-8
@@ -1421,18 +1421,18 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="262">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">os_id</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
 </span><span class="code-line line-number" line="263">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="264">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="265">    log_info <span class="token string">"刷新字体缓存<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="265">    log_info <span class="token string">"刷新字体缓存 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="266">    fc-cache <span class="token parameter variable">-fv</span> <span class="token operator">&#x26;></span>/dev/null
-</span><span class="code-line line-number" line="267">    log_info <span class="token string">"设置时区为 Asia/Shanghai<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="267">    log_info <span class="token string">"设置时区为 Asia/Shanghai <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="268">    timedatectl set-timezone Asia/Shanghai <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token operator">||</span><span class="token function">ln</span> <span class="token parameter variable">-sf</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 </span><span class="code-line line-number" line="269">    hwclock <span class="token parameter variable">--systohc</span> <span class="token operator">&#x26;></span>/dev/null<span class="token operator">||</span><span class="token boolean">true</span>
 </span><span class="code-line line-number" line="270">    <span class="token keyword">case</span> <span class="token string">"<span class="token variable">$os_id</span>"</span> <span class="token keyword">in</span>
 </span><span class="code-line line-number" line="271">    debian<span class="token operator">|</span>ubuntu<span class="token operator">|</span>pve<span class="token operator">|</span>fnos<span class="token operator">|</span>linuxmint<span class="token operator">|</span>devuan<span class="token operator">|</span>kali<span class="token punctuation">)</span>
-</span><span class="code-line line-number" line="272">        log_info <span class="token string">"使用 update-locale 持久化locale设置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="272">        log_info <span class="token string">"使用 update-locale 持久化locale设置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="273">        update-locale <span class="token assign-left variable"><span class="token environment constant">LC_ALL</span></span><span class="token operator">=</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token operator">||</span><span class="token boolean">true</span>
 </span><span class="code-line line-number" line="274">        <span class="token function">touch</span> /etc/default/locale <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
 </span><span class="code-line line-number" line="275">        update-locale <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>zh_CN.UTF-8 <span class="token assign-left variable"><span class="token environment constant">LANGUAGE</span></span><span class="token operator">=</span><span class="token string">"zh_CN:zh"</span> <span class="token assign-left variable">LC_MESSAGES</span><span class="token operator">=</span>zh_CN.UTF-8
-</span><span class="code-line line-number" line="276">        log_info <span class="token string">"创建增强的locale配置脚本<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="276">        log_info <span class="token string">"创建增强的locale配置脚本 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="277">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/profile.d/99-locale-zh.sh <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="278">            log_warn <span class="token string">"/etc/profile.d/99-locale-zh.sh 已存在，跳过创建"</span>
 </span><span class="code-line line-number" line="279">        <span class="token keyword">else</span>
@@ -1466,7 +1466,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="307">            <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/\r$//'</span> /etc/profile.d/99-locale-zh.sh <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token operator">||</span><span class="token boolean">true</span>
 </span><span class="code-line line-number" line="308">            log_ok <span class="token string">"已创建 /etc/profile.d/99-locale-zh.sh"</span>
 </span><span class="code-line line-number" line="309">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="310">        log_info <span class="token string">"配置 .bash_profile 确保登录时加载 .bashrc<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="310">        log_info <span class="token string">"配置 .bash_profile 确保登录时加载 .bashrc <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="311">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-v</span> SUDO_USER <span class="token operator">&#x26;&#x26;</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$SUDO_USER</span>"</span> <span class="token operator">&#x26;&#x26;</span> <span class="token string">"<span class="token variable">$SUDO_USER</span>"</span> <span class="token operator">!=</span> <span class="token string">"root"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="312">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">user_home</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">eval</span> <span class="token builtin class-name">echo</span> ~$SUDO_USER<span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="313">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">$user_home</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -1524,7 +1524,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="365">                <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="366">            <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="367">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="368">        log_info <span class="token string">"为用户创建个人locale配置<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="368">        log_info <span class="token string">"为用户创建个人locale配置 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="369">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-v</span> SUDO_USER <span class="token operator">&#x26;&#x26;</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$SUDO_USER</span>"</span> <span class="token operator">&#x26;&#x26;</span> <span class="token string">"<span class="token variable">$SUDO_USER</span>"</span> <span class="token operator">!=</span> <span class="token string">"root"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="370">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">user_home</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">eval</span> <span class="token builtin class-name">echo</span> ~$SUDO_USER<span class="token variable">)</span></span>
 </span><span class="code-line line-number" line="371">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">$user_home</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -1577,7 +1577,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="418"><span class="token string">EOF</span>
 </span><span class="code-line line-number" line="419">            log_ok <span class="token string">"已为root用户配置 .bashrc"</span>
 </span><span class="code-line line-number" line="420">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="421">        log_info <span class="token string">"配置SSH服务器拒绝客户端locale转发<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="421">        log_info <span class="token string">"配置SSH服务器拒绝客户端locale转发 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="422">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/ssh/sshd_config <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="423">            <span class="token keyword">if</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"由set_locales_zh脚本添加"</span> /etc/ssh/sshd_config <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="424">                log_warn <span class="token string">"SSH配置已修改，跳过"</span>
@@ -1593,7 +1593,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="434">                <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="435">            <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="436">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="437">        log_info <span class="token string">"创建PAM环境配置文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="437">        log_info <span class="token string">"创建PAM环境配置文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="438">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /etc/environment <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">grep</span> <span class="token parameter variable">-q</span> <span class="token string">"由set_locales_zh脚本管理"</span> /etc/environment <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
 </span><span class="code-line line-number" line="439">            log_warn <span class="token string">"/etc/environment 已由本脚本管理，重新写入以确保配置正确"</span>
 </span><span class="code-line line-number" line="440">        <span class="token keyword">fi</span>
@@ -1689,7 +1689,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     read -r -n 1 -s
     echo &#x22;&#x22;
     clear
@@ -1837,18 +1837,18 @@ set_locales_zh() {
 
 _debian_like_zh() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     install locales locales-all fonts-wqy-zenhei fonts-wqy-microhei fonts-noto-cjk-extra
-    log_info &#x22;生成并启用 zh_CN.UTF-8${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;生成并启用 zh_CN.UTF-8 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     cp -n /etc/locale.gen /etc/locale.gen.bak 2>/dev/null
     if ! grep -q &#x22;^zh_CN.UTF-8 UTF-8&#x22; /etc/locale.gen; then
         sed -i &#x27;s/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/&#x27; /etc/locale.gen
     fi
     locale-gen zh_CN.UTF-8
-    log_info &#x22;使用 update-locale 设置系统默认locale${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;使用 update-locale 设置系统默认locale ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     update-locale LANG=zh_CN.UTF-8 LC_MESSAGES=zh_CN.UTF-8 LANGUAGE=&#x22;zh_CN:zh&#x22;
-    log_info &#x22;配置apt使用中文界面${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;配置apt使用中文界面 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     mkdir -p /etc/apt/apt.conf.d
     echo &#x27;Acquire::Languages &#x22;zh_CN&#x22;;&#x27; >/etc/apt/apt.conf.d/99chinese
     echo &#x27;Acquire::Languages::fallback &#x22;en&#x22;;&#x27; >>/etc/apt/apt.conf.d/99chinese
@@ -1860,13 +1860,13 @@ _debian_like_zh() {
 
 _redhat_like_zh() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     install langpacks-zh_CN glibc-langpack-zh wqy-zenhei-fonts wqy-microhei-fonts google-noto-sans-cjk-fonts
-    log_info &#x22;设置 locale${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;设置 locale ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     localectl set-locale LANG=zh_CN.UTF-8 || echo &#x27;LANG=zh_CN.UTF-8&#x27; >/etc/locale.conf
     if command -v dnf &#x26;>/dev/null; then
-        log_info &#x22;配置dnf使用中文界面${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;配置dnf使用中文界面 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo &#x22;lang_cn=1&#x22; >>/etc/dnf/dnf.conf 2>/dev/null
     fi
     export LANG=zh_CN.UTF-8
@@ -1875,15 +1875,15 @@ _redhat_like_zh() {
 
 _arch_like_zh() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     install glibc-locales wqy-zenhei wqy-microhei noto-fonts-cjk
-    log_info &#x22;生成 locale${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;生成 locale ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     sed -i &#x27;s/#zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/&#x27; /etc/locale.gen
     locale-gen
     localectl set-locale LANG=zh_CN.UTF-8
     if [[ -f /etc/pacman.conf ]] &#x26;&#x26; grep -q &#x22;Color&#x22; /etc/pacman.conf; then
-        log_info &#x22;配置pacman显示中文${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;配置pacman显示中文 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         sed -i &#x27;s/^#Color/Color/&#x27; /etc/pacman.conf
     fi
     export LANG=zh_CN.UTF-8
@@ -1892,10 +1892,10 @@ _arch_like_zh() {
 
 _suse_like_zh() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     install glibc-locale wqy-zenhei-fonts wqy-microhei-fonts noto-sans-cjk-fonts
-    log_info &#x22;设置 locale${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;设置 locale ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     localectl set-locale LANG=zh_CN.UTF-8
     export LANG=zh_CN.UTF-8
     log_ok &#x22;SUSE系中文配置完成&#x22;
@@ -1903,10 +1903,10 @@ _suse_like_zh() {
 
 _alpine_like_zh() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     install musl-locales musl-locales-lang wqy-zenhei
-    log_info &#x22;设置 locale${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;设置 locale ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     sed -i &#x27;s/# zh_CN.UTF-8/zh_CN.UTF-8/&#x27; /etc/locale.conf
     export LANG=zh_CN.UTF-8
     log_ok &#x22;Alpine系中文配置完成&#x22;
@@ -1914,11 +1914,11 @@ _alpine_like_zh() {
 
 _gentoo_like_zh() {
     echo -e &#x22;&#x22;
-    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    echo -e &#x22;${gl_zi}>>> 安装中文语言包与字体 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
     emerge --noreplace glibc
     emerge --noreplace wqy-zenhei noto-cjk
-    log_info &#x22;生成 locale${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;生成 locale ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     sed -i &#x27;s/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/&#x27; /etc/locale.gen
     locale-gen
     eselect locale set zh_CN.UTF-8
@@ -1930,18 +1930,18 @@ _common_zh_post() {
     local os_id=&#x22;$1&#x22;
     echo -e &#x22;&#x22;
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-    log_info &#x22;刷新字体缓存${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;刷新字体缓存 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     fc-cache -fv &#x26;>/dev/null
-    log_info &#x22;设置时区为 Asia/Shanghai${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+    log_info &#x22;设置时区为 Asia/Shanghai ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
     timedatectl set-timezone Asia/Shanghai 2>/dev/null||ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
     hwclock --systohc &#x26;>/dev/null||true
     case &#x22;$os_id&#x22; in
     debian|ubuntu|pve|fnos|linuxmint|devuan|kali)
-        log_info &#x22;使用 update-locale 持久化locale设置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;使用 update-locale 持久化locale设置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         update-locale LC_ALL= 2>/dev/null||true
         touch /etc/default/locale 2>/dev/null
         update-locale LANG=zh_CN.UTF-8 LANGUAGE=&#x22;zh_CN:zh&#x22; LC_MESSAGES=zh_CN.UTF-8
-        log_info &#x22;创建增强的locale配置脚本${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;创建增强的locale配置脚本 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         if [[ -f /etc/profile.d/99-locale-zh.sh ]]; then
             log_warn &#x22;/etc/profile.d/99-locale-zh.sh 已存在，跳过创建&#x22;
         else
@@ -1975,7 +1975,7 @@ EOF
             sed -i &#x27;s/\r$//&#x27; /etc/profile.d/99-locale-zh.sh 2>/dev/null||true
             log_ok &#x22;已创建 /etc/profile.d/99-locale-zh.sh&#x22;
         fi
-        log_info &#x22;配置 .bash_profile 确保登录时加载 .bashrc${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;配置 .bash_profile 确保登录时加载 .bashrc ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         if [[ -v SUDO_USER &#x26;&#x26; -n &#x22;$SUDO_USER&#x22; &#x26;&#x26; &#x22;$SUDO_USER&#x22; != &#x22;root&#x22; ]]; then
             local user_home=$(eval echo ~$SUDO_USER)
             if [[ -d &#x22;$user_home&#x22; ]]; then
@@ -2033,7 +2033,7 @@ EOF
                 fi
             fi
         fi
-        log_info &#x22;为用户创建个人locale配置${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;为用户创建个人locale配置 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         if [[ -v SUDO_USER &#x26;&#x26; -n &#x22;$SUDO_USER&#x22; &#x26;&#x26; &#x22;$SUDO_USER&#x22; != &#x22;root&#x22; ]]; then
             local user_home=$(eval echo ~$SUDO_USER)
             if [[ -d &#x22;$user_home&#x22; ]]; then
@@ -2086,7 +2086,7 @@ fi
 EOF
             log_ok &#x22;已为root用户配置 .bashrc&#x22;
         fi
-        log_info &#x22;配置SSH服务器拒绝客户端locale转发${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;配置SSH服务器拒绝客户端locale转发 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         if [ -f /etc/ssh/sshd_config ]; then
             if grep -q &#x22;由set_locales_zh脚本添加&#x22; /etc/ssh/sshd_config 2>/dev/null; then
                 log_warn &#x22;SSH配置已修改，跳过&#x22;
@@ -2102,7 +2102,7 @@ EOF
                 fi
             fi
         fi
-        log_info &#x22;创建PAM环境配置文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;创建PAM环境配置文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         if [[ -f /etc/environment ]] &#x26;&#x26; grep -q &#x22;由set_locales_zh脚本管理&#x22; /etc/environment 2>/dev/null; then
             log_warn &#x22;/etc/environment 已由本脚本管理，重新写入以确保配置正确&#x22;
         fi
@@ -2399,8 +2399,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

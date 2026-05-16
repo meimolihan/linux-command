@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="tv_rename 命令">
     <meta name="twitter:description" content="电视剧视频智能识别重命名 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1238,7 +1238,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="17">
 </span><span class="code-line line-number" line="18"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="19">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="20">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="21">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-p</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="22">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="23">    <span class="token function">clear</span>
@@ -1256,20 +1256,20 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="35">
 </span><span class="code-line line-number" line="36"><span class="token function-name function">cancel_return</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="37">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">menu_name</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>上一级选单}</span>"</span>
-</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span><span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_lv}</span>即将返回 <span class="token variable">${gl_huang}</span><span class="token variable">${menu_name}</span> <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="39">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="40">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="40">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="41">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="42">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="43">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="44"><span class="token punctuation">}</span>
 </span><span class="code-line line-number" line="45">
 </span><span class="code-line line-number" line="46"><span class="token function-name function">handle_y_n</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="47">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_hong}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="47">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_hong}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>) <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="48">    sleep_fractional <span class="token number">0.3</span>
-</span><span class="code-line line-number" line="49">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_huang}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="49">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_huang}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>) <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="50">    sleep_fractional <span class="token number">0.3</span>
-</span><span class="code-line line-number" line="51">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="51">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>) <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="52">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="53">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="54">    <span class="token builtin class-name">return</span> <span class="token number">2</span>
@@ -1278,7 +1278,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="57"><span class="token function-name function">exit_animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="58">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token entity" title="\r">\r</span><span class="token variable">${gl_lv}</span>即将退出 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="59">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="60">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="61">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="62">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
 </span><span class="code-line line-number" line="63">    <span class="token function">clear</span>
@@ -1286,9 +1286,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="65">
 </span><span class="code-line line-number" line="66"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="67">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="68">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！ <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="69">    sleep_fractional <span class="token number">0.5</span>
-</span><span class="code-line line-number" line="70">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="70">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">" <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
 </span><span class="code-line line-number" line="71">    sleep_fractional <span class="token number">0.6</span>
 </span><span class="code-line line-number" line="72">    <span class="token function">clear</span>
 </span><span class="code-line line-number" line="73">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
@@ -2210,7 +2210,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="989"><span class="token string">    fi
 </span></span><span class="code-line line-number" line="990"><span class="token string">
 </span></span><span class="code-line line-number" line="991"><span class="token string">    echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="992"><span class="token string">    echo -e "</span><span class="token variable">${gl_huang}</span>即将进入 <span class="token variable">${gl_lv}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">basename</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>"</span><span class="token variable">)</span></span><span class="token variable">${gl_huang}</span> 目录<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span> <span class="token punctuation">\</span>c<span class="token string">"
+</span></span><span class="code-line line-number" line="992"><span class="token string">    echo -e "</span><span class="token variable">${gl_huang}</span>即将进入 <span class="token variable">${gl_lv}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">basename</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>"</span><span class="token variable">)</span></span><span class="token variable">${gl_huang}</span> 目录 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span> <span class="token punctuation">\</span>c<span class="token string">"
 </span></span><span class="code-line line-number" line="993"><span class="token string">    sleep_fractional 1.6
 </span></span><span class="code-line line-number" line="994"><span class="token string">    return 0
 </span></span><span class="code-line line-number" line="995"><span class="token string">}
@@ -2233,7 +2233,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="1012">            <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="1013">        <span class="token keyword">done</span>
 </span><span class="code-line line-number" line="1014">        
-</span><span class="code-line line-number" line="1015">        log_info <span class="token string">"扫描当前目录视频文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="1015">        log_info <span class="token string">"扫描当前目录视频文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1016">        <span class="token builtin class-name">local</span> <span class="token assign-left variable">files</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="1017">        <span class="token keyword">while</span> <span class="token assign-left variable"><span class="token environment constant">IFS</span></span><span class="token operator">=</span> <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token function">file</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
 </span><span class="code-line line-number" line="1018">            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">$file</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -2256,7 +2256,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="1035">        
 </span><span class="code-line line-number" line="1036">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1037">        
-</span><span class="code-line line-number" line="1038">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>正在智能识别剧集信息<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="1038">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>正在智能识别剧集信息 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1039">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1040">        
 </span><span class="code-line line-number" line="1041">        <span class="token builtin class-name">local</span> <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token string">""</span>
@@ -2434,7 +2434,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="1213">        
 </span><span class="code-line line-number" line="1214">        <span class="token keyword">case</span> <span class="token variable">$choice</span> <span class="token keyword">in</span>
 </span><span class="code-line line-number" line="1215">        <span class="token number">1</span><span class="token punctuation">)</span>
-</span><span class="code-line line-number" line="1216">            log_info <span class="token string">"开始重命名<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="1216">            log_info <span class="token string">"开始重命名 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1217">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">success_count</span><span class="token operator">=</span><span class="token number">0</span>
 </span><span class="code-line line-number" line="1218">            
 </span><span class="code-line line-number" line="1219">            <span class="token keyword">for</span> <span class="token for-or-select variable">item</span> <span class="token keyword">in</span> <span class="token string">"<span class="token variable">${preview_files<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
@@ -2571,7 +2571,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="1350"><span class="token string">        
 </span></span><span class="code-line line-number" line="1351"><span class="token string">        case "</span><span class="token variable">$confirm</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="1352"><span class="token string">        [Yy])
-</span></span><span class="code-line line-number" line="1353"><span class="token string">            log_info "</span>开始重命名<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="1353"><span class="token string">            log_info "</span>开始重命名 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="1354"><span class="token string">            local success_count=0
 </span></span><span class="code-line line-number" line="1355"><span class="token string">            
 </span></span><span class="code-line line-number" line="1356"><span class="token string">            for <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> ${#files[@]}<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>; do
@@ -2886,7 +2886,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="1665">                <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1666">            <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="1667">
-</span><span class="code-line line-number" line="1668">            log_info <span class="token string">"扫描当前目录视频文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="1668">            log_info <span class="token string">"扫描当前目录视频文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1669">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">files</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="1670">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">episode_info</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="1671">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">pattern_types</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -2899,7 +2899,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="1678">                <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="1679">                <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>0.  <span class="token variable">${gl_bai}</span>返回上一级选单"</span>
 </span><span class="code-line line-number" line="1680">                <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="1681">                <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> "</span><span class="token variable">)</span></span>"</span> <span class="token parameter variable">-n</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="1681">                <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bai}</span>请按任意键继续 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> "</span><span class="token variable">)</span></span>"</span> <span class="token parameter variable">-n</span> <span class="token number">1</span>
 </span><span class="code-line line-number" line="1682">                <span class="token builtin class-name">return</span>
 </span><span class="code-line line-number" line="1683">            <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="1684">
@@ -3445,7 +3445,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="2224"><span class="token string">
 </span></span><span class="code-line line-number" line="2225"><span class="token string">                case "</span><span class="token variable">$confirm</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="2226"><span class="token string">                [Yy])
-</span></span><span class="code-line line-number" line="2227"><span class="token string">                    log_info "</span>开始重命名<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="2227"><span class="token string">                    log_info "</span>开始重命名 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2228"><span class="token string">                    rename_count=0
 </span></span><span class="code-line line-number" line="2229"><span class="token string">                    local success_count=0
 </span></span><span class="code-line line-number" line="2230"><span class="token string">                    local fail_count=0
@@ -3598,7 +3598,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="2377"><span class="token string">            return
 </span></span><span class="code-line line-number" line="2378"><span class="token string">        fi
 </span></span><span class="code-line line-number" line="2379"><span class="token string">
-</span></span><span class="code-line line-number" line="2380"><span class="token string">        log_info "</span><span class="token variable">${gl_bai}</span>正在创建 <span class="token variable">${gl_huang}</span><span class="token variable">$file_count</span> <span class="token variable">${gl_bai}</span>个测试文件<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="2380"><span class="token string">        log_info "</span><span class="token variable">${gl_bai}</span>正在创建 <span class="token variable">${gl_huang}</span><span class="token variable">$file_count</span> <span class="token variable">${gl_bai}</span>个测试文件 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2381"><span class="token string">
 </span></span><span class="code-line line-number" line="2382"><span class="token string">        for i in <span class="token variable"><span class="token variable">$(</span><span class="token function">seq</span> <span class="token number">1</span> $file_count<span class="token variable">)</span></span>; do
 </span></span><span class="code-line line-number" line="2383"><span class="token string">            case <span class="token variable"><span class="token variable">$((</span>i <span class="token operator">%</span> <span class="token number">6</span><span class="token variable">))</span></span> in
@@ -3695,7 +3695,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="2474">            <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="2475">        <span class="token keyword">done</span>
 </span><span class="code-line line-number" line="2476">
-</span><span class="code-line line-number" line="2477">        log_info <span class="token string">"扫描当前目录视频文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="2477">        log_info <span class="token string">"扫描当前目录视频文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="2478">        <span class="token builtin class-name">local</span> <span class="token assign-left variable">files</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="2479">        <span class="token keyword">while</span> <span class="token assign-left variable"><span class="token environment constant">IFS</span></span><span class="token operator">=</span> <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token function">file</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
 </span><span class="code-line line-number" line="2480">            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">$file</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -3770,7 +3770,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="2549"><span class="token string">
 </span></span><span class="code-line line-number" line="2550"><span class="token string">            case "</span><span class="token variable">$confirm</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="2551"><span class="token string">            [Yy])
-</span></span><span class="code-line line-number" line="2552"><span class="token string">                log_info "</span>开始重命名<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="2552"><span class="token string">                log_info "</span>开始重命名 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2553"><span class="token string">                local success_count=0
 </span></span><span class="code-line line-number" line="2554"><span class="token string">
 </span></span><span class="code-line line-number" line="2555"><span class="token string">                for <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> ${#files[@]}<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>; do
@@ -3856,9 +3856,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="2635">        <span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="2636">
 </span><span class="code-line line-number" line="2637">        <span class="token function">clear</span>
-</span><span class="code-line line-number" line="2638">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 将移动<span class="token variable">${gl_lv}</span><span class="token variable">${source_dir}</span><span class="token variable">${gl_huang}</span>目录下的所有视频文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="2638">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 将移动<span class="token variable">${gl_lv}</span><span class="token variable">${source_dir}</span><span class="token variable">${gl_huang}</span>目录下的所有视频文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="2639">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="2640">        log_info <span class="token string">"正在扫描视频文件<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="2640">        log_info <span class="token string">"正在扫描视频文件 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="2641">
 </span><span class="code-line line-number" line="2642">        <span class="token builtin class-name">local</span> <span class="token assign-left variable">video_extensions</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"mp4"</span> <span class="token string">"avi"</span> <span class="token string">"kvm"</span> <span class="token string">"mov"</span> <span class="token string">"wmv"</span> <span class="token string">"flv"</span> <span class="token string">"webm"</span>
 </span><span class="code-line line-number" line="2643">            <span class="token string">"m4v"</span> <span class="token string">"mpg"</span> <span class="token string">"mpeg"</span> <span class="token string">"3gp"</span> <span class="token string">"mts"</span> <span class="token string">"m2ts"</span>
@@ -3896,7 +3896,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="2675">        <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>确认移动到 '<span class="token variable">${gl_huang}</span><span class="token variable">${target_dir}</span><span class="token variable">${gl_bai}</span>'目录吗? (<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>): "</span><span class="token punctuation">)</span><span class="token string">" confirm_move
 </span></span><span class="code-line line-number" line="2676"><span class="token string">        case "</span><span class="token variable">$confirm_move</span><span class="token string">" in
 </span></span><span class="code-line line-number" line="2677"><span class="token string">        [Yy])
-</span></span><span class="code-line line-number" line="2678"><span class="token string">            echo -e "</span><span class="token variable">${gl_bai}</span>正在移动文件<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="2678"><span class="token string">            echo -e "</span><span class="token variable">${gl_bai}</span>正在移动文件 <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2679"><span class="token string">            ;;
 </span></span><span class="code-line line-number" line="2680"><span class="token string">        [Nn] | "</span>"<span class="token punctuation">)</span>
 </span><span class="code-line line-number" line="2681">            log_info <span class="token string">"操作已取消"</span>
@@ -3969,11 +3969,11 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span></span><span class="code-line line-number" line="2748"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>     ├──<span class="token variable">${gl_lv}</span>Season 01/<span class="token variable">${gl_bai}</span>           <span class="token variable">${gl_hui}</span><span class="token operator">&#x3C;</span>-- <span class="token variable">${gl_lan}</span>第一季文件夹<span class="token variable">${gl_hui}</span> <span class="token punctuation">(</span>标准命名：Season XX<span class="token punctuation">)</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2749"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>     │   ├──<span class="token variable">${gl_huang}</span>庆余年-S01E01.mp4<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2750"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>     │   ├──<span class="token variable">${gl_huang}</span>庆余年-S01E02.mp4<span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="2751"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>     │   └──<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="2751"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>     │   └── <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2752"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>     └──<span class="token variable">${gl_lv}</span>Season 02/<span class="token variable">${gl_bai}</span>           <span class="token variable">${gl_hui}</span><span class="token operator">&#x3C;</span>-- <span class="token variable">${gl_lan}</span>第二季文件夹<span class="token variable">${gl_hui}</span> <span class="token punctuation">(</span>标准命名：Season XX<span class="token punctuation">)</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2753"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>         ├──<span class="token variable">${gl_huang}</span>庆余年-S02E01.mp4<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2754"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>         ├──<span class="token variable">${gl_huang}</span>庆余年-S02E02.mp4<span class="token variable">${gl_bai}</span><span class="token string">"
-</span></span><span class="code-line line-number" line="2755"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>         └──<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
+</span></span><span class="code-line line-number" line="2755"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>         └── <span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2756"><span class="token string">            echo -e "</span><span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token string">"
 </span></span><span class="code-line line-number" line="2757"><span class="token string">            echo -e "</span>"
 </span><span class="code-line line-number" line="2758">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">source_dir</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>"</span>
@@ -4033,7 +4033,7 @@ log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*&#x22; >&#x26;2; }
 
 break_end() {
     echo -e &#x22;${gl_lv}操作完成${gl_bai}&#x22;
-    echo -e &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -e &#x22;${gl_bai}按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     read -r -n 1 -s -p &#x22;&#x22;
     echo &#x22;&#x22;
     clear
@@ -4051,20 +4051,20 @@ sleep_fractional() {
 
 cancel_return() {
     local menu_name=&#x22;${1:-上一级选单}&#x22;
-    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name}${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_lv}即将返回 ${gl_huang}${menu_name} ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
 }
 
 handle_y_n() {
-    echo -ne &#x22;\r${gl_hong}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;\r${gl_hong}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai}) ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.3
-    echo -ne &#x22;\r${gl_huang}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;\r${gl_huang}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai}) ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.3
-    echo -ne &#x22;\r${gl_lv}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;\r${gl_lv}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai}) ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     return 2
@@ -4073,7 +4073,7 @@ handle_y_n() {
 exit_animation() {
     echo -ne &#x22;\r${gl_lv}即将退出 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     echo &#x22;&#x22;
     clear
@@ -4081,9 +4081,9 @@ exit_animation() {
 
 exit_script() {
     echo &#x22;&#x22;
-    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！ ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.5
-    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    echo -ne &#x22; ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
     sleep_fractional 0.6
     clear
     exit 0
@@ -5005,7 +5005,7 @@ enter_directory() {
     fi
 
     echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-    echo -e &#x22;${gl_huang}即将进入 ${gl_lv}$(basename &#x22;$(pwd)&#x22;)${gl_huang} 目录${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
+    echo -e &#x22;${gl_huang}即将进入 ${gl_lv}$(basename &#x22;$(pwd)&#x22;)${gl_huang} 目录 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} \c&#x22;
     sleep_fractional 1.6
     return 0
 }
@@ -5028,7 +5028,7 @@ tv_rename_ultimate() {
             fi
         done
         
-        log_info &#x22;扫描当前目录视频文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;扫描当前目录视频文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         local files=()
         while IFS= read -r file; do
             if [ -f &#x22;$file&#x22; ]; then
@@ -5051,7 +5051,7 @@ tv_rename_ultimate() {
         
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         
-        echo -e &#x22;${gl_huang}正在智能识别剧集信息${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_huang}正在智能识别剧集信息 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         
         local prefix=&#x22;&#x22;
@@ -5229,7 +5229,7 @@ tv_rename_ultimate() {
         
         case $choice in
         1)
-            log_info &#x22;开始重命名${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;开始重命名 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             local success_count=0
             
             for item in &#x22;${preview_files[@]}&#x22;; do
@@ -5366,7 +5366,7 @@ tv_rename_ultimate() {
         
         case &#x22;$confirm&#x22; in
         [Yy])
-            log_info &#x22;开始重命名${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;开始重命名 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             local success_count=0
             
             for ((i = 0; i < ${#files[@]}; i++)); do
@@ -5681,7 +5681,7 @@ tv_rename_ultimate() {
                 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             fi
 
-            log_info &#x22;扫描当前目录视频文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            log_info &#x22;扫描当前目录视频文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             local files=()
             local episode_info=()
             local pattern_types=()
@@ -5694,7 +5694,7 @@ tv_rename_ultimate() {
                 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
                 echo -e &#x22;${gl_huang}0.  ${gl_bai}返回上一级选单&#x22;
                 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-                read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} &#x22;)&#x22; -n 1
+                read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}请按任意键继续 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} &#x22;)&#x22; -n 1
                 return
             fi
 
@@ -6240,7 +6240,7 @@ tv_rename_ultimate() {
 
                 case &#x22;$confirm&#x22; in
                 [Yy])
-                    log_info &#x22;开始重命名${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                    log_info &#x22;开始重命名 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                     rename_count=0
                     local success_count=0
                     local fail_count=0
@@ -6393,7 +6393,7 @@ tv_rename_ultimate() {
             return
         fi
 
-        log_info &#x22;${gl_bai}正在创建 ${gl_huang}$file_count ${gl_bai}个测试文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;${gl_bai}正在创建 ${gl_huang}$file_count ${gl_bai}个测试文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 
         for i in $(seq 1 $file_count); do
             case $((i % 6)) in
@@ -6490,7 +6490,7 @@ tv_rename_ultimate() {
             fi
         done
 
-        log_info &#x22;扫描当前目录视频文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;扫描当前目录视频文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         local files=()
         while IFS= read -r file; do
             if [ -f &#x22;$file&#x22; ]; then
@@ -6565,7 +6565,7 @@ tv_rename_ultimate() {
 
             case &#x22;$confirm&#x22; in
             [Yy])
-                log_info &#x22;开始重命名${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+                log_info &#x22;开始重命名 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
                 local success_count=0
 
                 for ((i = 0; i < ${#files[@]}; i++)); do
@@ -6651,9 +6651,9 @@ tv_rename_ultimate() {
         fi
 
         clear
-        echo -e &#x22;${gl_huang}>>> 将移动${gl_lv}${source_dir}${gl_huang}目录下的所有视频文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        echo -e &#x22;${gl_huang}>>> 将移动${gl_lv}${source_dir}${gl_huang}目录下的所有视频文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
-        log_info &#x22;正在扫描视频文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+        log_info &#x22;正在扫描视频文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 
         local video_extensions=(&#x22;mp4&#x22; &#x22;avi&#x22; &#x22;kvm&#x22; &#x22;mov&#x22; &#x22;wmv&#x22; &#x22;flv&#x22; &#x22;webm&#x22;
             &#x22;m4v&#x22; &#x22;mpg&#x22; &#x22;mpeg&#x22; &#x22;3gp&#x22; &#x22;mts&#x22; &#x22;m2ts&#x22;
@@ -6691,7 +6691,7 @@ tv_rename_ultimate() {
         read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}确认移动到 &#x27;${gl_huang}${target_dir}${gl_bai}&#x27;目录吗? (${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai}): &#x22;)&#x22; confirm_move
         case &#x22;$confirm_move&#x22; in
         [Yy])
-            echo -e &#x22;${gl_bai}正在移动文件${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bai}正在移动文件 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             ;;
         [Nn] | &#x22;&#x22;)
             log_info &#x22;操作已取消&#x22;
@@ -6764,11 +6764,11 @@ tv_rename_ultimate() {
             echo -e &#x22;${gl_bufan}     ├──${gl_lv}Season 01/${gl_bai}           ${gl_hui}<-- ${gl_lan}第一季文件夹${gl_hui} (标准命名：Season XX)${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}     │   ├──${gl_huang}庆余年-S01E01.mp4${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}     │   ├──${gl_huang}庆余年-S01E02.mp4${gl_bai}&#x22;
-            echo -e &#x22;${gl_bufan}     │   └──${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bufan}     │   └── ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}     └──${gl_lv}Season 02/${gl_bai}           ${gl_hui}<-- ${gl_lan}第二季文件夹${gl_hui} (标准命名：Season XX)${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}         ├──${gl_huang}庆余年-S02E01.mp4${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}         ├──${gl_huang}庆余年-S02E02.mp4${gl_bai}&#x22;
-            echo -e &#x22;${gl_bufan}         └──${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+            echo -e &#x22;${gl_bufan}         └── ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
             echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
             echo -e &#x22;&#x22;
             local source_dir=&#x22;$(pwd)&#x22;
@@ -7033,8 +7033,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>

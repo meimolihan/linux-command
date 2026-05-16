@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="universal_backup 命令">
     <meta name="twitter:description" content="免交互通用目录备份脚本 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89l9jf">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mp89wlof">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mp89l9jf"></script>
+    <script src="../js/dt.js?v=mp89wlof"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1261,7 +1261,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="48">    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
 </span><span class="code-line line-number" line="49"><span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="50">
-</span><span class="code-line line-number" line="51"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 创建备份目录中<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="51"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 创建备份目录中 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="52"><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> <span class="token string">"<span class="token variable">$BACKUP_DEST</span>"</span>
 </span><span class="code-line line-number" line="53">
 </span><span class="code-line line-number" line="54"><span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$?</span> <span class="token parameter variable">-ne</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
@@ -1281,7 +1281,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="68">log_info <span class="token string">"<span class="token variable">${gl_bai}</span>备份前缀: <span class="token variable">${gl_zi}</span><span class="token variable">$BACKUP_PREFIX</span><span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="69">
 </span><span class="code-line line-number" line="70"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="71"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 创建备份文件中<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="71"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 创建备份文件中 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="72"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="73"><span class="token assign-left variable">BACKUP_FILE</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${BACKUP_DEST}</span>/<span class="token variable">${BACKUP_PREFIX}</span>_<span class="token variable">${TIMESTAMP}</span>.tar.gz"</span>
 </span><span class="code-line line-number" line="74">log_warn <span class="token string">"<span class="token variable">${gl_bai}</span>正在创建备份文件: <span class="token variable">${gl_huang}</span><span class="token variable"><span class="token variable">$(</span><span class="token function">basename</span> <span class="token string">"<span class="token variable">$BACKUP_FILE</span>"</span><span class="token variable">)</span></span><span class="token variable">${gl_bai}</span>"</span>
@@ -1296,7 +1296,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="83"><span class="token keyword">fi</span>
 </span><span class="code-line line-number" line="84">
 </span><span class="code-line line-number" line="85"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="86"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span>  <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 清理旧备份文件中<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="86"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span>  <span class="token string">"<span class="token variable">${gl_huang}</span>>>> 清理旧备份文件中 <span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="87"><span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="88"><span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">$BACKUP_DEST</span>"</span> <span class="token operator">||</span> <span class="token builtin class-name">exit</span>
 </span><span class="code-line line-number" line="89">
@@ -1376,7 +1376,7 @@ if [ ! -d &#x22;$BACKUP_SRC_DIR&#x22; ]; then
     exit 1
 fi
 
-echo -e &#x22;${gl_huang}>>> 创建备份目录中${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+echo -e &#x22;${gl_huang}>>> 创建备份目录中 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 mkdir -p &#x22;$BACKUP_DEST&#x22;
 
 if [ $? -ne 0 ]; then
@@ -1396,7 +1396,7 @@ log_info &#x22;${gl_bai}保留备份数量: ${gl_lv}$KEEP_COUNT${gl_bai}&#x22;
 log_info &#x22;${gl_bai}备份前缀: ${gl_zi}$BACKUP_PREFIX${gl_bai}&#x22;
 
 echo -e &#x22;&#x22;
-echo -e &#x22;${gl_huang}>>> 创建备份文件中${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+echo -e &#x22;${gl_huang}>>> 创建备份文件中 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 BACKUP_FILE=&#x22;${BACKUP_DEST}/${BACKUP_PREFIX}_${TIMESTAMP}.tar.gz&#x22;
 log_warn &#x22;${gl_bai}正在创建备份文件: ${gl_huang}$(basename &#x22;$BACKUP_FILE&#x22;)${gl_bai}&#x22;
@@ -1411,7 +1411,7 @@ else
 fi
 
 echo -e &#x22;&#x22;
-echo -e  &#x22;${gl_huang}>>> 清理旧备份文件中${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
+echo -e  &#x22;${gl_huang}>>> 清理旧备份文件中 ${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}&#x22;
 echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
 cd &#x22;$BACKUP_DEST&#x22; || exit
 
@@ -1665,8 +1665,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/index.js?v=mp89l9jf"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mp89l9jf"></script>
+<script type="text/javascript" src="../js/dt.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/index.js?v=mp89wlof"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mp89wlof"></script>
 </body>
 </html>
