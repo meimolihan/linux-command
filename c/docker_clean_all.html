@@ -5,19 +5,19 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <meta name="description" content="eject:用来退出抽取式设备 - 最专业的Linux命令大全，内容包含Linux命令手册、详解、学习，值得收藏的Linux命令速查手册。">
-    <meta name="keywords" content="Linux,Command,命令大全,Linux命令手册,eject,用来退出抽取式设备">
-    <title>eject 命令，Linux eject 命令详解：用来退出抽取式设备 -  Linux 命令搜索引擎</title>
+    <meta name="description" content="docker_clean_all:彻底清理 Docker 容器/镜像/目录 - 最专业的Linux命令大全，内容包含Linux命令手册、详解、学习，值得收藏的Linux命令速查手册。">
+    <meta name="keywords" content="Linux,Command,命令大全,Linux命令手册,docker_clean_all,彻底清理 Docker 容器/镜像/目录">
+    <title>docker_clean_all 命令，Linux docker_clean_all 命令详解：彻底清理 Docker 容器/镜像/目录 -  Linux 命令搜索引擎</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <!-- SEO -->
-    <link rel="canonical" href="/../c/eject.html">
-    <meta property="og:title" content="eject 命令">
-    <meta property="og:description" content="用来退出抽取式设备 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
+    <link rel="canonical" href="/../c/docker_clean_all.html">
+    <meta property="og:title" content="docker_clean_all 命令">
+    <meta property="og:description" content="彻底清理 Docker 容器/镜像/目录 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="/../c/eject.html">
+    <meta property="og:url" content="/../c/docker_clean_all.html">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="eject 命令">
-    <meta name="twitter:description" content="用来退出抽取式设备 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
+    <meta name="twitter:title" content="docker_clean_all 命令">
+    <meta name="twitter:description" content="彻底清理 Docker 容器/镜像/目录 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
     <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpavruow">
     <!-- 跳转到主内容（无障碍） -->
     <style>
@@ -992,7 +992,7 @@ function syncWallpaperUI(isOn) {
           <input type="text" class="query" id="query" autocomplete="off" placeholder="Linux 命令搜索"
             role="combobox" aria-label="搜索 Linux 命令" aria-expanded="false" aria-autocomplete="list" aria-controls="result" />
           <div class="enter-input">
-              <input type="hidden" id="current_path" value="/c/eject.html">
+              <input type="hidden" id="current_path" value="/c/docker_clean_all.html">
               <button id="search_btn" aria-label="执行搜索">搜索</button>
           </div>
       </div>
@@ -1019,19 +1019,19 @@ body.wallpaper-local {
 <!-- ⑥ 命令头部信息卡片 -->
 <div class="command-header-card">
   <div class="command-title-row">
-    <h1 class="command-name">eject</h1>
-    <span class="command-type-badge command">命令</span>
+    <h1 class="command-name">docker_clean_all</h1>
+    <span class="command-type-badge script">脚本</span>
   </div>
   
-  <p class="command-desc">用来退出抽取式设备</p>
+  <p class="command-desc">彻底清理 Docker 容器/镜像/目录</p>
   
   <div class="command-actions">
     
-    <a class="action-btn edit-btn" target="_blank" href="https://github.com/meimolihan/linux-command/edit/main/command/eject.md">
+    <a class="action-btn edit-btn" target="_blank" href="https://github.com/meimolihan/linux-command/edit/main/myscript/docker_clean_all.md">
       <svg class="action-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
       <span>纠正错误</span>
     </a>
-    <a class="action-btn add-btn" target="_blank" href="https://github.com/meimolihan/linux-command/edit/main/command/eject.md">
+    <a class="action-btn add-btn" target="_blank" href="https://github.com/meimolihan/linux-command/edit/main/myscript/docker_clean_all.md">
       <svg class="action-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>添加实例</span>
     </a>
@@ -1128,42 +1128,638 @@ class MarkdownStyle extends HTMLElement {
     }
 }
 customElements.define('markdown-style', MarkdownStyle);</script><markdown-style style="max-width: 960px; margin: 0 auto 60px auto; padding: 8px;" class="markdown-style">
-<h1 id="eject"><a class="anchor" aria-hidden="true" tabindex="-1" href="#eject"><span class="octicon octicon-link"></span></a>eject</h1>
-<p>用来退出抽取式设备</p>
+<h1 id="docker_clean_all"><a class="anchor" aria-hidden="true" tabindex="-1" href="#docker_clean_all"><span class="octicon octicon-link"></span></a>docker_clean_all</h1>
+<p>彻底清理 Docker 容器/镜像/目录</p>
+<h2 id="一键脚本"><a class="anchor" aria-hidden="true" tabindex="-1" href="#一键脚本"><span class="octicon octicon-link"></span></a>一键脚本</h2>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/docker_clean_all.sh<span class="token punctuation">)</span> /vol1/xxx
+</span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/docker_clean_all.sh) /vol1/xxx
+" class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h2 id="补充说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#补充说明"><span class="octicon octicon-link"></span></a>补充说明</h2>
-<p><strong>eject命令</strong> 用来退出抽取式设备。若设备已挂入，则eject命令会先将该设备卸除再退出。</p>
-<p>eject允许可移动介质（典型是cd-ROM、软盘、磁带、或者JAZ以及zip磁盘）在软件控制下弹出。该命令也可以控制一些多盘片CD-ROM控制器，控制一些设备支持的自动弹出功能，以及控制一些CD-ROM驱动器磁盘托盘的关闭。与name相应的设备将被弹出，name可以为设备文件或者其挂载点，也可以为完整路径或者省略前面的/dev或者/mnt设备文件名。如果没有指定name，缺省使用cdrom。</p>
-<p>有四种不同的弹出的方法，具体要看设备是CD-ROM， SCSI设备，可移动软盘，还是磁带而定。默认的弹出会依次尝试所有四种方法，直到成功为止。如果设备当前是挂载上来的，那么在弹出前要先卸载。</p>
-<h3 id="语法"><a class="anchor" aria-hidden="true" tabindex="-1" href="#语法"><span class="octicon octicon-link"></span></a>语法</h3>
-<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">eject<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
-</span></code><div onclick="copied(this)" data-code="eject(选项)(参数)
+<p>该脚本为 Shell 脚本通用工具函数库，提供一组可复用的基础函数，用于美化输出、交互控制、Docker 环境清理等场景。直接执行该脚本会自动加载所有工具函数，适合在其他脚本开头 source 使用。</p>
+<h3 id="函数说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#函数说明"><span class="octicon octicon-link"></span></a>函数说明</h3>
+<table>
+  <thead>
+    <tr>
+      <th>函数</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>list_color_init</code></td>
+      <td>初始化 9 种颜色变量（灰色/红/绿/黄/蓝/白/紫/亮青/重置）</td>
+    </tr>
+    <tr>
+      <td><code>log_info</code></td>
+      <td>输出蓝色 <code>[信息]</code> 前缀日志</td>
+    </tr>
+    <tr>
+      <td><code>log_ok</code></td>
+      <td>输出绿色 <code>[成功]</code> 前缀日志</td>
+    </tr>
+    <tr>
+      <td><code>log_warn</code></td>
+      <td>输出黄色 <code>[警告]</code> 前缀日志</td>
+    </tr>
+    <tr>
+      <td><code>log_error</code></td>
+      <td>输出红色 <code>[错误]</code> 前缀日志（输出到 stderr）</td>
+    </tr>
+    <tr>
+      <td><code>sleep_fractional</code></td>
+      <td>支持小数秒的休眠（依次尝试 sleep、perl、python3、python，最后取整回退）</td>
+    </tr>
+    <tr>
+      <td><code>exit_script</code></td>
+      <td>显示渐变动画后 clear 退出脚本</td>
+    </tr>
+    <tr>
+      <td><code>handle_y_n</code></td>
+      <td>Y/N 输入错误时的提示处理（三色闪烁提示，return 2）</td>
+    </tr>
+    <tr>
+      <td><code>break_end</code></td>
+      <td>操作完成提示，按任意键继续并清屏</td>
+    </tr>
+    <tr>
+      <td><code>remove_deployment_dir</code></td>
+      <td>安全删除指定部署目录（带不存在/失败提示）</td>
+    </tr>
+    <tr>
+      <td><code>docker_clean_all</code></td>
+      <td>Docker 环境彻底清理：停止并删除所有容器 → 删除所有镜像 → 可选删除部署目录</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="传参说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#传参说明"><span class="octicon octicon-link"></span></a>传参说明</h3>
+<table>
+  <thead>
+    <tr>
+      <th>方式</th>
+      <th>命令示例</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>docker_clean_all 不传参</td>
+      <td><code>docker_clean_all</code></td>
+      <td>仅清理容器和镜像，不删除额外目录</td>
+    </tr>
+    <tr>
+      <td>docker_clean_all 传目录</td>
+      <td><code>docker_clean_all /vol1/1000/compose</code></td>
+      <td>清理容器和镜像后，额外删除指定部署目录</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="注意事项"><a class="anchor" aria-hidden="true" tabindex="-1" href="#注意事项"><span class="octicon octicon-link"></span></a>注意事项</h3>
+<ul>
+  <li>颜色变量使用 <code>export</code> 导出，source 引入后可在父脚本中直接使用</li>
+  <li><code>sleep_fractional</code> 通过多种后备方案实现小数秒精度，兼容老旧系统</li>
+  <li><code>docker_clean_all</code> 为高危操作，会删除全部容器和镜像，请谨慎使用</li>
+  <li>所有函数均以标准输出/错误输出打印，适合在各类脚本中调用</li>
+  <li>建议在其他脚本顶部通过 <code>source script_utils.sh</code> 或直接粘贴使用</li>
+</ul>
+<h2 id="脚本源码"><a class="anchor" aria-hidden="true" tabindex="-1" href="#脚本源码"><span class="octicon octicon-link"></span></a>脚本源码</h2>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token shebang important">#!/bin/bash</span>
+</span><span class="code-line line-number" line="2"><span class="token builtin class-name">set</span> <span class="token parameter variable">-uo</span> pipefail
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4"><span class="token function-name function">list_color_init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_hui</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;59m'</span>
+</span><span class="code-line line-number" line="6">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_hong</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;9m'</span>
+</span><span class="code-line line-number" line="7">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_lv</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;10m'</span>
+</span><span class="code-line line-number" line="8">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_huang</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;11m'</span>
+</span><span class="code-line line-number" line="9">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_lan</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;32m'</span>
+</span><span class="code-line line-number" line="10">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_bai</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;15m'</span>
+</span><span class="code-line line-number" line="11">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_zi</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;13m'</span>
+</span><span class="code-line line-number" line="12">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">gl_bufan</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[38;5;14m'</span>
+</span><span class="code-line line-number" line="13">    <span class="token builtin class-name">export</span> <span class="token assign-left variable">reset</span><span class="token operator">=</span><span class="token string">$'<span class="token entity" title="\033">\033</span>[0m'</span>
+</span><span class="code-line line-number" line="14"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="15">list_color_init
+</span><span class="code-line line-number" line="16">
+</span><span class="code-line line-number" line="17"><span class="token function-name function">log_info</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lan}</span>[信息]<span class="token variable">${gl_bai}</span> <span class="token variable">$*</span><span class="token variable">${reset}</span>"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="18"><span class="token function-name function">log_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token punctuation">{</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>[成功]<span class="token variable">${gl_bai}</span> <span class="token variable">$*</span><span class="token variable">${reset}</span>"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="19"><span class="token function-name function">log_warn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>[警告]<span class="token variable">${gl_bai}</span> <span class="token variable">$*</span><span class="token variable">${reset}</span>"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="20"><span class="token function-name function">log_error</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_hong}</span>[错误]<span class="token variable">${gl_bai}</span> <span class="token variable">$*</span><span class="token variable">${reset}</span>"</span> <span class="token operator">></span><span class="token file-descriptor important">&#x26;2</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="21">
+</span><span class="code-line line-number" line="22"><span class="token function-name function">sleep_fractional</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="23">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">seconds</span><span class="token operator">=</span><span class="token variable">$1</span>
+</span><span class="code-line line-number" line="24">    <span class="token keyword">if</span> <span class="token function">sleep</span> <span class="token string">"<span class="token variable">$seconds</span>"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="25">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> perl <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span> perl <span class="token parameter variable">-e</span> <span class="token string">"select(undef, undef, undef, <span class="token variable">$seconds</span>)"</span><span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="26">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> python3 <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span> python3 <span class="token parameter variable">-c</span> <span class="token string">"import time; time.sleep(<span class="token variable">$seconds</span>)"</span><span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="27">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> python <span class="token operator">></span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&#x26;1</span><span class="token punctuation">;</span> <span class="token keyword">then</span> python <span class="token parameter variable">-c</span> <span class="token string">"import time; time.sleep(<span class="token variable">$seconds</span>)"</span><span class="token punctuation">;</span> <span class="token builtin class-name">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="28">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">int_seconds</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">awk</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$seconds</span>"</span> <span class="token string">'BEGIN{print int(s+0.999)}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="29">    <span class="token function">sleep</span> <span class="token string">"<span class="token variable">$int_seconds</span>"</span>
+</span><span class="code-line line-number" line="30"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="31">
+</span><span class="code-line line-number" line="32"><span class="token function-name function">exit_script</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="33">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="34">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>感谢使用，再见！<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="35">    sleep_fractional <span class="token number">0.5</span>
+</span><span class="code-line line-number" line="36">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="37">    sleep_fractional <span class="token number">0.6</span>
+</span><span class="code-line line-number" line="38">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="39">    <span class="token function">clear</span>
+</span><span class="code-line line-number" line="40">    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+</span><span class="code-line line-number" line="41"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="42">
+</span><span class="code-line line-number" line="43"><span class="token function-name function">handle_y_n</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="44">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_hong}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_hong}</span>。<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="45">    <span class="token function">sleep</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="46">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_huang}</span>。<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="47">    <span class="token function">sleep</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="48">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>无效的选择，请输入 <span class="token variable">${gl_bai}</span>(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>或<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)<span class="token variable">${gl_lv}</span>。<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="49">    sleep_fractional <span class="token number">0.5</span>
+</span><span class="code-line line-number" line="50">    <span class="token builtin class-name">return</span> <span class="token number">2</span>
+</span><span class="code-line line-number" line="51"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="52">
+</span><span class="code-line line-number" line="53"><span class="token function-name function">break_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="54">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lv}</span>操作完成<span class="token variable">${gl_bai}</span><span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="55">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">${gl_bai}</span>按任意键继续<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span> <span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="56">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token parameter variable">-s</span>
+</span><span class="code-line line-number" line="57">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="58">    <span class="token function">clear</span>
+</span><span class="code-line line-number" line="59"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="60">
+</span><span class="code-line line-number" line="61"><span class="token function-name function">remove_deployment_dir</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="62">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">deploy_dir</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$1</span>"</span>
+</span><span class="code-line line-number" line="63">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$deploy_dir</span>"</span> <span class="token operator">&#x26;&#x26;</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">$deploy_dir</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="64">        log_warn <span class="token string">"正在删除部署目录: <span class="token variable">$deploy_dir</span>"</span>
+</span><span class="code-line line-number" line="65">        <span class="token function">rm</span> <span class="token parameter variable">-rf</span> <span class="token string">"<span class="token variable">$deploy_dir</span>"</span>
+</span><span class="code-line line-number" line="66">        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$?</span> <span class="token parameter variable">-eq</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="67">            log_ok <span class="token string">"部署目录已删除: <span class="token variable">$deploy_dir</span>"</span>
+</span><span class="code-line line-number" line="68">        <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="69">            log_error <span class="token string">"部署目录删除失败: <span class="token variable">$deploy_dir</span>"</span>
+</span><span class="code-line line-number" line="70">        <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="71">    <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$deploy_dir</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="72">        log_warn <span class="token string">"部署目录不存在，跳过删除: <span class="token variable">$deploy_dir</span>"</span>
+</span><span class="code-line line-number" line="73">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="74"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="75">
+</span><span class="code-line line-number" line="76"><span class="token function-name function">column_if_available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="77">    <span class="token keyword">if</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> <span class="token function">column</span> <span class="token operator">&#x26;></span> /dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="78">        <span class="token function">column</span> <span class="token parameter variable">-t</span> <span class="token parameter variable">-s</span> <span class="token string">$'<span class="token entity" title="\t">\t</span>'</span>
+</span><span class="code-line line-number" line="79">    <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="80">        <span class="token function">cat</span>
+</span><span class="code-line line-number" line="81">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="82"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="83">
+</span><span class="code-line line-number" line="84"><span class="token function-name function">list_beautify_docker_ps</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="85">    <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="86">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"容器ID"</span> <span class="token string">"镜像"</span> <span class="token string">"命令"</span> <span class="token string">"创建时间"</span> <span class="token string">"状态"</span> <span class="token string">"端口"</span> <span class="token string">"名称"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
+</span><span class="code-line line-number" line="87">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"--------"</span> <span class="token string">"--------"</span> <span class="token string">"--------"</span> <span class="token string">"--------"</span> <span class="token string">"--------"</span> <span class="token string">"--------"</span> <span class="token string">"--------"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
+</span><span class="code-line line-number" line="88">
+</span><span class="code-line line-number" line="89">        <span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span> <span class="token parameter variable">--format</span> <span class="token string">"{{.ID}}<span class="token entity" title="\t">\t</span>{{.Image}}<span class="token entity" title="\t">\t</span>{{.Command}}<span class="token entity" title="\t">\t</span>{{.RunningFor}}<span class="token entity" title="\t">\t</span>{{.Status}}<span class="token entity" title="\t">\t</span>{{.Ports}}<span class="token entity" title="\t">\t</span>{{.Names}}"</span> <span class="token operator">|</span> <span class="token punctuation">\</span>
+</span><span class="code-line line-number" line="90">        <span class="token function">awk</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">cyan</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_bufan</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">green</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_lv</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">yellow</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_huang</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">blue</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_lan</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">white</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_bai</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">reset</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$reset</span>"</span> <span class="token string">'
+</span></span><span class="code-line line-number" line="91"><span class="token string">        BEGIN {FS="\t"; OFS="\t"}
+</span></span><span class="code-line line-number" line="92"><span class="token string">        {
+</span></span><span class="code-line line-number" line="93"><span class="token string">            id = substr($1, 1, 12)
+</span></span><span class="code-line line-number" line="94"><span class="token string">            image = $2
+</span></span><span class="code-line line-number" line="95"><span class="token string">            cmd = $3
+</span></span><span class="code-line line-number" line="96"><span class="token string">            created = $4
+</span></span><span class="code-line line-number" line="97"><span class="token string">            status = $5
+</span></span><span class="code-line line-number" line="98"><span class="token string">            ports = $6
+</span></span><span class="code-line line-number" line="99"><span class="token string">            name = $7
+</span></span><span class="code-line line-number" line="100"><span class="token string">
+</span></span><span class="code-line line-number" line="101"><span class="token string">            gsub(/ years ago/, "年前", created)
+</span></span><span class="code-line line-number" line="102"><span class="token string">            gsub(/ year ago/, "年前", created)
+</span></span><span class="code-line line-number" line="103"><span class="token string">            gsub(/ months ago/, "个月前", created)
+</span></span><span class="code-line line-number" line="104"><span class="token string">            gsub(/ month ago/, "个月前", created)
+</span></span><span class="code-line line-number" line="105"><span class="token string">            gsub(/ weeks ago/, "周前", created)
+</span></span><span class="code-line line-number" line="106"><span class="token string">            gsub(/ week ago/, "周前", created)
+</span></span><span class="code-line line-number" line="107"><span class="token string">            gsub(/ days ago/, "天前", created)
+</span></span><span class="code-line line-number" line="108"><span class="token string">            gsub(/ day ago/, "天前", created)
+</span></span><span class="code-line line-number" line="109"><span class="token string">            gsub(/ hours ago/, "小时前", created)
+</span></span><span class="code-line line-number" line="110"><span class="token string">            gsub(/ hour ago/, "小时前", created)
+</span></span><span class="code-line line-number" line="111"><span class="token string">            gsub(/ minutes ago/, "分钟前", created)
+</span></span><span class="code-line line-number" line="112"><span class="token string">            gsub(/ minute ago/, "分钟前", created)
+</span></span><span class="code-line line-number" line="113"><span class="token string">            gsub(/ seconds ago/, "秒前", created)
+</span></span><span class="code-line line-number" line="114"><span class="token string">            gsub(/ second ago/, "秒前", created)
+</span></span><span class="code-line line-number" line="115"><span class="token string">            gsub(/About /, "", created)
+</span></span><span class="code-line line-number" line="116"><span class="token string">
+</span></span><span class="code-line line-number" line="117"><span class="token string">            gsub(/ years ago/, "年前", status)
+</span></span><span class="code-line line-number" line="118"><span class="token string">            gsub(/ year ago/, "年前", status)
+</span></span><span class="code-line line-number" line="119"><span class="token string">            gsub(/ months ago/, "个月前", status)
+</span></span><span class="code-line line-number" line="120"><span class="token string">            gsub(/ month ago/, "个月前", status)
+</span></span><span class="code-line line-number" line="121"><span class="token string">            gsub(/ weeks ago/, "周前", status)
+</span></span><span class="code-line line-number" line="122"><span class="token string">            gsub(/ week ago/, "周前", status)
+</span></span><span class="code-line line-number" line="123"><span class="token string">            gsub(/ days ago/, "天前", status)
+</span></span><span class="code-line line-number" line="124"><span class="token string">            gsub(/ day ago/, "天前", status)
+</span></span><span class="code-line line-number" line="125"><span class="token string">            gsub(/ hours ago/, "小时前", status)
+</span></span><span class="code-line line-number" line="126"><span class="token string">            gsub(/ hour ago/, "小时前", status)
+</span></span><span class="code-line line-number" line="127"><span class="token string">            gsub(/ minutes ago/, "分钟前", status)
+</span></span><span class="code-line line-number" line="128"><span class="token string">            gsub(/ minute ago/, "分钟前", status)
+</span></span><span class="code-line line-number" line="129"><span class="token string">            gsub(/ seconds ago/, "秒前", status)
+</span></span><span class="code-line line-number" line="130"><span class="token string">            gsub(/ second ago/, "秒前", status)
+</span></span><span class="code-line line-number" line="131"><span class="token string">            gsub(/About /, "", status)
+</span></span><span class="code-line line-number" line="132"><span class="token string">
+</span></span><span class="code-line line-number" line="133"><span class="token string">            print cyan id reset, blue image reset, white cmd reset, blue created reset, yellow status reset, white ports reset, green name reset
+</span></span><span class="code-line line-number" line="134"><span class="token string">        }'</span>
+</span><span class="code-line line-number" line="135">    <span class="token punctuation">}</span> <span class="token operator">|</span> column_if_available
+</span><span class="code-line line-number" line="136"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="137">
+</span><span class="code-line line-number" line="138"><span class="token function-name function">list_beautify_docker_images</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="139">    <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="140">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"仓库"</span> <span class="token string">"标签"</span> <span class="token string">"镜像ID"</span> <span class="token string">"创建时间"</span> <span class="token string">"大小"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
+</span><span class="code-line line-number" line="141">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"----------"</span> <span class="token string">"----------"</span> <span class="token string">"----------"</span> <span class="token string">"----------"</span> <span class="token string">"----------"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
+</span><span class="code-line line-number" line="142">        
+</span><span class="code-line line-number" line="143">        <span class="token function">docker</span> image <span class="token function">ls</span> <span class="token parameter variable">--format</span> <span class="token string">"{{.Repository}}<span class="token entity" title="\t">\t</span>{{.Tag}}<span class="token entity" title="\t">\t</span>{{.ID}}<span class="token entity" title="\t">\t</span>{{.CreatedSince}}<span class="token entity" title="\t">\t</span>{{.Size}}"</span> <span class="token operator">|</span> <span class="token punctuation">\</span>
+</span><span class="code-line line-number" line="144">        <span class="token function">awk</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">green</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_lv</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">yellow</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_huang</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">cyan</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_bufan</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">blue</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_lan</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">white</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$gl_bai</span>"</span> <span class="token parameter variable">-v</span> <span class="token assign-left variable">reset</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$reset</span>"</span> <span class="token string">'
+</span></span><span class="code-line line-number" line="145"><span class="token string">        BEGIN {FS="\t"; OFS="\t"}
+</span></span><span class="code-line line-number" line="146"><span class="token string">        {
+</span></span><span class="code-line line-number" line="147"><span class="token string">            id = substr($3, 1, 12)
+</span></span><span class="code-line line-number" line="148"><span class="token string">            time = $4
+</span></span><span class="code-line line-number" line="149"><span class="token string">            gsub(/ years ago/, "年前", time)
+</span></span><span class="code-line line-number" line="150"><span class="token string">            gsub(/ year ago/, "年前", time)
+</span></span><span class="code-line line-number" line="151"><span class="token string">            gsub(/ months ago/, "个月前", time)
+</span></span><span class="code-line line-number" line="152"><span class="token string">            gsub(/ month ago/, "个月前", time)
+</span></span><span class="code-line line-number" line="153"><span class="token string">            gsub(/ weeks ago/, "周前", time)
+</span></span><span class="code-line line-number" line="154"><span class="token string">            gsub(/ week ago/, "周前", time)
+</span></span><span class="code-line line-number" line="155"><span class="token string">            gsub(/ days ago/, "天前", time)
+</span></span><span class="code-line line-number" line="156"><span class="token string">            gsub(/ day ago/, "天前", time)
+</span></span><span class="code-line line-number" line="157"><span class="token string">            gsub(/ hours ago/, "小时前", time)
+</span></span><span class="code-line line-number" line="158"><span class="token string">            gsub(/ hour ago/, "小时前", time)
+</span></span><span class="code-line line-number" line="159"><span class="token string">            gsub(/ minutes ago/, "分钟前", time)
+</span></span><span class="code-line line-number" line="160"><span class="token string">            gsub(/ minute ago/, "分钟前", time)
+</span></span><span class="code-line line-number" line="161"><span class="token string">            gsub(/ seconds ago/, "秒前", time)
+</span></span><span class="code-line line-number" line="162"><span class="token string">            gsub(/ second ago/, "秒前", time)
+</span></span><span class="code-line line-number" line="163"><span class="token string">            gsub(/About /, "", time)
+</span></span><span class="code-line line-number" line="164"><span class="token string">            
+</span></span><span class="code-line line-number" line="165"><span class="token string">            print green $1 reset, yellow $2 reset, cyan id reset, blue time reset, white $5 reset
+</span></span><span class="code-line line-number" line="166"><span class="token string">        }'</span>
+</span><span class="code-line line-number" line="167">    <span class="token punctuation">}</span> <span class="token operator">|</span> column_if_available
+</span><span class="code-line line-number" line="168"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="169">
+</span><span class="code-line line-number" line="170"><span class="token function-name function">docker_clean_all</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="171">    <span class="token builtin class-name">local</span> <span class="token assign-left variable">deploy_dir</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>}</span>"</span>
+</span><span class="code-line line-number" line="172">    
+</span><span class="code-line line-number" line="173">    <span class="token builtin class-name">echo</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="174">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> Docker 环境彻底清理<span class="token variable">${gl_bai}</span><span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="175">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span><span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="176">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> Docker容器列表<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="177">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="178">    list_beautify_docker_ps
+</span><span class="code-line line-number" line="179">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="180">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="181">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> Docker镜像列表<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="182">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="183">    list_beautify_docker_images
+</span><span class="code-line line-number" line="184">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="185">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_hong}</span>⚠️  警告: 此操作将彻底清理 Docker 环境！<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="186">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>  - 删除所有容器 (运行中/停止)<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="187">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>  - 删除所有镜像<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="188">    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$deploy_dir</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="189">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>  - 删除部署目录: <span class="token variable">$deploy_dir</span><span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="190">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="191">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="192">    
+</span><span class="code-line line-number" line="193">    <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"$(echo -e "<span class="token variable">${gl_bai}</span>确定执行彻底清理吗？(<span class="token variable">${gl_lv}</span>y<span class="token variable">${gl_bai}</span>/<span class="token variable">${gl_hong}</span>N<span class="token variable">${gl_bai}</span>)(<span class="token variable">${gl_hong}</span>0<span class="token variable">${gl_bai}</span>退出): <span class="token variable">${reset}</span>"</span><span class="token punctuation">)</span><span class="token string">" choice
+</span></span><span class="code-line line-number" line="194"><span class="token string">    
+</span></span><span class="code-line line-number" line="195"><span class="token string">    case "</span><span class="token variable">$choice</span><span class="token string">" in
+</span></span><span class="code-line line-number" line="196"><span class="token string">        [Yy])
+</span></span><span class="code-line line-number" line="197"><span class="token string">            echo -ne "</span><span class="token variable">${gl_huang}</span>正在停止并删除所有容器<span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token punctuation">\</span>c<span class="token string">"
+</span></span><span class="code-line line-number" line="198"><span class="token string">            sleep_fractional 0.5
+</span></span><span class="code-line line-number" line="199"><span class="token string">            echo -ne "</span><span class="token variable">${gl_hong}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_huang}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_lv}</span><span class="token builtin class-name">.</span><span class="token variable">${gl_bai}</span><span class="token punctuation">\</span>c<span class="token string">"
+</span></span><span class="code-line line-number" line="200"><span class="token string">            sleep_fractional 0.5
+</span></span><span class="code-line line-number" line="201"><span class="token string">            echo "</span>"
+</span><span class="code-line line-number" line="202">            
+</span><span class="code-line line-number" line="203">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">containers</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-aq</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="204">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$containers</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="205">                <span class="token function">docker</span> stop <span class="token variable">$containers</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token boolean">true</span>
+</span><span class="code-line line-number" line="206">                <span class="token function">docker</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token variable">$containers</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token boolean">true</span>
+</span><span class="code-line line-number" line="207">                log_ok <span class="token string">"所有容器已删除"</span>
+</span><span class="code-line line-number" line="208">            <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="209">                log_info <span class="token string">"没有容器需要删除"</span>
+</span><span class="code-line line-number" line="210">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="211">            
+</span><span class="code-line line-number" line="212">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_huang}</span>正在删除所有镜像<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="213">            sleep_fractional <span class="token number">0.5</span>
+</span><span class="code-line line-number" line="214">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-ne</span> <span class="token string">"<span class="token variable">${gl_hong}</span>.<span class="token variable">${gl_huang}</span>.<span class="token variable">${gl_lv}</span>.<span class="token variable">${gl_bai}</span><span class="token entity" title="\c">\c</span>"</span>
+</span><span class="code-line line-number" line="215">            sleep_fractional <span class="token number">0.5</span>
+</span><span class="code-line line-number" line="216">            <span class="token builtin class-name">echo</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="217">            
+</span><span class="code-line line-number" line="218">            <span class="token builtin class-name">local</span> <span class="token assign-left variable">images</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">docker</span> images <span class="token parameter variable">-q</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null<span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="219">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$images</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="220">                <span class="token function">docker</span> rmi <span class="token parameter variable">-f</span> <span class="token variable">$images</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">||</span> <span class="token boolean">true</span>
+</span><span class="code-line line-number" line="221">                log_ok <span class="token string">"所有镜像已删除"</span>
+</span><span class="code-line line-number" line="222">            <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="223">                log_info <span class="token string">"没有镜像需要删除"</span>
+</span><span class="code-line line-number" line="224">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="225">            
+</span><span class="code-line line-number" line="226">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$deploy_dir</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="227">                remove_deployment_dir <span class="token string">"<span class="token variable">$deploy_dir</span>"</span>
+</span><span class="code-line line-number" line="228">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="229">
+</span><span class="code-line line-number" line="230">            log_ok <span class="token string">"Docker 环境彻底清理完成！"</span>
+</span><span class="code-line line-number" line="231">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="232">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> Docker容器列表<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="233">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="234">            list_beautify_docker_ps
+</span><span class="code-line line-number" line="235">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="236">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="237">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>>>> Docker镜像列表<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="238">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="239">            list_beautify_docker_images
+</span><span class="code-line line-number" line="240">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="241">            break_end
+</span><span class="code-line line-number" line="242">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="243">        <span class="token number">0</span><span class="token punctuation">)</span> 
+</span><span class="code-line line-number" line="244">            exit_script
+</span><span class="code-line line-number" line="245">            <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="246">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="247">        *<span class="token punctuation">)</span> 
+</span><span class="code-line line-number" line="248">            handle_y_n
+</span><span class="code-line line-number" line="249">            <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="250">    <span class="token keyword">esac</span>
+</span><span class="code-line line-number" line="251"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="252">
+</span><span class="code-line line-number" line="253">docker_clean_all <span class="token string">"<span class="token variable">${1<span class="token operator">:-</span>}</span>"</span>
+</span></code><div onclick="copied(this)" data-code="#!/bin/bash
+set -uo pipefail
+
+list_color_init() {
+    export gl_hui=$&#x27;\033[38;5;59m&#x27;
+    export gl_hong=$&#x27;\033[38;5;9m&#x27;
+    export gl_lv=$&#x27;\033[38;5;10m&#x27;
+    export gl_huang=$&#x27;\033[38;5;11m&#x27;
+    export gl_lan=$&#x27;\033[38;5;32m&#x27;
+    export gl_bai=$&#x27;\033[38;5;15m&#x27;
+    export gl_zi=$&#x27;\033[38;5;13m&#x27;
+    export gl_bufan=$&#x27;\033[38;5;14m&#x27;
+    export reset=$&#x27;\033[0m&#x27;
+}
+list_color_init
+
+log_info()  { echo -e &#x22;${gl_lan}[信息]${gl_bai} $*${reset}&#x22;; }
+log_ok()    { echo -e &#x22;${gl_lv}[成功]${gl_bai} $*${reset}&#x22;; }
+log_warn()  { echo -e &#x22;${gl_huang}[警告]${gl_bai} $*${reset}&#x22;; }
+log_error() { echo -e &#x22;${gl_hong}[错误]${gl_bai} $*${reset}&#x22; >&#x26;2; }
+
+sleep_fractional() {
+    local seconds=$1
+    if sleep &#x22;$seconds&#x22; 2>/dev/null; then return 0; fi
+    if command -v perl >/dev/null 2>&#x26;1; then perl -e &#x22;select(undef, undef, undef, $seconds)&#x22;; return 0; fi
+    if command -v python3 >/dev/null 2>&#x26;1; then python3 -c &#x22;import time; time.sleep($seconds)&#x22;; return 0; fi
+    if command -v python >/dev/null 2>&#x26;1; then python -c &#x22;import time; time.sleep($seconds)&#x22;; return 0; fi
+    local int_seconds=$(awk -v s=&#x22;$seconds&#x22; &#x27;BEGIN{print int(s+0.999)}&#x27;)
+    sleep &#x22;$int_seconds&#x22;
+}
+
+exit_script() {
+    echo &#x22;&#x22;
+    echo -ne &#x22;${gl_hong}感谢使用，再见！${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    sleep_fractional 0.5
+    echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+    sleep_fractional 0.6
+    echo -e &#x22;${reset}&#x22;
+    clear
+    exit 0
+}
+
+handle_y_n() {
+    echo -e &#x22;${gl_hong}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_hong}。${reset}&#x22;
+    sleep 1
+    echo -e &#x22;${gl_huang}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_huang}。${reset}&#x22;
+    sleep 1
+    echo -e &#x22;${gl_lv}无效的选择，请输入 ${gl_bai}(${gl_lv}y${gl_bai}或${gl_hong}N${gl_bai})${gl_lv}。${reset}&#x22;
+    sleep_fractional 0.5
+    return 2
+}
+
+break_end() {
+    echo -e &#x22;${gl_lv}操作完成${gl_bai}${reset}&#x22;
+    echo -e -n &#x22;${gl_bai}按任意键继续${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai} ${reset}&#x22;
+    read -r -n 1 -s
+    echo &#x22;&#x22;
+    clear
+}
+
+remove_deployment_dir() {
+    local deploy_dir=&#x22;$1&#x22;
+    if [[ -n &#x22;$deploy_dir&#x22; &#x26;&#x26; -d &#x22;$deploy_dir&#x22; ]]; then
+        log_warn &#x22;正在删除部署目录: $deploy_dir&#x22;
+        rm -rf &#x22;$deploy_dir&#x22;
+        if [[ $? -eq 0 ]]; then
+            log_ok &#x22;部署目录已删除: $deploy_dir&#x22;
+        else
+            log_error &#x22;部署目录删除失败: $deploy_dir&#x22;
+        fi
+    elif [[ -n &#x22;$deploy_dir&#x22; ]]; then
+        log_warn &#x22;部署目录不存在，跳过删除: $deploy_dir&#x22;
+    fi
+}
+
+column_if_available() {
+    if command -v column &#x26;> /dev/null; then
+        column -t -s $&#x27;\t&#x27;
+    else
+        cat
+    fi
+}
+
+list_beautify_docker_ps() {
+    {
+        printf &#x22;%s%s\t%s\t%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_hui&#x22; &#x22;容器ID&#x22; &#x22;镜像&#x22; &#x22;命令&#x22; &#x22;创建时间&#x22; &#x22;状态&#x22; &#x22;端口&#x22; &#x22;名称&#x22; &#x22;$reset&#x22;
+        printf &#x22;%s%s\t%s\t%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_hui&#x22; &#x22;--------&#x22; &#x22;--------&#x22; &#x22;--------&#x22; &#x22;--------&#x22; &#x22;--------&#x22; &#x22;--------&#x22; &#x22;--------&#x22; &#x22;$reset&#x22;
+
+        docker ps -a --format &#x22;{{.ID}}\t{{.Image}}\t{{.Command}}\t{{.RunningFor}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}&#x22; | \
+        awk -v cyan=&#x22;$gl_bufan&#x22; -v green=&#x22;$gl_lv&#x22; -v yellow=&#x22;$gl_huang&#x22; -v blue=&#x22;$gl_lan&#x22; -v white=&#x22;$gl_bai&#x22; -v reset=&#x22;$reset&#x22; &#x27;
+        BEGIN {FS=&#x22;\t&#x22;; OFS=&#x22;\t&#x22;}
+        {
+            id = substr($1, 1, 12)
+            image = $2
+            cmd = $3
+            created = $4
+            status = $5
+            ports = $6
+            name = $7
+
+            gsub(/ years ago/, &#x22;年前&#x22;, created)
+            gsub(/ year ago/, &#x22;年前&#x22;, created)
+            gsub(/ months ago/, &#x22;个月前&#x22;, created)
+            gsub(/ month ago/, &#x22;个月前&#x22;, created)
+            gsub(/ weeks ago/, &#x22;周前&#x22;, created)
+            gsub(/ week ago/, &#x22;周前&#x22;, created)
+            gsub(/ days ago/, &#x22;天前&#x22;, created)
+            gsub(/ day ago/, &#x22;天前&#x22;, created)
+            gsub(/ hours ago/, &#x22;小时前&#x22;, created)
+            gsub(/ hour ago/, &#x22;小时前&#x22;, created)
+            gsub(/ minutes ago/, &#x22;分钟前&#x22;, created)
+            gsub(/ minute ago/, &#x22;分钟前&#x22;, created)
+            gsub(/ seconds ago/, &#x22;秒前&#x22;, created)
+            gsub(/ second ago/, &#x22;秒前&#x22;, created)
+            gsub(/About /, &#x22;&#x22;, created)
+
+            gsub(/ years ago/, &#x22;年前&#x22;, status)
+            gsub(/ year ago/, &#x22;年前&#x22;, status)
+            gsub(/ months ago/, &#x22;个月前&#x22;, status)
+            gsub(/ month ago/, &#x22;个月前&#x22;, status)
+            gsub(/ weeks ago/, &#x22;周前&#x22;, status)
+            gsub(/ week ago/, &#x22;周前&#x22;, status)
+            gsub(/ days ago/, &#x22;天前&#x22;, status)
+            gsub(/ day ago/, &#x22;天前&#x22;, status)
+            gsub(/ hours ago/, &#x22;小时前&#x22;, status)
+            gsub(/ hour ago/, &#x22;小时前&#x22;, status)
+            gsub(/ minutes ago/, &#x22;分钟前&#x22;, status)
+            gsub(/ minute ago/, &#x22;分钟前&#x22;, status)
+            gsub(/ seconds ago/, &#x22;秒前&#x22;, status)
+            gsub(/ second ago/, &#x22;秒前&#x22;, status)
+            gsub(/About /, &#x22;&#x22;, status)
+
+            print cyan id reset, blue image reset, white cmd reset, blue created reset, yellow status reset, white ports reset, green name reset
+        }&#x27;
+    } | column_if_available
+}
+
+list_beautify_docker_images() {
+    {
+        printf &#x22;%s%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_hui&#x22; &#x22;仓库&#x22; &#x22;标签&#x22; &#x22;镜像ID&#x22; &#x22;创建时间&#x22; &#x22;大小&#x22; &#x22;$reset&#x22;
+        printf &#x22;%s%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_hui&#x22; &#x22;----------&#x22; &#x22;----------&#x22; &#x22;----------&#x22; &#x22;----------&#x22; &#x22;----------&#x22; &#x22;$reset&#x22;
+        
+        docker image ls --format &#x22;{{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.CreatedSince}}\t{{.Size}}&#x22; | \
+        awk -v green=&#x22;$gl_lv&#x22; -v yellow=&#x22;$gl_huang&#x22; -v cyan=&#x22;$gl_bufan&#x22; -v blue=&#x22;$gl_lan&#x22; -v white=&#x22;$gl_bai&#x22; -v reset=&#x22;$reset&#x22; &#x27;
+        BEGIN {FS=&#x22;\t&#x22;; OFS=&#x22;\t&#x22;}
+        {
+            id = substr($3, 1, 12)
+            time = $4
+            gsub(/ years ago/, &#x22;年前&#x22;, time)
+            gsub(/ year ago/, &#x22;年前&#x22;, time)
+            gsub(/ months ago/, &#x22;个月前&#x22;, time)
+            gsub(/ month ago/, &#x22;个月前&#x22;, time)
+            gsub(/ weeks ago/, &#x22;周前&#x22;, time)
+            gsub(/ week ago/, &#x22;周前&#x22;, time)
+            gsub(/ days ago/, &#x22;天前&#x22;, time)
+            gsub(/ day ago/, &#x22;天前&#x22;, time)
+            gsub(/ hours ago/, &#x22;小时前&#x22;, time)
+            gsub(/ hour ago/, &#x22;小时前&#x22;, time)
+            gsub(/ minutes ago/, &#x22;分钟前&#x22;, time)
+            gsub(/ minute ago/, &#x22;分钟前&#x22;, time)
+            gsub(/ seconds ago/, &#x22;秒前&#x22;, time)
+            gsub(/ second ago/, &#x22;秒前&#x22;, time)
+            gsub(/About /, &#x22;&#x22;, time)
+            
+            print green $1 reset, yellow $2 reset, cyan id reset, blue time reset, white $5 reset
+        }&#x27;
+    } | column_if_available
+}
+
+docker_clean_all() {
+    local deploy_dir=&#x22;${1:-}&#x22;
+    
+    echo &#x22;&#x22;
+    echo -e &#x22;${gl_zi}>>> Docker 环境彻底清理${gl_bai}${reset}&#x22;
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}${reset}&#x22;
+    echo -e &#x22;${gl_huang}>>> Docker容器列表${gl_bai}&#x22;
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+    list_beautify_docker_ps
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+    echo -e &#x22;&#x22;
+    echo -e &#x22;${gl_huang}>>> Docker镜像列表${gl_bai}&#x22;
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+    list_beautify_docker_images
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+    echo -e &#x22;${gl_hong}⚠️  警告: 此操作将彻底清理 Docker 环境！${reset}&#x22;
+    echo -e &#x22;${gl_huang}  - 删除所有容器 (运行中/停止)${reset}&#x22;
+    echo -e &#x22;${gl_huang}  - 删除所有镜像${reset}&#x22;
+    if [[ -n &#x22;$deploy_dir&#x22; ]]; then
+        echo -e &#x22;${gl_huang}  - 删除部署目录: $deploy_dir${reset}&#x22;
+    fi
+    echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${reset}&#x22;
+    
+    read -r -e -p &#x22;$(echo -e &#x22;${gl_bai}确定执行彻底清理吗？(${gl_lv}y${gl_bai}/${gl_hong}N${gl_bai})(${gl_hong}0${gl_bai}退出): ${reset}&#x22;)&#x22; choice
+    
+    case &#x22;$choice&#x22; in
+        [Yy])
+            echo -ne &#x22;${gl_huang}正在停止并删除所有容器${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+            sleep_fractional 0.5
+            echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+            sleep_fractional 0.5
+            echo &#x22;&#x22;
+            
+            local containers=$(docker ps -aq 2>/dev/null)
+            if [[ -n &#x22;$containers&#x22; ]]; then
+                docker stop $containers 2>/dev/null || true
+                docker rm -f $containers 2>/dev/null || true
+                log_ok &#x22;所有容器已删除&#x22;
+            else
+                log_info &#x22;没有容器需要删除&#x22;
+            fi
+            
+            echo -ne &#x22;${gl_huang}正在删除所有镜像${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+            sleep_fractional 0.5
+            echo -ne &#x22;${gl_hong}.${gl_huang}.${gl_lv}.${gl_bai}\c&#x22;
+            sleep_fractional 0.5
+            echo &#x22;&#x22;
+            
+            local images=$(docker images -q 2>/dev/null)
+            if [[ -n &#x22;$images&#x22; ]]; then
+                docker rmi -f $images 2>/dev/null || true
+                log_ok &#x22;所有镜像已删除&#x22;
+            else
+                log_info &#x22;没有镜像需要删除&#x22;
+            fi
+            
+            if [[ -n &#x22;$deploy_dir&#x22; ]]; then
+                remove_deployment_dir &#x22;$deploy_dir&#x22;
+            fi
+
+            log_ok &#x22;Docker 环境彻底清理完成！&#x22;
+            echo -e &#x22;&#x22;
+            echo -e &#x22;${gl_huang}>>> Docker容器列表${gl_bai}&#x22;
+            echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+            list_beautify_docker_ps
+            echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+            echo -e &#x22;&#x22;
+            echo -e &#x22;${gl_huang}>>> Docker镜像列表${gl_bai}&#x22;
+            echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+            list_beautify_docker_images
+            echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
+            break_end
+            ;;
+        0) 
+            exit_script
+            return 1
+            ;;
+        *) 
+            handle_y_n
+            ;;
+    esac
+}
+
+docker_clean_all &#x22;${1:-}&#x22;
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-<h3 id="选项"><a class="anchor" aria-hidden="true" tabindex="-1" href="#选项"><span class="octicon octicon-link"></span></a>选项</h3>
-<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">-a<span class="token operator">&#x3C;</span>开关<span class="token operator">></span>或--auto<span class="token operator">&#x3C;</span>开关<span class="token operator">></span>：控制设备的自动退出功能；
-</span><span class="code-line line-number" line="2">-c<span class="token operator">&#x3C;</span>光驱编号<span class="token operator">></span>或--changerslut<span class="token operator">&#x3C;</span>光驱编号<span class="token operator">></span>   选择光驱柜中的光驱；
-</span><span class="code-line line-number" line="3">-d或--default：显示预设的设备，而不是实际执行动作；
-</span><span class="code-line line-number" line="4">-f或--floppy：退出抽取式磁盘；
-</span><span class="code-line line-number" line="5">-h或--help：显示帮助；
-</span><span class="code-line line-number" line="6">-n或--noop：显示指定的设备；
-</span><span class="code-line line-number" line="7">-q或--tape：退出磁带；
-</span><span class="code-line line-number" line="8">-r或--cdrom：退出光盘；
-</span><span class="code-line line-number" line="9">-s或--scsi：以SCSI指令来退出设备；
-</span><span class="code-line line-number" line="10">-t或--trayclose：关闭光盘的托盘；
-</span><span class="code-line line-number" line="11">-v或--verbose：执行时，显示详细的说明。
-</span></code><div onclick="copied(this)" data-code="-a<开关>或--auto<开关>：控制设备的自动退出功能；
--c<光驱编号>或--changerslut<光驱编号>   选择光驱柜中的光驱；
--d或--default：显示预设的设备，而不是实际执行动作；
--f或--floppy：退出抽取式磁盘；
--h或--help：显示帮助；
--n或--noop：显示指定的设备；
--q或--tape：退出磁带；
--r或--cdrom：退出光盘；
--s或--scsi：以SCSI指令来退出设备；
--t或--trayclose：关闭光盘的托盘；
--v或--verbose：执行时，显示详细的说明。
+<h2 id="创建本地脚本"><a class="anchor" aria-hidden="true" tabindex="-1" href="#创建本地脚本"><span class="octicon octicon-link"></span></a>创建本地脚本</h2>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token assign-left variable">new_script</span><span class="token operator">=</span><span class="token string">"new_test.sh"</span>
+</span><span class="code-line line-number" line="2">
+</span><span class="code-line line-number" line="3"><span class="token function">cat</span> <span class="token operator">></span> <span class="token string">"<span class="token variable">$new_script</span>"</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token string">'EOF'
+</span></span><span class="code-line line-number" line="4"><span class="token string">#!/bin/bash
+</span></span><span class="code-line line-number" line="5"><span class="token string">
+</span></span><span class="code-line line-number" line="6"><span class="token string"># 粘贴脚本源码
+</span></span><span class="code-line line-number" line="7"><span class="token string">
+</span></span><span class="code-line line-number" line="8"><span class="token string">EOF</span>
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10"><span class="token comment"># 保留本地脚本，去掉 rm -f "$new_script"</span>
+</span><span class="code-line line-number" line="11"><span class="token function">chmod</span> +x <span class="token string">"<span class="token variable">$new_script</span>"</span> <span class="token operator">&#x26;&#x26;</span> ./<span class="token string">"<span class="token variable">$new_script</span>"</span> <span class="token operator">&#x26;&#x26;</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">$new_script</span>"</span>
+</span></code><div onclick="copied(this)" data-code="new_script=&#x22;new_test.sh&#x22;
+
+cat > &#x22;$new_script&#x22; << &#x27;EOF&#x27;
+#!/bin/bash
+
+# 粘贴脚本源码
+
+EOF
+
+# 保留本地脚本，去掉 rm -f &#x22;$new_script&#x22;
+chmod +x &#x22;$new_script&#x22; &#x26;&#x26; ./&#x22;$new_script&#x22; &#x26;&#x26; rm -f &#x22;$new_script&#x22;
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-<h3 id="参数"><a class="anchor" aria-hidden="true" tabindex="-1" href="#参数"><span class="octicon octicon-link"></span></a>参数</h3>
-<p>设备名：指定弹出的设备名称。</p>
+<h2 id="相关命令"><a class="anchor" aria-hidden="true" tabindex="-1" href="#相关命令"><span class="octicon octicon-link"></span></a>相关命令</h2>
+<ul>
+  <li><a href="../c/docker_ps.html" title="Docker容器列表美化">docker_ps</a></li>
+  <li><a href="../c/docker_check_env.html" title="Docker环境检查安装">docker_check_env</a></li>
+  <li><a href="../c/docker_install_uninstall.html" title="Docker安装卸载">docker_install_uninstall</a></li>
+  <li><a href="../c/docker_clean_all.html" title="Docker彻底清理">docker_clean_all</a></li>
+</ul>
 <style>markdown-style pre .copied {
   display: flex;
   position: absolute;
