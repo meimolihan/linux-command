@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="pve_file_menu 命令">
     <meta name="twitter:description" content="PVE 系统文件管理器 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpc2jp3i">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpc5ehum">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mpc2jp3i"></script>
+    <script src="../js/dt.js?v=mpc5ehum"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1136,7 +1136,10 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h2 id="效果预览"><a class="anchor" aria-hidden="true" tabindex="-1" href="#效果预览"><span class="octicon octicon-link"></span></a>效果预览</h2>
 <p>
-  <img src="https://file.meimolihan.eu.org/screenshot/linux_file_menu.webp" alt="执行脚本效果预览" title="截图演示" loading="lazy">
+  <img src="https://file.meimolihan.eu.org/screenshot/linux_file_menu-01.webp" alt="执行脚本效果预览" title="截图演示" loading="lazy">
+</p>
+<p>
+  <img src="https://file.meimolihan.eu.org/screenshot/linux_file_menu-02.webp" alt="执行脚本效果预览" title="截图演示" loading="lazy">
 </p>
 <h2 id="补充说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#补充说明"><span class="octicon octicon-link"></span></a>补充说明</h2>
 <p>该脚本是 PVE（Proxmox VE）系统下的交互式文件管理器，专注于镜像文件管理和备份文件管理，适合在 PVE 环境下管理 ISO 镜像、备份文件的场景。</p>
@@ -8845,29 +8848,35 @@ bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/pve_file_menu.s
 </span><span class="code-line line-number" line="7648">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE 文件管理<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="7649">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
 </span><span class="code-line line-number" line="7650">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>1.  <span class="token variable">${gl_bai}</span>镜像文件管理       <span class="token variable">${gl_bufan}</span>2.  <span class="token variable">${gl_bai}</span>备份文件管理"</span>
-</span><span class="code-line line-number" line="7651">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="7652">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>0.  <span class="token variable">${gl_bai}</span>返回上一级选单     <span class="token variable">${gl_hong}</span>00. <span class="token variable">${gl_bai}</span>退出脚本"</span>
+</span><span class="code-line line-number" line="7651">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>3.  <span class="token variable">${gl_bai}</span>容器配置管理       <span class="token variable">${gl_bufan}</span>4.  <span class="token variable">${gl_bai}</span>虚拟机配置管理"</span>
+</span><span class="code-line line-number" line="7652">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>5.  <span class="token variable">${gl_bai}</span>虚拟磁盘管理       <span class="token variable">${gl_bufan}</span>6.  <span class="token variable">${gl_bai}</span>数据总目录管理"</span>
 </span><span class="code-line line-number" line="7653">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="7654">        <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"请输入你的选择: "</span> choice
-</span><span class="code-line line-number" line="7655">        
-</span><span class="code-line line-number" line="7656">        <span class="token keyword">case</span> <span class="token variable">$choice</span> <span class="token keyword">in</span>
-</span><span class="code-line line-number" line="7657">        <span class="token number">1</span><span class="token punctuation">)</span> linux_file /var/lib/vz/template/iso <span class="token string">"PVE 镜像文件管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="7658">        <span class="token number">2</span><span class="token punctuation">)</span> linux_file /var/lib/vz/dump <span class="token string">"PVE 备份文件管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="7659">        <span class="token number">0</span><span class="token punctuation">)</span> cancel_return<span class="token punctuation">;</span> <span class="token builtin class-name">break</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="7660">        00 <span class="token operator">|</span> 000 <span class="token operator">|</span> 0000<span class="token punctuation">)</span> exit_script <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="7661">        *<span class="token punctuation">)</span> handle_invalid_input <span class="token punctuation">;</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="7662">        <span class="token keyword">esac</span>
-</span><span class="code-line line-number" line="7663">    <span class="token keyword">done</span>
-</span><span class="code-line line-number" line="7664"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="7665">
-</span><span class="code-line line-number" line="7666">parse_arguments <span class="token string">"<span class="token variable">$@</span>"</span>
-</span><span class="code-line line-number" line="7667">
-</span><span class="code-line line-number" line="7668"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$SCRIPT_WORKDIR</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$SCRIPT_WORKDIR</span>"</span> <span class="token operator">!=</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="7669">    main <span class="token string">"<span class="token variable">$SCRIPT_WORKDIR</span>"</span>
-</span><span class="code-line line-number" line="7670"><span class="token keyword">else</span>
-</span><span class="code-line line-number" line="7671">    pve_file_menu
-</span><span class="code-line line-number" line="7672">    main <span class="token string">"<span class="token variable">$@</span>"</span>
-</span><span class="code-line line-number" line="7673"><span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="7654">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>0.  <span class="token variable">${gl_bai}</span>返回上一级选单     <span class="token variable">${gl_hong}</span>00. <span class="token variable">${gl_bai}</span>退出脚本"</span>
+</span><span class="code-line line-number" line="7655">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="7656">        <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"请输入你的选择: "</span> choice
+</span><span class="code-line line-number" line="7657">        
+</span><span class="code-line line-number" line="7658">        <span class="token keyword">case</span> <span class="token variable">$choice</span> <span class="token keyword">in</span>
+</span><span class="code-line line-number" line="7659">        <span class="token number">1</span><span class="token punctuation">)</span> linux_file /var/lib/vz/template/iso <span class="token string">"PVE 镜像文件管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7660">        <span class="token number">2</span><span class="token punctuation">)</span> linux_file /var/lib/vz/dump <span class="token string">"PVE 备份文件管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7661">        <span class="token number">3</span><span class="token punctuation">)</span> linux_file /etc/pve/lxc <span class="token string">"PVE 容器配置管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7662">        <span class="token number">4</span><span class="token punctuation">)</span> linux_file /etc/pve/qemu-server <span class="token string">"PVE 虚拟机配置管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7663">        <span class="token number">5</span><span class="token punctuation">)</span> linux_file /var/lib/vz/images <span class="token string">"PVE 虚拟磁盘管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7664">        <span class="token number">6</span><span class="token punctuation">)</span> linux_file /var/lib/vz <span class="token string">"PVE 数据总目录管理"</span> <span class="token string">"主菜单"</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7665">        <span class="token number">0</span><span class="token punctuation">)</span> cancel_return<span class="token punctuation">;</span> <span class="token builtin class-name">break</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7666">        00 <span class="token operator">|</span> 000 <span class="token operator">|</span> 0000<span class="token punctuation">)</span> exit_script <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7667">        *<span class="token punctuation">)</span> handle_invalid_input <span class="token punctuation">;</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7668">        <span class="token keyword">esac</span>
+</span><span class="code-line line-number" line="7669">    <span class="token keyword">done</span>
+</span><span class="code-line line-number" line="7670"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="7671">
+</span><span class="code-line line-number" line="7672">parse_arguments <span class="token string">"<span class="token variable">$@</span>"</span>
+</span><span class="code-line line-number" line="7673">
+</span><span class="code-line line-number" line="7674"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$SCRIPT_WORKDIR</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$SCRIPT_WORKDIR</span>"</span> <span class="token operator">!=</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="7675">    main <span class="token string">"<span class="token variable">$SCRIPT_WORKDIR</span>"</span>
+</span><span class="code-line line-number" line="7676"><span class="token keyword">else</span>
+</span><span class="code-line line-number" line="7677">    pve_file_menu
+</span><span class="code-line line-number" line="7678">    main <span class="token string">"<span class="token variable">$@</span>"</span>
+</span><span class="code-line line-number" line="7679"><span class="token keyword">fi</span>
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 
 SCRIPT_WORKDIR=&#x22;&#x22;
@@ -16518,6 +16527,8 @@ pve_file_menu() {
         echo -e &#x22;${gl_zi}>>> PVE 文件管理${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}1.  ${gl_bai}镜像文件管理       ${gl_bufan}2.  ${gl_bai}备份文件管理&#x22;
+        echo -e &#x22;${gl_bufan}3.  ${gl_bai}容器配置管理       ${gl_bufan}4.  ${gl_bai}虚拟机配置管理&#x22;
+        echo -e &#x22;${gl_bufan}5.  ${gl_bai}虚拟磁盘管理       ${gl_bufan}6.  ${gl_bai}数据总目录管理&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
         echo -e &#x22;${gl_huang}0.  ${gl_bai}返回上一级选单     ${gl_hong}00. ${gl_bai}退出脚本&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -16526,6 +16537,10 @@ pve_file_menu() {
         case $choice in
         1) linux_file /var/lib/vz/template/iso &#x22;PVE 镜像文件管理&#x22; &#x22;主菜单&#x22; ;;
         2) linux_file /var/lib/vz/dump &#x22;PVE 备份文件管理&#x22; &#x22;主菜单&#x22; ;;
+        3) linux_file /etc/pve/lxc &#x22;PVE 容器配置管理&#x22; &#x22;主菜单&#x22; ;;
+        4) linux_file /etc/pve/qemu-server &#x22;PVE 虚拟机配置管理&#x22; &#x22;主菜单&#x22; ;;
+        5) linux_file /var/lib/vz/images &#x22;PVE 虚拟磁盘管理&#x22; &#x22;主菜单&#x22; ;;
+        6) linux_file /var/lib/vz &#x22;PVE 数据总目录管理&#x22; &#x22;主菜单&#x22; ;;
         0) cancel_return; break ;;
         00 | 000 | 0000) exit_script ;;
         *) handle_invalid_input ;;
@@ -16765,8 +16780,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mpc2jp3i"></script>
-<script type="text/javascript" src="../js/index.js?v=mpc2jp3i"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mpc2jp3i"></script>
+<script type="text/javascript" src="../js/dt.js?v=mpc5ehum"></script>
+<script type="text/javascript" src="../js/index.js?v=mpc5ehum"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mpc5ehum"></script>
 </body>
 </html>
