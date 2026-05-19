@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="pve_pct_list 命令">
     <meta name="twitter:description" content="PVE PCT 容器列表美化工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpcbyzkn">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpcctex8">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mpcbyzkn"></script>
+    <script src="../js/dt.js?v=mpcctex8"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1227,53 +1227,87 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 </span><span class="code-line line-number" line="37">
 </span><span class="code-line line-number" line="38"><span class="token function-name function">list_beautify_pve_pct</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 </span><span class="code-line line-number" line="39">    <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="40">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"CTID"</span> <span class="token string">"名称"</span> <span class="token string">"状态"</span> <span class="token string">"内存"</span> <span class="token string">"磁盘"</span> <span class="token string">"锁"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
+</span><span class="code-line line-number" line="40">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"CTID"</span> <span class="token string">"状态"</span> <span class="token string">"名称"</span> <span class="token string">"内存(MB)"</span> <span class="token string">"磁盘(GB)"</span> <span class="token string">"锁"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
 </span><span class="code-line line-number" line="41">        <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_hui</span>"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"----"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
 </span><span class="code-line line-number" line="42">
-</span><span class="code-line line-number" line="43">        <span class="token builtin class-name">local</span> data
-</span><span class="code-line line-number" line="44">        <span class="token assign-left variable">data</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>pct list <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-n</span> +2<span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="45">        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$data</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="46">            <span class="token builtin class-name">printf</span> <span class="token string">"%s%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s<span class="token entity" title="\t">\t</span>%s%s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">$gl_huang</span>"</span> <span class="token string">"(无数据)"</span> <span class="token string">"(无数据)"</span> <span class="token string">"(无数据)"</span> <span class="token string">"(无数据)"</span> <span class="token string">"(无数据)"</span> <span class="token string">"(无数据)"</span> <span class="token string">"<span class="token variable">$reset</span>"</span>
-</span><span class="code-line line-number" line="47">        <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="48">            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$data</span>"</span> <span class="token operator">|</span> <span class="token keyword">while</span> <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> line<span class="token punctuation">;</span> <span class="token keyword">do</span>
-</span><span class="code-line line-number" line="49">                <span class="token assign-left variable">ctid</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $1}'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="50">                <span class="token assign-left variable">status</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $3}'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="51">                <span class="token assign-left variable">mem</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $4}'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="52">                <span class="token assign-left variable">disk</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $5}'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="53">                <span class="token assign-left variable">lock</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $6}'</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="54">                <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token parameter variable">-E</span> <span class="token string">'s/^[ ]*'</span>$<span class="token punctuation">{</span>ctid<span class="token punctuation">}</span><span class="token string">'[ ]+//; s/[ ]+'</span>$<span class="token punctuation">{</span>status<span class="token punctuation">}</span><span class="token string">'.*$//'</span> <span class="token operator">|</span> <span class="token function">xargs</span><span class="token variable">)</span></span>
-</span><span class="code-line line-number" line="55">
-</span><span class="code-line line-number" line="56">                <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$status</span>"</span> <span class="token operator">==</span> <span class="token string">"running"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="57">                    <span class="token assign-left variable">stat_color</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${gl_lv}</span>"</span>
-</span><span class="code-line line-number" line="58">                <span class="token keyword">else</span>
-</span><span class="code-line line-number" line="59">                    <span class="token assign-left variable">stat_color</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${gl_hong}</span>"</span>
-</span><span class="code-line line-number" line="60">                <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="61">
-</span><span class="code-line line-number" line="62">                <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lan}</span><span class="token variable">${ctid}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_bufan}</span><span class="token variable">${name}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${stat_color}</span><span class="token variable">${status}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_huang}</span><span class="token variable">${mem}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_zi}</span><span class="token variable">${disk}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_hui}</span><span class="token variable">${lock}</span><span class="token variable">${reset}</span>"</span>
-</span><span class="code-line line-number" line="63">            <span class="token keyword">done</span>
-</span><span class="code-line line-number" line="64">        <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="65">    <span class="token punctuation">}</span> <span class="token operator">|</span> column_if_available
-</span><span class="code-line line-number" line="66"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="67">
-</span><span class="code-line line-number" line="68"><span class="token function-name function">list_beautify_all</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="69">    <span class="token function">clear</span>
-</span><span class="code-line line-number" line="70">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> qm <span class="token operator">&#x26;></span> /dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
-</span><span class="code-line line-number" line="71">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
-</span><span class="code-line line-number" line="72">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE PCT容器列表<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="73">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="74">        log_error <span class="token string">"未检测到Proxmox VE环境，请确保脚本在PVE节点上运行"</span>
-</span><span class="code-line line-number" line="75">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="76">        break_end
-</span><span class="code-line line-number" line="77">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
-</span><span class="code-line line-number" line="78">    <span class="token keyword">fi</span>
-</span><span class="code-line line-number" line="79">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE PCT容器列表<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="80">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="81">    list_beautify_pve_pct
-</span><span class="code-line line-number" line="82">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
-</span><span class="code-line line-number" line="83">    break_end
-</span><span class="code-line line-number" line="84"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="85">
-</span><span class="code-line line-number" line="86">list_beautify_all
+</span><span class="code-line line-number" line="43">        <span class="token comment"># 直接使用 pct list 并逐行处理</span>
+</span><span class="code-line line-number" line="44">        pct list <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-n</span> +2 <span class="token operator">|</span> <span class="token keyword">while</span> <span class="token assign-left variable"><span class="token environment constant">IFS</span></span><span class="token operator">=</span> <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> line<span class="token punctuation">;</span> <span class="token keyword">do</span>
+</span><span class="code-line line-number" line="45">            <span class="token comment"># 跳过空行</span>
+</span><span class="code-line line-number" line="46">            <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">continue</span>
+</span><span class="code-line line-number" line="47">            
+</span><span class="code-line line-number" line="48">            <span class="token comment"># 提取 CTID（第一个字段）</span>
+</span><span class="code-line line-number" line="49">            <span class="token assign-left variable">ctid</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $1}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="50">            <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token string">"<span class="token variable">$ctid</span>"</span> <span class="token operator">=~</span> ^<span class="token punctuation">[</span><span class="token number">0</span>-9<span class="token punctuation">]</span>+$ <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">continue</span>
+</span><span class="code-line line-number" line="51">            
+</span><span class="code-line line-number" line="52">            <span class="token comment"># 提取状态（第二个字段）</span>
+</span><span class="code-line line-number" line="53">            <span class="token assign-left variable">status</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $2}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="54">            
+</span><span class="code-line line-number" line="55">            <span class="token comment"># 如果状态不是 running/stopped，可能是其他格式，尝试第三个字段</span>
+</span><span class="code-line line-number" line="56">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$status</span>"</span> <span class="token operator">!=</span> <span class="token string">"running"</span> <span class="token operator">&#x26;&#x26;</span> <span class="token string">"<span class="token variable">$status</span>"</span> <span class="token operator">!=</span> <span class="token string">"stopped"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="57">                <span class="token assign-left variable">status</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $3}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="58">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="59">            
+</span><span class="code-line line-number" line="60">            <span class="token comment"># 只处理有效的状态</span>
+</span><span class="code-line line-number" line="61">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$status</span>"</span> <span class="token operator">!=</span> <span class="token string">"running"</span> <span class="token operator">&#x26;&#x26;</span> <span class="token string">"<span class="token variable">$status</span>"</span> <span class="token operator">!=</span> <span class="token string">"stopped"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="62">                <span class="token builtin class-name">continue</span>
+</span><span class="code-line line-number" line="63">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="64">            
+</span><span class="code-line line-number" line="65">            <span class="token comment"># 提取内存、磁盘、锁（使用默认值避免未定义变量）</span>
+</span><span class="code-line line-number" line="66">            <span class="token assign-left variable">mem</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $4}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="67">            <span class="token assign-left variable">disk</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $6}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="68">            <span class="token assign-left variable">lock</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $7}'</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="69">            
+</span><span class="code-line line-number" line="70">            <span class="token comment"># 设置默认值</span>
+</span><span class="code-line line-number" line="71">            <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$mem</span>"</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$mem</span>"</span> <span class="token operator">=</span> <span class="token string">"running"</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$mem</span>"</span> <span class="token operator">=</span> <span class="token string">"stopped"</span> <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token assign-left variable">mem</span><span class="token operator">=</span><span class="token string">"-"</span>
+</span><span class="code-line line-number" line="72">            <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$disk</span>"</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$disk</span>"</span> <span class="token operator">=</span> <span class="token string">"running"</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$disk</span>"</span> <span class="token operator">=</span> <span class="token string">"stopped"</span> <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token assign-left variable">disk</span><span class="token operator">=</span><span class="token string">"-"</span>
+</span><span class="code-line line-number" line="73">            <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$lock</span>"</span> <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token assign-left variable">lock</span><span class="token operator">=</span><span class="token string">"-"</span>
+</span><span class="code-line line-number" line="74">            
+</span><span class="code-line line-number" line="75">            <span class="token comment"># 提取名称（移除 CTID 和状态后的内容，再排除数字和特殊字段）</span>
+</span><span class="code-line line-number" line="76">            <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$line</span>"</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token parameter variable">-E</span> <span class="token string">"s/^[ ]*<span class="token variable">${ctid}</span>[ ]+//"</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token parameter variable">-E</span> <span class="token string">"s/^<span class="token variable">${status}</span>[ ]+//"</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="77">            
+</span><span class="code-line line-number" line="78">            <span class="token comment"># 进一步清理名称（移除内存、磁盘等数字字段）</span>
+</span><span class="code-line line-number" line="79">            <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$name</span>"</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token parameter variable">-E</span> <span class="token string">'s/[ ]+[0-9]+[ ]+[0-9.]+[ ]+[^ ]*[ ]*$//'</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token parameter variable">-E</span> <span class="token string">'s/[ ]+[0-9]+[ ]+[0-9.]+$//'</span> <span class="token operator">|</span> <span class="token function">xargs</span><span class="token variable">)</span></span>
+</span><span class="code-line line-number" line="80">            
+</span><span class="code-line line-number" line="81">            <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$name</span>"</span> <span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"(未命名)"</span>
+</span><span class="code-line line-number" line="82">            
+</span><span class="code-line line-number" line="83">            <span class="token comment"># 状态翻译</span>
+</span><span class="code-line line-number" line="84">            <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$status</span>"</span> <span class="token operator">==</span> <span class="token string">"running"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="85">                <span class="token assign-left variable">status_cn</span><span class="token operator">=</span><span class="token string">"运行中"</span>
+</span><span class="code-line line-number" line="86">                <span class="token assign-left variable">stat_color</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${gl_lv}</span>"</span>
+</span><span class="code-line line-number" line="87">            <span class="token keyword">else</span>
+</span><span class="code-line line-number" line="88">                <span class="token assign-left variable">status_cn</span><span class="token operator">=</span><span class="token string">"已停止"</span>
+</span><span class="code-line line-number" line="89">                <span class="token assign-left variable">stat_color</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${gl_hong}</span>"</span>
+</span><span class="code-line line-number" line="90">            <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="91">            
+</span><span class="code-line line-number" line="92">            <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_lan}</span><span class="token variable">${ctid}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${stat_color}</span><span class="token variable">${status_cn}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_bufan}</span><span class="token variable">${name}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_huang}</span><span class="token variable">${mem}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_zi}</span><span class="token variable">${disk}</span><span class="token variable">${reset}</span><span class="token entity" title="\t">\t</span><span class="token variable">${gl_hui}</span><span class="token variable">${lock}</span><span class="token variable">${reset}</span>"</span>
+</span><span class="code-line line-number" line="93">        <span class="token keyword">done</span>
+</span><span class="code-line line-number" line="94">    <span class="token punctuation">}</span> <span class="token operator">|</span> column_if_available
+</span><span class="code-line line-number" line="95">    
+</span><span class="code-line line-number" line="96">    <span class="token comment"># 如果没有输出任何数据，显示提示</span>
+</span><span class="code-line line-number" line="97">    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$?</span> <span class="token parameter variable">-ne</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="98">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_huang}</span>(无数据)<span class="token entity" title="\t">\t</span>(无数据)<span class="token entity" title="\t">\t</span>(无数据)<span class="token entity" title="\t">\t</span>(无数据)<span class="token entity" title="\t">\t</span>(无数据)<span class="token entity" title="\t">\t</span>(无数据)"</span>
+</span><span class="code-line line-number" line="99">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="100"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="101">
+</span><span class="code-line line-number" line="102"><span class="token function-name function">list_beautify_all</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="103">    <span class="token function">clear</span>
+</span><span class="code-line line-number" line="104">    <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> pct <span class="token operator">&#x26;></span> /dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+</span><span class="code-line line-number" line="105">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">""</span>
+</span><span class="code-line line-number" line="106">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE PCT容器列表<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="107">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="108">        log_error <span class="token string">"未检测到Proxmox VE环境，请确保脚本在PVE节点上运行"</span>
+</span><span class="code-line line-number" line="109">        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="110">        break_end
+</span><span class="code-line line-number" line="111">        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+</span><span class="code-line line-number" line="112">    <span class="token keyword">fi</span>
+</span><span class="code-line line-number" line="113">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_zi}</span>>>> PVE PCT容器列表<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="114">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="115">    list_beautify_pve_pct
+</span><span class="code-line line-number" line="116">    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">${gl_bufan}</span>————————————————————————————————————————————————<span class="token variable">${gl_bai}</span>"</span>
+</span><span class="code-line line-number" line="117">    break_end
+</span><span class="code-line line-number" line="118"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="119">
+</span><span class="code-line line-number" line="120">list_beautify_all
 </span></code><div onclick="copied(this)" data-code="#!/bin/bash
 set -uo pipefail
 
@@ -1313,37 +1347,71 @@ column_if_available() {
 
 list_beautify_pve_pct() {
     {
-        printf &#x22;%s%s\t%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_hui&#x22; &#x22;CTID&#x22; &#x22;名称&#x22; &#x22;状态&#x22; &#x22;内存&#x22; &#x22;磁盘&#x22; &#x22;锁&#x22; &#x22;$reset&#x22;
+        printf &#x22;%s%s\t%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_hui&#x22; &#x22;CTID&#x22; &#x22;状态&#x22; &#x22;名称&#x22; &#x22;内存(MB)&#x22; &#x22;磁盘(GB)&#x22; &#x22;锁&#x22; &#x22;$reset&#x22;
         printf &#x22;%s%s\t%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_hui&#x22; &#x22;----&#x22; &#x22;----&#x22; &#x22;----&#x22; &#x22;----&#x22; &#x22;----&#x22; &#x22;----&#x22; &#x22;$reset&#x22;
 
-        local data
-        data=$(pct list | tail -n +2)
-        if [ -z &#x22;$data&#x22; ]; then
-            printf &#x22;%s%s\t%s\t%s\t%s\t%s\t%s%s\n&#x22; &#x22;$gl_huang&#x22; &#x22;(无数据)&#x22; &#x22;(无数据)&#x22; &#x22;(无数据)&#x22; &#x22;(无数据)&#x22; &#x22;(无数据)&#x22; &#x22;(无数据)&#x22; &#x22;$reset&#x22;
-        else
-            echo &#x22;$data&#x22; | while read -r line; do
-                ctid=$(echo &#x22;$line&#x22; | awk &#x27;{print $1}&#x27;)
+        # 直接使用 pct list 并逐行处理
+        pct list 2>/dev/null | tail -n +2 | while IFS= read -r line; do
+            # 跳过空行
+            [ -z &#x22;$line&#x22; ] &#x26;&#x26; continue
+            
+            # 提取 CTID（第一个字段）
+            ctid=$(echo &#x22;$line&#x22; | awk &#x27;{print $1}&#x27;)
+            [[ ! &#x22;$ctid&#x22; =~ ^[0-9]+$ ]] &#x26;&#x26; continue
+            
+            # 提取状态（第二个字段）
+            status=$(echo &#x22;$line&#x22; | awk &#x27;{print $2}&#x27;)
+            
+            # 如果状态不是 running/stopped，可能是其他格式，尝试第三个字段
+            if [[ &#x22;$status&#x22; != &#x22;running&#x22; &#x26;&#x26; &#x22;$status&#x22; != &#x22;stopped&#x22; ]]; then
                 status=$(echo &#x22;$line&#x22; | awk &#x27;{print $3}&#x27;)
-                mem=$(echo &#x22;$line&#x22; | awk &#x27;{print $4}&#x27;)
-                disk=$(echo &#x22;$line&#x22; | awk &#x27;{print $5}&#x27;)
-                lock=$(echo &#x22;$line&#x22; | awk &#x27;{print $6}&#x27;)
-                name=$(echo &#x22;$line&#x22; | sed -E &#x27;s/^[ ]*&#x27;${ctid}&#x27;[ ]+//; s/[ ]+&#x27;${status}&#x27;.*$//&#x27; | xargs)
-
-                if [[ &#x22;$status&#x22; == &#x22;running&#x22; ]]; then
-                    stat_color=&#x22;${gl_lv}&#x22;
-                else
-                    stat_color=&#x22;${gl_hong}&#x22;
-                fi
-
-                echo -e &#x22;${gl_lan}${ctid}${reset}\t${gl_bufan}${name}${reset}\t${stat_color}${status}${reset}\t${gl_huang}${mem}${reset}\t${gl_zi}${disk}${reset}\t${gl_hui}${lock}${reset}&#x22;
-            done
-        fi
+            fi
+            
+            # 只处理有效的状态
+            if [[ &#x22;$status&#x22; != &#x22;running&#x22; &#x26;&#x26; &#x22;$status&#x22; != &#x22;stopped&#x22; ]]; then
+                continue
+            fi
+            
+            # 提取内存、磁盘、锁（使用默认值避免未定义变量）
+            mem=$(echo &#x22;$line&#x22; | awk &#x27;{print $4}&#x27;)
+            disk=$(echo &#x22;$line&#x22; | awk &#x27;{print $6}&#x27;)
+            lock=$(echo &#x22;$line&#x22; | awk &#x27;{print $7}&#x27;)
+            
+            # 设置默认值
+            [ -z &#x22;$mem&#x22; ] || [ &#x22;$mem&#x22; = &#x22;running&#x22; ] || [ &#x22;$mem&#x22; = &#x22;stopped&#x22; ] &#x26;&#x26; mem=&#x22;-&#x22;
+            [ -z &#x22;$disk&#x22; ] || [ &#x22;$disk&#x22; = &#x22;running&#x22; ] || [ &#x22;$disk&#x22; = &#x22;stopped&#x22; ] &#x26;&#x26; disk=&#x22;-&#x22;
+            [ -z &#x22;$lock&#x22; ] &#x26;&#x26; lock=&#x22;-&#x22;
+            
+            # 提取名称（移除 CTID 和状态后的内容，再排除数字和特殊字段）
+            name=$(echo &#x22;$line&#x22; | sed -E &#x22;s/^[ ]*${ctid}[ ]+//&#x22; | sed -E &#x22;s/^${status}[ ]+//&#x22;)
+            
+            # 进一步清理名称（移除内存、磁盘等数字字段）
+            name=$(echo &#x22;$name&#x22; | sed -E &#x27;s/[ ]+[0-9]+[ ]+[0-9.]+[ ]+[^ ]*[ ]*$//&#x27; | sed -E &#x27;s/[ ]+[0-9]+[ ]+[0-9.]+$//&#x27; | xargs)
+            
+            [ -z &#x22;$name&#x22; ] &#x26;&#x26; name=&#x22;(未命名)&#x22;
+            
+            # 状态翻译
+            if [[ &#x22;$status&#x22; == &#x22;running&#x22; ]]; then
+                status_cn=&#x22;运行中&#x22;
+                stat_color=&#x22;${gl_lv}&#x22;
+            else
+                status_cn=&#x22;已停止&#x22;
+                stat_color=&#x22;${gl_hong}&#x22;
+            fi
+            
+            echo -e &#x22;${gl_lan}${ctid}${reset}\t${stat_color}${status_cn}${reset}\t${gl_bufan}${name}${reset}\t${gl_huang}${mem}${reset}\t${gl_zi}${disk}${reset}\t${gl_hui}${lock}${reset}&#x22;
+        done
     } | column_if_available
+    
+    # 如果没有输出任何数据，显示提示
+    if [ $? -ne 0 ]; then
+        echo -e &#x22;${gl_huang}(无数据)\t(无数据)\t(无数据)\t(无数据)\t(无数据)\t(无数据)&#x22;
+    fi
 }
 
 list_beautify_all() {
     clear
-    if ! command -v qm &#x26;> /dev/null; then
+    if ! command -v pct &#x26;> /dev/null; then
         echo -e &#x22;&#x22;
         echo -e &#x22;${gl_zi}>>> PVE PCT容器列表${gl_bai}&#x22;
         echo -e &#x22;${gl_bufan}————————————————————————————————————————————————${gl_bai}&#x22;
@@ -1578,8 +1646,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mpcbyzkn"></script>
-<script type="text/javascript" src="../js/index.js?v=mpcbyzkn"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mpcbyzkn"></script>
+<script type="text/javascript" src="../js/dt.js?v=mpcctex8"></script>
+<script type="text/javascript" src="../js/index.js?v=mpcctex8"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mpcctex8"></script>
 </body>
 </html>
