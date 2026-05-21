@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="compose_install_chrome 命令">
     <meta name="twitter:description" content="Docker Compose 部署 Chromium 网页版浏览器 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpf57s63">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpf6dfcq">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mpf57s63"></script>
+    <script src="../js/dt.js?v=mpf6dfcq"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1266,7 +1266,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
   <li>内置 HTTP_PROXY/HTTPS_PROXY 环境变量，可按需修改代理地址</li>
   <li>容器使用 <code>seccomp:unconfined</code> 安全配置，确保浏览器正常运行</li>
   <li>共享内存（shm_size）设置为 1gb，保障浏览器稳定性</li>
-  <li>脚本会自动安装 iptables-persistent 或 iptables-services 来持久化防火墙规则</li>
+  <li>脚本会自动检测并开放防火墙端口（优先使用 iptables-save 保存规则，支持 netfilter-persistent 超时保护，避免卡死）</li>
   <li>如需完全卸载，可使用文档末尾的一键卸载命令</li>
 </ul>
 <h2 id="脚本源码"><a class="anchor" aria-hidden="true" tabindex="-1" href="#脚本源码"><span class="octicon octicon-link"></span></a>脚本源码</h2>
@@ -2549,8 +2549,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mpf57s63"></script>
-<script type="text/javascript" src="../js/index.js?v=mpf57s63"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mpf57s63"></script>
+<script type="text/javascript" src="../js/dt.js?v=mpf6dfcq"></script>
+<script type="text/javascript" src="../js/index.js?v=mpf6dfcq"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mpf6dfcq"></script>
 </body>
 </html>
