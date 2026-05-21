@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_dir_file_restore 命令">
     <meta name="twitter:description" content="Linux 目录与文件恢复工具 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpewx3n2">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpezw8bo">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mpewx3n2"></script>
+    <script src="../js/dt.js?v=mpezw8bo"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1131,30 +1131,78 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 <h1 id="linux_dir_file_restore"><a class="anchor" aria-hidden="true" tabindex="-1" href="#linux_dir_file_restore"><span class="octicon octicon-link"></span></a>linux_dir_file_restore</h1>
 <p>Linux 目录与文件恢复工具</p>
 <h2 id="一键脚本"><a class="anchor" aria-hidden="true" tabindex="-1" href="#一键脚本"><span class="octicon octicon-link"></span></a>一键脚本</h2>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_dir_file_restore.sh<span class="token punctuation">)</span> /vol2/1000/file/myfile/compose/downloads /vol1/1000/compose
-</span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_dir_file_restore.sh) /vol2/1000/file/myfile/compose/downloads /vol1/1000/compose
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_dir_file_restore.sh<span class="token punctuation">)</span> /备份目录 /恢复目录
+</span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_dir_file_restore.sh) /备份目录 /恢复目录
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <table>
   <thead>
     <tr>
-      <th>模式</th>
-      <th>命令</th>
-      <th>说明</th>
+      <th align="left">功能模式</th>
+      <th align="left">执行命令</th>
+      <th align="left">作用说明</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>交互模式</td>
-      <td><code>./脚本名.sh</code></td>
-      <td>交互式输入备份目录和恢复目录</td>
+      <td align="left">传参模式（指定备份目录+恢复目录）</td>
+      <td align="left"><code>./restore.sh /备份目录 /恢复目录</code></td>
+      <td align="left">直接传参，免交互进入选择界面</td>
     </tr>
     <tr>
-      <td>传参模式</td>
-      <td><code>./脚本名.sh /备份目录 /恢复目录</code></td>
-      <td>传参模式（2个必传参数）</td>
+      <td align="left">交互模式（不传参）</td>
+      <td align="left"><code>./restore.sh</code></td>
+      <td align="left">手动输入备份目录、恢复目录，可视化操作</td>
+    </tr>
+    <tr>
+      <td align="left">批量恢复全部</td>
+      <td align="left">交互界面输入 <code>999</code></td>
+      <td align="left">一键恢复所有 <code>tar.gz</code>/<code>zip</code> 备份</td>
+    </tr>
+    <tr>
+      <td align="left">实用示例</td>
+      <td align="left"><code>./restore.sh /mnt/backup /mnt/data</code></td>
+      <td align="left">恢复 <code>/mnt/backup</code> 里所有备份到 <code>/mnt/data</code></td>
+    </tr>
+    <tr>
+      <td align="left">恢复规则</td>
+      <td align="left">-</td>
+      <td align="left">自动覆盖已存在文件，保留原始目录结构</td>
+    </tr>
+    <tr>
+      <td align="left">支持格式</td>
+      <td align="left">-</td>
+      <td align="left">支持 <code>tar.gz</code>、<code>zip</code> 格式备份恢复</td>
     </tr>
   </tbody>
 </table>
+<h3 id="目录结构图"><a class="anchor" aria-hidden="true" tabindex="-1" href="#目录结构图"><span class="octicon octicon-link"></span></a>目录结构图</h3>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1">./restore.sh /mnt/backup /mnt/data
+</span><span class="code-line line-number" line="2">
+</span><span class="code-line line-number" line="3"><span class="token comment"># 备份目录（来源）</span>
+</span><span class="code-line line-number" line="4">/mnt/backup
+</span><span class="code-line line-number" line="5">    ├── project.tar.gz
+</span><span class="code-line line-number" line="6">    ├── config.tar.gz
+</span><span class="code-line line-number" line="7">    └── readme.txt.zip
+</span><span class="code-line line-number" line="8">
+</span><span class="code-line line-number" line="9"><span class="token comment"># 恢复后（目标目录）</span>
+</span><span class="code-line line-number" line="10">/mnt/data
+</span><span class="code-line line-number" line="11">    ├── project/
+</span><span class="code-line line-number" line="12">    ├── config/
+</span><span class="code-line line-number" line="13">    └── readme.txt
+</span></code><div onclick="copied(this)" data-code="./restore.sh /mnt/backup /mnt/data
+
+# 备份目录（来源）
+/mnt/backup
+    ├── project.tar.gz
+    ├── config.tar.gz
+    └── readme.txt.zip
+
+# 恢复后（目标目录）
+/mnt/data
+    ├── project/
+    ├── config/
+    └── readme.txt
+" class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
 <h2 id="效果预览"><a class="anchor" aria-hidden="true" tabindex="-1" href="#效果预览"><span class="octicon octicon-link"></span></a>效果预览</h2>
 <p>
   <img src="https://file.meimolihan.eu.org/screenshot/linux_dir_file_backup.webp" alt="执行脚本效果预览" title="截图演示" loading="lazy">
@@ -2105,8 +2153,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mpewx3n2"></script>
-<script type="text/javascript" src="../js/index.js?v=mpewx3n2"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mpewx3n2"></script>
+<script type="text/javascript" src="../js/dt.js?v=mpezw8bo"></script>
+<script type="text/javascript" src="../js/index.js?v=mpezw8bo"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mpezw8bo"></script>
 </body>
 </html>

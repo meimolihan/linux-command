@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="linux_download 命令">
     <meta name="twitter:description" content="Linux 单文件下载脚本 - 最专业的Linux命令大全，值得收藏的Linux命令速查手册。">
-    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpewx3n2">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=mpezw8bo">
     <!-- 跳转到主内容（无障碍） -->
     <style>
       .skip-link {
@@ -130,7 +130,7 @@
         color: #c9d1d9 !important;
       }
     </style>
-    <script src="../js/dt.js?v=mpewx3n2"></script>
+    <script src="../js/dt.js?v=mpezw8bo"></script>
     <!-- 壁纸切换功能 -->
     <style>
       /* 壁纸背景 */
@@ -1131,15 +1131,50 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 <h1 id="linux_download"><a class="anchor" aria-hidden="true" tabindex="-1" href="#linux_download"><span class="octicon octicon-link"></span></a>linux_download</h1>
 <p>Linux 单文件下载脚本</p>
 <h2 id="一键脚本"><a class="anchor" aria-hidden="true" tabindex="-1" href="#一键脚本"><span class="octicon octicon-link"></span></a>一键脚本</h2>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_download.sh<span class="token punctuation">)</span>
-</span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_download.sh)
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">bash</span> <span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> gitee.com/meimolihan/linux-command_sh/raw/master/linux_download.sh<span class="token punctuation">)</span> https://example.com/file.zip
+</span></code><div onclick="copied(this)" data-code="bash <(curl -sL gitee.com/meimolihan/linux-command_sh/raw/master/linux_download.sh) https://example.com/file.zip
 " class="copied" style="opacity:1!important;visibility:visible!important;display:flex!important;"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+<table>
+  <thead>
+    <tr>
+      <th align="left">功能模式</th>
+      <th align="left">执行命令</th>
+      <th align="left">作用说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">一键传参模式</td>
+      <td align="left"><code>./download.sh https://example.com/file.zip</code></td>
+      <td align="left">直接传入下载链接，自动开始下载</td>
+    </tr>
+    <tr>
+      <td align="left">交互模式</td>
+      <td align="left"><code>./download.sh</code></td>
+      <td align="left">不传参，进入交互式界面，手动输入链接</td>
+    </tr>
+    <tr>
+      <td align="left">实用示例</td>
+      <td align="left"><code>./download.sh https://github.com/xxx/archive.tar.gz</code></td>
+      <td align="left">直接下载指定网络文件</td>
+    </tr>
+    <tr>
+      <td align="left">下载规则</td>
+      <td align="left">-</td>
+      <td align="left">自动识别 wget / curl，支持断点续传、文件大小校验</td>
+    </tr>
+    <tr>
+      <td align="left">支持功能</td>
+      <td align="left">-</td>
+      <td align="left">自定义文件名、MD5 校验、显示下载耗时与路径</td>
+    </tr>
+  </tbody>
+</table>
 <h2 id="效果预览"><a class="anchor" aria-hidden="true" tabindex="-1" href="#效果预览"><span class="octicon octicon-link"></span></a>效果预览</h2>
 <p>
   <img src="https://file.meimolihan.eu.org/screenshot/linux_download.webp" alt="执行脚本效果预览" title="截图演示" loading="lazy">
 </p>
 <h2 id="补充说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#补充说明"><span class="octicon octicon-link"></span></a>补充说明</h2>
-<h3 id="功能描述"><a class="anchor" aria-hidden="true" tabindex="-1" href="#功能描述"><span class="octicon octicon-link"></span></a>功能描述</h3>
 <p>支持断点续传与文件校验、可自动清理重复URL前缀的Linux终端单文件下载脚本，适用于需要下载大文件的场景。</p>
 <h3 id="功能特点"><a class="anchor" aria-hidden="true" tabindex="-1" href="#功能特点"><span class="octicon octicon-link"></span></a>功能特点</h3>
 <ul>
@@ -1181,9 +1216,6 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
   <li>下载大文件时请耐心等待，不要中断终端连接</li>
 </ul>
 <h2 id="脚本源码"><a class="anchor" aria-hidden="true" tabindex="-1" href="#脚本源码"><span class="octicon octicon-link"></span></a>脚本源码</h2>
-<ul>
-  <li>传参：<code>./脚本名.sh wget</code></li>
-</ul>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token shebang important">#!/bin/bash</span>
 </span><span class="code-line line-number" line="2"><span class="token builtin class-name">set</span> <span class="token parameter variable">-uo</span> pipefail
 </span><span class="code-line line-number" line="3">
@@ -1826,8 +1858,8 @@ function copied(target, str) {
     </a>
   </div>
 </div> -->
-<script type="text/javascript" src="../js/dt.js?v=mpewx3n2"></script>
-<script type="text/javascript" src="../js/index.js?v=mpewx3n2"></script>
-<script type="text/javascript" src="../js/enhance.js?v=mpewx3n2"></script>
+<script type="text/javascript" src="../js/dt.js?v=mpezw8bo"></script>
+<script type="text/javascript" src="../js/index.js?v=mpezw8bo"></script>
+<script type="text/javascript" src="../js/enhance.js?v=mpezw8bo"></script>
 </body>
 </html>
